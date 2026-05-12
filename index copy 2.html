@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directional Bubble Loop</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #9fdcff;
+        font-family: sans-serif;
+      }
+
+      .scene {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        /* Dreamy background based on your reference */
+        background:
+          radial-gradient(
+            circle at 15% 20%,
+            rgba(255, 210, 230, 0.4),
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 85%,
+            rgba(0, 195, 255, 0.4),
+            transparent 50%
+          ),
+          linear-gradient(135deg, #e0f7fa 0%, #81d4fa 50%, #29b6f6 100%);
+      }
+
+      /* Bubble Styling */
+      .bubble {
+        position: absolute;
+        border-radius: 50%;
+        background:
+          radial-gradient(
+            circle at 30% 25%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0.1) 40%,
+            transparent 70%
+          ),
+          linear-gradient(
+            145deg,
+            rgba(255, 190, 220, 0.15),
+            rgba(160, 240, 255, 0.15)
+          );
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow:
+          inset 0 0 15px rgba(255, 255, 255, 0.3),
+          0 0 10px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(1px);
+        will-change: transform, opacity;
+
+        /* Animation relies on CSS variables set by JS */
+        animation: floatDiagonal var(--duration) linear var(--delay) infinite;
+        opacity: 0; /* Hidden before animation starts */
+      }
+
+      /* Glossy highlight on the bubble */
+      .bubble::after {
+        content: "";
+        position: absolute;
+        width: 25%;
+        height: 25%;
+        top: 12%;
+        left: 18%;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        filter: blur(1px);
+        transform: rotate(-45deg);
+      }
+
+      /* Keyframes for moving from bottom-right to top-left.
+      Fades in at the start and fades out before leaving the viewport entirely.
+    */
+      @keyframes floatDiagonal {
+        0% {
+          transform: translate(var(--startX), var(--startY)) scale(var(--scale));
+          opacity: 0;
+        }
+        10% {
+          opacity: var(--maxOpacity);
+        }
+        85% {
+          opacity: var(--maxOpacity);
+        }
+        100% {
+          transform: translate(var(--endX), var(--endY)) scale(var(--scale));
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scene" id="scene">
+      <div id="bubbles"></div>
+    </div>
+
+    <script>
+      const bubbleContainer = document.getElementById("bubbles");
+      const bubbleCount = 45; // Adjust density here
+
+      function createBubble() {
+        const bubble = document.createElement("div");
+        bubble.className = "bubble";
+
+        // --- Math for organic, right-to-left upward flow ---
+
+        // Base size between 30px and 150px
+        const size = Math.random() * 120 + 30;
+
+        // Start X: Bias towards the right side and slightly off-screen right (60vw to 120vw)
+        const startX = Math.random() * 60 + 60;
+        // Start Y: Off-screen bottom (105vh to 130vh)
+        const startY = Math.random() * 25 + 105;
+
+        // End X: Move towards the left, ending off-screen left (-30vw to 40vw)
+        const endX = Math.random() * 70 - 30;
+        // End Y: Move upwards, ending off-screen top (-20vh to -50vh)
+        const endY = Math.random() * -30 - 20;
+
+        // Speed and timing
+        const duration = Math.random() * 15 + 15; // 15s to 30s
+        const delay = Math.random() * -30; // Negative delay so the screen is full immediately
+
+        // Depth mechanics: smaller bubbles are slightly more transparent and have lower z-index
+        const scale = Math.random() * 0.5 + 0.5;
+        const maxOpacity =
+          size < 60 ? Math.random() * 0.4 + 0.3 : Math.random() * 0.5 + 0.5;
+        bubble.style.zIndex = size < 60 ? "1" : "5";
+        if (size < 50) bubble.style.filter = "blur(2px)";
+
+        // Apply physical dimensions
+        bubble.style.width = `${size}px`;
+        bubble.style.height = `${size}px`;
+
+        // Apply CSS variables for the keyframes
+        bubble.style.setProperty("--startX", `${startX}vw`);
+        bubble.style.setProperty("--startY", `${startY}vh`);
+        bubble.style.setProperty("--endX", `${endX}vw`);
+        bubble.style.setProperty("--endY", `${endY}vh`);
+        bubble.style.setProperty("--scale", scale);
+        bubble.style.setProperty("--maxOpacity", maxOpacity);
+        bubble.style.setProperty("--duration", `${duration}s`);
+        bubble.style.setProperty("--delay", `${delay}s`);
+
+        bubbleContainer.appendChild(bubble);
+      }
+
+      // Generate the bubbles on load
+      for (let i = 0; i < bubbleCount; i++) {
+        createBubble();
+      }
+    </script>
+  </body>
+</html>
