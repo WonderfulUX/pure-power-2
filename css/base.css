@@ -1,0 +1,20 @@
+body {
+    background-color: var(--bgColor);
+    color: var(--white);
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+main {
+    display: block;
+}
+
+section {
+    position: relative;
+    padding: 100px 30px;
+}
+
+::selection {
+    background-color: var(--brightBlue);
+    color: var(--white);
+}

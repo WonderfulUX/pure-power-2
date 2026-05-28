@@ -1,0 +1,150 @@
+#laundryPowders {
+    position: relative;
+    background-color: var(--bgColor);
+    padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 80px);
+}
+
+#laundryPowders::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/img/webp/splash.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+#laundryPowders .section-title {
+    margin: 0 auto clamp(32px, 4vw, 56px);
+    text-align: center;
+}
+
+.powders-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(14px, 2vw, 24px);
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.powders-grid .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(12px, 1.5vw, 20px);
+    padding: clamp(24px, 3vw, 40px) clamp(20px, 2.5vw, 32px) clamp(20px, 2.5vw, 32px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    /* border: 2px solid hsl(from white h s l /0%);
+    transition: border .2s ease; */
+}
+
+/* .powders-grid .product:hover {
+    border-color: hsl(from white h s l / 56%);
+    box-shadow: 0 0 8px white;
+} */
+
+.powders-grid .product-image img {
+    height: 350px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.2));
+}
+
+.powders-grid .product-name {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.product-description {
+    font-size: 18px;
+}
+
+
+#liquidLaundry {
+    position: relative;
+    background-color: var(--brightBlue);
+    padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 80px);
+}
+
+#liquidLaundry>* {
+    position: relative;
+}
+
+#liquidLaundry .product-description {
+    margin-bottom: 12px;
+}
+
+#liquidLaundry .section-title {
+    width: fit-content;
+    margin-left: auto;
+}
+
+#liquidLaundry::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/img/webp/liquid.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+#liquid-5kg .product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#liquid-5kg .product-image {
+    display: flex;
+    justify-content: center;
+}
+
+#liquid-5kg .product-image img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.2));
+}
+
+#liquid-5kg .product-label {
+    font-size: clamp(0.65rem, 0.8vw, 0.75rem);
+    color: var(--yellow);
+}
+
+#liquid-5kg .product-name {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .powders-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    #liquid-5kg {
+        grid-template-columns: 1fr;
+    }
+
+    #liquid-5kg .product-image {
+        order: -1;
+    }
+
+    #liquid-5kg .product-image img {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+}

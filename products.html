@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pure Power Products — discover our full range of laundry powders and liquids.">
+    <title>Products — Pure Power</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/main.js" type="module" defer></script>
+</head>
+<body>
+    <header id="header">
+        <a href="/" class="header-logo" aria-label="Pure Power home">
+            <img src="assets/svg/purepower.svg" alt="Pure Power">
+        </a>
+        <nav class="header-nav" aria-label="Primary">
+            <a href="products.html" aria-current="page">Products</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+        <div class="header-actions">
+            <a href="/#contact" class="header-contact">Contact</a>
+            <div class="header-language">
+                <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
+                    <span>EN</span>
+                    <img src="assets/svg/chevron-down.svg" alt="" aria-hidden="true">
+                </button>
+                <ul class="header-language-menu" role="listbox">
+                    <li role="option"><a href="#">EN</a></li>
+                    <li role="option"><a href="#">FR</a></li>
+                </ul>
+            </div>
+            <button class="header-menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <aside id="mobile-menu" aria-hidden="true">
+        <button class="mobile-menu-close" aria-label="Close menu">
+            <img src="assets/svg/close.svg" alt="">
+        </button>
+        <nav class="mobile-menu-nav" aria-label="Mobile">
+            <a href="products.html" aria-current="page">Products</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="/#contact">Contact</a>
+        </nav>
+        <div class="mobile-menu-social">
+            <a href="#" aria-label="TikTok"></a>
+            <a href="#" aria-label="Facebook"></a>
+            <a href="#" aria-label="Instagram"></a>
+            <a href="#" aria-label="YouTube"></a>
+        </div>
+    </aside>
+
+    <main>
+        <section id="products-hero">
+            <h1 class="section-title">Our products</h1>
+            <p class="section-subtitle">Everything you need to know about our range</p>
+        </section>
+
+        <section id="products-panel">
+            <div class="products-layout">
+                <div class="products-list-panel">
+                    <div class="products-hint">
+                        <span>Click on a product below to display its details</span>
+                        <button class="products-hint-close" aria-label="Dismiss hint">
+                            <img src="assets/svg/close.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="products-thumbs" role="list">
+                        <button class="product-thumb active" data-product="iconic-4kg" role="listitem" aria-label="Iconic 4KG">
+                            <img src="assets/img/webp/4kg.webp" alt="Iconic 4KG">
+                        </button>
+                        <button class="product-thumb" data-product="compact-2kg" role="listitem" aria-label="Compact 2KG">
+                            <img src="assets/img/webp/2kg.webp" alt="Compact 2KG">
+                        </button>
+                        <button class="product-thumb" data-product="family-5kg" role="listitem" aria-label="Family 5KG">
+                            <img src="assets/img/webp/5kg.webp" alt="Family 5KG">
+                        </button>
+                        <button class="product-thumb" data-product="pro-format-6kg" role="listitem" aria-label="Pro Format 6KG">
+                            <img src="assets/img/webp/6kg.webp" alt="Pro Format 6KG">
+                        </button>
+                        <button class="product-thumb" data-product="liquid-5kg" role="listitem" aria-label="Liquid 5KG">
+                            <img src="assets/img/webp/liquid-5kg.webp" alt="Liquid 5KG">
+                        </button>
+                    </div>
+                    <div class="products-preview">
+                        <img class="product-image" src="assets/img/webp/4kg.webp" alt="">
+                    </div>
+                </div>
+
+                <div class="product-detail-panel" id="product-detail">
+                    <span class="product-label">Product</span>
+                    <div class="product-detail-header">
+                        <h2 class="product-name section-headline"></h2>
+                        <span class="product-badge" hidden></span>
+                    </div>
+                    <ul class="product-features"></ul>
+                    <div class="product-tabs" role="tablist">
+                        <button class="product-tab active" role="tab" aria-selected="true" data-tab="description">Description</button>
+                        <button class="product-tab" role="tab" aria-selected="false" data-tab="composition">Composition</button>
+                    </div>
+                    <div class="product-tab-content product-description" role="tabpanel" data-tab="description"></div>
+                    <div class="product-tab-content" role="tabpanel" data-tab="composition" hidden></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products-cta">
+            <p class="cta-label">Need more information</p>
+            <img src="assets/svg/question-marks.svg" alt="" aria-hidden="true" class="cta-icon">
+            <a href="/#contact" class="cta-button">Feel free to reach out</a>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-ticker">
+            <div class="footer-ticker-track"></div>
+        </div>
+        <div class="footer-content">
+            <a href="/" class="footer-logo" aria-label="Pure Power home">
+                <img src="assets/svg/purepower.svg" alt="Pure Power">
+            </a>
+            <div class="footer-social">
+                <a href="#" aria-label="TikTok"></a>
+                <a href="#" aria-label="Facebook"></a>
+                <a href="#" aria-label="Instagram"></a>
+                <a href="#" aria-label="YouTube"></a>
+            </div>
+            <nav class="footer-sitemap" aria-label="Sitemap">
+                <div class="footer-column">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">Iconic 4KG</a></li>
+                        <li><a href="products.html">Compact 2KG</a></li>
+                        <li><a href="products.html">Family 5KG</a></li>
+                        <li><a href="products.html">Pro Format 6KG</a></li>
+                        <li><a href="products.html">Liquid 5KG</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">Our story</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="/#contact">Get in touch</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
