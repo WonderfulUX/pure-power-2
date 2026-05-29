@@ -66,7 +66,7 @@
     aspect-ratio: 1;
     content: '';
     background: var(--yellow);
-    border: 4px solid;
+    border: 6px solid;
     z-index: 8;
     top: 50%;
     left: 50%;
@@ -195,10 +195,6 @@
         max-width: 220px;
     }
 
-    #bestSeller {
-        background-color: var(--electricBlue);
-    }
-
     #bestSeller .section-title {
         color: white;
     }
@@ -207,9 +203,7 @@
         background: white;
         color: var(--electricBlue);
     }
-}
 
-@media (max-width: 500px) {
     #best-seller-product .product-image::before {
         display: none;
     }

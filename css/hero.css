@@ -86,7 +86,7 @@ TEST  */
 }
 
 .wave-section-grid p {
-    font-size: clamp(20px, 2.5vw, 40px);
+    font-size: clamp(20px, 2.2vw, 40px);
 }
 
 @media screen and (max-width: 1200px) {
@@ -118,7 +118,15 @@ TEST  */
 
 @media screen and (max-width: 768px) {
     .hero {
-        height: 80vh;
+        height: 70vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero {
+        height: 60vh;
     }
 }
 
