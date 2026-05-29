@@ -63,10 +63,36 @@
     font-size: clamp(20px, 2.5vw, 40px);
 }
 
-
-@media (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .intro-grid {
-        grid-template-columns: 1fr;
-        gap: 36px;
+        display: flex;
+        flex-direction: column;
+        max-width: 750px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .intro-block:nth-of-type(2) {
+        translate: unset;
+    }
+
+    #hero {
+        min-height: 90vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        min-height: 80vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .intro-grid {
+        padding: 0;
+    }
+
+    #intro {
+        background-color: var(--brightBlue);
     }
 }

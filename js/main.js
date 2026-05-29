@@ -67,22 +67,33 @@ const PRODUCTS = [
 ];
 
 function initMobileMenu() {
-    const menuToggle = document.querySelector('.header-menu-toggle');
+    console.log('init');
+
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuBackdrop = document.querySelector('#mobile-nav-backdrop');
     const menuClose = document.querySelector('.mobile-menu-close');
+
+    console.log(menuToggle, mobileMenu);
 
     if (!menuToggle || !mobileMenu) return;
 
     function openMenu() {
-        mobileMenu.setAttribute('aria-hidden', 'false');
-        menuToggle.setAttribute('aria-expanded', 'true');
+        mobileMenuBackdrop.setAttribute('aria-hidden', 'false')
         document.body.style.overflow = 'hidden';
+        setTimeout(() => {
+            mobileMenu.setAttribute('aria-hidden', 'false');
+            menuToggle.setAttribute('aria-expanded', 'true');
+        }, 200)
     }
 
     function closeMenu() {
         mobileMenu.setAttribute('aria-hidden', 'true');
         menuToggle.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        setTimeout(() => {
+            mobileMenuBackdrop.setAttribute('aria-hidden', 'true')
+            document.body.style.overflow = '';
+        }, 200)
     }
 
     menuToggle.addEventListener('click', openMenu);

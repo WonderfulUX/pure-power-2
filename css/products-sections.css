@@ -19,6 +19,11 @@
     text-align: center;
 }
 
+#laundryPowders>* {
+    position: relative;
+    z-index: 10;
+}
+
 .powders-grid {
     position: relative;
     z-index: 1;
@@ -34,18 +39,12 @@
     flex-direction: column;
     align-items: center;
     gap: clamp(12px, 1.5vw, 20px);
-    padding: clamp(24px, 3vw, 40px) clamp(20px, 2.5vw, 32px) clamp(20px, 2.5vw, 32px);
+    padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     text-align: center;
-    /* border: 2px solid hsl(from white h s l /0%);
-    transition: border .2s ease; */
 }
 
-/* .powders-grid .product:hover {
-    border-color: hsl(from white h s l / 56%);
-    box-shadow: 0 0 8px white;
-} */
 
 .powders-grid .product-image img {
     height: 350px;
@@ -125,6 +124,47 @@
 #liquid-5kg .product-name {
     text-align: center;
     margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .powders-grid .product-image img,
+    #liquidLaundry .product-image img {
+        height: 250px;
+    }
+
+    .product-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 250px;
+        line-clamp: 3;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical
+    }
+
+    #laundryPowders {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .powders-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .powders-grid .product {
+        width: 300px;
+    }
+
+    #liquidLaundry .section-title {
+        margin: 0 0 50px;
+        width: unset;
+        text-align: center;
+    }
 }
 
 

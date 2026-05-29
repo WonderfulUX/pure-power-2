@@ -19,6 +19,7 @@
     text-transform: none;
     color: white;
     text-align: left;
+    align-content: center;
 }
 
 .reseller-content p {
@@ -77,4 +78,34 @@
 
 .reseller-logo img:hover {
     opacity: 1;
+}
+
+@media screen and (max-width:1000px) {
+    #resellers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #resellers .section-title {
+        background: unset;
+        color: var(--brightBlue);
+        text-align: center;
+        padding: 80px 0;
+    }
+
+    #resellers>* {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    #resellers .reseller-content {
+        padding: 0 0 80px;
+        width: 90%;
+        max-width: 450px;
+    }
+
+    .reseller-content p {
+        margin-bottom: 20px;
+    }
 }
