@@ -90,7 +90,7 @@
         <section id="products-hero" class="hero">
             <div class="hero-content">
                 <h1 class="section-title">Our products</h1>
-                <p class="section-subtitle">Everything you need to know about our range</p>
+                <p class="section-headline">Everything you need to know about our range</p>
             </div>
         </section>
 
@@ -104,24 +104,30 @@
                         </button>
                     </div>
                     <div class="products-thumbs" role="list">
-                        <button class="product-thumb active" data-product="iconic-4kg" role="listitem"
-                            aria-label="Iconic 4KG">
-                            <img src="assets/img/webp/4kg.webp" alt="Iconic 4KG">
-                        </button>
-                        <button class="product-thumb" data-product="compact-2kg" role="listitem"
-                            aria-label="Compact 2KG">
-                            <img src="assets/img/webp/2kg.webp" alt="Compact 2KG">
-                        </button>
-                        <button class="product-thumb" data-product="family-5kg" role="listitem" aria-label="Family 5KG">
-                            <img src="assets/img/webp/5kg.webp" alt="Family 5KG">
-                        </button>
-                        <button class="product-thumb" data-product="pro-format-6kg" role="listitem"
-                            aria-label="Pro Format 6KG">
-                            <img src="assets/img/webp/6kg.webp" alt="Pro Format 6KG">
-                        </button>
-                        <button class="product-thumb" data-product="liquid-5kg" role="listitem" aria-label="Liquid 5KG">
-                            <img src="assets/img/webp/liquid-5kg.webp" alt="Liquid 5KG">
-                        </button>
+                        <div class="product-list-scrollable">
+                            <div class="product-list-scrollable-ctn">
+                                <button class="product-thumb active" data-product="iconic-4kg" role="listitem"
+                                    aria-label="Iconic 4KG">
+                                    <img src="assets/img/webp/4kg.webp" alt="Iconic 4KG">
+                                </button>
+                                <button class="product-thumb" data-product="compact-2kg" role="listitem"
+                                    aria-label="Compact 2KG">
+                                    <img src="assets/img/webp/2kg.webp" alt="Compact 2KG">
+                                </button>
+                                <button class="product-thumb" data-product="family-5kg" role="listitem"
+                                    aria-label="Family 5KG">
+                                    <img src="assets/img/webp/5kg.webp" alt="Family 5KG">
+                                </button>
+                                <button class="product-thumb" data-product="pro-format-6kg" role="listitem"
+                                    aria-label="Pro Format 6KG">
+                                    <img src="assets/img/webp/6kg.webp" alt="Pro Format 6KG">
+                                </button>
+                                <button class="product-thumb" data-product="liquid-5kg" role="listitem"
+                                    aria-label="Liquid 5KG">
+                                    <img src="assets/img/webp/liquid-5kg.webp" alt="Liquid 5KG">
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div class="products-preview">
                         <img class="product-image" src="assets/img/webp/4kg.webp" alt="">
@@ -137,24 +143,28 @@
                         </div>
                         <ul class="product-features"></ul>
                     </div>
-                    <div class="product-details-block product-details-bottom">
+                    <div class="product-details-bottom">
                         <div class="product-tabs" role="tablist">
                             <button class="product-tab active" role="tab" aria-selected="true"
                                 data-tab="description">Description</button>
                             <button class="product-tab" role="tab" aria-selected="false"
                                 data-tab="composition">Composition</button>
                         </div>
-                        <div class="product-tab-content product-description" role="tabpanel" data-tab="description">
+                        <div class="product-tab-content product-description product-details-block " role="tabpanel"
+                            data-tab="description">
                         </div>
-                        <div class="product-tab-content" role="tabpanel" data-tab="composition" hidden></div>
+                        <div class="product-tab-content product-composition product-details-block " role="tabpanel"
+                            data-tab="composition" hidden></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="products-cta">
-            <p class="cta-label">Need more information</p>
-            <img src="assets/svg/question-marks.svg" alt="" aria-hidden="true" class="cta-icon">
+        <section id="redirectToContact">
+            <div class="incentive-text">
+                <p class="cta-label">Need more information</p>
+                <img src="assets/svg/question-marks-light.svg" alt="" aria-hidden="true" class="cta-icon">
+            </div>
             <a href="/#contact" class="cta-button">Feel free to reach out</a>
         </section>
     </main>

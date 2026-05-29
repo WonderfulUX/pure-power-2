@@ -120,10 +120,13 @@
 .cta-button {
     background: white;
     width: fit-content;
+    transition: box-shadow 0.2s ease;
 }
 
 .cta-button:hover {
-    backgroun: var(--electricBlue);
+    background: var(--yellow);
+    color: var(--bgColor);
+    box-shadow: inset 0 0 0 3px white;
 }
 
 .product-link:hover {
