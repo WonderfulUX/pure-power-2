@@ -67,14 +67,10 @@ const PRODUCTS = [
 ];
 
 function initMobileMenu() {
-    console.log('init');
-
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuBackdrop = document.querySelector('#mobile-nav-backdrop');
     const menuClose = document.querySelector('.mobile-menu-close');
-
-    console.log(menuToggle, mobileMenu);
 
     if (!menuToggle || !mobileMenu) return;
 
@@ -98,6 +94,9 @@ function initMobileMenu() {
 
     menuToggle.addEventListener('click', openMenu);
     menuClose?.addEventListener('click', closeMenu);
+    mobileMenuBackdrop.addEventListener('click', (e) => {
+        e.target.id === "mobile-nav-backdrop" && closeMenu()
+    })
 
     mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', closeMenu);
