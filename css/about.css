@@ -64,6 +64,12 @@
     width: auto;
 }
 
+#about-page .wave-section-wrapper {
+    background: url('../assets/img/webp/liquid-large.webp');
+    background-size: contain;
+    background-position-y: var(--wave-section-y-offset);
+}
+
 @media screen and (max-width: 1000px) {
     .about-editorial-left+p {
         position: relative;

@@ -1,23 +1,11 @@
-#products-hero {
-    position: relative;
-    min-height: 45vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: url('../assets/img/webp/splash.webp');
-    background-size: cover;
-    background-position: center;
-    padding: clamp(120px, 14vw, 180px) clamp(24px, 6vw, 80px) clamp(60px, 7vw, 100px);
+#products-page {
+    background: url('../assets/img/webp/community-large.webp');
+    background-size: contain;
 }
 
-#products-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--bgColor);
-    opacity: 0.7;
+#products-panel {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #products-hero .section-subtitle {
@@ -29,7 +17,11 @@
 
 #products-panel {
     background: var(--bgColor);
-    padding: clamp(40px, 6vw, 80px) clamp(24px, 6vw, 80px);
+    background: hsl(from white h s l /20%);
+    backdrop-filter: blur(20px);
+    width: 94%;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 .products-layout {
@@ -47,18 +39,18 @@
     justify-content: space-between;
     gap: 12px;
     padding: 12px 16px 12px 20px;
-    border-radius: 12px;
-    border: 1.5px solid rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.04);
+    border-radius: 4px;
+    background: white;
     margin-bottom: 20px;
     cursor: pointer;
     font-size: 0.875rem;
-    color: var(--lightGrey);
-    transition: background 0.2s ease;
+    color: hsl(from var(--black) h s l / 80%);
+    transition: background-color 0.2s ease;
+    opacity: .8;
 }
 
 .products-hint:hover {
-    background: rgba(255, 255, 255, 0.08);
+    opacity: 1;
 }
 
 .products-hint-close {
@@ -96,7 +88,7 @@
 }
 
 .product-thumb.active {
-    border-color: var(--yellow);
+    border-color: white;
     background: rgba(253, 216, 53, 0.08);
 }
 
@@ -122,44 +114,61 @@
     max-width: 320px;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.35));
+    filter: drop-shadow(0 24px 48px #FFFFFF90);
     transition: opacity 0.2s ease;
 }
 
 .product-detail-panel {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1.5px solid rgba(255, 255, 255, 0.12);
-    border-radius: 24px;
-    padding: clamp(24px, 3vw, 40px);
     display: flex;
     flex-direction: column;
-    gap: clamp(16px, 2vw, 24px);
+    gap: 10px;
 }
 
-.product-label {
-    font-size: 0.75rem;
-    color: var(--lightGrey);
-    opacity: 0.7;
+.product-label,
+.product-tab {
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .product-detail-header {
     position: relative;
 }
 
+.product-details-block {
+    border: 3px solid;
+    background: var(--brightBlue);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.product-details-top {}
+
 .product-name {
     font-size: clamp(1.5rem, 2.5vw, 2.25rem);
 }
 
+#products-page .product-name {
+    color: var(--yellow);
+    font-weight: 500;
+}
+
 .product-badge {
     position: absolute;
-    top: -8px;
+    top: 0;
     right: 0;
-    font-size: 0.75rem;
-    color: var(--black);
-    background: var(--pink);
-    padding: 6px 14px;
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    border: 3px solid;
+    background: linear-gradient(to bottom, var(--pink), var(--yellow));
+    padding: 4px 20px;
     border-radius: 100px;
-    transform: rotate(4deg);
+    rotate: -10deg;
+    translate: 30% -50%;
 }
 
 .product-features {
@@ -178,15 +187,13 @@
 .product-features li::before {
     content: '';
     display: block;
-    width: 18px;
-    height: 18px;
-    min-width: 18px;
-    background: var(--yellow);
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10' fill='none'%3E%3Cpath d='M1 5l3.5 3.5L11 1' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-image: url('../assets/svg/checkmark.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 10px;
+    background-size: 24px;
 }
 
 .product-tabs {
@@ -196,12 +203,9 @@
 }
 
 .product-tab {
-    font-size: 0.8rem;
     color: var(--white);
     opacity: 0.45;
     padding: 10px 16px 12px;
-    border-bottom: 2px solid transparent;
-    margin-bottom: -1.5px;
     transition: opacity 0.2s ease, border-color 0.2s ease;
 }
 
