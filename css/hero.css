@@ -1,11 +1,11 @@
-#hero {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+.hero {
     background-image: url('../assets/img/webp/hero.webp');
     background-size: cover;
     background-position: center top;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content {
@@ -15,17 +15,20 @@
     align-items: center;
     margin: 0 auto;
     text-align: center;
+    height: 30vh;
+    gap: 20px;
+    width: 100%;
 }
 
 .hero-content .section-title {
     max-width: 12ch;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.hero-content .section-headline {
-    width: fit-content;
+.hero .section-headline {
+    width: 850px;
     font-size: clamp(20px, 2.5vw, 28px);
+    max-width: 90%;
 }
 
 .hero-wave {
@@ -41,54 +44,86 @@
 
 .wave {
     position: absolute;
-    top: -100px;
+    top: var(--wave-section-y-offset);
     left: 0;
     width: 100%;
     display: unset;
 }
 
-.intro-grid {
+/* .wave-section-grid {
     position: relative;
     gap: 50px;
-    padding: 0 30px calc(var(--homepage-intro-pb) * 2);
+    padding: 0 0 calc(var(--homepage-intro-pb) * 2);
     display: flex;
     align-items: center;
 }
 
-.intro-block:nth-of-type(2) {
-    translate: 0 50%;
+TEST  */
+.wave-section-grid {
+    position: relative;
+    gap: 50px;
+    padding: 0 30px calc(var(--homepage-intro-pb) * 2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* align-items: center; */
 }
 
-.intro-grid p {
+.wave-section-wrapper {
+    position: relative;
+    background: url('../assets/img/webp/foam-large.webp');
+    background-size: contain;
+    background-position-y: var(--wave-section-y-offset);
+}
+
+.wave-grid-block:nth-of-type(even) {
+    translate: 0 50%;
+    padding-top: 50px;
+    grid-column: 2;
+}
+
+.wave-grid-block:nth-of-type(odd) {
+    grid-column: 1;
+}
+
+.wave-section-grid p {
     font-size: clamp(20px, 2.5vw, 40px);
 }
 
+@media screen and (max-width: 1200px) {
+    .wave-section-grid {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
-    .intro-grid {
+    .wave-section-grid {
         display: flex;
         flex-direction: column;
         max-width: 750px;
         margin: 0 auto;
         padding-bottom: 30px;
+        gap: 100px;
     }
 
-    .intro-block:nth-of-type(2) {
+    .wave-grid-block:nth-of-type(even) {
         translate: unset;
+        padding: 0;
     }
 
-    #hero {
-        min-height: 90vh;
+    .hero {
+        height: 90vh;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #hero {
-        min-height: 80vh;
+    .hero {
+        height: 80vh;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .intro-grid {
+    .wave-section-grid {
         padding: 0;
     }
 

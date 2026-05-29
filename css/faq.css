@@ -1,16 +1,3 @@
-#faq-hero {
-    position: relative;
-    min-height: 55vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-image: url('../assets/img/webp/hero.webp');
-    background-size: cover;
-    background-position: center top;
-    text-align: center;
-    padding-bottom: clamp(60px, 8vw, 100px);
-}
-
 .faq-hero-product {
     position: absolute;
     bottom: 0;
@@ -31,55 +18,9 @@
     transform: rotate(10deg) translateY(10%);
 }
 
-.faq-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 680px;
-    padding: 120px clamp(24px, 5vw, 60px) 0;
-}
-
-.faq-hero-content .section-subtitle {
-    margin-top: 16px;
-}
-
-.faq-hero-wave {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: clamp(50px, 7vw, 100px);
-    background: var(--brightBlue);
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-    z-index: 3;
-}
-
 #faq-content {
     position: relative;
-    background: var(--brightBlue);
     z-index: 4;
-}
-
-#faq-content::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url('../assets/img/webp/foam.webp');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    pointer-events: none;
-}
-
-.faq-grid {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(24px, 3.5vw, 48px);
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: clamp(60px, 8vw, 120px) clamp(24px, 6vw, 80px);
-    align-items: start;
 }
 
 .faq-item {
@@ -88,24 +29,36 @@
     gap: 14px;
 }
 
-.faq-question {
-    font-size: clamp(1.1rem, 1.6vw, 1.375rem);
+.faq article:nth-child(odd) {
+    grid-column: 1;
 }
 
-.faq-answer {
-    font-size: clamp(0.875rem, 1vw, 0.9375rem);
-    color: var(--white);
-    opacity: 0.85;
+.faq article:nth-child(odd) {
+    grid-column: 2;
+    margin-top: 8rem;
+}
+
+.faq article:nth-child(even) {
+    grid-column: 2;
+    margin-top: 8rem;
 }
 
 #faq-cta {
-    background: var(--brightBlue);
     padding: clamp(48px, 6vw, 80px) clamp(24px, 6vw, 80px);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: clamp(16px, 2vw, 24px);
+    z-index: 10;
+}
+
+#faq-cta.contactLink {
+    padding-bottom: 150px;
+}
+
+.section-headline-small {
+    font-size: clamp(30px, 3vw, 4.5rem);
 }
 
 @media (max-width: 768px) {

@@ -9,4 +9,11 @@
     --black: #000000;
     --lightBlack: #444444;
     --homepage-intro-pb: 100px;
+    --wave-section-y-offset: -150px;
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --wave-section-y-offset: -100px;
+    }
 }

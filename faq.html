@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/main.js" type="module" defer></script>
 </head>
+
 <body>
     <header id="header">
         <a href="/" class="header-logo" aria-label="Pure Power home">
@@ -16,11 +18,11 @@
         <nav class="header-nav" aria-label="Primary">
             <a href="products.html">Products</a>
             <a href="about.html">About</a>
-            <a href="faq.html" aria-current="page">FAQ</a>
+            <a href="faq.html">FAQ</a>
             <a href="blog.html">Blog</a>
         </nav>
         <div class="header-actions">
-            <a href="/#contact" class="header-contact">Contact</a>
+            <a href="#contact" class="header-contact">Contact</a>
             <div class="header-language">
                 <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
                     <span>EN</span>
@@ -31,93 +33,155 @@
                     <li role="option"><a href="#">FR</a></li>
                 </ul>
             </div>
-            <button class="header-menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </header>
+    <a href="/" class=" mobile-nav header-logo" aria-label="Pure Power home">
+        <img src="assets/svg/purepower.svg" alt="Pure Power">
+    </a>
+    <button class="mobile-menu-toggle" aria-label="Open menu" aria-controls="mobile-nav-backdrop" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-    <aside id="mobile-menu" aria-hidden="true">
-        <button class="mobile-menu-close" aria-label="Close menu">
-            <img src="assets/svg/close.svg" alt="">
-        </button>
-        <nav class="mobile-menu-nav" aria-label="Mobile">
-            <a href="products.html">Products</a>
-            <a href="about.html">About</a>
-            <a href="faq.html" aria-current="page">FAQ</a>
-            <a href="blog.html">Blog</a>
-            <a href="/#contact">Contact</a>
-        </nav>
-        <div class="mobile-menu-social">
-            <a href="#" aria-label="TikTok"></a>
-            <a href="#" aria-label="Facebook"></a>
-            <a href="#" aria-label="Instagram"></a>
-            <a href="#" aria-label="YouTube"></a>
-        </div>
-    </aside>
+    <div id="mobile-nav-backdrop" aria-hidden="true">
+        <aside id="mobile-menu">
+            <button class="mobile-menu-close" aria-label="Close menu">
+                <img src="assets/svg/close.svg" alt="">
+            </button>
+            <nav class="mobile-menu-nav" aria-label="Mobile">
+                <a href="products.html">Products</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="mobile-menu-social">
+                <a href="#" aria-label="TikTok">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.53V6.77a4.84 4.84 0 0 1-1.02-.08z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M21.58 7.19c-.23-.87-.91-1.56-1.78-1.78C18.25 5 12 5 12 5s-6.25 0-7.8.41c-.87.22-1.55.91-1.78 1.78C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.87.91 1.56 1.78 1.78C5.75 19 12 19 12 19s6.25 0 7.8-.41c.87-.22 1.55-.91 1.78-1.78C22 15.25 22 12 22 12s0-3.25-.42-4.81zm-11.08 7.72v-5.82l5.19 2.91-5.19 2.91z" />
+                    </svg>
+                </a>
+            </div>
+        </aside>
+    </div>
 
     <main>
-        <section id="faq-hero">
-            <img class="faq-hero-product faq-hero-product-left" src="assets/img/webp/2kg.webp" alt="">
-            <img class="faq-hero-product faq-hero-product-right" src="assets/img/webp/liquid-5kg.webp" alt="">
-            <div class="faq-hero-content">
+        <section id="faq-hero" class="hero">
+            <div class="hero-content">
                 <h1 class="section-title">FAQ</h1>
-                <p class="section-subtitle">We know you have questions. We gathered all the information you need down below</p>
-            </div>
-            <div class="faq-hero-wave" aria-hidden="true"></div>
-        </section>
-
-        <section id="faq-content">
-            <div class="faq-grid">
-                <article class="faq-item">
-                    <h3 class="faq-question">Do I need a fabric softener?</h3>
-                    <p class="faq-answer">The formulas are 'all-in-one'; however, for those who want even more softness and a longer-lasting fragrance, you can use your usual fabric softener.</p>
-                </article>
-                <article class="faq-item">
-                    <h3 class="faq-question">Can the detergent be used in the washing machine and by hand?</h3>
-                    <p class="faq-answer">Yes, it is suitable for both uses. The powder can be diluted in water for an effective hand wash.</p>
-                </article>
-                <article class="faq-item">
-                    <h3 class="faq-question">Is the detergent suitable for delicate clothing?</h3>
-                    <p class="faq-answer">The liquid detergent is 100% hypoallergenic, suitable for delicate fabrics, baby skin and underwear.</p>
-                </article>
-                <article class="faq-item">
-                    <h3 class="faq-question">What dosage is recommended for the liquid detergent?</h3>
-                    <p class="faq-answer">Use the measuring cap: Level 3: small machine / lightly soiled — Level 3 to 4: normal machine — Level 5: heavily soiled.</p>
-                </article>
-                <article class="faq-item">
-                    <h3 class="faq-question">What dosage for the powder?</h3>
-                    <p class="faq-answer">1 dose: small laundry — 2 doses: regular laundry.</p>
-                </article>
-                <article class="faq-item">
-                    <h3 class="faq-question">What is the best product for difficult stains?</h3>
-                    <p class="faq-answer">Dilute a dose of powder in a basin of water and soak the stained laundry before machine washing.</p>
-                </article>
+                <p class="section-headline">We know you have questions. We gathered all the information you need down
+                    below</p>
             </div>
         </section>
+        <div class="wave-section-wrapper">
+            <img class="wave" id="intro-wave" src="./assets/img/webp/foam-wavy-background.webp" alt="">
+            <section id="faq-content">
+                <div class="faq-grid wave-section-grid">
+                    <article class="faq-item wave-grid-block">
+                        <h2 class="faq-question section-headline-small">Do I need a fabric softener?</h2>
+                        <p class="faq-answer">The formulas are 'all-in-one'; however, for those who want even more
+                            softness
+                            and a longer-lasting fragrance, you can use your usual fabric softener.</p>
+                    </article>
+                    <article class="faq-item wave-grid-block">
+                        <h2 class="faq-question section-headline-small">Can the detergent be used in the washing machine
+                            and
+                            by
+                            hand?</h2>
+                        <p class="faq-answer">Yes, it is suitable for both uses. The powder can be diluted in water for
+                            an
+                            effective hand wash.</p>
+                    </article>
+                    <article class="faq-item wave-grid-block">
+                        <h2 class="faq-question section-headline-small">Is the detergent suitable for delicate clothing?
+                        </h2>
+                        <p class="faq-answer">The liquid detergent is 100% hypoallergenic, suitable for delicate
+                            fabrics,
+                            baby skin and underwear.</p>
+                    </article>
+                    <article class="faq-item wave-grid-block">
+                        <h2 class="faq-question section-headline-small">What dosage is recommended for the liquid
+                            detergent?
+                        </h2>
+                        <p class="faq-answer">Use the measuring cap: Level 3: small machine / lightly soiled — Level 3
+                            to 4:
+                            normal machine — Level 5: heavily soiled.</p>
+                    </article>
+                    <article class="faq-item wave-grid-block">
+                        <h2 class="faq-question section-headline-small">What dosage for the powder?</h2>
+                        <p class="faq-answer">1 dose: small laundry — 2 doses: regular laundry.</p>
+                    </article>
+                    <article class="faq-item wave-grid-block">
+                        <h2 class="faq-question section-headline-small">What is the best product for difficult stains?
+                        </h2>
+                        <p class="faq-answer">Dilute a dose of powder in a basin of water and soak the stained laundry
+                            before machine washing.</p>
+                    </article>
+                </div>
+            </section>
 
-        <section id="faq-cta">
-            <p class="cta-label">More questions</p>
-            <img src="assets/svg/question-marks.svg" alt="" aria-hidden="true" class="cta-icon">
-            <a href="/#contact" class="cta-button">Feel free to reach out</a>
-        </section>
+            <section id="faq-cta" class="contactLink">
+                <p class="cta-label">More questions</p>
+                <img src="assets/svg/question-marks.svg" alt="" aria-hidden="true" class="cta-icon">
+                <a href="/#contact" class="cta-button">Feel free to reach out</a>
+            </section>
+        </div>
     </main>
 
     <footer id="footer">
-        <div class="footer-ticker">
-            <div class="footer-ticker-track"></div>
-        </div>
         <div class="footer-content">
-            <a href="/" class="footer-logo" aria-label="Pure Power home">
-                <img src="assets/svg/purepower.svg" alt="Pure Power">
-            </a>
-            <div class="footer-social">
-                <a href="#" aria-label="TikTok"></a>
-                <a href="#" aria-label="Facebook"></a>
-                <a href="#" aria-label="Instagram"></a>
-                <a href="#" aria-label="YouTube"></a>
+            <div class="footer-brand">
+                <a href="/" class="footer-logo" aria-label="Pure Power home">
+                    <img src="assets/svg/purepower.svg" alt="Pure Power">
+                </a>
+                <div class="footer-social">
+                    <a href="#" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.53V6.77a4.84 4.84 0 0 1-1.02-.08z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M21.58 7.19c-.23-.87-.91-1.56-1.78-1.78C18.25 5 12 5 12 5s-6.25 0-7.8.41c-.87.22-1.55.91-1.78 1.78C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.87.91 1.56 1.78 1.78C5.75 19 12 19 12 19s6.25 0 7.8-.41c.87-.22 1.55-.91 1.78-1.78C22 15.25 22 12 22 12s0-3.25-.42-4.81zm-11.08 7.72v-5.82l5.19 2.91-5.19 2.91z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
             <nav class="footer-sitemap" aria-label="Sitemap">
                 <div class="footer-column">
@@ -141,11 +205,12 @@
                 <div class="footer-column">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="/#contact">Get in touch</a></li>
+                        <li><a href="#contact">Get in touch</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </footer>
 </body>
+
 </html>

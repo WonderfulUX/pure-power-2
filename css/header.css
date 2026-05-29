@@ -23,6 +23,11 @@
     width: auto;
 }
 
+#header .header-logo {
+    position: relative;
+    translate: 0 6px;
+}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -237,6 +242,13 @@
     display: none;
 }
 
+@media screen and (max-width: 1200px) {
+
+    #header {
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
 
     #header {
@@ -275,7 +287,7 @@
         align-content: center;
         top: 20px;
         left: 20px;
-        padding-top: 16px;
+        padding-top: 10px;
     }
 
     .mobile-nav.header-logo img {

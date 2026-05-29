@@ -1,16 +1,3 @@
-#about-hero {
-    position: relative;
-    min-height: 55vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-image: url('../assets/img/webp/hero.webp');
-    background-size: cover;
-    background-position: center top;
-    text-align: center;
-    padding-bottom: clamp(60px, 8vw, 100px);
-}
-
 .about-hero-product {
     position: absolute;
     bottom: 0;
@@ -31,45 +18,15 @@
     transform: rotate(10deg) translateY(10%);
 }
 
-.about-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 680px;
-    padding: 0 clamp(24px, 5vw, 60px);
-    padding-top: 120px;
-}
-
 .about-hero-content .section-subtitle {
     margin-top: 16px;
 }
 
-.about-hero-wave {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: clamp(50px, 7vw, 100px);
-    background: var(--brightBlue);
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-    z-index: 3;
-}
-
 #about-content {
     position: relative;
-    background: var(--brightBlue);
     z-index: 4;
 }
 
-#about-content::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url('../assets/img/webp/liquid.webp');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    pointer-events: none;
-}
 
 .about-content-inner {
     position: relative;
@@ -117,8 +74,7 @@
 }
 
 .cta-label {
-    font-size: clamp(0.85rem, 1vw, 0.9375rem);
-    color: var(--lightGrey);
+    font-size: clamp(20px, 2.5vw, 30px);
 }
 
 .cta-icon {
@@ -126,18 +82,6 @@
     width: auto;
 }
 
-.cta-button {
-    font-size: clamp(0.75rem, 0.9vw, 0.8125rem);
-    color: var(--black);
-    background: var(--yellow);
-    padding: 16px 40px;
-    border-radius: 100px;
-    transition: opacity 0.2s ease;
-}
-
-.cta-button:hover {
-    opacity: 0.85;
-}
 
 @media (max-width: 768px) {
     .about-hero-product {
