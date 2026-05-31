@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pure Power Blog — tips and guides for laundry care.">
+    <meta name="description" content="Blog Pure Power — conseils et guides pour l'entretien du linge.">
     <title>Article — Pure Power</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="alternate" hreflang="fr" href="/blog.html">
+    <link rel="alternate" hreflang="en" href="/en/blog.html">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/main.js" type="module" defer></script>
 </head>
 
 <body>
     <header id="header">
-        <a href="./" class="header-logo" aria-label="Pure Power home">
+        <a href="./" class="header-logo" aria-label="Pure Power accueil">
             <img src="assets/svg/purepower.svg" alt="Pure Power">
         </a>
-        <nav class="header-nav" aria-label="Primary">
-            <a href="./products.html">Products</a>
-            <a href="./about.html">About</a>
+        <nav class="header-nav" aria-label="Principale">
+            <a href="./products.html">Produits</a>
+            <a href="./about.html">À propos</a>
             <a href="./faq.html">FAQ</a>
             <a href="./blog.html">Blog</a>
         </nav>
@@ -30,20 +32,20 @@
             <a href="./#contact" class="header-contact">Contact</a>
             <div class="header-language">
                 <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
-                    <span>EN</span>
+                    <span>FR</span>
                     <img src="assets/svg/chevron-down.svg" alt="" aria-hidden="true">
                 </button>
                 <ul class="header-language-menu" role="listbox">
-                    <li role="option"><a href="#">EN</a></li>
-                    <li role="option"><a href="#">FR</a></li>
+                    <li role="option"><a href="/blog.html" hreflang="fr" lang="fr">FR</a></li>
+                    <li role="option"><a href="/en/blog.html" hreflang="en" lang="en">EN</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <a href="./" class=" mobile-nav header-logo" aria-label="Pure Power home">
+    <a href="./" class=" mobile-nav header-logo" aria-label="Pure Power accueil">
         <img src="assets/svg/purepower.svg" alt="Pure Power">
     </a>
-    <button class="mobile-menu-toggle" aria-label="Open menu" aria-controls="mobile-nav-backdrop" aria-expanded="false">
+    <button class="mobile-menu-toggle" aria-label="Ouvrir le menu" aria-controls="mobile-nav-backdrop" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -53,10 +55,10 @@
         <aside id="mobile-menu">
             <div class="mobile-menu-top">
                 <ul class="mobile-language-links" role="listbox">
-                    <li role="option"><a href="" class="lang mobile-language-link active">FR</a></li>
-                    <li role="option"><a href="" class="lang mobile-language-link">EN</a></li>
+                    <li role="option"><a href="/blog.html" class="lang mobile-language-link active" hreflang="fr" lang="fr">FR</a></li>
+                    <li role="option"><a href="/en/blog.html" class="lang mobile-language-link" hreflang="en" lang="en">EN</a></li>
                 </ul>
-                <button class="mobile-menu-close" aria-label="Close menu">
+                <button class="mobile-menu-close" aria-label="Fermer le menu">
                     <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M28.0018 0.87684C28.5876 0.291053 29.5371 0.291053 30.1229 0.87684C30.7087 1.46263 30.7087 2.41215 30.1229 2.99793L17.621 15.4999L30.1229 28.0018C30.7087 28.5876 30.7087 29.5371 30.1229 30.1229C29.5371 30.7087 28.5876 30.7087 28.0018 30.1229L15.4999 17.621L2.99793 30.1229C2.41215 30.7087 1.46263 30.7087 0.87684 30.1229C0.291053 29.5371 0.291053 28.5876 0.87684 28.0018L13.3788 15.4999L0.87684 2.99793C0.291053 2.41215 0.291053 1.46263 0.87684 0.87684C1.46263 0.291053 2.41215 0.291053 2.99793 0.87684L15.4999 13.3788L28.0018 0.87684Z" />
@@ -64,8 +66,8 @@
                 </button>
             </div>
             <nav class="mobile-menu-nav" aria-label="Mobile">
-                <a href="./products.html">Products</a>
-                <a href="./about.html">About</a>
+                <a href="./products.html">Produits</a>
+                <a href="./about.html">À propos</a>
                 <a href="./faq.html">FAQ</a>
                 <a href="./blog.html">Blog</a>
                 <a href="./#contact">Contact</a>
@@ -104,7 +106,7 @@
         <section id="products-hero" class="hero">
             <div class="hero-content">
                 <h1 class="section-title">Article</h1>
-                <p class="section-headline">Some article about laundry</p>
+                <p class="section-headline">Un article sur la lessive</p>
             </div>
         </section>
 
@@ -114,49 +116,49 @@
             eget nisl bibendum quis.</p>
 
         <article class="article-section">
-            <h2 class="article-title section-title">This is title 1</h2>
+            <h2 class="article-title section-title">Titre 1</h2>
             <div class="article-section-block">
-                <h3 class="section-subtitle"> This is subtitle 1</h3>
+                <h3 class="section-subtitle">Sous-titre 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur. Commodo arcu est praesent dignissim. Ac est tempus euismod
                     bibendum id duis volutpat. A tincidunt id vitae posuere convallis amet. Justo augue luctus at est id
                     eget nisl bibendum quis.</p>
             </div>
             <div class="article-section-block">
-                <h3 class="section-subtitle"> This is subtitle 2</h3>
+                <h3 class="section-subtitle">Sous-titre 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur. Commodo arcu est praesent dignissim. Ac est tempus euismod
                     bibendum id duis volutpat. A tincidunt id vitae posuere convallis amet. Justo augue luctus at est id
                     eget nisl bibendum quis.</p>
             </div>
             <div class="article-section-block">
-                <h3 class="section-subtitle"> This is subtitle 3</h3>
+                <h3 class="section-subtitle">Sous-titre 3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur. Commodo arcu est praesent dignissim. Ac est tempus euismod
                     bibendum id duis volutpat. A tincidunt id vitae posuere convallis amet. Justo augue luctus at est id
                     eget nisl bibendum quis.</p>
             </div>
         </article>
         <article class="article-section">
-            <h2 class="article-title section-title">This is title 2</h2>
+            <h2 class="article-title section-title">Titre 2</h2>
             <div class="article-section-block">
-                <h3 class="section-subtitle"> This is subtitle 1</h3>
+                <h3 class="section-subtitle">Sous-titre 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur. Commodo arcu est praesent dignissim. Ac est tempus euismod
                     bibendum id duis volutpat. A tincidunt id vitae posuere convallis amet. Justo augue luctus at est id
                     eget nisl bibendum quis.</p>
             </div>
             <div class="article-section-block">
-                <h3 class="section-subtitle"> This is subtitle 2</h3>
+                <h3 class="section-subtitle">Sous-titre 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur. Commodo arcu est praesent dignissim. Ac est tempus euismod
                     bibendum id duis volutpat. A tincidunt id vitae posuere convallis amet. Justo augue luctus at est id
                     eget nisl bibendum quis.</p>
             </div>
         </article>
 
-        <nav class="article-pagination" aria-label="Article navigation">
+        <nav class="article-pagination" aria-label="Navigation entre articles">
             <a href="#" class="article-pagination-prev">
                 <img src="assets/svg/back.svg" alt="">
-                <span>How to do your...</span>
+                <span>Comment faire votre...</span>
             </a>
             <a href="#" class="article-pagination-next">
-                <span>What is a deterg...</span>
+                <span>Qu'est-ce qu'une les...</span>
                 <img src="assets/svg/next.svg" alt="">
             </a>
         </nav>
@@ -165,7 +167,7 @@
     <footer id="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="./" class="footer-logo" aria-label="Pure Power home">
+                <a href="./" class="footer-logo" aria-label="Pure Power accueil">
                     <img src="assets/svg/purepower.svg" alt="Pure Power">
                 </a>
                 <div class="footer-social">
@@ -196,22 +198,22 @@
                     </a>
                 </div>
             </div>
-            <nav class="footer-sitemap" aria-label="Sitemap">
+            <nav class="footer-sitemap" aria-label="Plan du site">
                 <div class="footer-column">
-                    <h4>Products</h4>
+                    <h4>Produits</h4>
                     <ul>
                         <li><a href="./products.html">Iconic 4KG</a></li>
                         <li><a href="./products.html">Compact 2KG</a></li>
-                        <li><a href="./products.html">Family 5KG</a></li>
-                        <li><a href="./products.html">Pro Format 6KG</a></li>
-                        <li><a href="./products.html">Liquid 5KG</a></li>
+                        <li><a href="./products.html">Familial 5KG</a></li>
+                        <li><a href="./products.html">Format Pro 6KG</a></li>
+                        <li><a href="./products.html">Liquide 5KG</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>About</h4>
+                    <h4>À propos</h4>
                     <ul>
-                        <li><a href="./products.html">Our products</a></li>
-                        <li><a href="./about.html">Our story</a></li>
+                        <li><a href="./products.html">Nos produits</a></li>
+                        <li><a href="./about.html">Notre histoire</a></li>
                         <li><a href="./faq.html">FAQ</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                     </ul>
@@ -219,7 +221,7 @@
                 <div class="footer-column">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="./#contact">Get in touch</a></li>
+                        <li><a href="./#contact">Nous contacter</a></li>
                     </ul>
                 </div>
             </nav>

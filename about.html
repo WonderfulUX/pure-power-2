@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="About Pure Power — a brand dedicated to high-performance, economical, and sustainable laundry care.">
-    <title>About — Pure Power</title>
+        content="À propos de Pure Power — une marque dédiée aux soins du linge haute performance, économiques et durables.">
+    <title>À propos — Pure Power</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="alternate" hreflang="fr" href="/about.html">
+    <link rel="alternate" hreflang="en" href="/en/about.html">
     <link rel="stylesheet" href="css/index.css">
     <script src="js/main.js" type="module" defer></script>
 </head>
 
 <body>
     <header id="header">
-        <a href="./" class="header-logo" aria-label="Pure Power home">
+        <a href="./" class="header-logo" aria-label="Pure Power accueil">
             <img src="assets/svg/purepower.svg" alt="Pure Power">
         </a>
-        <nav class="header-nav" aria-label="Primary">
-            <a href="./products.html">Products</a>
-            <a href="./about.html">About</a>
+        <nav class="header-nav" aria-label="Principale">
+            <a href="./products.html">Produits</a>
+            <a href="./about.html">À propos</a>
             <a href="./faq.html">FAQ</a>
             <a href="./blog.html">Blog</a>
         </nav>
@@ -31,20 +33,20 @@
             <a href="./#contact" class="header-contact">Contact</a>
             <div class="header-language">
                 <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
-                    <span>EN</span>
+                    <span>FR</span>
                     <img src="assets/svg/chevron-down.svg" alt="" aria-hidden="true">
                 </button>
                 <ul class="header-language-menu" role="listbox">
-                    <li role="option"><a href="#">EN</a></li>
-                    <li role="option"><a href="#">FR</a></li>
+                    <li role="option"><a href="/about.html" hreflang="fr" lang="fr">FR</a></li>
+                    <li role="option"><a href="/en/about.html" hreflang="en" lang="en">EN</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <a href="./" class=" mobile-nav header-logo" aria-label="Pure Power home">
+    <a href="./" class=" mobile-nav header-logo" aria-label="Pure Power accueil">
         <img src="assets/svg/purepower.svg" alt="Pure Power">
     </a>
-    <button class="mobile-menu-toggle" aria-label="Open menu" aria-controls="mobile-nav-backdrop" aria-expanded="false">
+    <button class="mobile-menu-toggle" aria-label="Ouvrir le menu" aria-controls="mobile-nav-backdrop" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
@@ -54,10 +56,10 @@
         <aside id="mobile-menu">
             <div class="mobile-menu-top">
                 <ul class="mobile-language-links" role="listbox">
-                    <li role="option"><a href="" class="lang mobile-language-link active">FR</a></li>
-                    <li role="option"><a href="" class="lang mobile-language-link">EN</a></li>
+                    <li role="option"><a href="/about.html" class="lang mobile-language-link active" hreflang="fr" lang="fr">FR</a></li>
+                    <li role="option"><a href="/en/about.html" class="lang mobile-language-link" hreflang="en" lang="en">EN</a></li>
                 </ul>
-                <button class="mobile-menu-close" aria-label="Close menu">
+                <button class="mobile-menu-close" aria-label="Fermer le menu">
                     <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M28.0018 0.87684C28.5876 0.291053 29.5371 0.291053 30.1229 0.87684C30.7087 1.46263 30.7087 2.41215 30.1229 2.99793L17.621 15.4999L30.1229 28.0018C30.7087 28.5876 30.7087 29.5371 30.1229 30.1229C29.5371 30.7087 28.5876 30.7087 28.0018 30.1229L15.4999 17.621L2.99793 30.1229C2.41215 30.7087 1.46263 30.7087 0.87684 30.1229C0.291053 29.5371 0.291053 28.5876 0.87684 28.0018L13.3788 15.4999L0.87684 2.99793C0.291053 2.41215 0.291053 1.46263 0.87684 0.87684C1.46263 0.291053 2.41215 0.291053 2.99793 0.87684L15.4999 13.3788L28.0018 0.87684Z" />
@@ -65,8 +67,8 @@
                 </button>
             </div>
             <nav class="mobile-menu-nav" aria-label="Mobile">
-                <a href="./products.html">Products</a>
-                <a href="./about.html">About</a>
+                <a href="./products.html">Produits</a>
+                <a href="./about.html">À propos</a>
                 <a href="./faq.html">FAQ</a>
                 <a href="./blog.html">Blog</a>
                 <a href="./#contact">Contact</a>
@@ -104,9 +106,8 @@
     <main id="about-page">
         <section id="about-hero" class="hero">
             <div class="hero-content">
-                <h1 class="section-title">About us</h1>
-                <p class="section-headline">We know you have questions. We gathered all the information you need down
-                    below</p>
+                <h1 class="section-title">À propos</h1>
+                <p class="section-headline">Nous savons que vous avez des questions. Nous avons rassemblé toutes les informations dont vous avez besoin ci-dessous</p>
             </div>
         </section>
         <div class="wave-section-wrapper">
@@ -117,32 +118,24 @@
                 <img class="wave" src="./assets/img/png/liquid-wavy-background.png" loading="lazy" alt="">
             </picture>
             <section class="about-intro">
-                <p>Pure Power is a brand dedicated to laundry care. Designed to meet everyday
-                    demands, Pure Power transforms laundry into a more efficient, economical, and sustainable
-                    experience.</p>
+                <p>Pure Power est une marque dédiée aux soins du linge. Conçue pour répondre aux exigences du quotidien, Pure Power transforme le lavage en une expérience plus efficace, économique et durable.</p>
             </section>
             <section id="about-content">
                 <div class="wave-section-grid">
                     <div class="about-editorial-left">
-                        <h2 class="section-headline section-headline-small">Formulas that make a difference</h2>
-                        <p class="editorial">Hundreds of tests. High-performance formulas. Innovative and always
-                            economical
-                            formats.
-                            Effective products, premium containers designed to last and be reused. Every detail is
-                            optimized to go further, without compromise and always more practical.</p>
+                        <h2 class="section-headline section-headline-small">Des formules qui font la différence</h2>
+                        <p class="editorial">Des centaines de tests. Des formules haute performance. Des formats innovants et toujours économiques. Des produits efficaces, des contenants premium conçus pour durer et être réutilisés. Chaque détail est optimisé pour aller plus loin, sans compromis et toujours plus pratique.</p>
                     </div>
-                    <p class="editorial">Pure Power embodies a new generation of laundry detergent: more effective, more
-                        intelligent,
-                        more sustainable. A brand driven by a single priority: uncompromising quality.</p>
+                    <p class="editorial">Pure Power incarne une nouvelle génération de lessive : plus efficace, plus intelligente, plus durable. Une marque animée par une seule priorité : une qualité sans compromis.</p>
                 </div>
             </section>
 
             <section id="redirectToContact">
                 <div class="incentive-text">
-                    <p class="cta-label">Want to discuss</p>
+                    <p class="cta-label">Envie d'échanger</p>
                     <img src="assets/svg/question-marks-dark.svg" alt="" aria-hidden="true" class="cta-icon">
                 </div>
-                <a href="./#contact" class="cta-button">Feel free to reach out</a>
+                <a href="./#contact" class="cta-button">N'hésitez pas à nous contacter</a>
             </section>
         </div>
 
@@ -151,7 +144,7 @@
     <footer id="footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="./" class="footer-logo" aria-label="Pure Power home">
+                <a href="./" class="footer-logo" aria-label="Pure Power accueil">
                     <img src="assets/svg/purepower.svg" alt="Pure Power">
                 </a>
                 <div class="footer-social">
@@ -182,22 +175,22 @@
                     </a>
                 </div>
             </div>
-            <nav class="footer-sitemap" aria-label="Sitemap">
+            <nav class="footer-sitemap" aria-label="Plan du site">
                 <div class="footer-column">
-                    <h4>Products</h4>
+                    <h4>Produits</h4>
                     <ul>
                         <li><a href="./products.html">Iconic 4KG</a></li>
                         <li><a href="./products.html">Compact 2KG</a></li>
-                        <li><a href="./products.html">Family 5KG</a></li>
-                        <li><a href="./products.html">Pro Format 6KG</a></li>
-                        <li><a href="./products.html">Liquid 5KG</a></li>
+                        <li><a href="./products.html">Familial 5KG</a></li>
+                        <li><a href="./products.html">Format Pro 6KG</a></li>
+                        <li><a href="./products.html">Liquide 5KG</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>About</h4>
+                    <h4>À propos</h4>
                     <ul>
-                        <li><a href="./products.html">Our products</a></li>
-                        <li><a href="./about.html">Our story</a></li>
+                        <li><a href="./products.html">Nos produits</a></li>
+                        <li><a href="./about.html">Notre histoire</a></li>
                         <li><a href="./faq.html">FAQ</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                     </ul>
@@ -205,7 +198,7 @@
                 <div class="footer-column">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="./#contact">Get in touch</a></li>
+                        <li><a href="./#contact">Nous contacter</a></li>
                     </ul>
                 </div>
             </nav>

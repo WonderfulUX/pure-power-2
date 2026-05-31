@@ -1,8 +1,10 @@
-const PRODUCTS = [
+const lang = document.documentElement.lang;
+
+const PRODUCTS_EN = [
     {
         id: 'iconic-4kg',
         name: 'Pure Power 4KG',
-        image: 'assets/img/webp/4kg.webp',
+        image: '/assets/img/webp/4kg.webp',
         badge: 'Best seller',
         features: [
             'Most economical choice',
@@ -15,7 +17,7 @@ const PRODUCTS = [
     {
         id: 'compact-2kg',
         name: 'Pure Power 2KG',
-        image: 'assets/img/webp/2kg.webp',
+        image: '/assets/img/webp/2kg.webp',
         badge: null,
         features: [
             'Compact format',
@@ -28,7 +30,7 @@ const PRODUCTS = [
     {
         id: 'family-5kg',
         name: 'Pure Power 5KG',
-        image: 'assets/img/webp/5kg.webp',
+        image: '/assets/img/webp/5kg.webp',
         badge: null,
         features: [
             'Family format',
@@ -41,7 +43,7 @@ const PRODUCTS = [
     {
         id: 'pro-format-6kg',
         name: 'Pure Power 6KG',
-        image: 'assets/img/webp/6kg.webp',
+        image: '/assets/img/webp/6kg.webp',
         badge: null,
         features: [
             'Professional format',
@@ -54,7 +56,7 @@ const PRODUCTS = [
     {
         id: 'liquid-5kg',
         name: 'Pure Power Liquid 5KG',
-        image: 'assets/img/webp/liquid-5kg.webp',
+        image: '/assets/img/webp/liquid-5kg.webp',
         badge: null,
         features: [
             '100% hypoallergenic',
@@ -65,6 +67,76 @@ const PRODUCTS = [
         composition: 'Aqua, anionic surfactants, non-ionic surfactants, enzymes, fragrance, preservatives.'
     }
 ];
+
+const PRODUCTS_FR = [
+    {
+        id: 'iconic-4kg',
+        name: 'Pure Power 4KG',
+        image: '/assets/img/webp/4kg.webp',
+        badge: 'Best seller',
+        features: [
+            'Choix le plus économique',
+            'Concentration maximale',
+            'Parfum longue durée'
+        ],
+        description: 'Adoré des familles pour son rapport qualité-prix imbattable et sa concentration maximale.',
+        composition: 'Carbonate de sodium, percarbonate de sodium, enzymes, azurants optiques, parfum.'
+    },
+    {
+        id: 'compact-2kg',
+        name: 'Pure Power 2KG',
+        image: '/assets/img/webp/2kg.webp',
+        badge: null,
+        features: [
+            'Format compact',
+            'Concentration maximale',
+            'Parfum longue durée'
+        ],
+        description: 'Le format compact idéal pour les petits foyers sans compromis sur les performances.',
+        composition: 'Carbonate de sodium, percarbonate de sodium, enzymes, azurants optiques, parfum.'
+    },
+    {
+        id: 'family-5kg',
+        name: 'Pure Power 5KG',
+        image: '/assets/img/webp/5kg.webp',
+        badge: null,
+        features: [
+            'Format familial',
+            'Concentration maximale',
+            'Parfum longue durée'
+        ],
+        description: 'Le format familial conçu pour les grands foyers et une utilisation fréquente.',
+        composition: 'Carbonate de sodium, percarbonate de sodium, enzymes, azurants optiques, parfum.'
+    },
+    {
+        id: 'pro-format-6kg',
+        name: 'Pure Power 6KG',
+        image: '/assets/img/webp/6kg.webp',
+        badge: null,
+        features: [
+            'Format professionnel',
+            'Concentration maximale',
+            'Parfum longue durée'
+        ],
+        description: 'Le format professionnel pour une utilisation intensive et à haut volume.',
+        composition: 'Carbonate de sodium, percarbonate de sodium, enzymes, azurants optiques, parfum.'
+    },
+    {
+        id: 'liquid-5kg',
+        name: 'Pure Power Liquide 5KG',
+        image: '/assets/img/webp/liquid-5kg.webp',
+        badge: null,
+        features: [
+            '100% hypoallergénique',
+            'Adapté aux tissus délicats',
+            'Parfum longue durée'
+        ],
+        description: 'La formule liquide conçue pour les tissus délicats et les peaux sensibles.',
+        composition: 'Aqua, tensioactifs anioniques, tensioactifs non ioniques, enzymes, parfum, conservateurs.'
+    }
+];
+
+const PRODUCTS = lang === 'fr' ? PRODUCTS_FR : PRODUCTS_EN;
 
 function initMobileMenu() {
     const menuToggle = document.querySelector('.mobile-menu-toggle');
@@ -125,6 +197,7 @@ function initContactForm() {
 
     const radios = form.querySelectorAll('input[name="query-type"]');
     const fields = form.querySelector('.contact-fields');
+    const companyLabel = lang === 'fr' ? 'Nom de l\'entreprise' : 'Company name';
 
     radios.forEach(radio => {
         radio.addEventListener('change', () => {
@@ -133,7 +206,7 @@ function initContactForm() {
                 if (!existing) {
                     const label = document.createElement('label');
                     label.className = 'field field-full field-company';
-                    label.innerHTML = '<span>Company name</span><input type="text" name="company" autocomplete="organization">';
+                    label.innerHTML = `<span>${companyLabel}</span><input type="text" name="company" autocomplete="organization">`;
                     fields.prepend(label);
                 }
             } else {
@@ -222,13 +295,21 @@ function initProductsPage() {
 }
 
 function initTickers() {
-    const AVAILABILITY_ITEMS = [
-        { flag: 'assets/svg/guadeloupe.svg', name: 'Guadeloupe' },
-        { flag: 'assets/svg/martinique.svg', name: 'Martinique' },
-        { flag: 'assets/svg/guyane.svg', name: 'Guyane' },
-        { flag: 'assets/svg/new-caledonia.svg', name: 'New-Caledonia' }
+    const AVAILABILITY_ITEMS_EN = [
+        { flag: '/assets/svg/guadeloupe.svg', name: 'Guadeloupe' },
+        { flag: '/assets/svg/martinique.svg', name: 'Martinique' },
+        { flag: '/assets/svg/guyane.svg', name: 'Guyane' },
+        { flag: '/assets/svg/new-caledonia.svg', name: 'New-Caledonia' }
     ];
 
+    const AVAILABILITY_ITEMS_FR = [
+        { flag: '/assets/svg/guadeloupe.svg', name: 'Guadeloupe' },
+        { flag: '/assets/svg/martinique.svg', name: 'Martinique' },
+        { flag: '/assets/svg/guyane.svg', name: 'Guyane' },
+        { flag: '/assets/svg/new-caledonia.svg', name: 'Nouvelle-Calédonie' }
+    ];
+
+    const AVAILABILITY_ITEMS = lang === 'fr' ? AVAILABILITY_ITEMS_FR : AVAILABILITY_ITEMS_EN;
     const REPEAT = 6;
 
     document.querySelectorAll('[data-ticker="availability"]').forEach(track => {
