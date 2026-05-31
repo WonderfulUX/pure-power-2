@@ -99,6 +99,10 @@
         line-height: 40px;
         opacity: 1;
     }
+
+    .footer-logo img {
+        height: 60px;
+    }
 }
 
 @media (max-width: 768px) {

@@ -61,6 +61,12 @@
 
 .product-description {
     font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 
@@ -135,14 +141,8 @@
         height: 250px;
     }
 
-    .product-description {
-        overflow: hidden;
-        text-overflow: ellipsis;
+    .product-description:not(#best-seller-product .product-description) {
         width: 250px;
-        line-clamp: 3;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical
     }
 
     #laundryPowders {
