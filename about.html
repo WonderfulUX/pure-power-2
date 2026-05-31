@@ -110,7 +110,12 @@
             </div>
         </section>
         <div class="wave-section-wrapper">
-            <img class="wave" src="./assets/img/webp/liquid-wavy-background.webp" alt="">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./assets/img/webp/liquid-wavy-background-desktop.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="./assets/img/webp/liquid-wavy-background-tablet.webp" type="image/webp">
+                <source srcset="./assets/img/webp/liquid-wavy-background-mobile.webp" type="image/webp">
+                <img class="wave" src="./assets/img/png/liquid-wavy-background.png" loading="lazy" alt="">
+            </picture>
             <section class="about-intro">
                 <p>Pure Power is a brand dedicated to laundry care. Designed to meet everyday
                     demands, Pure Power transforms laundry into a more efficient, economical, and sustainable

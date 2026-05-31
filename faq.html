@@ -109,7 +109,12 @@
             </div>
         </section>
         <div class="wave-section-wrapper">
-            <img class="wave" src="./assets/img/webp/foam-wavy-background.webp" alt="">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="./assets/img/webp/foam-wavy-background-desktop.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="./assets/img/webp/foam-wavy-background-tablet.webp" type="image/webp">
+                <source srcset="./assets/img/webp/foam-wavy-background-mobile.webp" type="image/webp">
+                <img class="wave" src="./assets/img/png/foam-wavy-background.png" loading="lazy" alt="">
+            </picture>
             <section id="faq-content">
                 <div class="faq-grid wave-section-grid">
                     <article class="faq-item wave-grid-block">

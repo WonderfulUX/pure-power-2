@@ -66,7 +66,8 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('../assets/img/webp/community.webp');
+    background-image: url('../assets/img/jpg/community.jpg');
+    background-image: url('../assets/img/webp/community-desktop.webp');
     background-size: cover;
     background-position: center;
     opacity: 0.15;
@@ -198,5 +199,19 @@
 
     .community-videos .community-video:nth-child(n+3) {
         display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    #community::before {
+        background-image: url('../assets/img/jpg/community.jpg');
+        background-image: url('../assets/img/webp/community-tablet.webp');
+    }
+}
+
+@media (max-width: 767px) {
+    #community::before {
+        background-image: url('../assets/img/jpg/community.jpg');
+        background-image: url('../assets/img/webp/community-mobile.webp');
     }
 }

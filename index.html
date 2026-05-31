@@ -110,7 +110,12 @@
         </section>
         <div class="wave-section-wrapper">
             <section id="intro" class="wave-bg-section">
-                <img class="wave" src="./assets/img/webp/foam-wavy-background.webp" alt="">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="./assets/img/webp/foam-wavy-background-desktop.webp" type="image/webp">
+                    <source media="(min-width: 768px)" srcset="./assets/img/webp/foam-wavy-background-tablet.webp" type="image/webp">
+                    <source srcset="./assets/img/webp/foam-wavy-background-mobile.webp" type="image/webp">
+                    <img class="wave" src="./assets/img/png/foam-wavy-background.png" loading="lazy" alt="">
+                </picture>
                 <div class="intro-grid wave-section-grid">
                     <div class="wave-grid-block">
                         <h2 class="section-headline">Smart Recipes</h2>
@@ -134,7 +139,12 @@
                 </header>
                 <article class="product" id="best-seller-product">
                     <div class="product-image">
-                        <img src="assets/img/webp/4kg.webp" alt="Pure Power Compact 4KG">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="assets/img/webp/4kg-desktop.webp" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="assets/img/webp/4kg-tablet.webp" type="image/webp">
+                            <source srcset="assets/img/webp/4kg-mobile.webp" type="image/webp">
+                            <img src="assets/img/png/4kg.png" loading="lazy" alt="Pure Power Compact 4KG">
+                        </picture>
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">Pure Power 4KG</h3>
@@ -155,7 +165,12 @@
             <div class="powders-grid">
                 <article class="product" id="powder-2kg">
                     <div class="product-image">
-                        <img src="assets/img/webp/2kg.webp" alt="Pure Power Compact 2KG">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="assets/img/webp/2kg-desktop.webp" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="assets/img/webp/2kg-tablet.webp" type="image/webp">
+                            <source srcset="assets/img/webp/2kg-mobile.webp" type="image/webp">
+                            <img src="assets/img/png/2kg.png" loading="lazy" alt="Pure Power Compact 2KG">
+                        </picture>
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">Compact 2KG</h3>
@@ -167,7 +182,12 @@
                 </article>
                 <article class="product" id="powder-5kg">
                     <div class="product-image">
-                        <img src="assets/img/webp/5kg.webp" alt="Pure Power Family 5KG">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="assets/img/webp/5kg-desktop.webp" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="assets/img/webp/5kg-tablet.webp" type="image/webp">
+                            <source srcset="assets/img/webp/5kg-mobile.webp" type="image/webp">
+                            <img src="assets/img/png/5kg.png" loading="lazy" alt="Pure Power Family 5KG">
+                        </picture>
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">Family 5KG</h3>
@@ -178,7 +198,12 @@
                 </article>
                 <article class="product" id="powder-6kg">
                     <div class="product-image">
-                        <img src="assets/img/webp/6kg.webp" alt="Pure Power Pro Format 6KG">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="assets/img/webp/6kg-desktop.webp" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="assets/img/webp/6kg-tablet.webp" type="image/webp">
+                            <source srcset="assets/img/webp/6kg-mobile.webp" type="image/webp">
+                            <img src="assets/img/png/6kg.png" loading="lazy" alt="Pure Power Pro Format 6KG">
+                        </picture>
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">Pro Format 6KG</h3>
@@ -196,7 +221,12 @@
             <article class="product" id="liquid-5kg">
                 <div class="product-content">
                     <div class="product-image">
-                        <img src="assets/img/webp/liquid-5kg.webp" alt="Pure Power Liquid 5KG">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="assets/img/webp/liquid-5kg-desktop.webp" type="image/webp">
+                            <source media="(min-width: 768px)" srcset="assets/img/webp/liquid-5kg-tablet.webp" type="image/webp">
+                            <source srcset="assets/img/webp/liquid-5kg-mobile.webp" type="image/webp">
+                            <img src="assets/img/png/liquid-5kg.png" loading="lazy" alt="Pure Power Liquid 5KG">
+                        </picture>
                     </div>
                     <h3 class="product-name">pouring spout 5KG</h3>
                     <p class="product-description">Ultra-practical dosing, hypoallergenic, cold-active, long-lasting
@@ -219,19 +249,54 @@
             </header>
             <div class="community-videos">
                 <div class="community-video">
-                    <video src="assets/videos/webm/Social1.webm" autoplay muted loop playsinline></video>
+                    <video autoplay muted loop playsinline preload="none">
+                        <source media="(min-width: 1200px)" src="assets/videos/webm/social1-desktop.webm" type="video/webm">
+                        <source media="(min-width: 1200px)" src="assets/videos/mp4/social1-desktop.mp4" type="video/mp4">
+                        <source media="(min-width: 768px)" src="assets/videos/webm/social1-tablet.webm" type="video/webm">
+                        <source media="(min-width: 768px)" src="assets/videos/mp4/social1-tablet.mp4" type="video/mp4">
+                        <source src="assets/videos/webm/social1-mobile.webm" type="video/webm">
+                        <source src="assets/videos/mp4/social1-mobile.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="community-video">
-                    <video src="assets/videos/webm/Social2.webm" autoplay muted loop playsinline></video>
+                    <video autoplay muted loop playsinline preload="none">
+                        <source media="(min-width: 1200px)" src="assets/videos/webm/social2-desktop.webm" type="video/webm">
+                        <source media="(min-width: 1200px)" src="assets/videos/mp4/social2-desktop.mp4" type="video/mp4">
+                        <source media="(min-width: 768px)" src="assets/videos/webm/social2-tablet.webm" type="video/webm">
+                        <source media="(min-width: 768px)" src="assets/videos/mp4/social2-tablet.mp4" type="video/mp4">
+                        <source src="assets/videos/webm/social2-mobile.webm" type="video/webm">
+                        <source src="assets/videos/mp4/social2-mobile.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="community-video">
-                    <video src="assets/videos/webm/Social3.webm" autoplay muted loop playsinline></video>
+                    <video autoplay muted loop playsinline preload="none">
+                        <source media="(min-width: 1200px)" src="assets/videos/webm/social3-desktop.webm" type="video/webm">
+                        <source media="(min-width: 1200px)" src="assets/videos/mp4/social3-desktop.mp4" type="video/mp4">
+                        <source media="(min-width: 768px)" src="assets/videos/webm/social3-tablet.webm" type="video/webm">
+                        <source media="(min-width: 768px)" src="assets/videos/mp4/social3-tablet.mp4" type="video/mp4">
+                        <source src="assets/videos/webm/social3-mobile.webm" type="video/webm">
+                        <source src="assets/videos/mp4/social3-mobile.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="community-video">
-                    <video src="assets/videos/webm/Social4.webm" autoplay muted loop playsinline></video>
+                    <video autoplay muted loop playsinline preload="none">
+                        <source media="(min-width: 1200px)" src="assets/videos/webm/social4-desktop.webm" type="video/webm">
+                        <source media="(min-width: 1200px)" src="assets/videos/mp4/social4-desktop.mp4" type="video/mp4">
+                        <source media="(min-width: 768px)" src="assets/videos/webm/social4-tablet.webm" type="video/webm">
+                        <source media="(min-width: 768px)" src="assets/videos/mp4/social4-tablet.mp4" type="video/mp4">
+                        <source src="assets/videos/webm/social4-mobile.webm" type="video/webm">
+                        <source src="assets/videos/mp4/social4-mobile.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <div class="community-video">
-                    <video src="assets/videos/webm/Social5.webm" autoplay muted loop playsinline></video>
+                    <video autoplay muted loop playsinline preload="none">
+                        <source media="(min-width: 1200px)" src="assets/videos/webm/social5-desktop.webm" type="video/webm">
+                        <source media="(min-width: 1200px)" src="assets/videos/mp4/social5-desktop.mp4" type="video/mp4">
+                        <source media="(min-width: 768px)" src="assets/videos/webm/social5-tablet.webm" type="video/webm">
+                        <source media="(min-width: 768px)" src="assets/videos/mp4/social5-tablet.mp4" type="video/mp4">
+                        <source src="assets/videos/webm/social5-mobile.webm" type="video/webm">
+                        <source src="assets/videos/mp4/social5-mobile.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
             <div class="community-cta">

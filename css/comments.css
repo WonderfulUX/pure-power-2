@@ -1,5 +1,6 @@
 #commentsAndContact {
-    background-image: url('../assets/img/webp/sky.webp');
+    background-image: url('../assets/img/jpg/sky.jpg');
+    background-image: url('../assets/img/webp/sky-desktop.webp');
     background-position: top center;
     background-size: cover;
 }
@@ -63,7 +64,10 @@
     scale: 1.5;
     top: 0;
     left: 0;
-    background: no-repeat url('../assets/img/webp/cloud1.webp') center;
+    background-image: url('../assets/img/png/cloud1.png');
+    background-image: url('../assets/img/webp/cloud1-desktop.webp');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     width: 100%;
     height: 100%;
@@ -71,7 +75,9 @@
 
 .testimonial:nth-child(2)::before,
 .testimonial:nth-child(3)::before {
-    background: no-repeat url('../assets/img/webp/cloud2.webp');
+    background-image: url('../assets/img/png/cloud2.png');
+    background-image: url('../assets/img/webp/cloud2-desktop.webp');
+    background-repeat: no-repeat;
     background-size: contain;
 }
 
@@ -114,12 +120,16 @@
     }
 
     .testimonial:nth-child(odd)::before {
-        background: no-repeat url('../assets/img/webp/cloud1.webp');
+        background-image: url('../assets/img/png/cloud1.png');
+        background-image: url('../assets/img/webp/cloud1-desktop.webp');
+        background-repeat: no-repeat;
         background-size: contain;
     }
 
     .testimonial:nth-child(even)::before {
-        background: no-repeat url('../assets/img/webp/cloud2.webp');
+        background-image: url('../assets/img/png/cloud2.png');
+        background-image: url('../assets/img/webp/cloud2-desktop.webp');
+        background-repeat: no-repeat;
         background-size: contain;
     }
 
@@ -149,5 +159,61 @@
 @media screen and (max-width:400px) {
     .testimonial:nth-child(n)::before {
         display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    #commentsAndContact {
+        background-image: url('../assets/img/jpg/sky.jpg');
+        background-image: url('../assets/img/webp/sky-tablet.webp');
+    }
+
+    .testimonial::before {
+        background-image: url('../assets/img/png/cloud1.png');
+        background-image: url('../assets/img/webp/cloud1-tablet.webp');
+    }
+
+    .testimonial:nth-child(2)::before,
+    .testimonial:nth-child(3)::before {
+        background-image: url('../assets/img/png/cloud2.png');
+        background-image: url('../assets/img/webp/cloud2-tablet.webp');
+    }
+
+    .testimonial:nth-child(odd)::before {
+        background-image: url('../assets/img/png/cloud1.png');
+        background-image: url('../assets/img/webp/cloud1-tablet.webp');
+    }
+
+    .testimonial:nth-child(even)::before {
+        background-image: url('../assets/img/png/cloud2.png');
+        background-image: url('../assets/img/webp/cloud2-tablet.webp');
+    }
+}
+
+@media (max-width: 767px) {
+    #commentsAndContact {
+        background-image: url('../assets/img/jpg/sky.jpg');
+        background-image: url('../assets/img/webp/sky-mobile.webp');
+    }
+
+    .testimonial::before {
+        background-image: url('../assets/img/png/cloud1.png');
+        background-image: url('../assets/img/webp/cloud1-mobile.webp');
+    }
+
+    .testimonial:nth-child(2)::before,
+    .testimonial:nth-child(3)::before {
+        background-image: url('../assets/img/png/cloud2.png');
+        background-image: url('../assets/img/webp/cloud2-mobile.webp');
+    }
+
+    .testimonial:nth-child(odd)::before {
+        background-image: url('../assets/img/png/cloud1.png');
+        background-image: url('../assets/img/webp/cloud1-mobile.webp');
+    }
+
+    .testimonial:nth-child(even)::before {
+        background-image: url('../assets/img/png/cloud2.png');
+        background-image: url('../assets/img/webp/cloud2-mobile.webp');
     }
 }

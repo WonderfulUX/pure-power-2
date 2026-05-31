@@ -1,5 +1,6 @@
 .hero {
-    background-image: url('../assets/img/webp/hero.webp');
+    background-image: url('../assets/img/png/hero.png');
+    background-image: url('../assets/img/webp/hero-desktop.webp');
     background-size: cover;
     background-position: center top;
     height: 100vh;
@@ -70,7 +71,8 @@ TEST  */
 
 .wave-section-wrapper {
     position: relative;
-    background: url('../assets/img/webp/foam-large.webp');
+    background-image: url('../assets/img/jpg/foam-large.jpg');
+    background-image: url('../assets/img/webp/foam-large-desktop.webp');
     background-size: contain;
     background-position-y: var(--wave-section-y-offset);
 }
@@ -137,5 +139,29 @@ TEST  */
 
     #intro {
         background-color: var(--brightBlue);
+    }
+}
+
+@media (max-width: 1199px) {
+    .hero {
+        background-image: url('../assets/img/png/hero.png');
+        background-image: url('../assets/img/webp/hero-tablet.webp');
+    }
+
+    .wave-section-wrapper {
+        background-image: url('../assets/img/jpg/foam-large.jpg');
+        background-image: url('../assets/img/webp/foam-large-tablet.webp');
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        background-image: url('../assets/img/png/hero.png');
+        background-image: url('../assets/img/webp/hero-mobile.webp');
+    }
+
+    .wave-section-wrapper {
+        background-image: url('../assets/img/jpg/foam-large.jpg');
+        background-image: url('../assets/img/webp/foam-large-mobile.webp');
     }
 }

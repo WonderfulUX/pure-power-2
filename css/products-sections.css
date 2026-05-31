@@ -8,7 +8,8 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('../assets/img/webp/splash.webp');
+    background-image: url('../assets/img/png/splash.png');
+    background-image: url('../assets/img/webp/splash-desktop.webp');
     background-size: cover;
     background-position: center;
     opacity: 0.3;
@@ -86,7 +87,8 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('../assets/img/webp/liquid.webp');
+    background-image: url('../assets/img/jpg/liquid.jpg');
+    background-image: url('../assets/img/webp/liquid-desktop.webp');
     background-size: cover;
     background-position: center;
     opacity: 0.2;
@@ -186,5 +188,29 @@
     #liquid-5kg .product-image img {
         max-width: 260px;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    #laundryPowders::before {
+        background-image: url('../assets/img/png/splash.png');
+        background-image: url('../assets/img/webp/splash-tablet.webp');
+    }
+
+    #liquidLaundry::before {
+        background-image: url('../assets/img/jpg/liquid.jpg');
+        background-image: url('../assets/img/webp/liquid-tablet.webp');
+    }
+}
+
+@media (max-width: 767px) {
+    #laundryPowders::before {
+        background-image: url('../assets/img/png/splash.png');
+        background-image: url('../assets/img/webp/splash-mobile.webp');
+    }
+
+    #liquidLaundry::before {
+        background-image: url('../assets/img/jpg/liquid.jpg');
+        background-image: url('../assets/img/webp/liquid-mobile.webp');
     }
 }

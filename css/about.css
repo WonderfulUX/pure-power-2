@@ -65,7 +65,8 @@
 }
 
 #about-page .wave-section-wrapper {
-    background: url('../assets/img/webp/liquid-large.webp');
+    background-image: url('../assets/img/jpg/liquid-large.jpg');
+    background-image: url('../assets/img/webp/liquid-large-desktop.webp');
     background-size: contain;
     background-position-y: var(--wave-section-y-offset);
 }
@@ -93,5 +94,19 @@
     .about-intro {
         padding-top: 30px;
         padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #about-page .wave-section-wrapper {
+        background-image: url('../assets/img/jpg/liquid-large.jpg');
+        background-image: url('../assets/img/webp/liquid-large-tablet.webp');
+    }
+}
+
+@media (max-width: 767px) {
+    #about-page .wave-section-wrapper {
+        background-image: url('../assets/img/jpg/liquid-large.jpg');
+        background-image: url('../assets/img/webp/liquid-large-mobile.webp');
     }
 }

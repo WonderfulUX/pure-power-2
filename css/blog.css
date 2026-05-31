@@ -1,5 +1,6 @@
 #blog-page {
-    background: url('../assets/img/webp/community-large.webp');
+    background-image: url('../assets/img/jpg/community-large.jpg');
+    background-image: url('../assets/img/webp/community-large-desktop.webp');
     background-size: contain;
 }
 
@@ -107,5 +108,19 @@
 @media screen and (max-width: 500px) {
     .article-section {
         margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 1199px) {
+    #blog-page {
+        background-image: url('../assets/img/jpg/community-large.jpg');
+        background-image: url('../assets/img/webp/community-large-tablet.webp');
+    }
+}
+
+@media (max-width: 767px) {
+    #blog-page {
+        background-image: url('../assets/img/jpg/community-large.jpg');
+        background-image: url('../assets/img/webp/community-large-mobile.webp');
     }
 }
