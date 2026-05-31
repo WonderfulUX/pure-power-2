@@ -4,7 +4,7 @@ const PRODUCTS_EN = [
     {
         id: 'iconic-4kg',
         name: 'Pure Power 4KG',
-        image: '/assets/img/webp/4kg.webp',
+        image: '../assets/img/webp/4kg.webp',
         badge: 'Best seller',
         features: [
             'Most economical choice',
@@ -17,7 +17,7 @@ const PRODUCTS_EN = [
     {
         id: 'compact-2kg',
         name: 'Pure Power 2KG',
-        image: '/assets/img/webp/2kg.webp',
+        image: '../assets/img/webp/2kg.webp',
         badge: null,
         features: [
             'Compact format',
@@ -30,7 +30,7 @@ const PRODUCTS_EN = [
     {
         id: 'family-5kg',
         name: 'Pure Power 5KG',
-        image: '/assets/img/webp/5kg.webp',
+        image: '../assets/img/webp/5kg.webp',
         badge: null,
         features: [
             'Family format',
@@ -43,7 +43,7 @@ const PRODUCTS_EN = [
     {
         id: 'pro-format-6kg',
         name: 'Pure Power 6KG',
-        image: '/assets/img/webp/6kg.webp',
+        image: '../assets/img/webp/6kg.webp',
         badge: null,
         features: [
             'Professional format',
@@ -56,7 +56,7 @@ const PRODUCTS_EN = [
     {
         id: 'liquid-5kg',
         name: 'Pure Power Liquid 5KG',
-        image: '/assets/img/webp/liquid-5kg.webp',
+        image: '../assets/img/webp/liquid-5kg.webp',
         badge: null,
         features: [
             '100% hypoallergenic',
@@ -72,7 +72,7 @@ const PRODUCTS_FR = [
     {
         id: 'iconic-4kg',
         name: 'Pure Power 4KG',
-        image: '/assets/img/webp/4kg.webp',
+        image: './assets/img/webp/4kg.webp',
         badge: 'Best seller',
         features: [
             'Choix le plus économique',
@@ -85,7 +85,7 @@ const PRODUCTS_FR = [
     {
         id: 'compact-2kg',
         name: 'Pure Power 2KG',
-        image: '/assets/img/webp/2kg.webp',
+        image: './assets/img/webp/2kg.webp',
         badge: null,
         features: [
             'Format compact',
@@ -98,7 +98,7 @@ const PRODUCTS_FR = [
     {
         id: 'family-5kg',
         name: 'Pure Power 5KG',
-        image: '/assets/img/webp/5kg.webp',
+        image: './assets/img/webp/5kg.webp',
         badge: null,
         features: [
             'Format familial',
@@ -111,7 +111,7 @@ const PRODUCTS_FR = [
     {
         id: 'pro-format-6kg',
         name: 'Pure Power 6KG',
-        image: '/assets/img/webp/6kg.webp',
+        image: './assets/img/webp/6kg.webp',
         badge: null,
         features: [
             'Format professionnel',
@@ -124,7 +124,7 @@ const PRODUCTS_FR = [
     {
         id: 'liquid-5kg',
         name: 'Pure Power Liquide 5KG',
-        image: '/assets/img/webp/liquid-5kg.webp',
+        image: './assets/img/webp/liquid-5kg.webp',
         badge: null,
         features: [
             '100% hypoallergénique',
@@ -296,17 +296,17 @@ function initProductsPage() {
 
 function initTickers() {
     const AVAILABILITY_ITEMS_EN = [
-        { flag: '/assets/svg/guadeloupe.svg', name: 'Guadeloupe' },
-        { flag: '/assets/svg/martinique.svg', name: 'Martinique' },
-        { flag: '/assets/svg/guyane.svg', name: 'Guyane' },
-        { flag: '/assets/svg/new-caledonia.svg', name: 'New-Caledonia' }
+        { flag: '../assets/svg/guadeloupe.svg', name: 'Guadeloupe' },
+        { flag: '../assets/svg/martinique.svg', name: 'Martinique' },
+        { flag: '../assets/svg/guyane.svg', name: 'Guyane' },
+        { flag: '../assets/svg/new-caledonia.svg', name: 'New-Caledonia' }
     ];
 
     const AVAILABILITY_ITEMS_FR = [
-        { flag: '/assets/svg/guadeloupe.svg', name: 'Guadeloupe' },
-        { flag: '/assets/svg/martinique.svg', name: 'Martinique' },
-        { flag: '/assets/svg/guyane.svg', name: 'Guyane' },
-        { flag: '/assets/svg/new-caledonia.svg', name: 'Nouvelle-Calédonie' }
+        { flag: './assets/svg/guadeloupe.svg', name: 'Guadeloupe' },
+        { flag: './assets/svg/martinique.svg', name: 'Martinique' },
+        { flag: './assets/svg/guyane.svg', name: 'Guyane' },
+        { flag: './assets/svg/new-caledonia.svg', name: 'Nouvelle-Calédonie' }
     ];
 
     const AVAILABILITY_ITEMS = lang === 'fr' ? AVAILABILITY_ITEMS_FR : AVAILABILITY_ITEMS_EN;
