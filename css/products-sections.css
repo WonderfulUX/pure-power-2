@@ -141,7 +141,7 @@
         height: 250px;
     }
 
-    .product-description:not(#best-seller-product .product-description) {
+    .product-description:not(#best-seller-product .product-description) :not(.product-tab-content.product-description) {
         width: 250px;
     }
 
