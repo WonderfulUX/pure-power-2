@@ -5,8 +5,9 @@
     background-position: center top;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .hero-content {
@@ -14,7 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 35vh auto 0;
     text-align: center;
     height: 30vh;
     gap: 20px;
@@ -96,6 +97,16 @@ TEST  */
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    .hero {
+        background-image: url('../assets/img/png/hero.png');
+        background-image: url('../assets/img/webp/hero-tablet.webp');
+    }
+
+    .wave-section-wrapper {
+        background-image: url('../assets/img/jpg/foam-large.jpg');
+        background-image: url('../assets/img/webp/foam-large-tablet.webp');
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -116,19 +127,42 @@ TEST  */
     .hero {
         height: 90vh;
     }
+
+    .hero-content {
+        margin-top: 30vh;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
     .hero {
-        height: 70vh;
+        height: fit-content;
+        background-image: url('../assets/img/png/hero.png');
+        background-image: url('../assets/img/webp/hero-mobile.webp');
         background-size: contain;
         background-repeat: no-repeat;
+    }
+
+    .wave-section-wrapper {
+        background-image: url('../assets/img/jpg/foam-large.jpg');
+        background-image: url('../assets/img/webp/foam-large-mobile.webp');
+    }
+
+    .hero-content {
+        margin-top: 40vh;
+        text-shadow: 0 0 20px hsl(from black h s l / 50%);
+        margin-bottom: 15vh;
     }
 }
 
 @media screen and (max-width: 575px) {
     .hero {
-        height: 60vh;
+        height: fit-content;
+    }
+
+    .hero-content {
+        margin-top: 30vh;
+        margin-bottom: 20vh;
     }
 }
 
@@ -140,28 +174,5 @@ TEST  */
     #intro {
         background-color: var(--brightBlue);
     }
-}
 
-@media (max-width: 1199px) {
-    .hero {
-        background-image: url('../assets/img/png/hero.png');
-        background-image: url('../assets/img/webp/hero-tablet.webp');
-    }
-
-    .wave-section-wrapper {
-        background-image: url('../assets/img/jpg/foam-large.jpg');
-        background-image: url('../assets/img/webp/foam-large-tablet.webp');
-    }
-}
-
-@media (max-width: 767px) {
-    .hero {
-        background-image: url('../assets/img/png/hero.png');
-        background-image: url('../assets/img/webp/hero-mobile.webp');
-    }
-
-    .wave-section-wrapper {
-        background-image: url('../assets/img/jpg/foam-large.jpg');
-        background-image: url('../assets/img/webp/foam-large-mobile.webp');
-    }
 }

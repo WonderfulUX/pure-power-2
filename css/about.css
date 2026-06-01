@@ -71,6 +71,19 @@
     background-position-y: var(--wave-section-y-offset);
 }
 
+
+@media screen and (max-width: 1200px) {
+    .about-intro p {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #about-page .wave-section-wrapper {
+        background-image: url('../assets/img/jpg/liquid-large.jpg');
+        background-image: url('../assets/img/webp/liquid-large-tablet.webp');
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .about-editorial-left+p {
         position: relative;
@@ -78,10 +91,10 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .about-intro p {
-        padding-left: 16px;
-        padding-right: 16px;
+@media (max-width: 768px) {
+    #about-page .wave-section-wrapper {
+        background-image: url('../assets/img/jpg/liquid-large.jpg');
+        background-image: url('../assets/img/webp/liquid-large-mobile.webp');
     }
 }
 
@@ -94,19 +107,5 @@
     .about-intro {
         padding-top: 30px;
         padding-bottom: 50px;
-    }
-}
-
-@media (max-width: 1199px) {
-    #about-page .wave-section-wrapper {
-        background-image: url('../assets/img/jpg/liquid-large.jpg');
-        background-image: url('../assets/img/webp/liquid-large-tablet.webp');
-    }
-}
-
-@media (max-width: 767px) {
-    #about-page .wave-section-wrapper {
-        background-image: url('../assets/img/jpg/liquid-large.jpg');
-        background-image: url('../assets/img/webp/liquid-large-mobile.webp');
     }
 }

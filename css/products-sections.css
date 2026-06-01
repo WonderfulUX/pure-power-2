@@ -149,6 +149,17 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    #laundryPowders::before {
+        background-image: url('../assets/img/png/splash.png');
+        background-image: url('../assets/img/webp/splash-tablet.webp');
+    }
+
+    #liquidLaundry::before {
+        background-image: url('../assets/img/jpg/liquid.jpg');
+        background-image: url('../assets/img/webp/liquid-tablet.webp');
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -189,21 +200,7 @@
         max-width: 260px;
         margin: 0 auto;
     }
-}
 
-@media (max-width: 1199px) {
-    #laundryPowders::before {
-        background-image: url('../assets/img/png/splash.png');
-        background-image: url('../assets/img/webp/splash-tablet.webp');
-    }
-
-    #liquidLaundry::before {
-        background-image: url('../assets/img/jpg/liquid.jpg');
-        background-image: url('../assets/img/webp/liquid-tablet.webp');
-    }
-}
-
-@media (max-width: 767px) {
     #laundryPowders::before {
         background-image: url('../assets/img/png/splash.png');
         background-image: url('../assets/img/webp/splash-mobile.webp');
