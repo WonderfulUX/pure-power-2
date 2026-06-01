@@ -156,13 +156,11 @@ TEST  */
 }
 
 @media screen and (max-width: 575px) {
-    .hero {
-        height: fit-content;
-    }
 
     .hero-content {
-        margin-top: 30vh;
-        margin-bottom: 20vh;
+        margin-top: 200px;
+        margin-bottom: 140px;
+        text-shadow: unset;
     }
 }
 
