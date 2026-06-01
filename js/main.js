@@ -191,6 +191,14 @@ function initLanguageDropdown() {
     });
 }
 
+function initLanguageSwitcher() {
+    document.querySelectorAll('a[hreflang]').forEach(link => {
+        link.addEventListener('click', () => {
+            localStorage.setItem('pp-lang', link.getAttribute('hreflang'));
+        });
+    });
+}
+
 function initContactForm() {
     const form = document.querySelector('.contact-form');
     if (!form) return;
@@ -327,6 +335,7 @@ function initTickers() {
 
 initMobileMenu();
 initLanguageDropdown();
+initLanguageSwitcher();
 initContactForm();
 initProductsPage();
 initTickers();
