@@ -1,0 +1,340 @@
+#trust {
+    background: linear-gradient(to bottom, var(--white), var(--brightBlue));
+    overflow: hidden;
+    padding: 0;
+}
+
+#availabilityBanner {
+    background: linear-gradient(to right, var(--sky), var(--grass));
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#trustBanner {
+    background: linear-gradient(to right, var(--grass), var(--salmon));
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#resellersBanner {
+    background: linear-gradient(to right, var(--salmon), var(--yellow));
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.availability-ticker-track,
+.trust-ticker-track,
+.resellers-ticker-track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: ticker-scroll 24s linear infinite;
+    will-change: transform;
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: clamp(2rem, 6.25vw, 90px);
+    text-transform: uppercase;
+    color: var(--white);
+    flex-shrink: 0;
+    min-width: 200%;
+}
+
+.trust-ticker-track {
+    /* animation: ticker-scroll 26s linear infinite; */
+    /* animation-fill-mode: backwards; */
+    animation-direction: reverse;
+}
+
+.trust-ticker-track {
+    animation-duration: 20s;
+}
+
+.resellers-ticker-track {
+    animation-duration: 40s;
+    font-size: clamp(1.5rem, 4vw, 58px);
+}
+
+.availability-ticker-track .ticker-item,
+.trust-ticker-track .ticker-item,
+.resellers-ticker-track .ticker-item {
+    padding: 0 clamp(16px, 2.5vw, 40px);
+    flex-shrink: 0;
+}
+
+.availability-ticker-track .ticker-dot,
+.trust-ticker-track .ticker-dot,
+.resellers-ticker-track .ticker-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: currentColor;
+    opacity: 0.6;
+    flex-shrink: 0;
+}
+
+.reseller-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: brightness(0) invert(1);
+    margin: 0 clamp(16px, 2.5vw, 40px);
+}
+
+.trust-community {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 80px 80px 80px;
+}
+
+.trust-copy p {
+    font-size: clamp(1rem, 1.6vw, 23px);
+    color: var(--navy);
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.trust-socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.trust-socials a {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.trust-socials a:hover {
+    opacity: 1;
+}
+
+.trust-socials img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.trust-videos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.trust-video {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.trust-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* display: block; */
+}
+
+.trust-video--sm {
+    height: 313px;
+}
+
+.trust-video--md {
+    height: 360px;
+}
+
+.trust-video--lg {
+    height: 387px;
+}
+
+#comments {
+    position: relative;
+    /* padding: 100px 40px 160px; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.page-home #comments::before {
+    display: none;
+}
+
+.comments-bg {
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% + 90px);
+    height: auto;
+    pointer-events: none;
+}
+
+#comments h2 {
+    font-size: clamp(2rem, 8vw, 120px);
+    color: var(--white);
+    text-transform: none;
+    text-shadow: 0 8px 8px hsl(from black h s l / 15%);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 80px;
+    position: relative;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.page-home .comments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.comment-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.comment-card--tall {
+    transform: translateY(-40px);
+}
+
+.comment-cloud {
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.comment-card blockquote {
+    position: relative;
+    z-index: 1;
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: clamp(1rem, 1.9vw, 28px);
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    max-width: 320px;
+    background: linear-gradient(105deg, var(--sky) 0%, var(--navy) 92%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+    .trust-community {
+        grid-template-columns: 220px 1fr;
+        padding: 60px 50px;
+    }
+
+    .trust-videos {
+        grid-template-columns: 140px 160px 180px 140px;
+        gap: 12px;
+    }
+
+    .trust-video--sm {
+        height: 250px;
+    }
+
+    .trust-video--md {
+        height: 290px;
+    }
+
+    .trust-video--lg {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .trust-community {
+        grid-template-columns: 1fr;
+        padding: 50px 40px;
+        text-align: center;
+    }
+
+    .trust-socials {
+        justify-content: center;
+    }
+
+    .trust-videos {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .trust-video--sm,
+    .trust-video--md,
+    .trust-video--lg {
+        height: 220px;
+    }
+
+    .page-home .comments-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .comment-card--tall {
+        transform: none;
+    }
+
+    .comment-cloud {
+        max-width: 380px;
+    }
+
+    #comments h2 {
+        text-align: center;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    #availabilityBanner,
+    #trustBanner,
+    #resellersBanner {
+        height: 80px;
+    }
+
+    .trust-videos {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-video--sm,
+    .trust-video--md,
+    .trust-video--lg {
+        height: 240px;
+    }
+
+    #comments {
+        padding: 60px 24px 100px;
+    }
+
+    .comment-card {
+        min-height: 360px;
+        padding: 80px 24px;
+    }
+}

@@ -1,0 +1,204 @@
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    backdrop-filter: blur(2px);
+}
+
+.modal {
+    background: var(--ad-white);
+    border-radius: var(--ad-radius);
+    box-shadow: var(--ad-shadow-md);
+    padding: 32px;
+    max-width: 480px;
+    width: 90%;
+    position: relative;
+}
+
+.modal-categories {
+    max-width: 680px;
+    padding: 28px;
+    max-height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 20px;
+    color: var(--ad-muted);
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1;
+    transition: color 0.15s;
+}
+
+.modal-close:hover { color: var(--ad-black); }
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ad-black);
+}
+
+.modal-message {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ad-text);
+    margin-bottom: 24px;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.btn-modal-cancel {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ad-muted);
+    padding: 8px 16px;
+    border: 1px solid var(--ad-border);
+    border-radius: var(--ad-radius-sm);
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.btn-modal-cancel:hover { background: var(--ad-bg); }
+
+.btn-modal-confirm {
+    font-size: 13px;
+    font-weight: 500;
+    background: var(--ad-black);
+    color: var(--ad-white);
+    padding: 8px 16px;
+    border-radius: var(--ad-radius-sm);
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.btn-modal-confirm:hover { opacity: 0.85; }
+
+.cats-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.cats-new-link {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ad-amber);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+}
+
+.cats-new-link:hover { opacity: 0.7; }
+
+.cats-search { max-width: 200px; font-size: 13px; }
+
+.cats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cats-table th {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--ad-muted);
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--ad-border);
+}
+
+.cats-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--ad-border);
+    vertical-align: middle;
+}
+
+.cats-table td input {
+    font-size: 13px;
+    padding: 6px 10px;
+    border-color: transparent;
+    background: transparent;
+}
+
+.cats-table td input:focus {
+    background: var(--ad-white);
+    border-color: var(--ad-blue);
+}
+
+.cats-table td:nth-child(3) {
+    font-size: 13px;
+    color: var(--ad-muted);
+    width: 80px;
+    text-align: center;
+}
+
+.cats-actions {
+    display: flex;
+    gap: 8px;
+    width: 80px;
+}
+
+.cats-actions button {
+    font-size: 14px;
+    color: var(--ad-muted);
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.15s;
+}
+
+.cats-actions button:hover { color: var(--ad-black); }
+.cats-actions button:last-child:hover { color: var(--ad-red); }
+
+.cats-new-row td input {
+    background: #FFFBEB !important;
+    border-color: var(--ad-border) !important;
+}
+
+.cats-error {
+    font-size: 13px;
+    color: var(--ad-red);
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toast {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background: var(--ad-black);
+    color: var(--ad-white);
+    padding: 14px 20px;
+    border-radius: var(--ad-radius);
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 360px;
+    box-shadow: var(--ad-shadow-md);
+    z-index: 300;
+    cursor: pointer;
+    animation: toast-in 0.2s ease;
+}
+
+@keyframes toast-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}

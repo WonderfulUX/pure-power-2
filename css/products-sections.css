@@ -1,213 +1,138 @@
-#laundryPowders {
-    position: relative;
-    background-color: var(--bgColor);
-    padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 80px);
-}
-
-#laundryPowders::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url('../assets/img/png/splash.png');
-    background-image: url('../assets/img/webp/splash-desktop.webp');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.3;
-}
-
-#laundryPowders .section-title {
-    margin: 0 auto clamp(32px, 4vw, 56px);
-    text-align: center;
-}
-
-#laundryPowders>* {
-    position: relative;
-    z-index: 10;
-}
-
-.powders-grid {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: clamp(14px, 2vw, 24px);
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-.powders-grid .product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: clamp(12px, 1.5vw, 20px);
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    text-align: center;
-}
-
-
-.powders-grid .product-image img {
-    height: 350px;
-    width: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.2));
-}
-
-.powders-grid .product-name {
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.product-description {
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-clamp: 3;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
-
-
 #liquidLaundry {
-    position: relative;
-    background-color: var(--brightBlue);
-    padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 80px);
+    background: var(--mint);
+    overflow: hidden;
+    padding-bottom: 300px;
 }
 
-#liquidLaundry>* {
-    position: relative;
-}
-
-#liquidLaundry .product-description {
-    margin-bottom: 12px;
-}
-
-#liquidLaundry .section-title {
-    width: fit-content;
-    margin-left: auto;
-}
-
-#liquidLaundry::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url('../assets/img/jpg/liquid.jpg');
-    background-image: url('../assets/img/webp/liquid-desktop.webp');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.2;
-    pointer-events: none;
-}
-
-#liquid-5kg .product-content {
-    display: flex;
-    flex-direction: column;
+#liquidLaundryGrid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
     align-items: center;
-    width: 80%;
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
+    gap: 80px;
+    position: relative;
+    z-index: 2;
+    margin-top: 320px;
 }
 
-#liquid-5kg .product-image {
-    display: flex;
-    justify-content: center;
-}
-
-#liquid-5kg .product-image img {
+.liquid-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
     width: 100%;
-    max-width: 380px;
     height: auto;
-    object-fit: contain;
-    filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.2));
 }
 
-#liquid-5kg .product-label {
-    font-size: clamp(0.65rem, 0.8vw, 0.75rem);
-    color: var(--yellow);
+.liquid-bg-text {
+    font-size: clamp(120px, 19.4vw, 280px);
+    text-transform: uppercase;
+    line-height: .6;
+    font-weight: 400;
+    background: linear-gradient(to bottom, white, #FFFFFF00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 2;
 }
 
-#liquid-5kg .product-name {
-    text-align: center;
+.liquid-bg-text--offset {
+    padding-left: 134px;
+}
+
+.liquid-content {
+    max-width: 500px;
+}
+
+.liquid-content h3 {
+    font-size: clamp(1.5rem, 3.9vw, 57px);
+    color: var(--navy);
+    text-transform: none;
+    font-weight: 400;
+    line-height: 1;
     margin-bottom: 16px;
+    white-space: nowrap;
+}
+
+.liquid-content p {
+    font-size: clamp(1rem, 1.6vw, 23px);
+    color: var(--navy);
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.liquid-product {
+    position: relative;
+    z-index: 4;
+    aspect-ratio: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.liquid-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.liquid-product img.reflected {
+    translate: 0 -4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom center;
+    mask-image: linear-gradient(to bottom, hsl(from var(--mint) h s l / 0%), var(--mint))
+}
+
+#liquidLaundry h2 {
+    position: absolute;
+    translate: 0 -70%;
 }
 
 @media screen and (max-width: 1200px) {
-
-    .powders-grid .product-image img,
-    #liquidLaundry .product-image img {
-        height: 250px;
+    #liquidLaundry {
+        height: 900px;
+        padding: 160px 100px 0 80px;
     }
 
-    .product-description:not(#best-seller-product .product-description) :not(.product-tab-content.product-description) {
-        width: 250px;
+    .liquid-product {
+        width: 400px;
     }
-
-    #laundryPowders {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    #laundryPowders::before {
-        background-image: url('../assets/img/png/splash.png');
-        background-image: url('../assets/img/webp/splash-tablet.webp');
-    }
-
-    #liquidLaundry::before {
-        background-image: url('../assets/img/jpg/liquid.jpg');
-        background-image: url('../assets/img/webp/liquid-tablet.webp');
-    }
-
 }
 
 @media screen and (max-width: 1000px) {
-    .powders-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    #liquidLaundry {
+        height: auto;
+        flex-direction: column;
+        padding: 80px 40px 60px;
+        gap: 40px;
+        align-items: flex-start;
     }
 
-    .powders-grid .product {
-        width: 300px;
+    .liquid-wave {
+        top: -40px;
     }
 
-    #liquidLaundry .section-title {
-        margin: 0 0 50px;
-        width: unset;
-        text-align: center;
+    .liquid-bg-text {
+        display: none;
+    }
+
+    .liquid-product {
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
+    }
+
+    .liquid-product img {
+        width: 100%;
+        margin-left: 0;
     }
 }
 
-
-@media (max-width: 768px) {
-    .powders-grid {
-        grid-template-columns: 1fr;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-
-    #liquid-5kg {
-        grid-template-columns: 1fr;
-    }
-
-    #liquid-5kg .product-image {
-        order: -1;
-    }
-
-    #liquid-5kg .product-image img {
-        max-width: 260px;
-        margin: 0 auto;
-    }
-
-    #laundryPowders::before {
-        background-image: url('../assets/img/png/splash.png');
-        background-image: url('../assets/img/webp/splash-mobile.webp');
-    }
-
-    #liquidLaundry::before {
-        background-image: url('../assets/img/jpg/liquid.jpg');
-        background-image: url('../assets/img/webp/liquid-mobile.webp');
+@media screen and (max-width: 575px) {
+    #liquidLaundry {
+        padding: 60px 24px 40px;
     }
 }

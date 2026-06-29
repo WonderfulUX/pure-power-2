@@ -10,6 +10,14 @@
     --lightBlack: #444444;
     --homepage-intro-pb: 100px;
     --wave-section-y-offset: -150px;
+
+    --sky: #00a9e0;
+    --navy: #052681;
+    --mint: #c8fec8;
+    --cream: #fce99c;
+    --salmon: #f7b5a7;
+    --light-blue-footer: #b4ebfd;
+    --grass: #7ce47c;
 }
 
 @media screen and (max-width: 1200px) {

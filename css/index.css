@@ -3,10 +3,14 @@
 @import url('./typography.css');
 @import url('./base.css');
 @import url('./header.css');
+@import url('./home.css');
 @import url('./hero.css');
+@import url('./intro.css');
 @import url('./best-seller.css');
 @import url('./products-sections.css');
 @import url('./ticker.css');
+@import url('./trust.css');
+@import url('./range.css');
 @import url('./resellers.css');
 @import url('./comments.css');
 @import url('./contact.css');

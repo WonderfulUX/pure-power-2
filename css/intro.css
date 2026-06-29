@@ -1,0 +1,78 @@
+#intro {
+    position: relative;
+    display: flex;
+    gap: 120px;
+    padding-top: 0;
+    z-index: 3;
+}
+
+#maximumEfficiency {
+    margin-top: 200px;
+}
+
+.intro-block h2,
+.best-seller-content h2 {
+    font-size: clamp(3rem, 9vw, 130px);
+    color: var(--sky);
+    -webkit-text-stroke: 8px white;
+    filter: drop-shadow(0 8px 24px hsl(from black h s l / 20%));
+    line-height: 1;
+    text-transform: none;
+    font-weight: 400;
+    margin-bottom: 26px;
+    paint-order: stroke fill;
+}
+
+.intro-block p {
+    font-size: clamp(1rem, 2vw, 29px);
+    color: var(--white);
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1200px) {
+    #intro {
+        min-height: 680px;
+    }
+
+    .intro-block {
+        width: 400px;
+    }
+
+    #maximumEfficiency {
+        left: 600px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #intro {
+        min-height: unset;
+        padding: 60px 40px 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .intro-block {
+        position: static;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    #maximumEfficiency {
+        align-self: flex-end;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #intro {
+        padding: 50px 24px 60px;
+        gap: 50px;
+    }
+
+    #maximumEfficiency {
+        align-self: unset;
+        text-align: left;
+    }
+}

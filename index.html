@@ -1,40 +1,89 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Pure Power — Des produits lessive premium disponibles en Guadeloupe, Martinique, Guyane et Nouvelle-Calédonie.">
-    <title>Pure Power — Lessive Premium</title>
+        content="Pure Power — Premium laundry products available in Guadeloupe, Martinique, Guyane and New-Caledonia.">
+    <title>Pure Power — Premium Laundry</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
-    <link rel="alternate" hreflang="fr" href="./index.html">
-    <link rel="alternate" hreflang="en" href="./en/index.html">
-    <script>(function(){var s=localStorage.getItem('pp-lang');var l=(s||navigator.language||'fr').slice(0,2).toLowerCase();if(l!=='fr'){var p=location.pathname.split('/').pop();location.replace('./en/'+(p||'index.html'));}})();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/main.js" type="module" defer></script>
 </head>
 
-<body>
-    <header id="header">
-        <a href="./" class="header-logo" aria-label="Pure Power accueil">
+<body class="page-home">
+    <a href="./" class="mobile-nav header-logo" aria-label="Pure Power home">
+        <img src="./assets/svg/purepower.svg" alt="Pure Power">
+    </a>
+    <div class="header-right-btns">
+        <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
+            <span>EN</span>
+            <!-- <img src="./assets/svg/chevron-down.svg" alt="" aria-hidden="true"> -->
+        </button>
+        <button class="mobile-menu-toggle" aria-label="Open menu" aria-controls="mobile-nav-backdrop"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div id="mobile-nav-backdrop" aria-hidden="true">
+        <nav id="mobile-menu" aria-hidden="true">
+            <div class="mobile-menu-top">
+                <a href="./" class="header-logo" aria-label="Pure Power home">
+                    <img src="./assets/svg/purepower.svg" alt="Pure Power">
+                </a>
+                <div class="header-right-btns">
+                    <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
+                        <span>EN</span>
+                        <img src="./assets/svg/chevron-down.svg" alt="" aria-hidden="true">
+                    </button>
+                    <button class="mobile-menu-close" aria-label="Close menu">
+                        <img src="./assets/svg/close.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <nav class="mobile-menu-nav">
+                <a href="./products.html">Products</a>
+                <a href="./about.html">About</a>
+                <a href="./faq.html">FAQ</a>
+                <a href="./blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="mobile-menu-social">
+                <a href="#" aria-label="TikTok"><img src="./assets/svg/tik-tok.svg" alt="" width="30" height="30"></a>
+                <a href="#" aria-label="Facebook"><img src="./assets/svg/facebook.svg" alt="" width="30"
+                        height="30"></a>
+                <a href="#" aria-label="Instagram"><img src="./assets/svg/instagram.svg" alt="" width="30"
+                        height="30"></a>
+                <a href="#" aria-label="YouTube"><img src="./assets/svg/youtube.svg" alt="" width="30" height="30"></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- <header id="header">
+        <a href="./" class="header-logo" aria-label="Pure Power home">
             <img src="./assets/svg/purepower.svg" alt="Pure Power">
         </a>
-        <nav class="header-nav" aria-label="Principale">
-            <a href="./products.html">Produits</a>
-            <a href="./about.html">À propos</a>
+        <nav class="header-nav" aria-label="Main">
+            <a href="./products.html">Products</a>
+            <a href="./about.html">About</a>
             <a href="./faq.html">FAQ</a>
             <a href="./blog.html">Blog</a>
         </nav>
         <div class="header-actions">
-            <a href="./#contact" class="header-contact">Contact</a>
+            <a href="#contact" class="header-contact">Contact</a>
             <div class="header-language">
                 <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
-                    <span>FR</span>
+                    <span>EN</span>
                     <img src="./assets/svg/chevron-down.svg" alt="" aria-hidden="true">
                 </button>
                 <ul class="header-language-menu" role="listbox">
@@ -43,508 +92,350 @@
                 </ul>
             </div>
         </div>
-    </header>
-    <a href="./" class=" mobile-nav header-logo" aria-label="Pure Power accueil">
-        <img src="./assets/svg/purepower.svg" alt="Pure Power">
-    </a>
-    <button class="mobile-menu-toggle" aria-label="Ouvrir le menu" aria-controls="mobile-nav-backdrop"
-        aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <div id="mobile-nav-backdrop" aria-hidden="true">
-        <aside id="mobile-menu">
-            <div class="mobile-menu-top">
-                <ul class="mobile-language-links" role="listbox">
-                    <li role="option"><a href="./index.html" class="lang mobile-language-link active" hreflang="fr"
-                            lang="fr">FR</a></li>
-                    <li role="option"><a href="./en/index.html" class="lang mobile-language-link" hreflang="en"
-                            lang="en">EN</a></li>
-                </ul>
-                <button class="mobile-menu-close" aria-label="Fermer le menu">
-                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M28.0018 0.87684C28.5876 0.291053 29.5371 0.291053 30.1229 0.87684C30.7087 1.46263 30.7087 2.41215 30.1229 2.99793L17.621 15.4999L30.1229 28.0018C30.7087 28.5876 30.7087 29.5371 30.1229 30.1229C29.5371 30.7087 28.5876 30.7087 28.0018 30.1229L15.4999 17.621L2.99793 30.1229C2.41215 30.7087 1.46263 30.7087 0.87684 30.1229C0.291053 29.5371 0.291053 28.5876 0.87684 28.0018L13.3788 15.4999L0.87684 2.99793C0.291053 2.41215 0.291053 1.46263 0.87684 0.87684C1.46263 0.291053 2.41215 0.291053 2.99793 0.87684L15.4999 13.3788L28.0018 0.87684Z" />
-                    </svg>
-                </button>
-            </div>
-            <nav class="mobile-menu-nav" aria-label="Mobile">
-                <a href="./products.html">Produits</a>
-                <a href="./about.html">À propos</a>
-                <a href="./faq.html">FAQ</a>
-                <a href="./blog.html">Blog</a>
-                <a href="./#contact">Contact</a>
-            </nav>
-            <div class="mobile-menu-social">
-                <a href="#" aria-label="TikTok">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path
-                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.53V6.77a4.84 4.84 0 0 1-1.02-.08z" />
-                    </svg>
-                </a>
-                <a href="#" aria-label="Facebook">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                    </svg>
-                </a>
-                <a href="#" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" aria-hidden="true">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                    </svg>
-                </a>
-                <a href="#" aria-label="YouTube">
-                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                        <path
-                            d="M21.58 7.19c-.23-.87-.91-1.56-1.78-1.78C18.25 5 12 5 12 5s-6.25 0-7.8.41c-.87.22-1.55.91-1.78 1.78C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.87.91 1.56 1.78 1.78C5.75 19 12 19 12 19s6.25 0 7.8-.41c.87-.22 1.55-.91 1.78-1.78C22 15.25 22 12 22 12s0-3.25-.42-4.81zm-11.08 7.72v-5.82l5.19 2.91-5.19 2.91z" />
-                    </svg>
-                </a>
-            </div>
-        </aside>
-    </div>
-
+    </header> -->
     <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1 class="section-title">La lessive réinventée</h1>
-                <p class="section-headline">Plus propre. Plus simple. Meilleure. Plus puissante.</p>
+
+        <section id="hero">
+            <img class="hero-bg" src="./assets/hero-foam-bg.webp" alt="" width="1440" height="804" loading="eager">
+            <div class="hero-product">
+                <img src="./assets/4kg.png" alt="Pure Power 4KG" width="944" height="708" loading="eager">
+                <img class="reflected" src="./assets/4kg.png" alt="Pure Power 4KG" width="944" height="708"
+                    loading="eager">
+            </div>
+            <div class="hero-text">
+                <h1>The laundry<br>revolution</h1>
+                <p class="hero-subtitle">Cleaner. Simpler. Better. Stronger</p>
             </div>
         </section>
-        <div class="wave-section-wrapper">
-            <section id="intro" class="wave-bg-section">
-                <picture>
-                    <source media="(min-width: 1200px)" srcset="./assets/img/webp/foam-wavy-background-desktop.webp"
-                        type="image/webp">
-                    <source media="(min-width: 768px)" srcset="./assets/img/webp/foam-wavy-background-tablet.webp"
-                        type="image/webp">
-                    <source srcset="./assets/img/webp/foam-wavy-background-mobile.webp" type="image/webp">
-                    <img class="wave" src="./assets/img/png/foam-wavy-background.png" loading="lazy" alt="">
-                </picture>
-                <div class="intro-grid wave-section-grid">
-                    <div class="wave-grid-block">
-                        <h2 class="section-headline">Formules innovantes</h2>
-                        <p>Une formule haute performance conçue pour traiter les taches tenaces sur tous les tissus, à
-                            toutes les températures. Chaque dose est précisément calibrée pour ne rien gaspiller — un
-                            maximum d'efficacité, un minimum d'effort.</p>
-                    </div>
-                    <div class="wave-grid-block">
-                        <h2 class="section-headline">Efficacité Maximale</h2>
-                        <p>Pure Power délivre des résultats de qualité professionnelle à chaque lavage. Concentrée,
-                            longue durée et conçue pour performer là où d'autres lessives échouent — parce que votre
-                            linge mérite mieux que la moyenne.</p>
-                    </div>
-                </div>
-            </section>
 
-            <section id="bestSeller">
-                <header class="section-header">
-                    <h2 class="section-title">Notre <span class="highlight">best</span><br>seller</h2>
-                </header>
-                <article class="product" id="best-seller-product">
-                    <div class="product-image">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="./assets/img/webp/4kg-desktop.webp"
-                                type="image/webp">
-                            <source media="(min-width: 768px)" srcset="./assets/img/webp/4kg-tablet.webp"
-                                type="image/webp">
-                            <source srcset="./assets/img/webp/4kg-mobile.webp" type="image/webp">
-                            <img src="./assets/img/png/4kg.png" loading="lazy" alt="Pure Power Compact 4KG">
-                        </picture>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Pure Power 4KG</h3>
-                        <p class="product-description">Adoré des familles pour son rapport qualité-prix imbattable et sa
-                            concentration maximale.</p>
-                        <a href="./products.html" class="product-link">Voir les détails</a>
-                    </div>
-                </article>
-            </section>
-        </div>
+        <section id="intro">
+            <div class="intro-block" id="smartRecipes">
+                <h2>Smart<br>recipes</h2>
+                <p>Every Pure Power formula is calibrated by laundry chemists for tropical climates — fast-acting on
+                    tough
+                    stains, gentle on delicate fibres, and dosed so a single scoop does the work of three</p>
+            </div>
+            <div class="intro-block" id="maximumEfficiency">
+                <h2>Maximum<br>Efficiency</h2>
+                <p>Up to 120 washes from a single Mega Seau. Concentrated active enzymes mean less plastic, less
+                    storage,
+                    less waste and a fresher, brighter wash every cycle</p>
+            </div>
+        </section>
 
         <section id="laundryPowders">
-            <header class="section-header">
-                <h2 class="section-title">Lessives<br>en Poudre</h2>
-            </header>
-            <div class="powders-grid">
-                <article class="product" id="powder-2kg">
-                    <div class="product-image">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="./assets/img/webp/2kg-desktop.webp"
-                                type="image/webp">
-                            <source media="(min-width: 768px)" srcset="./assets/img/webp/2kg-tablet.webp"
-                                type="image/webp">
-                            <source srcset="./assets/img/webp/2kg-mobile.webp" type="image/webp">
-                            <img src="./assets/img/png/2kg.png" loading="lazy" alt="Pure Power Compact 2KG">
-                        </picture>
+            <div id="bestSeller" class="best-seller-grid">
+                <div class="best-seller-ctn">
+                    <!-- <img class="best-seller-decorative-bg decorative-1" src="./assets/best-seller-bg.webp" alt=""
+                        aria-hidden="true" loading="lazy" width="1921" height="1761"> -->
+                    <img class="best-seller-decorative-bg decorative-2" src="./assets/best-seller-bg.webp" alt=""
+                        aria-hidden="true" loading="lazy" width="1921" height="1761">
+                    <img class="best-seller-product" src="./assets/4kg.png" alt="Pure Power 4KG" width="944"
+                        height="708" loading="lazy">
+                    <div class="best-seller-badge">
+                        <img src="./assets/svg/best-seller-tag.svg" alt="Best seller">
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Compact 2KG</h3>
-                        <p class="product-description">Idéal pour les personnes seules et les couples. Concentration
-                            maximale dans un contenant compact et réutilisable.</p>
+                </div>
+                <div class="best-seller-content">
+                    <h2>Pure Power <br> 4Kg</h2>
+                    <p>Loved by families for its unbeatable value and maximum concentration.</p>
+                    <a href="./products.html" class="product-link">see details</a>
+                </div>
+            </div>
+            <div id="otherLaundryPowders">
+                <h2>
+                    <span class="powders-bg-text">laundry</span>
+                    <span class="powders-bg-text powders-bg-text--offset">powders</span>
+                </h2>
+                <div class="powders-grid">
+                    <div class="product-item" id="product2kg">
+                        <div class="product-img-ctn">
+                            <img src="./assets/2kg.png" alt="Pure Power 2KG" width="624" height="492" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3>Compact format 2Kg</h3>
+                            <p>The ideal format to start. Easy-to-store bucket, same concentration, same power</p>
+                        </div>
+                        <a href="./products.html" class="product-link">see details</a>
                     </div>
-                    <a href="./products.html" class="product-link">Voir les détails</a>
-                </article>
-                <article class="product" id="powder-5kg">
-                    <div class="product-image">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="./assets/img/webp/5kg-desktop.webp"
-                                type="image/webp">
-                            <source media="(min-width: 768px)" srcset="./assets/img/webp/5kg-tablet.webp"
-                                type="image/webp">
-                            <source srcset="./assets/img/webp/5kg-mobile.webp" type="image/webp">
-                            <img src="./assets/img/png/5kg.png" loading="lazy" alt="Pure Power Familial 5KG">
-                        </picture>
+                    <div class="product-item product-item--featured" id="product6kg">
+                        <div class="product-img-ctn">
+                            <img src="./assets/6kg.png" alt="Pure Power 6KG" width="602" height="506" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3>Pro format 6Kg</h3>
+                            <p>For professionals and large households. Intensive pace, zero compromise on efficiency</p>
+                        </div>
+                        <a href="./products.html" class="product-link">see details</a>
                     </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Familial 5KG</h3>
-                        <p class="product-description">Conçu pour les foyers actifs. Assez de doses pour gérer le linge
-                            de toute la famille.</p>
+                    <div class="product-item" id="product5kg">
+                        <div class="product-img-ctn">
+                            <img src="./assets/5kg.png" alt="Pure Power 5KG" width="554" height="503" loading="lazy">
+                        </div>
+                        <div class="product-details">
+                            <h3>Family format 5Kg</h3>
+                            <p>Best value for large families. Weeks of spotless laundry at the best price</p>
+                        </div>
+                        <a href="./products.html" class="product-link">see details</a>
                     </div>
-                    <a href="./products.html" class="product-link">Voir les détails</a>
-                </article>
-                <article class="product" id="powder-6kg">
-                    <div class="product-image">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="./assets/img/webp/6kg-desktop.webp"
-                                type="image/webp">
-                            <source media="(min-width: 768px)" srcset="./assets/img/webp/6kg-tablet.webp"
-                                type="image/webp">
-                            <source srcset="./assets/img/webp/6kg-mobile.webp" type="image/webp">
-                            <img src="./assets/img/png/6kg.png" loading="lazy" alt="Pure Power Format Pro 6KG">
-                        </picture>
-                    </div>
-                    <div class="product-content">
-                        <h3 class="product-name">Format Pro 6KG</h3>
-                        <p class="product-description">Volume professionnel pour une utilisation intensive et fréquente
-                            à la maison ou en entreprise.</p>
-                    </div>
-                    <a href="./products.html" class="product-link">Voir les détails</a>
-                </article>
+                </div>
             </div>
         </section>
 
         <section id="liquidLaundry">
-            <h2 class="section-title">Lessive<br>Liquide</h2>
-            <article class="product" id="liquid-5kg">
-                <div class="product-content">
-                    <div class="product-image">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="./assets/img/webp/liquid-5kg-desktop.webp"
-                                type="image/webp">
-                            <source media="(min-width: 768px)" srcset="./assets/img/webp/liquid-5kg-tablet.webp"
-                                type="image/webp">
-                            <source srcset="./assets/img/webp/liquid-5kg-mobile.webp" type="image/webp">
-                            <img src="./assets/img/png/liquid-5kg.png" loading="lazy" alt="Pure Power Liquide 5KG">
-                        </picture>
+            <img class="liquid-wave" src="./assets/liquid-laundry-wave.png" alt="" aria-hidden="true" loading="lazy"
+                width="1439" height="803">
+            <div id="liquidLaundryGrid">
+
+                <div class="liquid-content">
+                    <h3>Pouring spout 5kg</h3>
+                    <p>Ultra-practical dosing, hypoallergenic, cold-active, long-lasting fragrance.</p>
+                    <a href="./products.html" class="product-link">see details</a>
+                </div>
+                <div class="liquid-product">
+                    <img src="./assets/5kg-liquid.png" alt="Pure Power Liquid 5KG" width="944" height="708"
+                        loading="lazy">
+                    <img class="reflected" src="./assets/5kg-liquid.png" alt="Pure Power Liquid 5KG" width="944"
+                        height="708" loading="lazy">
+                </div>
+            </div>
+            <h2>
+                <span class="liquid-bg-text" aria-hidden="true">liquid</span>
+                <span class="liquid-bg-text liquid-bg-text--offset" aria-hidden="true">laundry</span>
+            </h2>
+        </section>
+
+
+        <section id="trust">
+            <div id="availabilityBanner">
+                <div class="ticker">
+                    <div class="ticker-track availability-ticker-track">
+                        <span class="ticker-item">Available in</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Guadeloupe</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Martinique</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Guyane</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">New-Caledonia</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Available in</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Guadeloupe</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Martinique</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Guyane</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">New-Caledonia</span>
+                        <span class="ticker-dot"></span>
                     </div>
-                    <h3 class="product-name">5KG avec bec verseur</h3>
-                    <p class="product-description">Dosage ultra-pratique, hypoallergénique, actif à froid, parfum longue
-                        durée.</p>
-                    <a href="./products.html" class="product-link">Voir les détails</a>
                 </div>
-            </article>
-        </section>
+            </div>
 
-        <section id="availabilityBanner" aria-label="Disponibilité">
-            <div class="ticker" aria-hidden="true">
-                <div class="ticker-track" data-ticker="availability"></div>
+            <div id="trustBanner">
+                <div class="ticker">
+                    <div class="ticker-track trust-ticker-track">
+                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-dot"></span>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <section id="community">
-            <header class="section-header">
-                <h2 class="section-title section-title-small">Rejoignez la Communauté</h2>
-                <p class="section-headline">Suivez-nous et partagez vos moments Pure Power</p>
-            </header>
-            <div class="community-videos">
-                <div class="community-video">
-                    <video autoplay muted loop playsinline preload="none">
-                        <source media="(min-width: 1200px)" src="./assets/videos/webm/social1-desktop.webm"
-                            type="video/webm">
-                        <source media="(min-width: 1200px)" src="./assets/videos/mp4/social1-desktop.mp4"
-                            type="video/mp4">
-                        <source media="(min-width: 768px)" src="./assets/videos/webm/social1-tablet.webm"
-                            type="video/webm">
-                        <source media="(min-width: 768px)" src="./assets/videos/mp4/social1-tablet.mp4"
-                            type="video/mp4">
-                        <source src="./assets/videos/webm/social1-mobile.webm" type="video/webm">
-                        <source src="./assets/videos/mp4/social1-mobile.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="community-video">
-                    <video autoplay muted loop playsinline preload="none">
-                        <source media="(min-width: 1200px)" src="./assets/videos/webm/social2-desktop.webm"
-                            type="video/webm">
-                        <source media="(min-width: 1200px)" src="./assets/videos/mp4/social2-desktop.mp4"
-                            type="video/mp4">
-                        <source media="(min-width: 768px)" src="./assets/videos/webm/social2-tablet.webm"
-                            type="video/webm">
-                        <source media="(min-width: 768px)" src="./assets/videos/mp4/social2-tablet.mp4"
-                            type="video/mp4">
-                        <source src="./assets/videos/webm/social2-mobile.webm" type="video/webm">
-                        <source src="./assets/videos/mp4/social2-mobile.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="community-video">
-                    <video autoplay muted loop playsinline preload="none">
-                        <source media="(min-width: 1200px)" src="./assets/videos/webm/social3-desktop.webm"
-                            type="video/webm">
-                        <source media="(min-width: 1200px)" src="./assets/videos/mp4/social3-desktop.mp4"
-                            type="video/mp4">
-                        <source media="(min-width: 768px)" src="./assets/videos/webm/social3-tablet.webm"
-                            type="video/webm">
-                        <source media="(min-width: 768px)" src="./assets/videos/mp4/social3-tablet.mp4"
-                            type="video/mp4">
-                        <source src="./assets/videos/webm/social3-mobile.webm" type="video/webm">
-                        <source src="./assets/videos/mp4/social3-mobile.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="community-video">
-                    <video autoplay muted loop playsinline preload="none">
-                        <source media="(min-width: 1200px)" src="./assets/videos/webm/social4-desktop.webm"
-                            type="video/webm">
-                        <source media="(min-width: 1200px)" src="./assets/videos/mp4/social4-desktop.mp4"
-                            type="video/mp4">
-                        <source media="(min-width: 768px)" src="./assets/videos/webm/social4-tablet.webm"
-                            type="video/webm">
-                        <source media="(min-width: 768px)" src="./assets/videos/mp4/social4-tablet.mp4"
-                            type="video/mp4">
-                        <source src="./assets/videos/webm/social4-mobile.webm" type="video/webm">
-                        <source src="./assets/videos/mp4/social4-mobile.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="community-video">
-                    <video autoplay muted loop playsinline preload="none">
-                        <source media="(min-width: 1200px)" src="./assets/videos/webm/social5-desktop.webm"
-                            type="video/webm">
-                        <source media="(min-width: 1200px)" src="./assets/videos/mp4/social5-desktop.mp4"
-                            type="video/mp4">
-                        <source media="(min-width: 768px)" src="./assets/videos/webm/social5-tablet.webm"
-                            type="video/webm">
-                        <source media="(min-width: 768px)" src="./assets/videos/mp4/social5-tablet.mp4"
-                            type="video/mp4">
-                        <source src="./assets/videos/webm/social5-mobile.webm" type="video/webm">
-                        <source src="./assets/videos/mp4/social5-mobile.mp4" type="video/mp4">
-                    </video>
+            <div id="resellersBanner">
+                <div class="ticker">
+                    <div class="ticker-track resellers-ticker-track">
+                        <span class="ticker-item">Your favorite laundry in</span>
+                        <img src="./assets/svg/leclerc-logo.svg" alt="Leclerc" class="reseller-logo" loading="lazy">
+                        <span class="ticker-dot"></span>
+                        <img src="./assets/svg/leaderprice-logo.svg" alt="Leader Price" class="reseller-logo"
+                            loading="lazy">
+                        <span class="ticker-dot"></span>
+                        <img src="./assets/svg/promocash-logo.svg" alt="Promocash" class="reseller-logo" loading="lazy">
+                        <span class="ticker-dot"></span>
+                        <img src="./assets/svg/carrefour-logo.svg" alt="Carrefour" class="reseller-logo" loading="lazy">
+                        <span class="ticker-dot"></span>
+                        <span class="ticker-item">Your favorite laundry in</span>
+                        <img src="./assets/svg/leclerc-logo.svg" alt="Leclerc" class="reseller-logo" loading="lazy">
+                        <span class="ticker-dot"></span>
+                        <img src="./assets/svg/leaderprice-logo.svg" alt="Leader Price" class="reseller-logo"
+                            loading="lazy">
+                        <span class="ticker-dot"></span>
+                        <img src="./assets/svg/promocash-logo.svg" alt="Promocash" class="reseller-logo" loading="lazy">
+                        <span class="ticker-dot"></span>
+                        <img src="./assets/svg/carrefour-logo.svg" alt="Carrefour" class="reseller-logo" loading="lazy">
+                        <span class="ticker-dot"></span>
+                    </div>
                 </div>
             </div>
-            <div class="community-cta">
-                <h3>Abonnez-vous</h3>
-                <img src="./assets/svg/subscription-chevrons.svg" alt="" aria-hidden="true">
-                <div class="community-socials">
-                    <a href="#" class="community-social-link" aria-label="TikTok">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.53V6.77a4.84 4.84 0 0 1-1.02-.08z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="community-social-link" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="community-social-link" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg>
-                    </a>
-                    <a href="#" class="community-social-link" aria-label="YouTube">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M21.58 7.19c-.23-.87-.91-1.56-1.78-1.78C18.25 5 12 5 12 5s-6.25 0-7.8.41c-.87.22-1.55.91-1.78 1.78C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.87.91 1.56 1.78 1.78C5.75 19 12 19 12 19s6.25 0 7.8-.41c.87-.22 1.55-.91 1.78-1.78C22 15.25 22 12 22 12s0-3.25-.42-4.81zm-11.08 7.72v-5.82l5.19 2.91-5.19 2.91z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
 
-        <section id="resellers">
-            <h2 class="section-title section-title-small">Toute la puissance d'une lessive</h2>
-            <div class="reseller-content">
-                <p>disponible maintenant chez ↓</p>
-                <div class="resellers-row">
-                    <img class="square-logo u" src="./assets/svg/u-logo.svg"
-                        alt="Retrouvez les produits Pure Power dans tous les magasins U">
-                    <img class="square-logo leader" src="./assets/svg/leaderprice-logo.svg"
-                        alt="Retrouvez les produits Pure Power dans tous les magasins Leader Price">
-                    <img class="wide-logo leclerc" src="./assets/svg/leclerc-logo.svg"
-                        alt="Retrouvez les produits Pure Power dans tous les magasins E.Leclerc">
-                    <img class="wide-logo promocash" src="./assets/svg/promocash-logo.svg"
-                        alt="Retrouvez les produits Pure Power dans tous les magasins Promocash">
-                    <img class="wide-logo carrefour" src="./assets/svg/carrefour-logo.svg"
-                        alt="Retrouvez les produits Pure Power dans tous les magasins Carrefour">
+            <div class="trust-community">
+                <div class="trust-copy">
+                    <p>Loved by families for its unbeatable value and maximum concentration.</p>
+                    <div class="trust-socials">
+                        <a href="#" aria-label="TikTok"><img src="./assets/svg/tik-tok.svg" alt="" width="30"
+                                height="30" loading="lazy"></a>
+                        <a href="#" aria-label="Facebook"><img src="./assets/svg/facebook.svg" alt="" width="30"
+                                height="30" loading="lazy"></a>
+                        <a href="#" aria-label="Instagram"><img src="./assets/svg/instagram.svg" alt="" width="30"
+                                height="30" loading="lazy"></a>
+                        <a href="#" aria-label="YouTube"><img src="./assets/svg/youtube.svg" alt="" width="30"
+                                height="21" loading="lazy"></a>
+                    </div>
+                </div>
+                <div class="trust-videos">
+                    <div class="trust-video trust-video--sm">
+                        <video autoplay="" muted="" loop="" playsinline="" preload="none">
+                            <source media="(min-width: 1200px)" src="./assets/videos/webm/social1-desktop.webm"
+                                type="video/webm">
+                            <source media="(min-width: 1200px)" src="./assets/videos/mp4/social1-desktop.mp4"
+                                type="video/mp4">
+                            <source media="(min-width: 768px)" src="./assets/videos/webm/social1-tablet.webm"
+                                type="video/webm">
+                            <source media="(min-width: 768px)" src="./assets/videos/mp4/social1-tablet.mp4"
+                                type="video/mp4">
+                            <source src="./assets/videos/webm/social1-mobile.webm" type="video/webm">
+                            <source src="./assets/videos/mp4/social1-mobile.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="trust-video trust-video--md">
+                        <video autoplay="" muted="" loop="" playsinline="" preload="none">
+                            <source media="(min-width: 1200px)" src="./assets/videos/webm/social2-desktop.webm"
+                                type="video/webm">
+                            <source media="(min-width: 1200px)" src="./assets/videos/mp4/social2-desktop.mp4"
+                                type="video/mp4">
+                            <source media="(min-width: 768px)" src="./assets/videos/webm/social2-tablet.webm"
+                                type="video/webm">
+                            <source media="(min-width: 768px)" src="./assets/videos/mp4/social2-tablet.mp4"
+                                type="video/mp4">
+                            <source src="./assets/videos/webm/social1-mobile.webm" type="video/webm">
+                            <source src="./assets/videos/mp4/social1-mobile.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="trust-video trust-video--lg">
+                        <video autoplay="" muted="" loop="" playsinline="" preload="none">
+                            <source media="(min-width: 1200px)" src="./assets/videos/webm/social3-desktop.webm"
+                                type="video/webm">
+                            <source media="(min-width: 1200px)" src="./assets/videos/mp4/social3-desktop.mp4"
+                                type="video/mp4">
+                            <source media="(min-width: 768px)" src="./assets/videos/webm/social3-tablet.webm"
+                                type="video/webm">
+                            <source media="(min-width: 768px)" src="./assets/videos/mp4/social3-tablet.mp4"
+                                type="video/mp4">
+                            <source src="./assets/videos/webm/social1-mobile.webm" type="video/webm">
+                            <source src="./assets/videos/mp4/social1-mobile.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="trust-video trust-video--sm">
+                        <video autoplay="" muted="" loop="" playsinline="" preload="none">
+                            <source media="(min-width: 1200px)" src="./assets/videos/webm/social4-desktop.webm"
+                                type="video/webm">
+                            <source media="(min-width: 1200px)" src="./assets/videos/mp4/social4-desktop.mp4"
+                                type="video/mp4">
+                            <source media="(min-width: 768px)" src="./assets/videos/webm/social4-tablet.webm"
+                                type="video/webm">
+                            <source media="(min-width: 768px)" src="./assets/videos/mp4/social4-tablet.mp4"
+                                type="video/mp4">
+                            <source src="./assets/videos/webm/social1-mobile.webm" type="video/webm">
+                            <source src="./assets/videos/mp4/social1-mobile.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
             </div>
-        </section>
-        <div id="commentsAndContact">
-            <section id="comments">
-                <h2 class="section-title section-title-small"><span class="highlight">Ce que disent</span><br>nos
-                    clients
-                </h2>
+
+            <div id="comments">
+                <img class="comments-bg" src="./assets/heart-bubbles-bg.webp" alt="" aria-hidden="true" loading="lazy"
+                    width="1530" height="866">
+                <h2>What people say<br>about us</h2>
                 <div class="comments-grid">
-                    <div class="testimonial">
-                        <p class="testimonial-text">« J'utilise Pure Power depuis six mois. Mes vêtements ressortent
-                            propres à chaque fois, le parfum tient toute la journée. Ça vaut chaque centime. »</p>
-                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">
-                            <svg width="145" height="24" viewBox="0 0 145 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12.9014 2.37402L15.583 8.7207L22.4834 9.32031L23.6602 9.42285L22.7676 10.1963L17.5449 14.7236L19.1025 21.4561L19.3691 22.6064L18.3574 21.9961L12.4404 18.4268L6.52344 21.9961L5.51172 22.6064L5.77832 21.4561L7.33496 14.7236L2.11328 10.1963L1.2207 9.42285L2.39746 9.32031L9.29688 8.7207L11.9795 2.37402L12.4404 1.28418L12.9014 2.37402ZM42.9014 2.37402L45.583 8.7207L52.4834 9.32031L53.6602 9.42285L52.7676 10.1963L47.5449 14.7236L49.1025 21.4561L49.3691 22.6064L48.3574 21.9961L42.4404 18.4268L36.5234 21.9961L35.5117 22.6064L35.7783 21.4561L37.335 14.7236L32.1133 10.1963L31.2207 9.42285L32.3975 9.32031L39.2969 8.7207L41.9795 2.37402L42.4404 1.28418L42.9014 2.37402ZM72.9014 2.37402L75.583 8.7207L82.4834 9.32031L83.6602 9.42285L82.7676 10.1963L77.5449 14.7236L79.1025 21.4561L79.3691 22.6064L78.3574 21.9961L72.4404 18.4268L66.5234 21.9961L65.5117 22.6064L65.7783 21.4561L67.335 14.7236L62.1133 10.1963L61.2207 9.42285L62.3975 9.32031L69.2969 8.7207L71.9795 2.37402L72.4404 1.28418L72.9014 2.37402ZM102.901 2.37402L105.583 8.7207L112.483 9.32031L113.66 9.42285L112.768 10.1963L107.545 14.7236L109.103 21.4561L109.369 22.6064L108.357 21.9961L102.44 18.4268L96.5234 21.9961L95.5117 22.6064L95.7783 21.4561L97.335 14.7236L92.1133 10.1963L91.2207 9.42285L92.3975 9.32031L99.2969 8.7207L101.979 2.37402L102.44 1.28418L102.901 2.37402ZM132.901 2.37402L135.583 8.7207L142.483 9.32031L143.66 9.42285L142.768 10.1963L137.545 14.7236L139.103 21.4561L139.369 22.6064L138.357 21.9961L132.44 18.4268L126.523 21.9961L125.512 22.6064L125.778 21.4561L127.335 14.7236L122.113 10.1963L121.221 9.42285L122.397 9.32031L129.297 8.7207L131.979 2.37402L132.44 1.28418L132.901 2.37402Z"
-                                    fill="#FDD835" stroke="#333333" />
-                            </svg>
-                            <span class="testimonial-name">- Michaël T.</span>
-                        </div>
+                    <div class="comment-card">
+                        <img class="comment-cloud" src="./assets/comment-cloud.webp" alt="" loading="lazy" width="698"
+                            height="698">
+                        <blockquote>La lessive miraculeuse, et l'odeur qui dure</blockquote>
                     </div>
-                    <div class="testimonial">
-                        <p class="testimonial-text">« La lessive miraculeuse, et l'odeur qui dure »</p>
-                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">
-                            <svg width="145" height="24" viewBox="0 0 145 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12.9014 2.37402L15.583 8.7207L22.4834 9.32031L23.6602 9.42285L22.7676 10.1963L17.5449 14.7236L19.1025 21.4561L19.3691 22.6064L18.3574 21.9961L12.4404 18.4268L6.52344 21.9961L5.51172 22.6064L5.77832 21.4561L7.33496 14.7236L2.11328 10.1963L1.2207 9.42285L2.39746 9.32031L9.29688 8.7207L11.9795 2.37402L12.4404 1.28418L12.9014 2.37402ZM42.9014 2.37402L45.583 8.7207L52.4834 9.32031L53.6602 9.42285L52.7676 10.1963L47.5449 14.7236L49.1025 21.4561L49.3691 22.6064L48.3574 21.9961L42.4404 18.4268L36.5234 21.9961L35.5117 22.6064L35.7783 21.4561L37.335 14.7236L32.1133 10.1963L31.2207 9.42285L32.3975 9.32031L39.2969 8.7207L41.9795 2.37402L42.4404 1.28418L42.9014 2.37402ZM72.9014 2.37402L75.583 8.7207L82.4834 9.32031L83.6602 9.42285L82.7676 10.1963L77.5449 14.7236L79.1025 21.4561L79.3691 22.6064L78.3574 21.9961L72.4404 18.4268L66.5234 21.9961L65.5117 22.6064L65.7783 21.4561L67.335 14.7236L62.1133 10.1963L61.2207 9.42285L62.3975 9.32031L69.2969 8.7207L71.9795 2.37402L72.4404 1.28418L72.9014 2.37402ZM102.901 2.37402L105.583 8.7207L112.483 9.32031L113.66 9.42285L112.768 10.1963L107.545 14.7236L109.103 21.4561L109.369 22.6064L108.357 21.9961L102.44 18.4268L96.5234 21.9961L95.5117 22.6064L95.7783 21.4561L97.335 14.7236L92.1133 10.1963L91.2207 9.42285L92.3975 9.32031L99.2969 8.7207L101.979 2.37402L102.44 1.28418L102.901 2.37402ZM132.901 2.37402L135.583 8.7207L142.483 9.32031L143.66 9.42285L142.768 10.1963L137.545 14.7236L139.103 21.4561L139.369 22.6064L138.357 21.9961L132.44 18.4268L126.523 21.9961L125.512 22.6064L125.778 21.4561L127.335 14.7236L122.113 10.1963L121.221 9.42285L122.397 9.32031L129.297 8.7207L131.979 2.37402L132.44 1.28418L132.901 2.37402Z"
-                                    fill="#FDD835" stroke="#333333" />
-                            </svg>
-                            <span class="testimonial-name">- Sandra P.</span>
-                        </div>
+                    <div class="comment-card comment-card--tall">
+                        <img class="comment-cloud" src="./assets/comment-cloud.webp" alt="" loading="lazy" width="698"
+                            height="698">
+                        <blockquote>Bonsoir je reviens vers vous la meilleure des lessives que j'ai utilisée je suis
+                            très
+                            très satisfaite vraiment</blockquote>
                     </div>
-                    <div class="testimonial">
-                        <p class="testimonial-text">« Waouh, nouveau produit arrivé, les chariots remplis avec ces seaux
-                            de lessive, certains avec 6 ou 7 ! »</p>
-                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">
-                            <svg width="145" height="24" viewBox="0 0 145 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12.9014 2.37402L15.583 8.7207L22.4834 9.32031L23.6602 9.42285L22.7676 10.1963L17.5449 14.7236L19.1025 21.4561L19.3691 22.6064L18.3574 21.9961L12.4404 18.4268L6.52344 21.9961L5.51172 22.6064L5.77832 21.4561L7.33496 14.7236L2.11328 10.1963L1.2207 9.42285L2.39746 9.32031L9.29688 8.7207L11.9795 2.37402L12.4404 1.28418L12.9014 2.37402ZM42.9014 2.37402L45.583 8.7207L52.4834 9.32031L53.6602 9.42285L52.7676 10.1963L47.5449 14.7236L49.1025 21.4561L49.3691 22.6064L48.3574 21.9961L42.4404 18.4268L36.5234 21.9961L35.5117 22.6064L35.7783 21.4561L37.335 14.7236L32.1133 10.1963L31.2207 9.42285L32.3975 9.32031L39.2969 8.7207L41.9795 2.37402L42.4404 1.28418L42.9014 2.37402ZM72.9014 2.37402L75.583 8.7207L82.4834 9.32031L83.6602 9.42285L82.7676 10.1963L77.5449 14.7236L79.1025 21.4561L79.3691 22.6064L78.3574 21.9961L72.4404 18.4268L66.5234 21.9961L65.5117 22.6064L65.7783 21.4561L67.335 14.7236L62.1133 10.1963L61.2207 9.42285L62.3975 9.32031L69.2969 8.7207L71.9795 2.37402L72.4404 1.28418L72.9014 2.37402ZM102.901 2.37402L105.583 8.7207L112.483 9.32031L113.66 9.42285L112.768 10.1963L107.545 14.7236L109.103 21.4561L109.369 22.6064L108.357 21.9961L102.44 18.4268L96.5234 21.9961L95.5117 22.6064L95.7783 21.4561L97.335 14.7236L92.1133 10.1963L91.2207 9.42285L92.3975 9.32031L99.2969 8.7207L101.979 2.37402L102.44 1.28418L102.901 2.37402ZM132.901 2.37402L135.583 8.7207L142.483 9.32031L143.66 9.42285L142.768 10.1963L137.545 14.7236L139.103 21.4561L139.369 22.6064L138.357 21.9961L132.44 18.4268L126.523 21.9961L125.512 22.6064L125.778 21.4561L127.335 14.7236L122.113 10.1963L121.221 9.42285L122.397 9.32031L129.297 8.7207L131.979 2.37402L132.44 1.28418L132.901 2.37402Z"
-                                    fill="#FDD835" stroke="#333333" />
-                            </svg>
-                            <span class="testimonial-name">- Jeremy N.</span>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <p class="testimonial-text">« Bombardez-nous !!! la poudre est exceptionnelle »</p>
-                        <div class="testimonial-stars" aria-label="5 étoiles sur 5">
-                            <svg width="145" height="24" viewBox="0 0 145 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12.9014 2.37402L15.583 8.7207L22.4834 9.32031L23.6602 9.42285L22.7676 10.1963L17.5449 14.7236L19.1025 21.4561L19.3691 22.6064L18.3574 21.9961L12.4404 18.4268L6.52344 21.9961L5.51172 22.6064L5.77832 21.4561L7.33496 14.7236L2.11328 10.1963L1.2207 9.42285L2.39746 9.32031L9.29688 8.7207L11.9795 2.37402L12.4404 1.28418L12.9014 2.37402ZM42.9014 2.37402L45.583 8.7207L52.4834 9.32031L53.6602 9.42285L52.7676 10.1963L47.5449 14.7236L49.1025 21.4561L49.3691 22.6064L48.3574 21.9961L42.4404 18.4268L36.5234 21.9961L35.5117 22.6064L35.7783 21.4561L37.335 14.7236L32.1133 10.1963L31.2207 9.42285L32.3975 9.32031L39.2969 8.7207L41.9795 2.37402L42.4404 1.28418L42.9014 2.37402ZM72.9014 2.37402L75.583 8.7207L82.4834 9.32031L83.6602 9.42285L82.7676 10.1963L77.5449 14.7236L79.1025 21.4561L79.3691 22.6064L78.3574 21.9961L72.4404 18.4268L66.5234 21.9961L65.5117 22.6064L65.7783 21.4561L67.335 14.7236L62.1133 10.1963L61.2207 9.42285L62.3975 9.32031L69.2969 8.7207L71.9795 2.37402L72.4404 1.28418L72.9014 2.37402ZM102.901 2.37402L105.583 8.7207L112.483 9.32031L113.66 9.42285L112.768 10.1963L107.545 14.7236L109.103 21.4561L109.369 22.6064L108.357 21.9961L102.44 18.4268L96.5234 21.9961L95.5117 22.6064L95.7783 21.4561L97.335 14.7236L92.1133 10.1963L91.2207 9.42285L92.3975 9.32031L99.2969 8.7207L101.979 2.37402L102.44 1.28418L102.901 2.37402ZM132.901 2.37402L135.583 8.7207L142.483 9.32031L143.66 9.42285L142.768 10.1963L137.545 14.7236L139.103 21.4561L139.369 22.6064L138.357 21.9961L132.44 18.4268L126.523 21.9961L125.512 22.6064L125.778 21.4561L127.335 14.7236L122.113 10.1963L121.221 9.42285L122.397 9.32031L129.297 8.7207L131.979 2.37402L132.44 1.28418L132.901 2.37402Z"
-                                    fill="#FDD835" stroke="#333333" />
-                            </svg>
-                            <span class="testimonial-name">- Maria C.</span>
-                        </div>
+                    <div class="comment-card">
+                        <img class="comment-cloud" src="./assets/comment-cloud.webp" alt="" loading="lazy" width="698"
+                            height="698">
+                        <blockquote>La lessive miraculeuse, et l'odeur qui dure</blockquote>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="contact">
-                <header class="section-header">
-                    <h2 class="section-title">Échangeons</h2>
-                    <p class="section-headline">Une question ? clients ou revendeurs,
-                        nous vous répondrons rapidement.</p>
-                </header>
-                <form class="contact-form" novalidate>
-                    <fieldset class="contact-type">
-                        <legend class="visually-hidden">Type de demande</legend>
-                        <label>
-                            <input type="radio" name="query-type" value="customer" checked>
-                            <span>Particulier</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="query-type" value="business">
-                            <span>Professionnel</span>
-                        </label>
-                    </fieldset>
-                    <div class="contact-fields">
-                        <label class="field">
-                            <span>Prénom</span>
-                            <input type="text" name="first-name" autocomplete="given-name">
-                        </label>
-                        <label class="field">
-                            <span>Nom</span>
-                            <input type="text" name="last-name" autocomplete="family-name">
-                        </label>
-                        <label class="field field-full">
-                            <span>Email</span>
-                            <input type="email" name="email" autocomplete="email">
-                        </label>
-                        <label class="field field-full">
-                            <span>Message</span>
-                            <textarea name="message" rows="6"></textarea>
-                        </label>
-                    </div>
-                    <button type="submit" class="contact-submit">Envoyer</button>
-                </form>
-            </section>
-        </div>
+        <section id="purepowerRange">
+            <div class="rangeHighlighttexts">
+                <p class="range-bg-text range-text-1" aria-hidden="true">pure power</p>
+                <p class="range-bg-text range-text-2" aria-hidden="true">pure power</p>
+                <p class="range-bg-text range-text-3" aria-hidden="true">pure power</p>
+                <p class="range-bg-text range-text-4" aria-hidden="true">pure power</p>
+            </div>
+            <img class="range-img" src="./assets/range-podium.webp" alt="Pure Power product range" loading="lazy"
+                width="1254" height="1254">
+        </section>
     </main>
 
+
     <footer id="footer">
-        <div class="footer-content">
-            <div class="footer-brand">
-                <a href="./" class="footer-logo" aria-label="Pure Power accueil">
-                    <img src="./assets/svg/purepower.svg" alt="Pure Power">
-                </a>
+        <img class="footer-wave" src="./assets/footer-wave.png" alt="" aria-hidden="true" loading="lazy" width="1440"
+            height="843">
+        <img class="footer-logo" src="./assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
+        <div class="footer-inner">
+            <a href="#contact" class="footer-cta">Let's talk</a>
+            <div class="footer-right">
                 <div class="footer-social">
-                    <a href="#" aria-label="TikTok">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.79 1.53V6.77a4.84 4.84 0 0 1-1.02-.08z" />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="YouTube">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M21.58 7.19c-.23-.87-.91-1.56-1.78-1.78C18.25 5 12 5 12 5s-6.25 0-7.8.41c-.87.22-1.55.91-1.78 1.78C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.87.91 1.56 1.78 1.78C5.75 19 12 19 12 19s6.25 0 7.8-.41c.87-.22 1.55-.91 1.78-1.78C22 15.25 22 12 22 12s0-3.25-.42-4.81zm-11.08 7.72v-5.82l5.19 2.91-5.19 2.91z" />
-                        </svg>
-                    </a>
+                    <a href="#" aria-label="TikTok"><img src="./assets/svg/tik-tok.svg" alt="" width="26" height="30"
+                            loading="lazy"></a>
+                    <a href="#" aria-label="Facebook"><img src="./assets/svg/facebook.svg" alt="" width="30" height="30"
+                            loading="lazy"></a>
+                    <a href="#" aria-label="Instagram"><img src="./assets/svg/instagram.svg" alt="" width="30"
+                            height="30" loading="lazy"></a>
+                    <a href="#" aria-label="YouTube"><img src="./assets/svg/youtube.svg" alt="" width="30" height="21"
+                            loading="lazy"></a>
                 </div>
+                <nav class="footer-links" aria-label="Footer">
+                    <div class="footer-column">
+                        <p class="footer-column-title">Products</p>
+                        <ul>
+                            <li><a href="./products.html" class="footer-column-link">Iconic 4KG</a></li>
+                            <li><a href="./products.html" class="footer-column-link">Compact 2KG</a></li>
+                            <li><a href="./products.html" class="footer-column-link">Family 5KG</a></li>
+                            <li><a href="./products.html" class="footer-column-link">Pro format 6KG</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <p class="footer-column-title">About</p>
+                        <ul>
+                            <li><a href="./products.html" class="footer-column-link">Our products</a></li>
+                            <li><a href="./about.html" class="footer-column-link">About us</a></li>
+                            <li><a href="./faq.html" class="footer-column-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-            <nav class="footer-sitemap" aria-label="Plan du site">
-                <div class="footer-column">
-                    <h4>Produits</h4>
-                    <ul>
-                        <li><a href="./products.html">Iconic 4KG</a></li>
-                        <li><a href="./products.html">Compact 2KG</a></li>
-                        <li><a href="./products.html">Familial 5KG</a></li>
-                        <li><a href="./products.html">Format Pro 6KG</a></li>
-                        <li><a href="./products.html">Liquide 5KG</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>À propos</h4>
-                    <ul>
-                        <li><a href="./products.html">Nos produits</a></li>
-                        <li><a href="./about.html">Notre histoire</a></li>
-                        <li><a href="./faq.html">FAQ</a></li>
-                        <li><a href="./blog.html">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="./#contact">Nous contacter</a></li>
-                    </ul>
-                </div>
-            </nav>
+        </div>
+        <img class="footer-logo" src="./assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
+        <div class="footer-legal">
+            <a href="#">CGV</a>
+            <span>·</span>
+            <a href="#">CGU</a>
         </div>
     </footer>
 </body>

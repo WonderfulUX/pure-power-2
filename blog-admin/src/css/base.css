@@ -1,0 +1,51 @@
+body {
+    font-family: var(--ad-font);
+    font-size: 14px;
+    color: var(--ad-text);
+    background-color: var(--ad-bg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, select, textarea {
+    font-size: 14px;
+    color: var(--ad-text);
+    background: var(--ad-white);
+    border: 1px solid var(--ad-border);
+    border-radius: var(--ad-radius-sm);
+    padding: 8px 12px;
+    width: 100%;
+    transition: border-color 0.15s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--ad-blue);
+    outline: none;
+}
+
+.btn-primary {
+    background: var(--ad-black);
+    color: var(--ad-white);
+    padding: 10px 20px;
+    border-radius: var(--ad-radius-sm);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.btn-primary:hover { opacity: 0.85; }
+
+.btn-secondary {
+    background: var(--ad-white);
+    color: var(--ad-black);
+    border: 1px solid var(--ad-border);
+    padding: 10px 20px;
+    border-radius: var(--ad-radius-sm);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.btn-secondary:hover { background: var(--ad-bg); }

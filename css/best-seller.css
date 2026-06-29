@@ -1,213 +1,263 @@
-#best-seller-product {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    border-radius: 28px;
-    gap: 50px;
-}
-
-/* #best-seller-product:hover img {
-    animation: shine 2s infinite forwards;
-}
-
-@keyframes shine {
-    25% {
-        filter: drop-shadow(0px 0px 100px var(--yellow));
-    }
-
-    0%,
-    100% {
-        filter: drop-shadow(0px 0px 0px var(--yellow));
-    }
-} */
-
-#bestSeller {
-    padding-left: 0;
-}
-
-#bestSeller .section-title {
-    text-align: right;
-    width: fit-content;
-    color: var(--electricBlue);
-    margin-left: 30px;
-}
-
-.highlight {
-    color: var(--yellow);
-}
-
-#best-seller-product .product-image {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 50px;
+#bestSeller,
+#otherLaundryPowders {
+    padding: 140px 30px;
     position: relative;
 }
 
-#best-seller-product .product-image::before {
-    position: absolute;
-    display: block;
-    width: calc(100% - 50px);
-    height: 50%;
-    content: '';
-    background: white;
-    z-index: 5;
-    top: 50%;
-    left: 0;
-    translate: 0 -50%;
-    border-radius: 0 10px 10px 0;
+.best-seller-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    align-items: center;
+    gap: 80px;
 }
 
-#best-seller-product .product-image::after {
-    position: absolute;
-    display: block;
-    border-radius: 50%;
-    height: 90%;
+.best-seller-ctn {
+    position: relative;
+    width: 100%;
     aspect-ratio: 1;
-    content: '';
-    background: var(--yellow);
-    border: 6px solid;
-    z-index: 8;
+    z-index: 1;
+}
+
+.best-seller-decorative-bg {
+    position: absolute;
+    pointer-events: none;
+    object-fit: contain;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+    z-index: 0;
+    opacity: 1;
+    /* scale: 0.2;
+    animation: explode 5s cubic-bezier(.01, 1, .9, 1) infinite; */
 }
 
-#best-seller-product .product-image img {
-    width: 100%;
-    max-width: 340px;
-    height: auto;
-    object-fit: contain;
-    position: relative;
-    z-index: 10;
-}
+/* .decorative-2 {
+    animation-delay: 4s;
+} */
 
-#best-seller-product .product-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#best-seller-product .product-name {
-    font-size: clamp(2rem, 3.8vw, 3.25rem);
-    margin-bottom: 4px;
-}
-
-#best-seller-product .product-description {
-    font-size: clamp(16px, 2vw, 2rem);
-    margin-bottom: 24px;
-    padding-right: 24px;
-}
-
-.product-link,
-.cta-button {
-    text-transform: uppercase;
-    font-size: 16px;
-    border-radius: 30px;
-    transition: opacity 0.2s ease;
-    height: 48px;
-    padding: 0 20px;
-    width: 200px;
-    align-content: center;
-    background: var(--lightGrey);
-    color: var(--bgColor);
-    font-weight: 500;
-    text-align: center;
-    display: inline-block;
-    transition: background-color .2s ease;
-}
-
-.cta-button {
-    background: white;
-    width: fit-content;
-    transition: box-shadow 0.2s ease;
-}
-
-.cta-button:hover {
-    background: var(--yellow);
-    color: var(--bgColor);
-    box-shadow: inset 0 0 0 3px white;
-}
-
-.product-link:hover {
-    background: var(--white);
-}
-
-#best-seller-product .product-link {
-    color: var(--electricBlue);
-    background: var(--yellow);
-    border-color: var(--yellow);
-}
-
-#best-seller-product .product-link:hover {
-    color: var(--yellow);
-    background: var(--electricBlue);
-    border-color: var(--yellow);
-}
-
-
-@media screen and (max-width: 1200px) {
-    #best-seller-product {
-        grid-template-columns: 50% 40%;
+@keyframes explode {
+    90% {
+        scale: 1;
     }
 
-    #best-seller-product .product-image img {
-        width: 250px;
+    95% {
+        scale: 0.2;
+    }
+}
+
+
+.best-seller-product {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+#otherLaundryPowders {
+    z-index: 2;
+    overflow: hidden;
+    padding-top: 360px;
+    background: linear-gradient(to bottom, hsl(from var(--mint) h s l/0%), hsl(from var(--mint) h s l/100%));
+}
+
+.best-seller-badge {
+    position: absolute;
+    top: -120px;
+    left: -100px;
+    width: 220px;
+    transform: rotate(-19deg);
+}
+
+.best-seller-badge img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.best-seller-content {
+    position: relative;
+    z-index: 2;
+}
+
+.best-seller-content h2 {
+    /* font-size: clamp(3rem, 6.9vw, 100px); */
+    margin-bottom: 16px;
+}
+
+.best-seller-content p {
+    font-size: clamp(1rem, 2.1vw, 30px);
+    color: var(--navy);
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.page-home .product-link {
+    display: inline-block;
+    border: 3px solid var(--navy);
+    border-radius: 78px;
+    width: 220px;
+    line-height: 50px;
+    color: var(--navy);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    background: hsl(from var(--navy) h s l/0%);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    text-align: center;
+}
+
+.page-home .product-link:hover {
+    background: var(--navy);
+    color: var(--white);
+}
+
+#laundryPowders {
+    position: relative;
+    padding: 140px 0 0;
+}
+
+.powders-bg-text {
+    font-size: clamp(120px, 19vw, 280px);
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, white, #FFFFFF00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: .6;
+    opacity: .5;
+}
+
+
+.powders-bg-text--offset {
+    padding-left: 150px;
+}
+
+.powders-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+    position: relative;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.product-item .product-img-ctn {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.product-item .product-img-ctn img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* .product-item--featured .product-img-ctn img {
+    width: 180%;
+} */
+
+/* #product5kg .product-img-ctn img {
+    transform: rotate(-29deg);
+} */
+
+.product-item .product-details h3 {
+    font-size: 32px;
+    color: var(--navy);
+    text-transform: none;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 8px;
+    -webkit-text-stroke: 4px white;
+    paint-order: stroke fill;
+}
+
+.product-item .product-details p {
+    font-size: 16px;
+    color: var(--navy);
+    font-weight: 500;
+    line-height: 1.4;
+    height: 3lh;
+}
+
+@media screen and (max-width: 1200px) {
+    .best-seller-grid {
+        grid-template-columns: 380px 1fr;
+        padding: 200px 100px 120px;
+        gap: 60px;
+    }
+
+    .powders-grid {
+        grid-template-columns: 240px 380px 290px;
+        gap: 60px;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    #best-seller-product {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        max-width: 450px;
-        align-items: center;
-    }
-
-    #best-seller-product .product-content {
-        display: unset;
+    .best-seller-grid {
+        grid-template-columns: 1fr;
+        padding: 80px 40px 60px;
         text-align: center;
     }
 
-    #best-seller-product .product-image::before {
-        border-radius: 10px;
+    .best-seller-ctn {
+        height: 380px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .best-seller-content {
+        text-align: center;
+    }
+
+    .powders-grid {
+        grid-template-columns: 1fr;
+        gap: 80px;
+        padding: 0 40px;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .powders-bg-text {
+        display: none;
+    }
+
+    .product-item--featured {
+        order: -1;
+    }
+
+    .product-item .product-img-ctn img,
+    .product-item--featured .product-img-ctn img,
+    #product5kg .product-img-ctn img {
+        transform: none;
         width: 100%;
-    }
-
-    #best-seller-product {
-        gap: 0;
-    }
-
-    #best-seller-product .product-description {
-        padding-right: unset;
-        width: 100%;
-    }
-
-    #bestSeller {
-        padding: 60px 0;
-    }
-
-    .product-link {
-        background: white;
     }
 }
 
-@media (max-width: 768px) {
-    #best-seller-product .product-image img {
-        max-width: 220px;
+@media screen and (max-width: 575px) {
+    .best-seller-grid {
+        padding: 60px 24px 40px;
     }
 
-    #bestSeller .section-title {
-        color: white;
+    .best-seller-ctn {
+        height: 300px;
     }
 
-    #best-seller-product .product-link:hover {
-        background: white;
-        color: var(--electricBlue);
-    }
-
-    #best-seller-product .product-image::before {
-        display: none;
+    #laundryPowders {
+        padding: 60px 0 40px;
     }
 }

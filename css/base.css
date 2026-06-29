@@ -10,9 +10,22 @@ main {
     overflow: hidden;
 }
 
-section {
+section,
+.footer-inner {
     position: relative;
     padding: 100px 30px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+main {
+    position: relative;
+    z-index: 0;
 }
 
 ::selection {

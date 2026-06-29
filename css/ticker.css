@@ -12,204 +12,23 @@
 }
 
 @keyframes ticker-scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-80%);
-    }
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 .ticker-item {
     display: inline-flex;
     align-items: center;
-    gap: clamp(14px, 2vw, 24px);
-    padding: 0 clamp(16px, 2.5vw, 32px);
+    padding: 0 clamp(16px, 2.5vw, 40px);
     flex-shrink: 0;
-}
-
-.ticker-item img {
-    height: 100px;
-    width: auto;
 }
 
 .ticker-dot {
     display: inline-block;
-    width: 4px;
-    height: 4px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: currentColor;
-    opacity: 0.4;
+    opacity: 0.5;
     flex-shrink: 0;
-}
-
-#availabilityBanner {
-    background: var(--white);
-    overflow: hidden;
-    width: 100%;
-    height: 180px;
-    color: var(--electricBlue);
-    font-size: clamp(30px, 5vw, 60px);
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    padding: 0;
-}
-
-#community {
-    position: relative;
-    background: var(--bgColor);
-}
-
-#community::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: url('../assets/img/jpg/community.jpg');
-    background-image: url('../assets/img/webp/community-desktop.webp');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.15;
-    pointer-events: none;
-}
-
-#community .section-title {
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-#community .section-headline {
-    margin-bottom: 80px;
-    text-align: center;
-    font-size: 24px;
-}
-
-.community-videos {
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: clamp(8px, 1.2vw, 14px);
-    margin: 0 auto 80px;
-}
-
-.community-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.community-cta {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: clamp(20px, 4vw, 56px);
-    margin-top: clamp(28px, 4vw, 48px);
-}
-
-.community-subscribe {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: clamp(0.7rem, 0.85vw, 0.8rem);
-    color: var(--black);
-    background: var(--yellow);
-    padding: 13px 26px;
-    border-radius: 100px;
-    transition: opacity 0.2s ease;
-}
-
-.community-subscribe:hover {
-    opacity: 0.8;
-}
-
-.community-subscribe img {
-    height: 14px;
-    width: auto;
-}
-
-.community-socials {
-    display: flex;
-    align-items: center;
-    gap: clamp(16px, 2.5vw, 32px);
-}
-
-.community-social-link {
-    display: flex;
-    align-items: center;
-    color: var(--white);
-    opacity: 0.65;
-    transition: opacity 0.2s ease;
-}
-
-.community-social-link:hover {
-    opacity: 1;
-}
-
-.community-social-link {
-    opacity: 1;
-}
-
-#community>* {
-    position: relative;
-    z-index: 10;
-}
-
-#community svg {
-    width: 60px;
-    height: auto;
-}
-
-@media screen and (max-width: 1200px) {
-    #community::before {
-        background-image: url('../assets/img/jpg/community.jpg');
-        background-image: url('../assets/img/webp/community-tablet.webp');
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #community svg {
-        width: 40px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .community-videos {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .community-videos .community-video:nth-child(n+4) {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .community-cta {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .community-cta img {
-        rotate: 90deg;
-        height: 20px;
-    }
-
-    #community::before {
-        background-image: url('../assets/img/jpg/community.jpg');
-        background-image: url('../assets/img/webp/community-mobile.webp');
-    }
-}
-
-@media (max-width: 600px) {
-    .community-videos {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .community-videos .community-video:nth-child(n+3) {
-        display: none;
-    }
 }
