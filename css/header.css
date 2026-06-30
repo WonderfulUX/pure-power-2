@@ -42,7 +42,7 @@
 }
 
 .header-contact {
-    color: var(--bgColor);
+    color: var(--navy);
     background: var(--yellow);
     padding: 10px 24px;
     border-radius: 100px;
@@ -59,6 +59,8 @@
 
 .header-language {
     position: relative;
+    width: fit-content;
+    height: fit-content;
 }
 
 .header-language-toggle {
@@ -66,6 +68,7 @@
     align-items: center;
     gap: 5px;
     transition: opacity 0.2s ease;
+    font-size: 18px;
 }
 
 .header-right-btns {
@@ -78,17 +81,18 @@
     justify-content: flex-end;
 }
 
-.header-right-btns>* {
+.header-language-toggle,
+.mobile-menu-toggle {
     width: 54px;
     height: 54px;
-    color: var(--bgColor);
+    color: var(--navy);
     background-color: white;
     border: 3px solid;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -113,15 +117,16 @@
 
 .header-language-menu {
     position: absolute;
-    top: calc(100% + 8px);
+    top: calc(100% + 4px);
+    color: white;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: #00000050;
     backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 4px;
-    padding: 6px;
-    min-width: 60px;
+    border: 3px solid;
+    border-radius: 10px;
+    width: 54px;
     opacity: 0;
+    overflow: hidden;
     pointer-events: none;
     transform: translateY(-6px);
     transition: opacity 0.2s ease, transform 0.2s ease;
@@ -136,13 +141,16 @@
 .header-language-menu li a {
     display: block;
     padding: 6px 10px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     transition: background-color 0.15s ease;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .header-language-menu li a:hover {
-    /* background: hsl(from white h s l / 50%); */
-    background: var(--electricBlue);
+    background: var(--grass);
+    color: var(--navy);
 }
 
 .mobile-menu-toggle {
@@ -156,7 +164,7 @@
     display: block;
     width: 26px;
     height: 3px;
-    background: var(--bgColor);
+    background: var(--navy);
     border-radius: 30px;
     border-radius: 2px;
     transition: transform 0.25s ease, opacity 0.25s ease;
@@ -169,6 +177,15 @@
     display: none;
 }
 
+#mobile-nav-backdrop[aria-hidden="false"] {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background: hsl(from black h s l / 80%);
+    position: fixed;
+    z-index: 110;
+}
+
 #mobile-menu {
     position: fixed;
     top: 0;
@@ -176,7 +193,7 @@
     right: 0;
     width: 240px;
     z-index: 200;
-    background: var(--bgColor);
+    background: var(--navy);
     display: grid;
     grid-template-rows: auto 1fr auto;
     padding: 30px;
@@ -233,15 +250,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: clamp(24px, 5vw, 40px);
+    gap: 24px;
 }
 
 .mobile-menu-nav a {
-    font-size: 30px;
+    font-size: 28px;
     color: var(--white);
     opacity: 0;
     transform: translateX(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: 'Cherry Bomb One', cursive;
 }
 
 #mobile-menu[aria-hidden="false"] .mobile-menu-nav a {
@@ -282,7 +300,7 @@
     align-items: center;
     justify-content: center;
     color: var(--white);
-    opacity: 0.6;
+    opacity: 0.8;
     transition: opacity 0.2s ease;
 }
 
@@ -300,7 +318,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: 3px solid var(--bgColor);
+    border: 3px solid var(--navy);
 }
 
 
@@ -319,56 +337,4 @@
 
 .mobile-nav.header-logo img {
     height: 60px;
-}
-
-@media screen and (max-width: 1200px) {
-
-    #header {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-
-    #header {
-        display: none;
-    }
-
-    .header-nav,
-    .header-contact,
-    .header-language {
-        display: none;
-    }
-
-
-    #mobile-nav-backdrop[aria-hidden="false"] {
-        width: 100%;
-        height: 100vh;
-        display: block;
-        background: hsl(from black h s l / 80%);
-        position: fixed;
-        z-index: 110;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    .mobile-menu-toggle,
-    .mobile-nav.header-logo {
-        width: 60px;
-        height: 60px;
-        top: 10px;
-    }
-
-    .mobile-menu-toggle {
-        right: 10px;
-    }
-
-    .mobile-nav.header-logo {
-        left: 10px;
-    }
-
-    .mobile-nav.header-logo img {
-        height: 30px;
-    }
 }

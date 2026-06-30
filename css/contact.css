@@ -107,7 +107,6 @@
 
 .field textarea {
     resize: vertical;
-    min-height: 110px;
 }
 
 .field-full {
@@ -141,20 +140,4 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
-}
-
-@media (max-width: 600px) {
-    .contact-fields {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .contact-form {
-        padding: 20px;
-    }
-
-    .contact-type {
-        flex-direction: column;
-    }
 }

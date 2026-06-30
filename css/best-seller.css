@@ -6,16 +6,17 @@
 
 .best-seller-grid {
     display: grid;
-    grid-template-columns: .9fr 1.1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 80px;
 }
 
 .best-seller-ctn {
     position: relative;
-    width: 100%;
+    width: 80%;
     aspect-ratio: 1;
     z-index: 1;
+    margin-left: auto;
 }
 
 .best-seller-decorative-bg {
@@ -63,16 +64,38 @@
 
 .best-seller-badge {
     position: absolute;
-    top: -120px;
-    left: -100px;
-    width: 220px;
+    top: -0;
+    left: -0;
+    width: fit-content;
+    height: fit-content;
     transform: rotate(-19deg);
+    /* background: center/cover no-repeat url('/assets/svg/best-seller-tag.svg'); */
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    translate: 50px 50px;
+    line-height: .8;
+    color: var(--navy);
+    font-size: 28px;
+    z-index: 2;
+}
+
+.best-seller-badge span {
+    -webkit-text-stroke: 4px white;
+    paint-order: stroke fill;
 }
 
 .best-seller-badge img {
-    width: 100%;
+    width: 160%;
     height: auto;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
     display: block;
+    position: absolute;
+    z-index: -1;
+    filter: drop-shadow(0 0 20px #00000030);
+
 }
 
 .best-seller-content {
@@ -81,8 +104,8 @@
 }
 
 .best-seller-content h2 {
-    /* font-size: clamp(3rem, 6.9vw, 100px); */
     margin-bottom: 16px;
+    width: 10ch;
 }
 
 .best-seller-content p {
@@ -131,7 +154,7 @@
 
 
 .powders-bg-text--offset {
-    padding-left: 150px;
+    padding-left: .8ch;
 }
 
 .powders-grid {
@@ -141,6 +164,7 @@
     align-items: end;
     gap: 30px;
     position: relative;
+    perspective: 500px;
 }
 
 .product-item {
@@ -149,6 +173,26 @@
     align-items: center;
     gap: 14px;
     text-align: center;
+    transition: translate 1.2s cubic-bezier(.09, 1.74, .93, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-item[data-pos="3"],
+.product-item[data-pos="6"] {
+    translate: -130% 0 -400px;
+}
+
+.product-item[data-pos="1"],
+.product-item[data-pos="4"] {
+    translate: 0 0 0;
+}
+
+.product-item[data-pos="2"],
+.product-item[data-pos="5"] {
+    translate: 100% 0 -200px;
 }
 
 .product-item .product-img-ctn {
@@ -158,6 +202,20 @@
     align-items: center;
     justify-content: center;
     overflow: visible;
+}
+
+@keyframes moveToPos2 {
+    33% {
+        translate: 1px 1px 1px;
+    }
+
+    33% {
+        translate: 1px 1px 1px;
+    }
+
+    100% {
+        translate: 1px 1px 1px;
+    }
 }
 
 .product-item .product-img-ctn img {
@@ -184,6 +242,7 @@
     margin-bottom: 8px;
     -webkit-text-stroke: 4px white;
     paint-order: stroke fill;
+    filter: drop-shadow(0 6px 8px hsl(from black h s l / 20%));
 }
 
 .product-item .product-details p {
@@ -192,72 +251,4 @@
     font-weight: 500;
     line-height: 1.4;
     height: 3lh;
-}
-
-@media screen and (max-width: 1200px) {
-    .best-seller-grid {
-        grid-template-columns: 380px 1fr;
-        padding: 200px 100px 120px;
-        gap: 60px;
-    }
-
-    .powders-grid {
-        grid-template-columns: 240px 380px 290px;
-        gap: 60px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .best-seller-grid {
-        grid-template-columns: 1fr;
-        padding: 80px 40px 60px;
-        text-align: center;
-    }
-
-    .best-seller-ctn {
-        height: 380px;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .best-seller-content {
-        text-align: center;
-    }
-
-    .powders-grid {
-        grid-template-columns: 1fr;
-        gap: 80px;
-        padding: 0 40px;
-        max-width: 480px;
-        margin: 0 auto;
-    }
-
-    .powders-bg-text {
-        display: none;
-    }
-
-    .product-item--featured {
-        order: -1;
-    }
-
-    .product-item .product-img-ctn img,
-    .product-item--featured .product-img-ctn img,
-    #product5kg .product-img-ctn img {
-        transform: none;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .best-seller-grid {
-        padding: 60px 24px 40px;
-    }
-
-    .best-seller-ctn {
-        height: 300px;
-    }
-
-    #laundryPowders {
-        padding: 60px 0 40px;
-    }
 }

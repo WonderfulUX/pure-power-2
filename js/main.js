@@ -339,3 +339,21 @@ initLanguageSwitcher();
 initContactForm();
 initProductsPage();
 initTickers();
+
+
+document.querySelector('.powders-grid').addEventListener('click', moveElements)
+
+function moveElements() {
+    // document.querySelector('.product-item[data-pos="1"]').style.translate = "50% 0 -200px";
+    // document.querySelector('.product-item[data-pos="2"]').style.translate = "-100% 0 -400px";
+    // document.querySelector('.product-item[data-pos="3"]').style.translate = "0 0 0"
+
+    document.querySelector('.product-item[data-pos="1"]').setAttribute('data-pos', 5)
+    document.querySelector('.product-item[data-pos="2"]').setAttribute('data-pos', 6)
+    document.querySelector('.product-item[data-pos="3"]').setAttribute('data-pos', 4)
+    document.querySelector('.product-item[data-pos="4"]').setAttribute('data-pos', 2)
+    document.querySelector('.product-item[data-pos="5"]').setAttribute('data-pos', 3)
+    document.querySelector('.product-item[data-pos="6"]').setAttribute('data-pos', 1)
+    console.log('New');
+
+}

@@ -38,7 +38,7 @@
 }
 
 .liquid-bg-text--offset {
-    padding-left: 134px;
+    padding-left: .8ch;
 }
 
 .liquid-content {
@@ -53,6 +53,9 @@
     line-height: 1;
     margin-bottom: 16px;
     white-space: nowrap;
+    -webkit-text-stroke: 8px white;
+    paint-order: stroke fill;
+    filter: drop-shadow(0 8px 8px hsl(from black h s l / 20%));
 }
 
 .liquid-content p {

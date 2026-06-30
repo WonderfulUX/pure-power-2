@@ -56,13 +56,3 @@
 .section-headline-small {
     font-size: clamp(30px, 3vw, 4.5rem);
 }
-
-@media (max-width: 768px) {
-    .faq-hero-product {
-        height: clamp(140px, 22vw, 220px);
-    }
-
-    .faq-grid {
-        grid-template-columns: 1fr;
-    }
-}
