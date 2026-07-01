@@ -12,10 +12,6 @@
 
 @media screen and (max-width: 1200px) {
 
-    .about-intro p {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
 
     #about-page .wave-section-wrapper {
         background-image: url('../assets/img/jpg/liquid-large.jpg');
@@ -72,9 +68,12 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .about-editorial-left+p {
-        position: relative;
-        translate: unset;
+    .hero-content {
+        max-width: 500px;
+    }
+
+    .hero-subtitle {
+        text-align: left;
     }
 
     .best-seller-grid {
@@ -333,6 +332,10 @@
         height: clamp(140px, 22vw, 220px);
     }
 
+    .drop-CTN {
+        scale: .7;
+    }
+
     .faq-grid {
         grid-template-columns: 1fr;
     }
@@ -527,7 +530,7 @@
         overflow: hidden;
         border: 4px solid;
         border-radius: 20px;
-        background: #FFFFFF50;
+        background: radial-gradient(var(--mint), hsl(from var(--sky) h s l /90%) 70%);
         backdrop-filter: blur(20px);
         padding: 100px 40px 40px;
         display: grid;
@@ -539,26 +542,6 @@
         margin: 0;
         align-items: unset;
         gap: 24px;
-    }
-
-    #liquidLaundryGrid::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        display: block;
-        background: linear-gradient(to bottom,
-                hsl(from var(--sky) h s l / 60%),
-                hsl(from var(--grass) h s l / 50%));
-        z-index: -1;
-    }
-
-    #liquidLaundryGrid::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        display: block;
-        background: #FFFFFF50;
-        z-index: 1;
     }
 
     #liquidLaundryGrid>* {
@@ -588,6 +571,12 @@
         text-align: center;
         height: unset;
         padding: 80px 15px;
+    }
+
+    .cta-button {
+        font-weight: 400px;
+        padding: unset;
+        width: 300px;
     }
 
     #hero h1 {
@@ -702,10 +691,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    .about-intro p {
-        padding-left: unset;
-        padding-right: unset;
-    }
 
     .about-intro {
         padding-top: 30px;

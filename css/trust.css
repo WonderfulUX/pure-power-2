@@ -175,7 +175,7 @@
     width: 100%;
 }
 
-.page-home #comments::before {
+#comments::before {
     display: none;
 }
 
@@ -201,7 +201,7 @@
     padding-right: 40px;
 }
 
-.page-home .comments-grid {
+.comments-grid {
     gap: 0;
     align-items: center;
     position: relative;
@@ -214,7 +214,7 @@
     width: fit-content;
 }
 
-.page-home .comments-grid:hover {
+.comments-grid:hover {
     animation-play-state: paused;
 }
 

@@ -62,7 +62,6 @@ body {
 }
 
 h1 {
-    font-weight: 500;
     font-size: clamp(2.75rem, 9vw, 7rem);
 }
 
@@ -84,10 +83,11 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
+
     line-height: 1;
 }
 
+h1,
 h2,
 h3,
 h4,

@@ -24,18 +24,14 @@
     grid-template-rows: auto;
 }
 
-.about-intro {
+.about-intro,
+.centered-CTN {
     position: relative;
     z-index: 10;
     font-size: clamp(20px, 2.2vw, 40px);
     max-width: 750px;
     margin: 0 auto;
-    padding-top: 50px;
-}
-
-.about-editorial-left+p {
-    position: relative;
-    translate: 50% 0;
+    padding-top: 0;
 }
 
 #about-content {
@@ -51,12 +47,13 @@
 }
 
 .about-editorial-left .section-headline {
-    font-size: clamp(1.75rem, 3vw, 2.75rem);
-    margin-bottom: clamp(20px, 2.5vw, 32px);
+    font-size: clamp(50px, 7vw, 90px);
+    margin-bottom: 30px;
 }
 
 .cta-label {
-    font-size: clamp(20px, 2.5vw, 30px);
+    font-size: clamp(20px, 4.5vw, 60px);
+    font-family: 'Cherry bomb one', cursive;
 }
 
 .cta-icon {
@@ -64,9 +61,7 @@
     width: auto;
 }
 
-#about-page .wave-section-wrapper {
-    background-image: url('../assets/img/jpg/liquid-large.jpg');
-    background-image: url('../assets/img/webp/liquid-large-desktop.webp');
-    background-size: contain;
-    background-position-y: var(--wave-section-y-offset);
+.editorial {
+    margin-bottom: 50px;
+    color: var(--navy);
 }

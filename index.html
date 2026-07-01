@@ -15,11 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+    <link rel="alternate" hreflang="fr" href="./index.html">
+    <link rel="alternate" hreflang="en" href="./en/index.html">
+    <script>(function () { var s = localStorage.getItem('pp-lang'); var l = (s || navigator.language || 'fr').slice(0, 2).toLowerCase(); if (l !== 'fr') { var p = location.pathname.split('/').pop(); location.replace('./en/' + (p || 'index.html')); } })();</script>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/main.js" type="module" defer></script>
 </head>
 
-<body class="page-home">
+<body>
     <a href="./" class="mobile-nav header-logo" aria-label="Pure Power home">
         <img src="./assets/svg/purepower.svg" alt="Pure Power">
     </a>
@@ -34,9 +37,6 @@
                 <li role="option"><a href="./en/index.html" hreflang="en" lang="en">EN</a></li>
             </ul>
         </div>
-        <!-- <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
-            <span>EN</span>
-        </button> -->
         <button class="mobile-menu-toggle" aria-label="Open menu" aria-controls="mobile-nav-backdrop"
             aria-expanded="false">
             <span></span>
@@ -98,34 +98,9 @@
             </div>
         </nav>
     </div>
-
-    <!-- <header id="header">
-        <a href="./" class="header-logo" aria-label="Pure Power home">
-            <img src="./assets/svg/purepower.svg" alt="Pure Power">
-        </a>
-        <nav class="header-nav" aria-label="Main">
-            <a href="./products.html">Products</a>
-            <a href="./about.html">About</a>
-            <a href="./faq.html">FAQ</a>
-            <a href="./blog.html">Blog</a>
-        </nav>
-        <div class="header-actions">
-            <a href="#contact" class="header-contact">Contact</a>
-            <div class="header-language">
-                <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
-                    <span>EN</span>
-                    <img src="./assets/svg/chevron-down.svg" alt="" aria-hidden="true">
-                </button>
-                <ul class="header-language-menu" role="listbox">
-                    <li role="option"><a href="./index.html" hreflang="fr" lang="fr">FR</a></li>
-                    <li role="option"><a href="./en/index.html" hreflang="en" lang="en">EN</a></li>
-                </ul>
-            </div>
-        </div>
-    </header> -->
     <main>
 
-        <section id="hero">
+        <section id="hero" class="hero">
             <img class="hero-bg" src="./assets/hero-foam-bg.png" alt="" width="1440" height="804" loading="eager">
             <div class="hero-text">
                 <h1>The laundry<br>revolution</h1>

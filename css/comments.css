@@ -30,12 +30,6 @@
     margin: 0 auto 100px;
 }
 
-.comments-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 50px;
-}
-
 .testimonial {
     position: relative;
     padding: 20px;
