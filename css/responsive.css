@@ -4,6 +4,10 @@
         top: 60%;
         translate: unset;
     }
+
+    .footer-logo {
+        width: 250px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -31,6 +35,39 @@
     #otherLaundryPowders {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .best-seller-ctn {
+        width: 100%;
+    }
+
+    .trust-community {
+        grid-template-columns: 220px 1fr;
+        padding: 60px 50px;
+    }
+
+    .trust-videos {
+        grid-template-columns: 140px 160px 180px 140px;
+        gap: 12px;
+    }
+
+    .trust-video--sm {
+        height: 250px;
+    }
+
+    .trust-video--md {
+        height: 290px;
+    }
+
+    .trust-video--lg {
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+    #liquidLaundryGrid {
+        margin-top: 280px;
     }
 }
 
@@ -82,17 +119,50 @@
 
     .powder-grid-scrollable {
         overflow-x: scroll;
-        padding: 0 100px;
+        padding: 0 30px;
         display: flex;
         scrollbar-width: none;
     }
 
+    #powderScrollableTitle,
+    #liquidLaundryResponsiveTitle {
+        display: block;
+        font-size: clamp(40px, 6vw, 80px);
+    }
+
     .powders-grid {
         grid-template-columns: repeat(3, 330px);
+        height: fit-content;
+        gap: 160px;
+        /* padding-bottom: 100px; */
+        padding: 80px 120px 60px;
+        background: #FFFFFF50;
+        border-radius: 20px;
+        border: 4px solid;
+        backdrop-filter: blur(20px);
+        margin-bottom: 50px;
     }
 
     .powders-bg-text {
         display: none;
+    }
+
+    .product-item-CTN,
+    .product-item {
+        width: 100%;
+    }
+
+    .product-item-CTN[data-pos="1"],
+    .product-item-CTN[data-pos="2"],
+    .product-item-CTN[data-pos="3"],
+    .product-item-CTN[data-pos="1"] .product-item,
+    .product-item-CTN[data-pos="2"] .product-item,
+    .product-item-CTN[data-pos="3"] .product-item {
+        position: unset;
+        translate: unset;
+        transform: unset;
+        /* top: 0;
+        left: 0; */
     }
 
     .product-item--featured {
@@ -106,21 +176,15 @@
         width: 100%;
     }
 
-    .comments-grid {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .footer-range-img {
         width: 90%;
     }
 
-    .footer-inner {
+    /* .footer-inner {
         align-items: center;
         padding: 60px 40px 0;
         gap: 50px;
-    }
+    } */
 
     .footer-right {
         width: 100%;
@@ -128,6 +192,7 @@
 
     .footer-logo {
         margin-top: 0;
+        width: 160px;
     }
 
     .products-layout {
@@ -141,7 +206,90 @@
     .products-hint {
         opacity: 1;
     }
+
+    #liquidLaundryGrid {
+        margin-top: 200px;
+    }
+
+    .liquid-wave {
+        top: -40px;
+    }
+
+    .liquid-bg-text {
+        display: none;
+    }
+
+    .liquid-product {
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
+    }
+
+    .liquid-product img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #liquidLaundry {
+        padding-bottom: 100px;
+    }
+
+    .trust-copy p {
+        max-width: 400px;
+        margin: 0 auto 20px;
+    }
+
+    .trust-community {
+        grid-template-columns: 1fr;
+        padding: 80px 40px;
+        text-align: center;
+    }
+
+    .trust-socials {
+        justify-content: center;
+    }
+
+    .trust-videos {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .comment-card--tall {
+        transform: none;
+    }
+
+    .comment-cloud {
+        max-width: 380px;
+    }
+
+    #comments h2 {
+        text-align: center;
+        padding-right: 0;
+    }
 }
+
+@media (max-width: 900px) {
+    .product-item .product-details h3 {
+        font-size: 30px;
+    }
+
+
+    #liquidLaundryGrid {
+        margin-top: 160px;
+        padding-bottom: unset;
+        gap: 50px;
+    }
+
+}
+
+/* @media (max-width: 900px) {
+    .product-item .product-details h3 {
+        font-size: 30px;
+    }
+
+} */
 
 @media (max-width: 768px) {
     #about-page .wave-section-wrapper {
@@ -149,10 +297,6 @@
         background-image: url('../assets/img/webp/liquid-large-mobile.webp');
     }
 
-    .comments-grid {
-        max-width: 420px;
-        margin: 0 auto;
-    }
 
     .faq-hero-product {
         height: clamp(140px, 22vw, 220px);
@@ -164,12 +308,6 @@
 
     .footer-range-img {
         width: 100%;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
     }
 
     .footer-cta {
@@ -192,6 +330,13 @@
         padding: 20px 20px 0;
         width: 100%;
         display: flex;
+    }
+
+    .powders-grid {
+        grid-template-columns: repeat(3, 300px);
+        padding: 40px 80px;
+        gap: 80px;
+        margin: 0;
     }
 
     .product-thumb {
@@ -263,6 +408,95 @@
     .intro-block {
         max-width: 500px;
     }
+
+    #liquidLaundryGrid {
+        border: 4px solid;
+        border-radius: 20px;
+        background: #FFFFFF50;
+        backdrop-filter: blur(20px);
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'title'
+            'image'
+            'content';
+        margin: 0;
+        align-items: unset;
+        gap: 24px;
+    }
+
+    .liquid-product {
+        grid-area: image;
+        margin: 0 auto;
+    }
+
+    .liquid-product .reflected {
+        display: none;
+    }
+
+    .liquid-content {
+        grid-area: content;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .liquid-content p {
+        text-align: center;
+    }
+
+    #liquidLaundryResponsiveTitle {
+        grid-area: title;
+        position: unset;
+        filter: drop-shadow(0 0 10px #00000030);
+        translate: unset;
+    }
+
+    .liquid-wave {
+        display: none;
+    }
+
+    .trust-community {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .trust-videos-scrollable-ctn {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .trust-videos-srollable {
+        width: 100%;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .trust-videos {
+        padding: 0 30px;
+    }
+
+    .trust-video {
+        width: 300px;
+        height: 500px;
+    }
+
+    .trust-video--sm .trust-video--md .trust-video--lg {
+        height: 100%;
+    }
+
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-inner {
+        align-items: flex-end;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -274,17 +508,29 @@
         height: 300px;
     }
 
-    #laundryPowders {
-        padding: 60px 0 40px;
-    }
-
-    .footer-inner {
-        padding: 40px 24px 0;
-    }
-
     .footer-cta {
         padding: 0 40px;
         line-height: 64px;
+    }
+
+    #availabilityBanner,
+    #trustBanner,
+    #resellersBanner {
+        height: 80px;
+    }
+
+    .trust-videos {
+        grid-template-columns: 1fr;
+    }
+
+    .trust-video--sm,
+    .trust-video--md,
+    .trust-video--lg {
+        height: 240px;
+    }
+
+    .comment-card {
+        padding: 80px 24px;
     }
 
 }
@@ -310,14 +556,7 @@
         padding-bottom: 50px;
     }
 
-    .mobile-menu-toggle,
-    .mobile-nav.header-logo {
-        width: 60px;
-        height: 60px;
-        top: 10px;
-    }
-
-    .mobile-menu-toggle {
+    .header-right-btns {
         right: 10px;
     }
 
@@ -326,7 +565,7 @@
     }
 
     .mobile-nav.header-logo img {
-        height: 30px;
+        height: 50px;
     }
 
     .product-label,

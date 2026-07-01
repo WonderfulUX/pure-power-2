@@ -60,17 +60,3 @@
     background-clip: text;
     translate: 10%;
 }
-
-@media screen and (max-width: 1000px) {
-    #purepowerRange {
-        height: 400px;
-        padding: 60px 40px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    #purepowerRange {
-        height: 280px;
-        padding: 40px 24px;
-    }
-}

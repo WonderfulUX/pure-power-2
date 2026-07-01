@@ -1,12 +1,12 @@
 #liquidLaundry {
     background: var(--mint);
     overflow: hidden;
-    padding-bottom: 300px;
+    padding-bottom: 200px;
 }
 
 #liquidLaundryGrid {
     display: grid;
-    grid-template-columns: 1.1fr .9fr;
+    grid-template-columns: .9fr 1.1fr;
     align-items: center;
     gap: 80px;
     position: relative;
@@ -43,10 +43,25 @@
 
 .liquid-content {
     max-width: 500px;
+    margin-top: 100px;
+}
+
+#liquidLaundryResponsiveTitle {
+    text-align: right;
+    display: none;
+    position: absolute;
+    top: 0;
+    translate: 0 -100%;
+    font-family: 'Cherry Bomb One', cursive;
+    color: white;
+    filter: drop-shadow(0 0px 8px #00000090);
+    text-transform: uppercase;
+    width: fit-content;
+    /* margin-left: auto; */
 }
 
 .liquid-content h3 {
-    font-size: clamp(1.5rem, 3.9vw, 57px);
+    font-size: clamp(40px, 3.9vw, 57px);
     color: var(--navy);
     text-transform: none;
     font-weight: 400;
@@ -71,7 +86,7 @@
     z-index: 4;
     aspect-ratio: 1;
     height: 100%;
-    width: 100%;
+    width: 80%;
 }
 
 .liquid-product img {
@@ -92,50 +107,4 @@
 #liquidLaundry h2 {
     position: absolute;
     translate: 0 -70%;
-}
-
-@media screen and (max-width: 1200px) {
-    #liquidLaundry {
-        height: 900px;
-        padding: 160px 100px 0 80px;
-    }
-
-    .liquid-product {
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #liquidLaundry {
-        height: auto;
-        flex-direction: column;
-        padding: 80px 40px 60px;
-        gap: 40px;
-        align-items: flex-start;
-    }
-
-    .liquid-wave {
-        top: -40px;
-    }
-
-    .liquid-bg-text {
-        display: none;
-    }
-
-    .liquid-product {
-        width: 100%;
-        max-width: 400px;
-        align-self: center;
-    }
-
-    .liquid-product img {
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    #liquidLaundry {
-        padding: 60px 24px 40px;
-    }
 }

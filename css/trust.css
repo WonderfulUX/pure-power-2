@@ -96,9 +96,9 @@
 }
 
 .trust-copy p {
-    font-size: clamp(1rem, 1.6vw, 23px);
+    font-size: clamp(20px, 1.6vw, 23px);
     color: var(--navy);
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.4;
     margin-bottom: 20px;
 }
@@ -135,6 +135,11 @@
     align-items: center;
 }
 
+
+.trust-videos-srollable {
+    display: flex;
+}
+
 .trust-video {
     border-radius: 20px;
     overflow: hidden;
@@ -166,6 +171,10 @@
     overflow: hidden;
 }
 
+.comment-grid-scrollable {
+    width: 100%;
+}
+
 .page-home #comments::before {
     display: none;
 }
@@ -187,19 +196,32 @@
     text-shadow: 0 8px 8px hsl(from black h s l / 15%);
     font-weight: 400;
     line-height: 1;
-    margin-bottom: 80px;
     position: relative;
     text-align: right;
     padding-right: 40px;
 }
 
 .page-home .comments-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0;
-    justify-content: center;
     align-items: center;
     position: relative;
+    display: flex;
+    animation: flow 120s linear infinite;
+    height: fit-content;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 0 30px;
+    width: fit-content;
+}
+
+.page-home .comments-grid:hover {
+    animation-play-state: paused;
+}
+
+@keyframes flow {
+    to {
+        translate: -100% 0;
+    }
 }
 
 .comment-card {
@@ -208,7 +230,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 300px;
+    height: 500px;
+    flex-shrink: 0;
+    width: 600px;
+    background: no-repeat url('../assets/comment-cloud.webp');
+    background-size: cover;
+    background-position: -20% 70%;
+
 }
 
 .comment-card--tall {
@@ -231,7 +259,7 @@
     position: relative;
     z-index: 1;
     font-family: 'Cherry Bomb One', cursive;
-    font-size: clamp(1rem, 1.9vw, 28px);
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.4;
     text-align: center;
@@ -242,73 +270,24 @@
     color: transparent;
 }
 
-@media screen and (max-width: 1200px) {
-    .trust-community {
-        grid-template-columns: 220px 1fr;
-        padding: 60px 50px;
-    }
-
-    .trust-videos {
-        grid-template-columns: 140px 160px 180px 140px;
-        gap: 12px;
-    }
-
-    .trust-video--sm {
-        height: 250px;
-    }
-
-    .trust-video--md {
-        height: 290px;
-    }
-
-    .trust-video--lg {
-        height: 320px;
-    }
+blockquote::before,
+blockquote::after {
+    display: block;
+    position: absolute;
 }
 
-@media screen and (max-width: 1000px) {
-    .trust-community {
-        grid-template-columns: 1fr;
-        padding: 50px 40px;
-        text-align: center;
-    }
+blockquote::before {
+    content: url('../assets/svg/quote-top.svg');
+    top: 0;
+    left: 0;
+    translate: -50% -70%;
+}
 
-    .trust-socials {
-        justify-content: center;
-    }
-
-    .trust-videos {
-        grid-template-columns: repeat(2, 1fr);
-        height: auto;
-        max-width: 500px;
-        margin: 0 auto;
-    }
-
-    .trust-video--sm,
-    .trust-video--md,
-    .trust-video--lg {
-        height: 220px;
-    }
-
-    .page-home .comments-grid {
-        grid-template-columns: 1fr;
-        max-width: 480px;
-        margin: 0 auto;
-        gap: 20px;
-    }
-
-    .comment-card--tall {
-        transform: none;
-    }
-
-    .comment-cloud {
-        max-width: 380px;
-    }
-
-    #comments h2 {
-        text-align: center;
-        padding-right: 0;
-    }
+blockquote::after {
+    content: url('../assets/svg/quote-bottom.svg');
+    bottom: 0;
+    right: 0;
+    translate: 50% 70%;
 }
 
 @media screen and (max-width: 575px) {
@@ -327,10 +306,6 @@
     .trust-video--md,
     .trust-video--lg {
         height: 240px;
-    }
-
-    #comments {
-        padding: 60px 24px 100px;
     }
 
     .comment-card {
