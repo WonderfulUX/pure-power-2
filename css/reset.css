@@ -35,7 +35,9 @@ html {
 input,
 textarea {
     -webkit-appearance: none;
+    appearance: none;
     -webkit-border-radius: 0;
+    border-radius: 0;
     border: none;
 }
 
@@ -60,4 +62,5 @@ button {
 
 input {
     -moz-appearance: textfield;
+    appearance: textfield;
 }

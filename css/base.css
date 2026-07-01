@@ -112,3 +112,13 @@ svg {
     font-size: clamp(50px, 7vw, 90px);
     margin-bottom: 30px;
 }
+
+.intro,
+.centered-CTN {
+    position: relative;
+    z-index: 10;
+    font-size: clamp(20px, 2.2vw, 40px);
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 0;
+}
