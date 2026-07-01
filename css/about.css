@@ -17,12 +17,6 @@
     margin-top: 16px;
 }
 
-#about-content .wave-section-grid {
-    position: relative;
-    z-index: 4;
-    grid-template-columns: 60%;
-    grid-template-rows: auto;
-}
 
 .about-intro,
 .centered-CTN {
@@ -46,10 +40,6 @@
     align-items: start;
 }
 
-.about-editorial-left .section-headline {
-    font-size: clamp(50px, 7vw, 90px);
-    margin-bottom: 30px;
-}
 
 .cta-label {
     font-size: clamp(20px, 4.5vw, 60px);

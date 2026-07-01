@@ -107,3 +107,8 @@ svg {
     color: var(--white);
     font-weight: 400;
 }
+
+.section-headline.section-title {
+    font-size: clamp(50px, 7vw, 90px);
+    margin-bottom: 30px;
+}

@@ -277,6 +277,24 @@
         height: 100%;
         line-height: 40px;
     }
+
+    #faq-content {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        max-width: 750px;
+        margin: 0 auto;
+        width: 90%;
+        gap: 80px;
+    }
+
+    .faq-item:nth-of-type(even) {
+        margin-top: unset;
+    }
 }
 
 @media (max-width: 900px) {
