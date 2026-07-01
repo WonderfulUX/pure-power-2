@@ -180,11 +180,6 @@
         width: 90%;
     }
 
-    /* .footer-inner {
-        align-items: center;
-        padding: 60px 40px 0;
-        gap: 50px;
-    } */
 
     .footer-right {
         width: 100%;
@@ -268,6 +263,21 @@
         text-align: center;
         padding-right: 0;
     }
+
+    .footer-column ul {
+        gap: 0;
+    }
+
+    .footer-column li {
+        height: 40px;
+    }
+
+    .footer-column-link {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -290,6 +300,27 @@
     }
 
 } */
+
+@media (max-width: 850px) {
+    #intro {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .intro-block {
+        max-width: 450px;
+    }
+
+    #maximumEfficiency {
+        margin: 0 0 0 auto;
+    }
+
+    .range-img {
+        width: 100%;
+    }
+
+}
 
 @media (max-width: 768px) {
     #about-page .wave-section-wrapper {
@@ -402,27 +433,11 @@
     }
 
     #maximumEfficiency {
-        margin: 0 0 0 auto;
+        margin: 0;
     }
 
     .intro-block {
         max-width: 500px;
-    }
-
-    #liquidLaundryGrid {
-        border: 4px solid;
-        border-radius: 20px;
-        background: #FFFFFF50;
-        backdrop-filter: blur(20px);
-        padding: 40px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas: 'title'
-            'image'
-            'content';
-        margin: 0;
-        align-items: unset;
-        gap: 24px;
     }
 
     .liquid-product {
@@ -497,15 +512,158 @@
     .footer-links {
         flex-direction: column;
     }
-}
 
-@media screen and (max-width: 575px) {
-    .best-seller-grid {
-        padding: 60px 24px 40px;
+    section,
+    #bestSeller {
+        padding: 50px 30px;
+    }
+
+    #laundryPowders {
+        padding: 50px 0 0;
+    }
+
+    #liquidLaundryGrid {
+        position: relative;
+        overflow: hidden;
+        border: 4px solid;
+        border-radius: 20px;
+        background: #FFFFFF50;
+        backdrop-filter: blur(20px);
+        padding: 100px 40px 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            /* 'title' */
+            'image'
+            'content';
+        margin: 0;
+        align-items: unset;
+        gap: 24px;
+    }
+
+    #liquidLaundryGrid::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        display: block;
+        background: linear-gradient(to bottom,
+                hsl(from var(--sky) h s l / 60%),
+                hsl(from var(--grass) h s l / 50%));
+        z-index: -1;
+    }
+
+    #liquidLaundryGrid::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        display: block;
+        background: #FFFFFF50;
+        z-index: 1;
+    }
+
+    #liquidLaundryGrid>* {
+        position: relative;
+        z-index: 2;
+    }
+
+    #liquidLaundryResponsiveTitle {
+        filter: unset;
+        position: absolute;
+        top: 20px;
+        left: 20px;
     }
 
     .best-seller-ctn {
-        height: 300px;
+        max-width: 350px;
+    }
+
+}
+
+
+@media screen and (max-width: 575px) {
+    #hero {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+        height: unset;
+        padding: 80px 15px;
+    }
+
+    #hero h1 {
+        font-size: clamp(3.5rem, 14vw, 136px);
+    }
+
+    .intro-block h2,
+    .best-seller-content h2 {
+        font-size: clamp(3rem, 12vw, 136px);
+    }
+
+    #intro {
+        padding-bottom: 0;
+    }
+
+    #bestSeller,
+    #otherLaundryPowders {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .powders-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        padding: 40px 0;
+        gap: 30px;
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    #liquidLaundryGrid {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    section,
+    .footer-inner {
+        padding: 50px 15px;
+    }
+
+    .footer-inner {
+        padding: 50vw 20px 50px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .footer-cta {
+        align-self: center;
+    }
+
+    .powder-grid-scrollable {
+        padding: 0;
+    }
+
+    #powderScrollableTitle {
+        position: unset;
+        text-align: center;
+    }
+
+    .product-item-CTN {
+        width: 300px;
+        margin: 0 auto 80px;
+    }
+
+    .product-item-CTN:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .hero-product {
+        position: unset;
+        translate: unset;
+    }
+
+    .best-seller-grid {
+        padding: 60px 24px 40px;
     }
 
     .footer-cta {
@@ -523,14 +681,22 @@
         grid-template-columns: 1fr;
     }
 
-    .trust-video--sm,
+    /* .trust-video--sm,
     .trust-video--md,
     .trust-video--lg {
         height: 240px;
-    }
+    } */
 
     .comment-card {
         padding: 80px 24px;
+    }
+
+    .best-seller-ctn {
+        max-width: 300px;
+    }
+
+    .best-seller-badge {
+        font-size: 20px;
     }
 
 }
@@ -552,8 +718,7 @@
     }
 
     #comments {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 0;
     }
 
     .header-right-btns {
@@ -586,4 +751,9 @@
     .product-thumb {
         width: 200px;
     }
+
+    #purepowerRange {
+        padding: 50px 0 0;
+    }
+
 }

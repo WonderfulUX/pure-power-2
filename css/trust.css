@@ -289,26 +289,3 @@ blockquote::after {
     right: 0;
     translate: 50% 70%;
 }
-
-@media screen and (max-width: 575px) {
-
-    #availabilityBanner,
-    #trustBanner,
-    #resellersBanner {
-        height: 80px;
-    }
-
-    .trust-videos {
-        grid-template-columns: 1fr;
-    }
-
-    .trust-video--sm,
-    .trust-video--md,
-    .trust-video--lg {
-        height: 240px;
-    }
-
-    .comment-card {
-        padding: 80px 24px;
-    }
-}
