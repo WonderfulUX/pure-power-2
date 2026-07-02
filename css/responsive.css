@@ -350,6 +350,9 @@
         background-image: url('../assets/img/webp/liquid-large-mobile.webp');
     }
 
+    #blog-hero {
+        padding-bottom: 50px;
+    }
 
     .faq-hero-product {
         height: clamp(140px, 22vw, 220px);
@@ -594,6 +597,10 @@
         border-radius: 20px;
     }
 
+    .best-seller-decorative-bg {
+        scale: .6;
+    }
+
 }
 
 
@@ -668,6 +675,17 @@
     #liquidLaundryGrid {
         max-width: 450px;
         margin: 0 auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: 100%
+    }
+
+    .liquid-content {
+        width: 100%;
+    }
+
+    .liquid-content h3 {
+        scale: .9;
     }
 
     section,
@@ -704,12 +722,35 @@
     }
 
     .hero-product {
-        position: unset;
+        position: relative;
         translate: unset;
+        width: 90%;
+        max-width: 360px;
+        height: fit-content;
+    }
+
+    .hero-product picture:last-of-type {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        translate: 0 100%;
+        width: 100%;
+    }
+
+    .hero-text .hero-subtitle {
+        text-align: center;
+    }
+
+    .best-seller-decorative-bg {
+        scale: .5;
     }
 
     .best-seller-grid {
         padding: 60px 24px 40px;
+    }
+
+    .product-item .product-img-ctn {
+        width: 90%;
     }
 
     .footer-cta {
@@ -729,6 +770,10 @@
 
     .trust-videos {
         grid-template-columns: 1fr;
+    }
+
+    #blog-hero {
+        padding-bottom: 30px;
     }
 
     /* .trust-video--sm,
@@ -798,6 +843,10 @@
     .product-features li,
     .product-tab-content {
         font-size: 16px;
+    }
+
+    #blog-hero {
+        padding-bottom: 0px;
     }
 
     .product-thumb {
