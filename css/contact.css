@@ -1,42 +1,80 @@
-#contact .section-title {
-    text-align: center;
-    text-shadow: 0 0 20px hsl(from black h s l / 30%);
-    z-index: 2;
-}
-
-#contact .section-header {
-    position: relative;
-    margin: 0 auto;
+#contact-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    place-items: center;
+    pointer-events: none;
+    scale: 0;
+    padding: 30px;
     display: flex;
-    flex-direction: column;
+    opacity: 0;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
+    overflow: auto;
+    scrollbar-width: none;
+    transition: opacity .3s .5s, scale 0s .6s;
 }
 
-#contact .section-header img {
-    z-index: 1;
+#contact-modal.is-open {
+    transition: opacity .3s;
+    scale: 1;
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+    background: hsl(from black h s l / 80%);
+}
+
+.contact-modal-panel {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    overflow-y: auto;
+    background: linear-gradient(to bottom, var(--cream), var(--light-blue-footer));
+    border-radius: 20px;
+    padding: 30px 40px;
+    color: var(--navy);
+    opacity: 0;
+    translate: 0 24px;
+    transition: opacity 0.2s ease, translate 0.2s ease;
+    /* pointer-events: none; */
+}
+
+#contact-modal.is-open .contact-modal-panel {
+    opacity: 1;
+    translate: 0 0;
+    transition: opacity 0.35s ease, translate 0.35s ease;
+}
+
+.contact-modal-panel .section-title {
+    margin-bottom: 12px;
+    font-size: 30px;
+}
+
+.contact-modal-close {
     position: absolute;
-    display: block;
-    width: auto;
-    height: 250px;
-    translate: 0 -50%;
+    top: 24px;
+    right: 24px;
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
 }
 
-#contact .section-headline {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 80px;
-    max-width: 42ch;
+.contact-modal-close:hover {
+    opacity: 1;
 }
+
+/* .contact-modal-close svg {
+    fill: var(--white);
+} */
 
 .contact-form {
-    max-width: 640px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 50px;
-    background: hsl(from white h s l / 10%);
     border-radius: 10px;
 }
 
@@ -49,19 +87,25 @@
 
 .contact-type label {
     padding: 10px 18px;
-    border-radius: 100px;
-    border: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 30px;
+    border: 2px solid hsl(from var(--navy) h s l / 30%);
     cursor: pointer;
     font-size: 15px;
+    font-weight: 500;
     width: 150px;
     text-align: center;
     transition: border-color 0.2s ease, background 0.2s ease;
 }
 
+#contact-modal-message {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
 .contact-type label:has(input:checked) {
-    border-color: var(--yellow);
-    /* background: rgba(253, 216, 53, 0.08); */
-    color: var(--yellow);
+    background: var(--mint);
+    border-color: var(--navy);
 }
 
 .contact-type input[type="radio"] {
@@ -88,16 +132,18 @@
     font-size: clamp(0.7rem, 0.8vw, 0.75rem);
     opacity: 0.7;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .field input,
 .field textarea {
     background: hsl(from white h s l / 30%);
-    border-radius: 6px;
+    border-radius: 10px;
     padding: 13px 15px;
     font-size: clamp(0.875rem, 1vw, 0.9375rem);
-    color: var(--white);
+    color: var(--navy);
     width: 100%;
+    border: 3px solid white;
 }
 
 .field input:focus,
@@ -106,7 +152,7 @@
 }
 
 .field textarea {
-    resize: vertical;
+    resize: none;
 }
 
 .field-full {
@@ -116,14 +162,16 @@
 .contact-submit {
     align-self: center;
     font-size: 16px;
-    color: var(--electricBlue);
-    background: var(--yellow);
+    color: var(--navy);
+    border: 2px solid;
+    /* background: var(--yellow); */
     text-transform: uppercase;
     height: 50px;
     width: 280px;
     font-weight: 500;
     border-radius: 30px;
     transition: background-color 0.2s ease;
+    /* box-shadow: 0 4px 8px #00000030; */
 }
 
 .contact-submit:hover {

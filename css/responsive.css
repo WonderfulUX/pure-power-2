@@ -672,6 +672,15 @@
         margin: 0 auto;
     }
 
+    .contact-modal-panel {
+        padding: 30px;
+    }
+
+    .contact-fields {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, auto);
+    }
+
     #liquidLaundryGrid {
         max-width: 450px;
         margin: 0 auto;

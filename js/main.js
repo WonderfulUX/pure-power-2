@@ -6,7 +6,7 @@ const PRODUCTS_EN = [
         name: 'Pure Power 4KG',
         image: {
             webp: { desktop: '../assets/img/webp/4k-product-desktop.webp', tablet: '../assets/img/webp/4k-product-tablet.webp', mobile: '../assets/img/webp/4k-product-mobile.webp' },
-            png:  { desktop: '../assets/img/png/4k-product-desktop.png',  tablet: '../assets/img/png/4k-product-tablet.png',  mobile: '../assets/img/png/4k-product-mobile.png'  }
+            png: { desktop: '../assets/img/png/4k-product-desktop.png', tablet: '../assets/img/png/4k-product-tablet.png', mobile: '../assets/img/png/4k-product-mobile.png' }
         },
         badge: 'Best seller',
         features: [
@@ -22,7 +22,7 @@ const PRODUCTS_EN = [
         name: 'Pure Power 2KG',
         image: {
             webp: { desktop: '../assets/img/webp/2kg-product-desktop.webp', tablet: '../assets/img/webp/2kg-product-tablet.webp', mobile: '../assets/img/webp/2kg-product-mobile.webp' },
-            png:  { desktop: '../assets/img/png/2kg-product-desktop.png',  tablet: '../assets/img/png/2kg-product-tablet.png',  mobile: '../assets/img/png/2kg-product-mobile.png'  }
+            png: { desktop: '../assets/img/png/2kg-product-desktop.png', tablet: '../assets/img/png/2kg-product-tablet.png', mobile: '../assets/img/png/2kg-product-mobile.png' }
         },
         badge: null,
         features: [
@@ -38,7 +38,7 @@ const PRODUCTS_EN = [
         name: 'Pure Power 5KG',
         image: {
             webp: { desktop: '../assets/img/webp/5kg-product-desktop.webp', tablet: '../assets/img/webp/5kg-product-tablet.webp', mobile: '../assets/img/webp/5kg-product-mobile.webp' },
-            png:  { desktop: '../assets/img/png/5kg-product-desktop.png',  tablet: '../assets/img/png/5kg-product-tablet.png',  mobile: '../assets/img/png/5kg-product-mobile.png'  }
+            png: { desktop: '../assets/img/png/5kg-product-desktop.png', tablet: '../assets/img/png/5kg-product-tablet.png', mobile: '../assets/img/png/5kg-product-mobile.png' }
         },
         badge: null,
         features: [
@@ -54,7 +54,7 @@ const PRODUCTS_EN = [
         name: 'Pure Power 6KG',
         image: {
             webp: { desktop: '../assets/img/webp/6kg-desktop-product.webp', tablet: '../assets/img/webp/6kg-tablet-product.webp', mobile: '../assets/img/webp/6kg-mobile-product.webp' },
-            png:  { desktop: '../assets/img/png/6kg-desktop.png',           tablet: '../assets/img/png/6kg-tablet.png',           mobile: '../assets/img/png/6kg-mobile.png'           }
+            png: { desktop: '../assets/img/png/6kg-desktop.png', tablet: '../assets/img/png/6kg-tablet.png', mobile: '../assets/img/png/6kg-mobile.png' }
         },
         badge: null,
         features: [
@@ -70,7 +70,7 @@ const PRODUCTS_EN = [
         name: 'Pure Power Liquid 5KG',
         image: {
             webp: { desktop: '../assets/img/webp/5k-liquid-product-desktop.webp', tablet: '../assets/img/webp/5k-liquid-product-tablet.webp', mobile: '../assets/img/webp/5k-liquid-product-mobile.webp' },
-            png:  { desktop: '../assets/img/png/5k-liquid-product-desktop.png',  tablet: '../assets/img/png/5k-liquid-product-tablet.png',  mobile: '../assets/img/png/5k-liquid-product-mobile.png'  }
+            png: { desktop: '../assets/img/png/5k-liquid-product-desktop.png', tablet: '../assets/img/png/5k-liquid-product-tablet.png', mobile: '../assets/img/png/5k-liquid-product-mobile.png' }
         },
         badge: null,
         features: [
@@ -89,7 +89,7 @@ const PRODUCTS_FR = [
         name: 'Pure Power 4KG',
         image: {
             webp: { desktop: './assets/img/webp/4k-product-desktop.webp', tablet: './assets/img/webp/4k-product-tablet.webp', mobile: './assets/img/webp/4k-product-mobile.webp' },
-            png:  { desktop: './assets/img/png/4k-product-desktop.png',  tablet: './assets/img/png/4k-product-tablet.png',  mobile: './assets/img/png/4k-product-mobile.png'  }
+            png: { desktop: './assets/img/png/4k-product-desktop.png', tablet: './assets/img/png/4k-product-tablet.png', mobile: './assets/img/png/4k-product-mobile.png' }
         },
         badge: 'Best seller',
         features: [
@@ -105,7 +105,7 @@ const PRODUCTS_FR = [
         name: 'Pure Power 2KG',
         image: {
             webp: { desktop: './assets/img/webp/2kg-product-desktop.webp', tablet: './assets/img/webp/2kg-product-tablet.webp', mobile: './assets/img/webp/2kg-product-mobile.webp' },
-            png:  { desktop: './assets/img/png/2kg-product-desktop.png',  tablet: './assets/img/png/2kg-product-tablet.png',  mobile: './assets/img/png/2kg-product-mobile.png'  }
+            png: { desktop: './assets/img/png/2kg-product-desktop.png', tablet: './assets/img/png/2kg-product-tablet.png', mobile: './assets/img/png/2kg-product-mobile.png' }
         },
         badge: null,
         features: [
@@ -121,7 +121,7 @@ const PRODUCTS_FR = [
         name: 'Pure Power 5KG',
         image: {
             webp: { desktop: './assets/img/webp/5kg-product-desktop.webp', tablet: './assets/img/webp/5kg-product-tablet.webp', mobile: './assets/img/webp/5kg-product-mobile.webp' },
-            png:  { desktop: './assets/img/png/5kg-product-desktop.png',  tablet: './assets/img/png/5kg-product-tablet.png',  mobile: './assets/img/png/5kg-product-mobile.png'  }
+            png: { desktop: './assets/img/png/5kg-product-desktop.png', tablet: './assets/img/png/5kg-product-tablet.png', mobile: './assets/img/png/5kg-product-mobile.png' }
         },
         badge: null,
         features: [
@@ -137,7 +137,7 @@ const PRODUCTS_FR = [
         name: 'Pure Power 6KG',
         image: {
             webp: { desktop: './assets/img/webp/6kg-desktop-product.webp', tablet: './assets/img/webp/6kg-tablet-product.webp', mobile: './assets/img/webp/6kg-mobile-product.webp' },
-            png:  { desktop: './assets/img/png/6kg-desktop.png',           tablet: './assets/img/png/6kg-tablet.png',           mobile: './assets/img/png/6kg-mobile.png'           }
+            png: { desktop: './assets/img/png/6kg-desktop.png', tablet: './assets/img/png/6kg-tablet.png', mobile: './assets/img/png/6kg-mobile.png' }
         },
         badge: null,
         features: [
@@ -153,7 +153,7 @@ const PRODUCTS_FR = [
         name: 'Pure Power 5KG liquide',
         image: {
             webp: { desktop: './assets/img/webp/5k-liquid-product-desktop.webp', tablet: './assets/img/webp/5k-liquid-product-tablet.webp', mobile: './assets/img/webp/5k-liquid-product-mobile.webp' },
-            png:  { desktop: './assets/img/png/5k-liquid-product-desktop.png',  tablet: './assets/img/png/5k-liquid-product-tablet.png',  mobile: './assets/img/png/5k-liquid-product-mobile.png'  }
+            png: { desktop: './assets/img/png/5k-liquid-product-desktop.png', tablet: './assets/img/png/5k-liquid-product-tablet.png', mobile: './assets/img/png/5k-liquid-product-mobile.png' }
         },
         badge: null,
         features: [
@@ -229,14 +229,72 @@ function initLanguageSwitcher() {
     });
 }
 
-function initContactForm() {
-    const form = document.querySelector('.contact-form');
-    if (!form) return;
+function initContactModal() {
+    const t = lang === 'fr'
+        ? { title: 'Contact', intro: 'Une question ? clients ou revendeurs, nous vous répondrons rapidement.', closeLabel: 'Fermer', legend: 'Type de demande', customer: 'Particulier', business: 'Professionnel', firstName: 'Prénom', lastName: 'Nom', email: 'Email', message: 'Message', submit: 'Envoyer', company: 'Nom de l\'entreprise' }
+        : { title: 'Contact', intro: "Have a question? Whether you're a customer or a retailer, we'll get back to you shortly.", closeLabel: 'Close', legend: 'Type of request', customer: 'Individual', business: 'Professional', firstName: 'First name', lastName: 'Last name', email: 'Email', message: 'Message', submit: 'Send', company: 'Company name' };
 
-    const radios = form.querySelectorAll('input[name="query-type"]');
-    const fields = form.querySelector('.contact-fields');
-    const companyLabel = lang === 'fr' ? 'Nom de l\'entreprise' : 'Company name';
+    const modal = document.createElement('div');
+    modal.id = 'contact-modal';
+    modal.setAttribute('aria-hidden', 'true');
+    modal.innerHTML = `
+        <div class="contact-modal-panel" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+            <button class="contact-modal-close" aria-label="${t.closeLabel}">
+                <svg width="20" height="20" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.0018 0.87684C28.5876 0.291053 29.5371 0.291053 30.1229 0.87684C30.7087 1.46263 30.7087 2.41215 30.1229 2.99793L17.621 15.4999L30.1229 28.0018C30.7087 28.5876 30.7087 29.5371 30.1229 30.1229C29.5371 30.7087 28.5876 30.7087 28.0018 30.1229L15.4999 17.621L2.99793 30.1229C2.41215 30.7087 1.46263 30.7087 0.87684 30.1229C0.291053 29.5371 0.291053 28.5876 0.87684 28.0018L13.3788 15.4999L0.87684 2.99793C0.291053 2.41215 0.291053 1.46263 0.87684 0.87684C1.46263 0.291053 2.41215 0.291053 2.99793 0.87684L15.4999 13.3788L28.0018 0.87684Z"/></svg>
+            </button>
+            <h2 id="contact-modal-title" class="section-title">${t.title}</h2>
+            <p id="contact-modal-message" class="section-title">${t.intro}</p>
+            <form class="contact-form" novalidate>
+                <fieldset class="contact-type">
+                    <legend class="visually-hidden">${t.legend}</legend>
+                    <label><input type="radio" name="query-type" value="customer"> ${t.customer}</label>
+                    <label><input type="radio" name="query-type" value="business"> ${t.business}</label>
+                </fieldset>
+                <div class="contact-fields">
+                    <label class="field"><span>${t.firstName}</span><input type="text" name="firstName" autocomplete="given-name"></label>
+                    <label class="field"><span>${t.lastName}</span><input type="text" name="lastName" autocomplete="family-name"></label>
+                    <label class="field field-full"><span>${t.email}</span><input type="email" name="email" autocomplete="email"></label>
+                    <label class="field field-full"><span>${t.message}</span><textarea name="message" rows="5"></textarea></label>
+                </div>
+                <button type="submit" class="contact-submit">${t.submit}</button>
+            </form>
+        </div>`;
+    document.body.appendChild(modal);
 
+    const backdrop = modal.querySelector('.contact-modal-backdrop');
+    const closeBtn = modal.querySelector('.contact-modal-close');
+    const fields = modal.querySelector('.contact-fields');
+
+    const open = () => {
+        modal.setAttribute('aria-hidden', 'false');
+        modal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    };
+
+    const close = (e) => {
+        if (!e.target.classList.contains('is-open')) return
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        // setTimeout(() => {
+        // }, 200);
+        document.body.style.overflow = '';
+    };
+
+    // backdrop.addEventListener('click', close);
+    modal.addEventListener('click', close);
+    closeBtn.addEventListener('click', close);
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && modal.classList.contains('is-open')) close();
+    });
+
+    document.querySelectorAll('a[href*="#contact"]').forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            open();
+        });
+    });
+
+    const radios = modal.querySelectorAll('input[name="query-type"]');
     radios.forEach(radio => {
         radio.addEventListener('change', () => {
             const existing = fields.querySelector('.field-company');
@@ -244,7 +302,7 @@ function initContactForm() {
                 if (!existing) {
                     const label = document.createElement('label');
                     label.className = 'field field-full field-company';
-                    label.innerHTML = `<span>${companyLabel}</span><input type="text" name="company" autocomplete="organization">`;
+                    label.innerHTML = `<span>${t.company}</span><input type="text" name="company" autocomplete="organization">`;
                     fields.prepend(label);
                 }
             } else {
@@ -376,7 +434,7 @@ function initTickers() {
 initMobileMenu();
 initLanguageDropdown();
 initLanguageSwitcher();
-initContactForm();
+initContactModal();
 initProductsPage();
 initTickers();
 
