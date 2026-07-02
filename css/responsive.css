@@ -672,6 +672,10 @@
         margin: 0 auto;
     }
 
+    #contact-modal {
+        display: unset;
+    }
+
     .contact-modal-panel {
         padding: 30px;
     }
@@ -818,6 +822,13 @@
         height: 44px;
     }
 
+    .contact-type {
+        flex-direction: column;
+    }
+
+    .contact-modal-panel {
+        width: 100%;
+    }
 
     .article-section {
         margin-bottom: 80px;
