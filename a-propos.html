@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FAQ — Answers to your most common questions about Pure Power laundry products.">
-    <title>FAQ — Pure Power</title>
-    <link rel="icon" type="image/x-icon" href=".../assets/favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href=".../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href=".../assets/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href=".../assets/favicon/apple-touch-icon.png">
-    <link rel="manifest" href=".../assets/favicon/site.webmanifest">
+    <meta name="description"
+        content="À propos de Pure Power — une marque dédiée aux soins du linge haute performance, économiques et durables.">
+    <title>À propos — Pure Power</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
-    <link rel="alternate" hreflang="fr" href="../faq.html">
-    <link rel="alternate" hreflang="en" href="./faq.html">
-    <script>(function () { var s = localStorage.getItem('pp-lang'); var l = (s || navigator.language || 'en').slice(0, 2).toLowerCase(); if (l === 'fr') { location.replace('../index.html'); } })();</script>
-    <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/main.js" type="module" defer></script>
+    <link rel="alternate" hreflang="fr" href="./a-propos.html">
+    <link rel="alternate" hreflang="en" href="./en/about.html">
+    <script>(function () { var s = localStorage.getItem('pp-lang'); var l = (s || navigator.language || 'fr').slice(0, 2).toLowerCase(); if (l !== 'fr') { var p = location.pathname.split('/').pop(); location.replace('./en/' + (p || 'index.html')); } })();</script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/main.js" type="module" defer></script>
 </head>
 
 <body>
-    <a href="./" class="mobile-nav header-logo" aria-label="Pure Power home">
-        <img src="../assets/svg/purepower.svg" alt="Pure Power">
+    <a href="./" class="mobile-nav header-logo" aria-label="Pure Power page home">
+        <img src="./assets/svg/purepower.svg" alt="Pure Power">
     </a>
     <div class="header-right-btns">
         <div class="header-language">
             <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
-                EN
-                <!-- <img src="../assets/svg/chevron-down.svg" alt="" aria-hidden="true"> -->
+                FR
+                <!-- <img src="./assets/svg/chevron-down.svg" alt="" aria-hidden="true"> -->
             </button>
             <ul class="header-language-menu" role="listbox">
-                <li role="option"><a href="../faq.html" hreflang="fr" lang="fr">FR</a></li>
+                <!-- <li role="option"><a href="./produits.html" hreflang="fr" lang="fr">FR</a></li> -->
+                <li role="option"><a href="./en/about.html" hreflang="en" lang="en">EN</a></li>
             </ul>
         </div>
         <button class="mobile-menu-toggle" aria-label="Open menu" aria-controls="mobile-nav-backdrop"
@@ -46,7 +48,7 @@
         <nav id="mobile-menu" aria-hidden="true">
             <div class="mobile-menu-top">
                 <a href="./" class="header-logo" aria-label="Pure Power home">
-                    <img src="../assets/svg/purepower.svg" alt="Pure Power">
+                    <img src="./assets/svg/purepower.svg" alt="Pure Power">
                 </a>
 
                 <button class="mobile-menu-close" aria-label="Close menu">
@@ -57,8 +59,8 @@
                 </button>
             </div>
             <nav class="mobile-menu-nav">
-                <a href="./products.html">Products</a>
-                <a href="./about.html">About</a>
+                <a href="./produits.html">Produits</a>
+                <a href="./a-propos.html">À propos</a>
                 <a href="./faq.html">FAQ</a>
                 <a href="./blog/index.html">Blog</a>
                 <a href="#contact">Contact</a>
@@ -100,70 +102,44 @@
         </nav>
     </div>
 
-    <main>
-        <section id="faq-hero" class="hero">
+    <main id="about-page">
+        <section id="about-hero" class="hero">
             <img class="hero-bg" src="./assets/hero-foam-bg.png" alt="" width="1440" height="804" loading="eager">
             <div class="hero-content">
-                <h1 class="section-title">FAQ</h1>
+                <h1 class="section-title">À propos</h1>
                 <p class="hero-subtitle">Nous savons que vous avez des questions. Nous avons rassemblé toutes les
                     informations dont vous avez besoin ci-dessous</p>
                 <div class="drop-CTN">
-                    <img src="../assets/svg/drop.svg" alt="">
+                    <img src="./assets/svg/drop.svg" alt="">
                 </div>
 
             </div>
         </section>
-        <section id="faq-content" class="gradient-CTN">
-            <div class="faq-grid">
-                <article class="faq-item wave-grid-block">
-                    <h2 class="faq-question section-headline section-title shadow">Ai-je besoin d'un assouplissant?
-                    </h2>
-                    <p class="faq-answer readable">Les formules sont « tout-en-un » ; cependant, pour ceux qui veulent
-                        encore
-                        plus de douceur et un parfum plus persistant, vous pouvez utiliser votre assouplissant
-                        habituel.</p>
-                </article>
-                <article class="faq-item wave-grid-block">
-                    <h2 class="faq-question section-headline section-title shadow">Le détergent peut-il être utilisé en
-                        machine
-                        et
-                        à la main?</h2>
-                    <p class="faq-answer readable">Oui, il convient aux deux usages. La poudre peut être diluée dans
-                        l'eau
-                        pour un lavage à la main efficace.</p>
-                </article>
-                <article class="faq-item wave-grid-block">
-                    <h2 class="faq-question section-headline section-title shadow">Le détergent convient-il aux
-                        vêtements
-                        délicats?</h2>
-                    <p class="faq-answer readable">Le détergent liquide est 100% hypoallergénique, adapté aux tissus
-                        délicats, à la peau des bébés et aux sous-vêtements.</p>
-                </article>
-                <article class="faq-item wave-grid-block">
-                    <h2 class="faq-question section-headline section-title shadow">Quel dosage est recommandé pour le
-                        détergent
-                        liquide?</h2>
-                    <p class="faq-answer readable">Utilisez le bouchon doseur : <br> Niveau 3 : petite machine / peu
-                        sale <br>
-                        Niveau
-                        3 à 4 : machine normale <br> Niveau 5 : très sale.</p>
-                </article>
-                <article class="faq-item wave-grid-block">
-                    <h2 class="faq-question section-headline section-title shadow">Quel dosage pour la poudre?</h2>
-                    <p class="faq-answer readable">1 dose : petite lessive <br> 2 doses : lessive ordinaire.</p>
-                </article>
-                <article class="faq-item wave-grid-block">
-                    <h2 class="faq-question section-headline section-title shadow">Quel est le meilleur produit pour les
-                        taches
-                        difficiles?</h2>
-                    <p class="faq-answer readable">Diluez une dose de poudre dans une bassine d'eau et faites tremper le
-                        linge taché avant de le laver en machine.</p>
-                </article>
+        <section class="about-intro intro">
+            <p class="readable">Pure Power est une marque dédiée aux soins du linge. Conçue pour répondre aux exigences
+                du quotidien,
+                Pure Power transforme le lavage en une expérience plus efficace, économique et durable.</p>
+        </section>
+        <section id="about-content" class="gradient-CTN">
+            <div class="about-content-CTN centered-CTN">
+                <div class="about-editorial-left">
+                    <h2 class="section-headline section-title  shadow">Des formules qui font la différence</h2>
+                    <p class="editorial readable">Des centaines de tests. Des formules haute performance. Des formats
+                        innovants et toujours économiques. Des produits efficaces, des contenants premium conçus
+                        pour durer et être réutilisés. Chaque détail est optimisé pour aller plus loin, sans
+                        compromis et toujours plus pratique.</p>
+                </div>
+                <p class="editorial readable"><strong>Pure Power</strong> incarne une nouvelle génération de lessive :
+                    plus efficace,
+                    plus
+                    intelligente, plus durable . Une marque animée par une seule priorité: <br><strong> une qualité
+                        sans
+                        compromis.</strong> </p>
             </div>
             <div id="redirectToContact">
                 <div class="incentive-text">
-                    <p class="cta-label shadow">D'autres questions</p>
-                    <img src="../assets/svg/question-marks-dark.svg" alt="" aria-hidden="true" class="cta-icon">
+                    <p class="cta-label shadow">Envie d'échanger</p>
+                    <img src="./assets/svg/question-marks-dark.svg" alt="" aria-hidden="true" class="cta-icon">
                 </div>
                 <a href="./#contact" class="cta-button">Contactez-nous</a>
             </div>
@@ -171,14 +147,14 @@
     </main>
 
     <footer id="footer">
-        <img class="footer-wave" src="../assets/footer-wave.png" alt="" aria-hidden="true" loading="lazy" width="1440"
+        <img class="footer-wave" src="./assets/footer-wave.png" alt="" aria-hidden="true" loading="lazy" width="1440"
             height="843">
-        <img class="footer-logo" src="../assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
+        <img class="footer-logo" src="./assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
         <div class="footer-inner">
-            <a href="#contact" class="footer-cta">Let's talk</a>
+            <a href="#contact" class="footer-cta">Contact</a>
             <div class="footer-right">
                 <div class="footer-social">
-                    <a href="#" aria-label="TikTok"><img src="../assets/svg/tik-tok.svg" alt="" width="26" height="30"
+                    <a href="#" aria-label="TikTok"><img src="./assets/svg/tik-tok.svg" alt="" width="26" height="30"
                             loading="lazy"></a>
                     <a href="#" aria-label="Facebook"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -210,25 +186,25 @@
                     <div class="footer-column">
                         <p class="footer-column-title">Products</p>
                         <ul>
-                            <li><a href="./products.html" class="footer-column-link">Iconic 4KG</a></li>
-                            <li><a href="./products.html" class="footer-column-link">Compact 2KG</a></li>
-                            <li><a href="./products.html" class="footer-column-link">Family 5KG</a></li>
-                            <li><a href="./products.html" class="footer-column-link">Pro format 6KG</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Iconic 4KG</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Compact 2KG</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Familial 5KG</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Format pro 6KG</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <p class="footer-column-title">About</p>
+                        <p class="footer-column-title">À propos</p>
                         <ul>
-                            <li><a href="./products.html" class="footer-column-link">Our products</a></li>
-                            <li><a href="./about.html" class="footer-column-link">About us</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Nos produits</a></li>
+                            <li><a href="./a-propos.html" class="footer-column-link">Notre histoire</a></li>
                             <li><a href="./faq.html" class="footer-column-link">FAQ</a></li>
-                            <li><a href="../blog/en/index.html" class="footer-column-link">Blog</a></li>
+                            <li><a href="./blog/index.html" class="footer-column-link">Blog</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
-        <img class="footer-logo" src="../assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
+        <img class="footer-logo" src="./assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
         <div class="footer-legal">
             <a href="#">CGV</a>
             <span>·</span>

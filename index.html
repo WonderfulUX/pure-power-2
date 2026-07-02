@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Pure Power — Premium laundry products available in Guadeloupe, Martinique, Guyane and New-Caledonia.">
-    <title>Pure Power — Premium Laundry</title>
+        content="Pure Power — Des produits lessive premium disponibles en Guadeloupe, Martinique, Guyane et Nouvelle-Calédonie.">
+    <title>Pure Power — Lessive Premium</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
@@ -23,17 +23,17 @@
 </head>
 
 <body>
-    <a href="./" class="mobile-nav header-logo" aria-label="Pure Power home">
+    <a href="./" class="mobile-nav header-logo" aria-label="Pure Power page home">
         <img src="./assets/svg/purepower.svg" alt="Pure Power">
     </a>
     <div class="header-right-btns">
         <div class="header-language">
             <button class="header-language-toggle" aria-haspopup="listbox" aria-expanded="false">
-                EN
+                FR
                 <!-- <img src="./assets/svg/chevron-down.svg" alt="" aria-hidden="true"> -->
             </button>
             <ul class="header-language-menu" role="listbox">
-                <li role="option"><a href="./index.html" hreflang="fr" lang="fr">FR</a></li>
+                <!-- <li role="option"><a href="./index.html" hreflang="fr" lang="fr">FR</a></li> -->
                 <li role="option"><a href="./en/index.html" hreflang="en" lang="en">EN</a></li>
             </ul>
         </div>
@@ -52,14 +52,17 @@
                 </a>
 
                 <button class="mobile-menu-close" aria-label="Close menu">
-                    <img src="./assets/svg/close.svg" alt="">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M28.0018 0.87684C28.5876 0.291053 29.5371 0.291053 30.1229 0.87684C30.7087 1.46263 30.7087 2.41215 30.1229 2.99793L17.621 15.4999L30.1229 28.0018C30.7087 28.5876 30.7087 29.5371 30.1229 30.1229C29.5371 30.7087 28.5876 30.7087 28.0018 30.1229L15.4999 17.621L2.99793 30.1229C2.41215 30.7087 1.46263 30.7087 0.87684 30.1229C0.291053 29.5371 0.291053 28.5876 0.87684 28.0018L13.3788 15.4999L0.87684 2.99793C0.291053 2.41215 0.291053 1.46263 0.87684 0.87684C1.46263 0.291053 2.41215 0.291053 2.99793 0.87684L15.4999 13.3788L28.0018 0.87684Z" />
+                    </svg>
                 </button>
             </div>
             <nav class="mobile-menu-nav">
-                <a href="./products.html">Products</a>
-                <a href="./about.html">About</a>
+                <a href="./produits.html">Produits</a>
+                <a href="./a-propos.html">À propos</a>
                 <a href="./faq.html">FAQ</a>
-                <a href="./blog.html">Blog</a>
+                <a href="./blog/index.html">Blog</a>
                 <a href="#contact">Contact</a>
             </nav>
             <div class="mobile-menu-social">
@@ -103,8 +106,8 @@
         <section id="hero" class="hero">
             <img class="hero-bg" src="./assets/hero-foam-bg.png" alt="" width="1440" height="804" loading="eager">
             <div class="hero-text">
-                <h1>The laundry<br>revolution</h1>
-                <p class="hero-subtitle">Cleaner. Simpler. Better. Stronger</p>
+                <h1>La lessive <br>réinventée</h1>
+                <p class="hero-subtitle">Plus propre. Plus simple. Meilleure. Plus puissante.</p>
             </div>
             <div class="hero-product">
                 <img src="./assets/4kg.png" alt="Pure Power 4KG" width="944" height="708" loading="eager">
@@ -115,16 +118,17 @@
 
         <section id="intro">
             <div class="intro-block" id="smartRecipes">
-                <h2>Smart<br>recipes</h2>
-                <p>Every Pure Power formula is calibrated by laundry chemists for tropical climates — fast-acting on
-                    tough
-                    stains, gentle on delicate fibres, and dosed so a single scoop does the work of three</p>
+                <h2>Formules <br>
+                    innovantes</h2>
+                <p>Une formule haute performance conçue pour traiter les taches tenaces sur tous les tissus, à toutes
+                    les températures. Chaque dose est précisément calibrée pour ne rien gaspiller — un maximum
+                    d'efficacité, un minimum d'effort.</p>
             </div>
             <div class="intro-block" id="maximumEfficiency">
-                <h2>Maximum<br>Efficiency</h2>
-                <p>Up to 120 washes from a single Mega Seau. Concentrated active enzymes mean less plastic, less
-                    storage,
-                    less waste and a fresher, brighter wash every cycle</p>
+                <h2>Efficacité <br> Maximale</h2>
+                <p>Pure Power délivre des résultats de qualité professionnelle à chaque lavage. Concentrée, longue durée
+                    et conçue pour performer là où d'autres lessives échouent — parce que votre linge mérite mieux que
+                    la moyenne.</p>
             </div>
         </section>
 
@@ -144,18 +148,18 @@
                 </div>
                 <div class="best-seller-content">
                     <h2>Pure Power 4Kg</h2>
-                    <p>Loved by families for its unbeatable value and maximum concentration.</p>
-                    <a href="./products.html" class="product-link">see details</a>
+                    <p>Adoré des familles pour son rapport qualité-prix imbattable et sa concentration maximale</p>
+                    <a href="./products.html" class="product-link">Voir le produit</a>
                 </div>
             </div>
             <div id="otherLaundryPowders">
                 <h2>
-                    <span class="powders-bg-text">laundry</span>
-                    <span class="powders-bg-text powders-bg-text--offset">powders</span>
+                    <span class="powders-bg-text">Lessives</span>
+                    <span class="powders-bg-text powders-bg-text--offset">en poudre</span>
                 </h2>
                 <div class="powder-grid-scrollable">
                     <div class="powders-grid">
-                        <h3 id="powderScrollableTitle">Laundry powders</h3>
+                        <h3 id="powderScrollableTitle">Lessives en poudre</h3>
                         <div class="product-item-CTN" data-pos="3">
                             <div class="product-item" id="product2kg">
                                 <div class="product-img-ctn">
@@ -163,11 +167,12 @@
                                         loading="lazy">
                                 </div>
                                 <div class="product-details">
-                                    <h3>Compact format 2Kg</h3>
-                                    <p>The ideal format to start. Easy-to-store bucket, same concentration, same power
+                                    <h3>Format compact 2Kg</h3>
+                                    <p>Idéal pour les personnes seules et les couples. Concentration
+                                        maximale dans un contenant compact et réutilisable.
                                     </p>
                                 </div>
-                                <a href="./products.html" class="product-link">see details</a>
+                                <a href="./products.html" class="product-link">Voir le produit</a>
                             </div>
                         </div>
                         <div class="product-item-CTN" data-pos="1">
@@ -177,12 +182,12 @@
                                         loading="lazy">
                                 </div>
                                 <div class="product-details">
-                                    <h3>Pro format 6Kg</h3>
-                                    <p>For professionals and large households. Intensive pace, zero compromise on
-                                        efficiency
+                                    <h3>Format pro 6Kg</h3>
+                                    <p>Volume professionnel pour une utilisation intensive et fréquente
+                                        à la maison ou en entreprise.
                                     </p>
                                 </div>
-                                <a href="./products.html" class="product-link">see details</a>
+                                <a href="./products.html" class="product-link">Voir le produit</a>
                             </div>
                         </div>
                         <div class="product-item-CTN" data-pos="2">
@@ -192,10 +197,11 @@
                                         loading="lazy">
                                 </div>
                                 <div class="product-details">
-                                    <h3>Family format 5Kg</h3>
-                                    <p>Best value for large families. Weeks of spotless laundry at the best price</p>
+                                    <h3>Format familial 5kg</h3>
+                                    <p>Conçu pour les foyers actifs. Assez de doses pour gérer le linge
+                                        de toute la famille.</p>
                                 </div>
-                                <a href="./products.html" class="product-link">see details</a>
+                                <a href="./products.html" class="product-link">Voir le produit</a>
                             </div>
                         </div>
                     </div>
@@ -207,11 +213,12 @@
             <img class="liquid-wave" src="./assets/liquid-laundry-wave.png" alt="" aria-hidden="true" loading="lazy"
                 width="1439" height="803">
             <div id="liquidLaundryGrid">
-                <p id="liquidLaundryResponsiveTitle">Liquid Laundry</p>
+                <p id="liquidLaundryResponsiveTitle">Lessive liquide</p>
                 <div class="liquid-content">
-                    <h3>Pouring spout 5kg</h3>
-                    <p>Ultra-practical dosing, hypoallergenic, cold-active, long-lasting fragrance.</p>
-                    <a href="./products.html" class="product-link">see details</a>
+                    <h3>5kg avec bec verseur</h3>
+                    <p>Dosage ultra-pratique, hypoallergénique, actif à froid, parfum longue
+                        durée.</p>
+                    <a href="./products.html" class="product-link">Voir le produit</a>
                 </div>
                 <div class="liquid-product">
                     <img src="./assets/5kg-liquid.png" alt="Pure Power Liquid 5KG" width="944" height="708"
@@ -221,8 +228,8 @@
                 </div>
             </div>
             <h2>
-                <span class="liquid-bg-text" aria-hidden="true">liquid</span>
-                <span class="liquid-bg-text liquid-bg-text--offset" aria-hidden="true">laundry</span>
+                <span class="liquid-bg-text" aria-hidden="true">Lessive</span>
+                <span class="liquid-bg-text liquid-bg-text--offset" aria-hidden="true">liquid</span>
             </h2>
         </section>
 
@@ -231,7 +238,7 @@
             <div id="availabilityBanner">
                 <div class="ticker">
                     <div class="ticker-track availability-ticker-track">
-                        <span class="ticker-item">Available in</span>
+                        <span class="ticker-item">Disponible en</span>
                         <span class="ticker-dot"></span>
                         <span class="ticker-item">Guadeloupe</span>
                         <span class="ticker-dot"></span>
@@ -239,9 +246,9 @@
                         <span class="ticker-dot"></span>
                         <span class="ticker-item">Guyane</span>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">New-Caledonia</span>
+                        <span class="ticker-item">Nouvelle-Caledonie</span>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Available in</span>
+                        <span class="ticker-item">Disponible en</span>
                         <span class="ticker-dot"></span>
                         <span class="ticker-item">Guadeloupe</span>
                         <span class="ticker-dot"></span>
@@ -249,7 +256,7 @@
                         <span class="ticker-dot"></span>
                         <span class="ticker-item">Guyane</span>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">New-Caledonia</span>
+                        <span class="ticker-item">Nouvelle-Caledonie</span>
                         <span class="ticker-dot"></span>
                     </div>
                 </div>
@@ -258,17 +265,17 @@
             <div id="trustBanner">
                 <div class="ticker">
                     <div class="ticker-track trust-ticker-track">
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-item">Plus de 2 millions de consommateurs</span>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-item">Plus de 2 millions de consommateurs</span>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-item">Plus de 2 millions de consommateurs</span>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-item">Plus de 2 millions de consommateurs</span>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-item">Plus de 2 millions de consommateurs</span>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-item">Plus de 2millions de consommateurs</span>
                         <span class="ticker-dot"></span>
                     </div>
                 </div>
@@ -277,7 +284,7 @@
             <div id="resellersBanner">
                 <div class="ticker">
                     <div class="ticker-track resellers-ticker-track">
-                        <span class="ticker-item">Your favorite laundry in</span>
+                        <span class="ticker-item">Votre lessive favorite chez</span>
                         <img src="./assets/svg/leclerc-logo.svg" alt="Leclerc" class="reseller-logo" loading="lazy">
                         <span class="ticker-dot"></span>
                         <img src="./assets/svg/leaderprice-logo.svg" alt="Leader Price" class="reseller-logo"
@@ -287,7 +294,7 @@
                         <span class="ticker-dot"></span>
                         <img src="./assets/svg/carrefour-logo.svg" alt="Carrefour" class="reseller-logo" loading="lazy">
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Your favorite laundry in</span>
+                        <span class="ticker-item">Votre lessive favorite chez</span>
                         <img src="./assets/svg/leclerc-logo.svg" alt="Leclerc" class="reseller-logo" loading="lazy">
                         <span class="ticker-dot"></span>
                         <img src="./assets/svg/leaderprice-logo.svg" alt="Leader Price" class="reseller-logo"
@@ -303,7 +310,7 @@
 
             <div class="trust-community">
                 <div class="trust-copy">
-                    <p>Loved by families for its unbeatable value and maximum concentration.</p>
+                    <p>Suivez-nous et partagez vos moments Pure Power</p>
                     <div class="trust-socials">
                         <a href="#" aria-label="TikTok"><img src="./assets/svg/tik-tok.svg" alt="" width="30"
                                 height="30" loading="lazy"></a>
@@ -401,7 +408,7 @@
             <div id="comments">
                 <img class="comments-bg" src="./assets/heart-bubbles-bg.webp" alt="" aria-hidden="true" loading="lazy"
                     width="1530" height="866">
-                <h2>What people say<br>about us</h2>
+                <h2>Ce que disent<br>nos clients</h2>
                 <div class="comment-grid-scrollable">
                     <div class="comments-grid">
                         <div class="comment-card">
@@ -455,7 +462,7 @@
             height="843">
         <img class="footer-logo" src="./assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
         <div class="footer-inner">
-            <a href="#contact" class="footer-cta">Let's talk</a>
+            <a href="#contact" class="footer-cta">Contact</a>
             <div class="footer-right">
                 <div class="footer-social">
                     <a href="#" aria-label="TikTok"><img src="./assets/svg/tik-tok.svg" alt="" width="26" height="30"
@@ -488,20 +495,21 @@
                 </div>
                 <nav class="footer-links" aria-label="Footer">
                     <div class="footer-column">
-                        <p class="footer-column-title">Products</p>
+                        <p class="footer-column-title">Produits</p>
                         <ul>
-                            <li><a href="./products.html" class="footer-column-link">Iconic 4KG</a></li>
-                            <li><a href="./products.html" class="footer-column-link">Compact 2KG</a></li>
-                            <li><a href="./products.html" class="footer-column-link">Family 5KG</a></li>
-                            <li><a href="./products.html" class="footer-column-link">Pro format 6KG</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Iconic 4KG</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Compact 2KG</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Familial 5KG</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Format pro 6KG</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
-                        <p class="footer-column-title">About</p>
+                        <p class="footer-column-title">À propos</p>
                         <ul>
-                            <li><a href="./products.html" class="footer-column-link">Our products</a></li>
-                            <li><a href="./about.html" class="footer-column-link">About us</a></li>
+                            <li><a href="./produits.html" class="footer-column-link">Nos produits</a></li>
+                            <li><a href="./a-propos.html" class="footer-column-link">Notre histoire</a></li>
                             <li><a href="./faq.html" class="footer-column-link">FAQ</a></li>
+                            <li><a href="./blog/index.html" class="footer-column-link">Blog</a></li>
                         </ul>
                     </div>
                 </nav>

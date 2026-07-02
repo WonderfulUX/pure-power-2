@@ -30,7 +30,20 @@
 .article-section {
     margin: 0 auto;
     max-width: 860px;
-    width: 90%;
+    width: 100%;
+}
+
+
+#blog-hero h1 {
+    font-size: clamp(40px, 6vw, 90px);
+}
+
+#blog-hero .hero-content {
+    max-width: unset;
+}
+
+.blog-content .section-headline.section-title {
+    font-size: clamp(30px, 5vw, 90px);
 }
 
 
@@ -55,10 +68,71 @@
 .article-section {
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.article-section {
+    margin-bottom: 100px;
+}
+
+.article-section:last-of-type {
+    margin-bottom: unset;
 }
 
 .article-section .readable {
     font-size: 18px;
+}
+
+.readable li::marker {
+    content: '●  ';
+    display: inline-block;
+}
+
+.readable li {
+    margin-left: 16px;
+}
+
+.article-section-intro {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: var(--navy);
+    font-weight: 400;
+}
+
+.pure-power-advice {
+    border-radius: 20px;
+    border: 4px solid white;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--yellow), var(--salmon));
+    color: var(--navy);
+    position: relative;
+}
+
+.pure-power-advice::before,
+.pure-power-advice::after {
+    position: absolute;
+    content: url('../assets/spark.png');
+    display: block;
+    z-index: 2;
+}
+
+.pure-power-advice::before {
+    left: 0;
+    top: 0;
+    translate: -50% -50%;
+}
+
+.pure-power-advice::after {
+    bottom: 0;
+    right: 0;
+    translate: 50% 50%;
+}
+
+.pure-power-advice h2 {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    margin-bottom: 20px;
+    width: fit-content;
+    color: white;
 }
 
 .article-pagination {

@@ -285,4 +285,10 @@
     font-weight: 500;
     line-height: 1.4;
     height: 3lh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }

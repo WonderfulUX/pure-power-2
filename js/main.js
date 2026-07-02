@@ -4,7 +4,7 @@ const PRODUCTS_EN = [
     {
         id: 'iconic-4kg',
         name: 'Pure Power 4KG',
-        image: '../assets/img/webp/4kg.webp',
+        image: '../assets/4kg.png',
         badge: 'Best seller',
         features: [
             'Most economical choice',
@@ -17,7 +17,7 @@ const PRODUCTS_EN = [
     {
         id: 'compact-2kg',
         name: 'Pure Power 2KG',
-        image: '../assets/img/webp/2kg.webp',
+        image: '../assets/2kg.png',
         badge: null,
         features: [
             'Compact format',
@@ -30,7 +30,7 @@ const PRODUCTS_EN = [
     {
         id: 'family-5kg',
         name: 'Pure Power 5KG',
-        image: '../assets/img/webp/5kg.webp',
+        image: '../assets/5k.png',
         badge: null,
         features: [
             'Family format',
@@ -43,7 +43,7 @@ const PRODUCTS_EN = [
     {
         id: 'pro-format-6kg',
         name: 'Pure Power 6KG',
-        image: '../assets/img/webp/6kg.webp',
+        image: '../assets/6kg.png',
         badge: null,
         features: [
             'Professional format',
@@ -56,7 +56,7 @@ const PRODUCTS_EN = [
     {
         id: 'liquid-5kg',
         name: 'Pure Power Liquid 5KG',
-        image: '../assets/img/webp/liquid-5kg.webp',
+        image: '../assets/5k-liquid-future',
         badge: null,
         features: [
             '100% hypoallergenic',
@@ -72,7 +72,7 @@ const PRODUCTS_FR = [
     {
         id: 'iconic-4kg',
         name: 'Pure Power 4KG',
-        image: './assets/img/webp/4kg.webp',
+        image: '../assets/4kg.png',
         badge: 'Best seller',
         features: [
             'Choix le plus économique',
@@ -85,7 +85,7 @@ const PRODUCTS_FR = [
     {
         id: 'compact-2kg',
         name: 'Pure Power 2KG',
-        image: './assets/img/webp/2kg.webp',
+        image: './assets/2kg.png',
         badge: null,
         features: [
             'Format compact',
@@ -98,7 +98,7 @@ const PRODUCTS_FR = [
     {
         id: 'family-5kg',
         name: 'Pure Power 5KG',
-        image: './assets/img/webp/5kg.webp',
+        image: './assets/5kg.png',
         badge: null,
         features: [
             'Format familial',
@@ -111,7 +111,7 @@ const PRODUCTS_FR = [
     {
         id: 'pro-format-6kg',
         name: 'Pure Power 6KG',
-        image: './assets/img/webp/6kg.webp',
+        image: './assets/6kg.png',
         badge: null,
         features: [
             'Format professionnel',
@@ -123,8 +123,8 @@ const PRODUCTS_FR = [
     },
     {
         id: 'liquid-5kg',
-        name: 'Pure Power Liquide 5KG',
-        image: './assets/img/webp/liquid-5kg.webp',
+        name: 'Pure Power 5KG liquide',
+        image: './assets/5k-liquid-future.png',
         badge: null,
         features: [
             '100% hypoallergénique',
