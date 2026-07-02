@@ -35,13 +35,18 @@
 }
 
 .footer-logo {
+    width: 200px;
+    height: auto;
+}
+
+.footer-logo-link {
     position: absolute;
     top: 0;
     left: 50%;
     translate: -50% 0;
     z-index: 2;
-    width: 200px;
-    height: auto;
+    width: fit-content;
+    height: fit-content;
 }
 
 
