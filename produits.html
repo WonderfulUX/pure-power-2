@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
     <link rel="alternate" hreflang="fr" href="./produits.html">
     <link rel="alternate" hreflang="en" href="./en/products.html">
-    <script>(function () { var s = localStorage.getItem('pp-lang'); var l = (s || navigator.language || 'fr').slice(0, 2).toLowerCase(); if (l !== 'fr') { var p = location.pathname.split('/').pop(); location.replace('./en/' + (p || 'index.html')); } })();</script>
+    <script>(function () { var s = localStorage.getItem('pp-lang'); var l = (s || navigator.language || 'fr').slice(0, 2).toLowerCase(); if (l !== 'fr') { location.replace('./en/products.html'); } })();</script>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/main.js" type="module" defer></script>
 </head>
@@ -104,14 +104,20 @@
 
     <main>
         <section id="product-hero" class="hero">
-            <img class="hero-bg" src="./assets/hero-foam-bg.png" alt="" width="1440" height="804" loading="eager">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="./assets/img/webp/hero-foam-bg-desktop.webp"
+                    type="image/webp">
+                <source media="(min-width: 1000px)" srcset="./assets/img/png/hero-foam-bg-desktop.png">
+                <source media="(min-width: 575px)" srcset="./assets/img/webp/hero-foam-bg-tablet.webp"
+                    type="image/webp">
+                <source media="(min-width: 575px)" srcset="./assets/img/png/hero-foam-bg-tablet.png">
+                <source srcset="./assets/img/webp/hero-foam-bg-mobile.webp" type="image/webp">
+                <img class="hero-bg" src="./assets/img/png/hero-foam-bg-mobile.png" alt="" width="1440" height="804"
+                    loading="eager">
+            </picture>
             <div class="hero-content">
                 <h1 class="section-title">Nos produits</h1>
                 <p class="hero-subtitle">Tout ce que vous devez savoir sur notre gamme</p>
-                <div class="drop-CTN" style="opacity: 0;">
-                    <img src="./assets/svg/drop.svg" alt="">
-                </div>
-
             </div>
         </section>
 
@@ -136,30 +142,56 @@
                                 <div class="product-list-scrollable-ctn">
                                     <button class="product-thumb active" data-product="iconic-4kg" role="listitem"
                                         aria-label="Iconic 4KG">
-                                        <img src="./assets/4kg - base.png" loading="lazy" alt="Iconic 4KG">
+                                        <picture>
+                                            <source srcset="./assets/img/webp/4kg-mobile.webp" type="image/webp">
+                                            <img src="./assets/img/png/4kg-mobile.png" loading="lazy" alt="Iconic 4KG">
+                                        </picture>
                                     </button>
                                     <button class="product-thumb" data-product="compact-2kg" role="listitem"
                                         aria-label="Compact 2KG">
-                                        <img src="./assets/2kg.png" loading="lazy" alt="Compact 2KG">
+                                        <picture>
+                                            <source srcset="./assets/img/webp/2kg-mobile.webp" type="image/webp">
+                                            <img src="./assets/img/png/2kg-mobile.png" loading="lazy" alt="Compact 2KG">
+                                        </picture>
                                     </button>
                                     <button class="product-thumb" data-product="family-5kg" role="listitem"
                                         aria-label="Familial 5KG">
-                                        <img src="./assets/5kg.png" loading="lazy" alt="Familial 5KG">
+                                        <picture>
+                                            <source srcset="./assets/img/webp/5kg-mobile.webp" type="image/webp">
+                                            <img src="./assets/img/png/5kg-mobile.png" loading="lazy"
+                                                alt="Familial 5KG">
+                                        </picture>
                                     </button>
                                     <button class="product-thumb" data-product="pro-format-6kg" role="listitem"
                                         aria-label="Format Pro 6KG">
-                                        <img src="./assets/6kg.png" loading="lazy" alt="Format Pro 6KG">
+                                        <picture>
+                                            <source srcset="./assets/img/webp/6kg-mobile.webp" type="image/webp">
+                                            <img src="./assets/img/png/6kg-mobile.png" loading="lazy"
+                                                alt="Format Pro 6KG">
+                                        </picture>
                                     </button>
                                     <button class="product-thumb" data-product="liquid-5kg" role="listitem"
                                         aria-label="Liquide 5KG">
                                         <picture>
-                                            <img src="./assets/5kg-liquid.png" loading="lazy" alt="Liquide 5KG">
+                                            <source srcset="./assets/img/webp/5kg-liquid-mobile.webp" type="image/webp">
+                                            <img src="./assets/img/png/5kg-liquid-mobile.png" loading="lazy"
+                                                alt="Liquide 5KG">
+                                        </picture>
                                     </button>
                                 </div>
                             </div>
                         </div>
                         <div class="products-preview">
-                            <img class="product-image" src="./assets/4kg.webp" loading="lazy" alt="">
+                            <picture class="product-image">
+                                <source media="(min-width: 1000px)" srcset="./assets/img/webp/4k-product-desktop.webp"
+                                    type="image/webp">
+                                <source media="(min-width: 1000px)" srcset="./assets/img/png/4k-product-desktop.png">
+                                <source media="(min-width: 575px)" srcset="./assets/img/webp/4k-product-tablet.webp"
+                                    type="image/webp">
+                                <source media="(min-width: 575px)" srcset="./assets/img/png/4k-product-tablet.png">
+                                <source srcset="./assets/img/webp/4k-product-mobile.webp" type="image/webp">
+                                <img src="./assets/img/png/4k-product-mobile.png" loading="lazy" alt="Pure Power 4KG">
+                            </picture>
                         </div>
                     </div>
 
@@ -192,8 +224,15 @@
     </main>
 
     <footer id="footer">
-        <img class="footer-wave" src="./assets/footer-wave.png" alt="" aria-hidden="true" loading="lazy" width="1440"
-            height="843">
+        <picture>
+            <source media="(min-width: 1000px)" srcset="./assets/img/webp/footer-wave-desktop.webp" type="image/webp">
+            <source media="(min-width: 1000px)" srcset="./assets/img/png/footer-wave-desktop.png">
+            <source media="(min-width: 575px)" srcset="./assets/img/webp/footer-wave-tablet.webp" type="image/webp">
+            <source media="(min-width: 575px)" srcset="./assets/img/png/footer-wave-tablet.png">
+            <source srcset="./assets/img/webp/footer-wave-mobile.webp" type="image/webp">
+            <img class="footer-wave" src="./assets/img/png/footer-wave-mobile.png" alt="" aria-hidden="true"
+                loading="lazy" width="1440" height="843">
+        </picture>
         <img class="footer-logo" src="./assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
         <div class="footer-inner">
             <a href="#contact" class="footer-cta">Contact</a>

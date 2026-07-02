@@ -9,14 +9,14 @@
     <link rel="icon" type="image/x-icon" href="../../assets/favicon/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="../../assets/favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
     <link rel="alternate" hreflang="fr" href="../taches-tenaces-herbe-sang-vin-graisse-maquillage.html">
     <link rel="alternate" hreflang="en" href="./common-tough-stains-grass-blood-wine-grease-makeup.html">
-    <script>(function () { var s = localStorage.getItem('pp-lang'); var l = (s || navigator.language || 'fr').slice(0, 2).toLowerCase(); if (l !== 'fr') { var p = location.pathname.split('/').pop(); location.replace('./en/' + (p || 'index.html')); } })();</script>
+    <script>(function () { var s = localStorage.getItem('pp-lang'); var l = (s || navigator.language || 'en').slice(0, 2).toLowerCase(); if (l === 'fr') { location.replace('../taches-tenaces-herbe-sang-vin-graisse-maquillage.html'); } })();</script>
     <link rel="stylesheet" href="../../css/index.css">
     <script src="../../js/main.js" type="module" defer></script>
 </head>
@@ -105,7 +105,14 @@
 
     <main>
         <section id="blog-hero" class="hero">
-            <img class="hero-bg" src="../assets/hero-foam-bg.png" alt="" width="1440" height="804" loading="eager">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="../../assets/img/webp/hero-foam-bg-desktop.webp" type="image/webp">
+                <source media="(min-width: 1000px)" srcset="../../assets/img/png/hero-foam-bg-desktop.png">
+                <source media="(min-width: 575px)" srcset="../../assets/img/webp/hero-foam-bg-tablet.webp" type="image/webp">
+                <source media="(min-width: 575px)" srcset="../../assets/img/png/hero-foam-bg-tablet.png">
+                <source srcset="../../assets/img/webp/hero-foam-bg-mobile.webp" type="image/webp">
+                <img class="hero-bg" src="../../assets/img/png/hero-foam-bg-mobile.png" alt="" width="1440" height="804" loading="eager">
+            </picture>
             <div class="hero-content">
                 <h1 class="section-title">Comment enlever les tâches tenaces : herbe, sang, vin, graisse et
                     maquillage</h1>
@@ -204,8 +211,14 @@
     </main>
 
     <footer id="footer">
-        <img class="footer-wave" src="../../assets/footer-wave.png" alt="" aria-hidden="true" loading="lazy"
-            width="1440" height="843">
+        <picture>
+            <source media="(min-width: 1000px)" srcset="../../assets/img/webp/footer-wave-desktop.webp" type="image/webp">
+            <source media="(min-width: 1000px)" srcset="../../assets/img/png/footer-wave-desktop.png">
+            <source media="(min-width: 575px)" srcset="../../assets/img/webp/footer-wave-tablet.webp" type="image/webp">
+            <source media="(min-width: 575px)" srcset="../../assets/img/png/footer-wave-tablet.png">
+            <source srcset="../../assets/img/webp/footer-wave-mobile.webp" type="image/webp">
+            <img class="footer-wave" src="../../assets/img/png/footer-wave-mobile.png" alt="" aria-hidden="true" loading="lazy" width="1440" height="843">
+        </picture>
         <img class="footer-logo" src="../../assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
         <div class="footer-inner">
             <a href="#contact" class="footer-cta">Let's talk</a>

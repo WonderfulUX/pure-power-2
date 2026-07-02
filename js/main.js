@@ -4,7 +4,10 @@ const PRODUCTS_EN = [
     {
         id: 'iconic-4kg',
         name: 'Pure Power 4KG',
-        image: '../assets/4kg.png',
+        image: {
+            webp: { desktop: '../assets/img/webp/4k-product-desktop.webp', tablet: '../assets/img/webp/4k-product-tablet.webp', mobile: '../assets/img/webp/4k-product-mobile.webp' },
+            png:  { desktop: '../assets/img/png/4k-product-desktop.png',  tablet: '../assets/img/png/4k-product-tablet.png',  mobile: '../assets/img/png/4k-product-mobile.png'  }
+        },
         badge: 'Best seller',
         features: [
             'Most economical choice',
@@ -17,7 +20,10 @@ const PRODUCTS_EN = [
     {
         id: 'compact-2kg',
         name: 'Pure Power 2KG',
-        image: '../assets/2kg.png',
+        image: {
+            webp: { desktop: '../assets/img/webp/2kg-product-desktop.webp', tablet: '../assets/img/webp/2kg-product-tablet.webp', mobile: '../assets/img/webp/2kg-product-mobile.webp' },
+            png:  { desktop: '../assets/img/png/2kg-product-desktop.png',  tablet: '../assets/img/png/2kg-product-tablet.png',  mobile: '../assets/img/png/2kg-product-mobile.png'  }
+        },
         badge: null,
         features: [
             'Compact format',
@@ -30,7 +36,10 @@ const PRODUCTS_EN = [
     {
         id: 'family-5kg',
         name: 'Pure Power 5KG',
-        image: '../assets/5k.png',
+        image: {
+            webp: { desktop: '../assets/img/webp/5kg-product-desktop.webp', tablet: '../assets/img/webp/5kg-product-tablet.webp', mobile: '../assets/img/webp/5kg-product-mobile.webp' },
+            png:  { desktop: '../assets/img/png/5kg-product-desktop.png',  tablet: '../assets/img/png/5kg-product-tablet.png',  mobile: '../assets/img/png/5kg-product-mobile.png'  }
+        },
         badge: null,
         features: [
             'Family format',
@@ -43,7 +52,10 @@ const PRODUCTS_EN = [
     {
         id: 'pro-format-6kg',
         name: 'Pure Power 6KG',
-        image: '../assets/6kg.png',
+        image: {
+            webp: { desktop: '../assets/img/webp/6kg-desktop-product.webp', tablet: '../assets/img/webp/6kg-tablet-product.webp', mobile: '../assets/img/webp/6kg-mobile-product.webp' },
+            png:  { desktop: '../assets/img/png/6kg-desktop.png',           tablet: '../assets/img/png/6kg-tablet.png',           mobile: '../assets/img/png/6kg-mobile.png'           }
+        },
         badge: null,
         features: [
             'Professional format',
@@ -56,7 +68,10 @@ const PRODUCTS_EN = [
     {
         id: 'liquid-5kg',
         name: 'Pure Power Liquid 5KG',
-        image: '../assets/5k-liquid-future',
+        image: {
+            webp: { desktop: '../assets/img/webp/5k-liquid-product-desktop.webp', tablet: '../assets/img/webp/5k-liquid-product-tablet.webp', mobile: '../assets/img/webp/5k-liquid-product-mobile.webp' },
+            png:  { desktop: '../assets/img/png/5k-liquid-product-desktop.png',  tablet: '../assets/img/png/5k-liquid-product-tablet.png',  mobile: '../assets/img/png/5k-liquid-product-mobile.png'  }
+        },
         badge: null,
         features: [
             '100% hypoallergenic',
@@ -72,7 +87,10 @@ const PRODUCTS_FR = [
     {
         id: 'iconic-4kg',
         name: 'Pure Power 4KG',
-        image: '../assets/4kg.png',
+        image: {
+            webp: { desktop: './assets/img/webp/4k-product-desktop.webp', tablet: './assets/img/webp/4k-product-tablet.webp', mobile: './assets/img/webp/4k-product-mobile.webp' },
+            png:  { desktop: './assets/img/png/4k-product-desktop.png',  tablet: './assets/img/png/4k-product-tablet.png',  mobile: './assets/img/png/4k-product-mobile.png'  }
+        },
         badge: 'Best seller',
         features: [
             'Choix le plus économique',
@@ -85,7 +103,10 @@ const PRODUCTS_FR = [
     {
         id: 'compact-2kg',
         name: 'Pure Power 2KG',
-        image: './assets/2kg.png',
+        image: {
+            webp: { desktop: './assets/img/webp/2kg-product-desktop.webp', tablet: './assets/img/webp/2kg-product-tablet.webp', mobile: './assets/img/webp/2kg-product-mobile.webp' },
+            png:  { desktop: './assets/img/png/2kg-product-desktop.png',  tablet: './assets/img/png/2kg-product-tablet.png',  mobile: './assets/img/png/2kg-product-mobile.png'  }
+        },
         badge: null,
         features: [
             'Format compact',
@@ -98,7 +119,10 @@ const PRODUCTS_FR = [
     {
         id: 'family-5kg',
         name: 'Pure Power 5KG',
-        image: './assets/5kg.png',
+        image: {
+            webp: { desktop: './assets/img/webp/5kg-product-desktop.webp', tablet: './assets/img/webp/5kg-product-tablet.webp', mobile: './assets/img/webp/5kg-product-mobile.webp' },
+            png:  { desktop: './assets/img/png/5kg-product-desktop.png',  tablet: './assets/img/png/5kg-product-tablet.png',  mobile: './assets/img/png/5kg-product-mobile.png'  }
+        },
         badge: null,
         features: [
             'Format familial',
@@ -111,7 +135,10 @@ const PRODUCTS_FR = [
     {
         id: 'pro-format-6kg',
         name: 'Pure Power 6KG',
-        image: './assets/6kg.png',
+        image: {
+            webp: { desktop: './assets/img/webp/6kg-desktop-product.webp', tablet: './assets/img/webp/6kg-tablet-product.webp', mobile: './assets/img/webp/6kg-mobile-product.webp' },
+            png:  { desktop: './assets/img/png/6kg-desktop.png',           tablet: './assets/img/png/6kg-tablet.png',           mobile: './assets/img/png/6kg-mobile.png'           }
+        },
         badge: null,
         features: [
             'Format professionnel',
@@ -124,7 +151,10 @@ const PRODUCTS_FR = [
     {
         id: 'liquid-5kg',
         name: 'Pure Power 5KG liquide',
-        image: './assets/5k-liquid-future.png',
+        image: {
+            webp: { desktop: './assets/img/webp/5k-liquid-product-desktop.webp', tablet: './assets/img/webp/5k-liquid-product-tablet.webp', mobile: './assets/img/webp/5k-liquid-product-mobile.webp' },
+            png:  { desktop: './assets/img/png/5k-liquid-product-desktop.png',  tablet: './assets/img/png/5k-liquid-product-tablet.png',  mobile: './assets/img/png/5k-liquid-product-mobile.png'  }
+        },
         badge: null,
         features: [
             '100% hypoallergénique',
@@ -239,7 +269,7 @@ function initProductsPage() {
     }
 
     const thumbs = panel.querySelectorAll('.product-thumb');
-    const previewImage = panel.querySelector('.products-preview .product-image');
+    const previewContainer = panel.querySelector('.products-preview');
     const detailName = panel.querySelector('.product-name');
     const detailBadge = panel.querySelector('.product-badge');
     const detailFeatures = panel.querySelector('.product-features');
@@ -262,9 +292,19 @@ function initProductsPage() {
     });
 
     function renderProduct(product) {
-        if (previewImage) {
-            previewImage.src = product.image;
-            previewImage.alt = product.name;
+        if (previewContainer) {
+            const picture = document.createElement('picture');
+            picture.className = 'product-image';
+            picture.innerHTML =
+                `<source media="(min-width: 1000px)" srcset="${product.image.webp.desktop}" type="image/webp">` +
+                `<source media="(min-width: 1000px)" srcset="${product.image.png.desktop}">` +
+                `<source media="(min-width: 575px)" srcset="${product.image.webp.tablet}" type="image/webp">` +
+                `<source media="(min-width: 575px)" srcset="${product.image.png.tablet}">` +
+                `<source srcset="${product.image.webp.mobile}" type="image/webp">` +
+                `<img src="${product.image.png.mobile}" alt="${product.name}" loading="lazy">`;
+            const existing = previewContainer.querySelector('.product-image');
+            if (existing) existing.replaceWith(picture);
+            else previewContainer.appendChild(picture);
         }
 
         if (detailName) detailName.textContent = product.name;

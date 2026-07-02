@@ -150,6 +150,7 @@
     color: transparent;
     line-height: .6;
     opacity: .5;
+    white-space: nowrap;
 }
 
 

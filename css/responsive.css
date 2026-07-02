@@ -126,7 +126,8 @@
     #powderScrollableTitle,
     #liquidLaundryResponsiveTitle {
         display: block;
-        font-size: clamp(40px, 6vw, 80px);
+        font-size: clamp(30px, 6vw, 80px);
+        text-transform: uppercase;
     }
 
     .powders-grid {
@@ -629,6 +630,12 @@
         border: none;
     }
 
+    #liquidLaundryResponsiveTitle {
+        left: 50%;
+        translate: -50% 0;
+        white-space: nowrap;
+    }
+
     #hero h1 {
         font-size: clamp(3.5rem, 14vw, 136px);
     }
@@ -749,6 +756,12 @@
     .intro {
         padding-top: 30px;
         padding-bottom: 50px;
+    }
+
+    .header-language-toggle,
+    .mobile-menu-toggle {
+        width: 44px;
+        height: 44px;
     }
 
 

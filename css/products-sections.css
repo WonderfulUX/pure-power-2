@@ -55,7 +55,7 @@
     font-family: 'Cherry Bomb One', cursive;
     color: white;
     filter: drop-shadow(0 0px 8px #00000090);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     width: fit-content;
     /* margin-left: auto; */
 }

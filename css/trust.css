@@ -233,7 +233,7 @@
     height: 500px;
     flex-shrink: 0;
     width: 600px;
-    background: no-repeat url('../assets/comment-cloud.webp');
+    background: no-repeat url('../assets/img/webp/comment-cloud-desktop.webp');
     background-size: cover;
     background-position: -20% 70%;
 
