@@ -113,9 +113,7 @@
 
 .pure-power-advice::before,
 .pure-power-advice::after {
-    position: absolute;
     content: url('../assets/img/png/spark-small-desktop.png');
-    display: block;
     z-index: 2;
 }
 

@@ -221,6 +221,44 @@
     transform: translateX(0);
 }
 
+#hero .drop-fr {
+    position: relative;
+    color: hsl(from var(--sky) h s l/0%);
+    filter: none;
+    text-shadow: none;
+    user-select: none;
+    width: 10ch;
+    position: relative;
+    z-index: 0;
+}
+
+.hero-text:has(.drop-fr) {
+    translate: 0 3vw;
+}
+
+#hero .drop-fr::before {
+    content: '';
+    background: center/contain no-repeat url('../assets/svg/h1.svg');
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    /* filter: drop-shadow(0 4px 8px #00000030); */
+    translate: 0 2vw;
+}
+
+#hero .drop-fr::after {
+    content: '';
+    background: center/contain no-repeat url('../assets/img/png/spark-desktop.png');
+    bottom: calc(0 - 11vw);
+    right: calc(0 - 7vw);
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    /* translate: -11vw 7vw; */
+}
+
 .mobile-language-link {
     display: inline-block;
     width: 100%;
@@ -336,5 +374,5 @@
 }
 
 .mobile-nav.header-logo img {
-    height: 60px;
+    height: 80px;
 }

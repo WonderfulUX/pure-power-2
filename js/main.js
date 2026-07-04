@@ -272,12 +272,12 @@ function initContactModal() {
     };
 
     const close = (e) => {
-        if (!e.target.classList.contains('is-open')) return
-        modal.classList.remove('is-open');
-        modal.setAttribute('aria-hidden', 'true');
-        // setTimeout(() => {
-        // }, 200);
-        document.body.style.overflow = '';
+        if (e.target.classList.contains('is-open') ||
+            e.target.closest('.contact-modal-close')) {
+            modal.classList.remove('is-open');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
     };
 
     // backdrop.addEventListener('click', close);

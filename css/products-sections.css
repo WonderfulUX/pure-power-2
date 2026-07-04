@@ -11,7 +11,7 @@
     gap: 80px;
     position: relative;
     z-index: 2;
-    margin-top: 320px;
+    margin-top: 25vw;
 }
 
 .liquid-wave {
@@ -43,7 +43,7 @@
 
 .liquid-content {
     max-width: 500px;
-    margin-top: 100px;
+    margin-top: 20vw;
 }
 
 #liquidLaundryResponsiveTitle {
@@ -71,6 +71,18 @@
     -webkit-text-stroke: 8px white;
     paint-order: stroke fill;
     filter: drop-shadow(0 8px 8px hsl(from black h s l / 20%));
+}
+
+img.shadowing {
+    z-index: -1;
+    position: absolute;
+    transform: rotateY(-36deg) rotateX(88deg);
+    transform-origin: bottom center;
+    translate: 30% 0 -5000px;
+    height: 500%;
+    opacity: .1;
+    filter: blur(32px) brightness(0);
+    scale: 1 20;
 }
 
 .liquid-content p {

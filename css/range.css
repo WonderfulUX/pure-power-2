@@ -1,7 +1,8 @@
 #purepowerRange {
     position: relative;
     background: var(--cream);
-    /* height: 761px; */
+    background: center/contain no-repeat url('../assets/svg/full-range.svg') var(--cream);
+    background-position: top;
     overflow: hidden;
     display: flex;
     flex-direction: column;

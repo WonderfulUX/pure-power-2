@@ -165,7 +165,7 @@
     align-items: end;
     gap: 30px;
     position: relative;
-    perspective: 2000px;
+    perspective: 5000px;
     perspective-origin: 50% -50%;
     height: 70vh;
 }
@@ -193,13 +193,13 @@
     align-items: center;
     gap: 14px;
     text-align: center;
-    width: 400px;
+    width: 440px;
     transition: translate 1s cubic-bezier(.01, 1.37, .72, 1.33);
 }
 
 .product-item-CTN[data-pos="2"],
 .product-item-CTN[data-pos="5"] {
-    translate: 0 0 -1200px;
+    translate: 0 0 -4000px;
     z-index: 1;
 }
 
@@ -223,7 +223,7 @@
 
 .product-item-CTN[data-pos="3"],
 .product-item-CTN[data-pos="6"] {
-    translate: 0 0 -2000px;
+    translate: 0 0 -5000px;
 }
 
 .product-item-CTN[data-pos="3"] .product-item,

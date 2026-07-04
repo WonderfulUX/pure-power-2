@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+::after,
+::before {
+    position: absolute;
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: unset;
