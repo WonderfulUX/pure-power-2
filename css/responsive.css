@@ -169,6 +169,13 @@
         left: 0; */
     }
 
+    .product-item-CTN[data-pos="2"] .product-item .anti-clockwise-trig,
+    .product-item-CTN[data-pos="5"] .product-item .anti-clockwise-trig,
+    .product-item-CTN[data-pos="3"] .product-item .clockwise-trig,
+    .product-item-CTN[data-pos="6"] .product-item .clockwise-trig {
+        visibility: hidden;
+    }
+
     .product-item--featured {
         order: -1;
     }
