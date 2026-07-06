@@ -48,11 +48,8 @@
     width: fit-content;
 }
 
-.drop-CTN::after {
-    content: url('../assets/img/png/spark-small-desktop.png');
-    bottom: 0;
-    right: 0;
-    translate: 45% 25%;
+.drop-CTN img {
+    pointer-events: none;
 }
 
 .hero-product {
