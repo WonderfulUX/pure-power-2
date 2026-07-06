@@ -450,3 +450,12 @@ document.addEventListener('DOMContentLoaded', () => {
         trigger.addEventListener('click', moveElementsAntiClockwise)
     })
 })
+
+let commentsWidth = document.querySelector('.comments-grid').getBoundingClientRect().width
+const duration = document.querySelectorAll('.comment-card').length
+console.log(commentsWidth)
+
+document.querySelector('.comments-grid').animate(
+    [{ translate: "0 0 " }, { translate: `-${commentsWidth / 2}px 0` }],
+    { duration: duration * 6000, easing: "linear", iterations: "Infinity" }
+)

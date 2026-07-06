@@ -178,6 +178,7 @@
 
 .comment-grid-scrollable {
     width: 100%;
+    padding: 0 30px;
 }
 
 #comments::before {
@@ -211,17 +212,17 @@
     align-items: center;
     position: relative;
     display: flex;
-    animation: flow 120s linear infinite;
+    /* animation: flow 120s linear infinite; */
     height: fit-content;
     overflow-x: auto;
     scrollbar-width: none;
-    padding: 0 30px;
+    /* padding: 0 30px; */
     width: fit-content;
 }
 
-.comments-grid:hover {
+/* .comments-grid:hover {
     animation-play-state: paused;
-}
+} */
 
 @keyframes flow {
     to {
@@ -237,7 +238,8 @@
     justify-content: center;
     height: 500px;
     flex-shrink: 0;
-    width: 600px;
+    width: 560px;
+    margin: 0 25px;
     background: no-repeat url('../assets/img/webp/comment-cloud-desktop.webp');
     background-size: cover;
     background-position: -20% 70%;
