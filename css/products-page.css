@@ -135,9 +135,9 @@
     padding: clamp(20px, 3vw, 40px);
 }
 
-.products-preview .product-image {
+.products-preview .product-image img {
     width: 100%;
-    max-width: 320px;
+    max-width: 440px;
     height: auto;
     object-fit: contain;
     filter: drop-shadow(0 24px 60px var(--cream));
