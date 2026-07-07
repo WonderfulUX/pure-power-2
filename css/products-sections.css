@@ -43,7 +43,7 @@
 
 .liquid-content {
     max-width: 500px;
-    margin-top: 20vw;
+    margin-top: 10vw;
 }
 
 #liquidLaundryResponsiveTitle {
@@ -118,5 +118,5 @@ img.shadowing {
 
 #liquidLaundry h2 {
     position: absolute;
-    translate: 0 -70%;
+    translate: 0 -45%;
 }
