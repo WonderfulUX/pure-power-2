@@ -34,7 +34,7 @@
 
 .cta-label {
     font-size: clamp(20px, 4.5vw, 60px);
-    font-family: 'Cherry bomb one', cursive;
+    font-family: "Titan One", sans-serif;
 }
 
 .cta-icon {
@@ -44,5 +44,5 @@
 
 .editorial {
     margin-bottom: 50px;
-    color: var(--navy);
+    color: red;
 }

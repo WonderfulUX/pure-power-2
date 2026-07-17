@@ -29,10 +29,10 @@
     width: 90%;
     max-width: 500px;
     overflow-y: auto;
-    background: linear-gradient(to bottom, var(--cream), var(--light-blue-footer));
+    background: var(--glacial);
     border-radius: 20px;
     padding: 30px 40px;
-    color: var(--navy);
+    /* color: red; */
     opacity: 0;
     translate: 0 24px;
     transition: opacity 0.2s ease, translate 0.2s ease;
@@ -88,7 +88,7 @@
 .contact-type label {
     padding: 10px 18px;
     border-radius: 30px;
-    border: 2px solid hsl(from var(--navy) h s l / 30%);
+    border: 2px solid var(--dark-blue);
     cursor: pointer;
     font-size: 15px;
     font-weight: 500;
@@ -104,8 +104,9 @@
 }
 
 .contact-type label:has(input:checked) {
-    background: var(--mint);
-    border-color: var(--navy);
+    background: var(--signature);
+    border-color: var(--signature);
+    color: var(--white);
 }
 
 .contact-type input[type="radio"] {
@@ -141,9 +142,9 @@
     border-radius: 10px;
     padding: 13px 15px;
     font-size: clamp(0.875rem, 1vw, 0.9375rem);
-    color: var(--navy);
+    color: var(--dark-blue);
     width: 100%;
-    border: 3px solid white;
+    border: 2px solid var(--white);
 }
 
 .field input:focus,
@@ -162,7 +163,7 @@
 .contact-submit {
     align-self: center;
     font-size: 16px;
-    color: var(--navy);
+    color: var(--signature);
     border: 2px solid;
     /* background: var(--yellow); */
     text-transform: uppercase;
@@ -175,7 +176,9 @@
 }
 
 .contact-submit:hover {
-    background: var(--yellow);
+    background: var(--signature);
+    border-color: var(--signature);
+    color: var(--white);
 }
 
 .visually-hidden {

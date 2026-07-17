@@ -54,43 +54,67 @@
     font-display: swap;
 }
 
-body {
-    font-family: 'HK Grotesk Wide', sans-serif;
-    color: var(--white);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Monument extended';
+    src: url('../assets/font/PPMonumentExtended-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-h1 {
-    font-size: clamp(2.75rem, 9vw, 7rem);
+/* @font-face {
+    font-family: 'Monument extended';
+    src: url('../assets/font/PPMonumentExtended-Heavy.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+} */
+
+/* @font-face {
+    font-family: 'Monument wide';
+    src: url('../assets/font/PPMonumentWide-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 
-h2 {
-    font-size: clamp(2.5rem, 6.8vw, 5.5rem);
+@font-face {
+    font-family: 'Monument wide';
+    src: url('../assets/font/PPMonumentWide-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
-h3 {
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
-}
+@font-face {
+    font-family: 'Monument wide';
+    src: url('../assets/font/PPMonumentWide-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+} */
 
-h4 {
-    font-size: clamp(1.125rem, 2vw, 1.5rem);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
-    line-height: 1;
-}
 
 h1,
 h2,
 h3,
 h4,
 h5 {
+    font-family: "Titan One", sans-serif;
+    color: var(--signature);
+    text-transform: uppercase;
+    line-height: 100%;
     font-weight: 400;
+}
+
+h1 {
+    font-size: clamp(3.5rem, 5.5vw, 170px);
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 7vw;
+    margin-bottom: 80px;
 }

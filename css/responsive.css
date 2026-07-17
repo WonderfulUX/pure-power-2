@@ -45,7 +45,7 @@
         padding: 60px 50px;
     }
 
-    .trust-videos {
+    .socials-videos {
         gap: 12px;
     }
 
@@ -265,19 +265,11 @@
         justify-content: center;
     }
 
-    .trust-videos {
+    .socials-videos {
         height: auto;
         margin: 0 auto;
     }
 
-
-    .comment-card--tall {
-        transform: none;
-    }
-
-    .comment-cloud {
-        max-width: 380px;
-    }
 
     #comments h2 {
         text-align: center;
@@ -527,29 +519,29 @@
         padding-right: 0;
     }
 
-    .trust-videos-scrollable-ctn {
+    .socials-videos-scrollable-ctn {
         width: 100%;
         overflow: hidden;
     }
 
-    .trust-videos-srollable {
+    .socials-videos-srollable {
         width: 100%;
         overflow: auto;
         scrollbar-width: none;
     }
 
-    .trust-videos {
+    .socials-videos {
         padding: 0 30px;
         display: flex;
         width: fit-content;
     }
 
-    .trust-video {
+    .socials-video {
         width: 300px;
         height: 500px;
     }
 
-    .trust-video--sm .trust-video--md .trust-video--lg {
+    .socials-video--sm .socials-video--md .socials-video--lg {
         height: 100%;
     }
 
@@ -579,7 +571,7 @@
         overflow: hidden;
         border: 4px solid;
         border-radius: 20px;
-        background: radial-gradient(var(--mint), hsl(from var(--sky) h s l /90%) 70%);
+        background: radial-gradient(red, hsl(from var(--sky) h s l /90%) 70%);
         backdrop-filter: blur(20px);
         padding: 100px 40px 40px;
         display: grid;
@@ -731,7 +723,7 @@
         font-size: 30px;
     }
 
-    .trust-videos {
+    .socials-videos {
         padding: 30px 30px 30px 16px;
     }
 
@@ -828,25 +820,10 @@
         font-size: 20px;
     }
 
-    #home-hero .drop-fr::before {
-        /* translate: 0 2vw; */
-        background: center/contain no-repeat url('../assets/svg/h1-mobile.svg');
-    }
-
-    #home-hero .drop-en::before {
-        /* translate: 0 2vw; */
-        background: center/contain no-repeat url('../assets/svg/h1-en-mobile.svg');
-    }
-
     .hero-text {
         max-width: unset;
     }
 
-    .hero-text:has(.drop-fr),
-    #home-hero .drop-fr::before,
-    #home-hero .drop-en::before {
-        translate: unset;
-    }
 
     #home-hero h1 {
         margin: 0;

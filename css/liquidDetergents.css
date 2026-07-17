@@ -1,0 +1,14 @@
+#liquidDetergents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding-top: 150px;
+    /* padding-bottom: 150px; */
+}
+
+#liquidDetergents h3 {
+    left: 0;
+    top: 0;
+    translate: -5% 0;
+}

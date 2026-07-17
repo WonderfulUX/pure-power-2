@@ -42,7 +42,7 @@
 }
 
 .header-contact {
-    color: var(--navy);
+    color: red;
     background: var(--yellow);
     padding: 10px 24px;
     border-radius: 100px;
@@ -85,9 +85,8 @@
 .mobile-menu-toggle {
     width: 54px;
     height: 54px;
-    color: var(--navy);
-    background-color: white;
-    border: 3px solid;
+    color: var(--white);
+    background-color: var(--dark-blue);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -149,8 +148,8 @@
 }
 
 .header-language-menu li a:hover {
-    background: var(--grass);
-    color: var(--navy);
+    background: var(--signature);
+    color: var(--white);
 }
 
 .mobile-menu-toggle {
@@ -164,7 +163,7 @@
     display: block;
     width: 26px;
     height: 3px;
-    background: var(--navy);
+    background: var(--white);
     border-radius: 30px;
     border-radius: 2px;
     transition: transform 0.25s ease, opacity 0.25s ease;
@@ -193,7 +192,7 @@
     right: 0;
     width: 240px;
     z-index: 200;
-    background: var(--navy);
+    background: var(--dark-blue);
     display: grid;
     grid-template-rows: auto 1fr auto;
     padding: 30px;
@@ -261,12 +260,16 @@
     opacity: 0;
     transform: translateX(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    font-family: 'Cherry Bomb One', cursive;
 }
 
 #mobile-menu[aria-hidden="false"] .mobile-menu-nav a {
-    opacity: 1;
+    opacity: .7;
     transform: translateX(0);
+}
+
+#mobile-menu[aria-hidden="false"] .mobile-menu-nav a:hover {
+    opacity: 1;
+    color: var(--yellow);
 }
 
 #mobile-menu[aria-hidden="false"] .mobile-menu-nav a:nth-child(1) {
@@ -320,7 +323,6 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    border: 3px solid var(--navy);
 }
 
 

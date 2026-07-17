@@ -12,23 +12,18 @@
 }
 
 @keyframes ticker-scroll {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 .ticker-item {
     display: inline-flex;
     align-items: center;
     padding: 0 clamp(16px, 2.5vw, 40px);
-    flex-shrink: 0;
-}
-
-.ticker-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: currentColor;
-    opacity: 0.5;
     flex-shrink: 0;
 }

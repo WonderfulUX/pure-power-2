@@ -1,0 +1,33 @@
+#perks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    gap: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+#perksWave {
+    width: 100%;
+    fill: var(--yellow);
+    position: absolute;
+    z-index: -1;
+}
+
+.perk {
+    text-align: center;
+}
+
+.perk svg {
+    fill: var(--signature);
+    margin-bottom: 20px;
+}
+
+.perk p {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--signature);
+}

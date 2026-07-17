@@ -165,7 +165,7 @@
 .product-details-block {
     border: 4px solid white;
     background: var(--product-panel-bg);
-    color: var(--navy);
+    color: red;
     padding: 20px;
     border-radius: 20px;
     display: flex;
@@ -198,7 +198,7 @@
     border-radius: 100px;
     rotate: -10deg;
     translate: 30% -50%;
-    font-family: 'Cherry bomb one', cursive;
+    font-family: "Titan One", sans-serif;
     text-shadow: 0 0 20px #00000050;
 }
 
@@ -255,7 +255,7 @@
 .product-tab {
     border: 4px solid #FFFFFF00;
     border-bottom: none;
-    color: var(--navy);
+    color: red;
     padding: 10px 16px 12px;
     transition: opacity 0.2s ease;
     position: relative;
@@ -312,14 +312,14 @@
 
 .product-tab-content {
     font-size: clamp(0.875rem, 1vw, 0.9375rem);
-    color: var(--navy);
+    color: red;
     border-color: white;
     width: 100%;
     font-size: 20px;
 }
 
 #products-cta {
-    background: var(--navy);
+    background: red;
     padding: clamp(48px, 6vw, 80px) clamp(24px, 6vw, 80px);
     text-align: center;
     display: flex;
