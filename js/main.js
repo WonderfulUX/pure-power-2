@@ -296,6 +296,12 @@ function initContactModal() {
         });
     });
 
+    window.addEventListener('resize', () => {
+        document.querySelector("#powderDetergents .products-grid").style.translate = '0px 0px'
+        deActivateButton(slideLeft)
+        activateButton(slideRight)
+    })
+
     const radios = modal.querySelectorAll('input[name="query-type"]');
     radios.forEach(radio => {
         radio.addEventListener('change', () => {
@@ -459,3 +465,31 @@ document.querySelector('.comments-grid').animate(
     [{ translate: "0 0 " }, { translate: `-${commentsWidth / 2}px 0` }],
     { duration: duration * 6000, easing: "linear", iterations: "Infinity" }
 )
+
+
+slideRight.addEventListener('click', () => {
+    const translateXvalue = getTranslationValue()
+    document.querySelector('#powderDetergents .products-grid').style.translate = `-${translateXvalue}px 0px`
+    deActivateButton(slideRight)
+    activateButton(slideLeft)
+})
+slideLeft.addEventListener('click', () => {
+    const translateXvalue = getTranslationValue()
+    document.querySelector('#powderDetergents .products-grid').style.translate = `0 0`
+    deActivateButton(slideLeft)
+    activateButton(slideRight)
+})
+
+function getTranslationValue() {
+    const grid = document.querySelector('#powderDetergents .products-grid')
+    return Math.abs(grid.getBoundingClientRect().width - innerWidth)
+}
+
+function activateButton(btnId) {
+    btnId.removeAttribute('disabled')
+    btnId.setAttribute('aria-disabled', false)
+}
+function deActivateButton(btnId) {
+    btnId.disabled = true
+    btnId.setAttribute('aria-disabled', true)
+}

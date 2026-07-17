@@ -11,6 +11,16 @@
     #home-hero {
         gap: 100px;
     }
+
+    #powderDetergents .products-grid {
+        padding: 0;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .view-buttons {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -31,234 +41,70 @@
         height: 90vh;
     }
 
-    #otherLaundryPowders {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
     .best-seller-ctn {
         width: 100%;
-    }
-
-    .trust-community {
-        grid-template-columns: 220px 1fr;
-        padding: 60px 50px;
     }
 
     .socials-videos {
         gap: 12px;
     }
 
-    .product-item-CTN[data-pos="2"] .product-details-and-link,
-    .product-item-CTN[data-pos="5"] .product-details-and-link,
-    .product-item-CTN[data-pos="3"] .product-details-and-link,
-    .product-item-CTN[data-pos="6"] .product-details-and-link {
-        scale: 1.1;
-        translate: 0 0 0;
+    .perk {
+        margin-top: 50px;
+        scale: .8;
     }
 
-}
+    #perks {
+        gap: 50px;
+    }
 
-@media screen and (max-width: 1100px) {
-    #liquidLaundryGrid {
-        margin-top: 280px;
+    #liquidDetergents {
+        gap: 0;
+    }
+
+    #socials {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .trust-copy {
+        text-align: center;
+    }
+
+    .trust-socials {
+        justify-content: center;
+    }
+
+    #socials p {
+        font-size: 40px;
+        width: 500px;
+        margin: 0 auto 30px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .product-item .product-img-ctn .shadowing {
-        display: none;
-    }
-
-    .hero-content {
-        max-width: 500px;
-    }
-
-    .hero-subtitle {
-        text-align: left;
-    }
-
-    .best-seller-grid {
-        grid-template-columns: 1fr;
-        padding: 80px 40px 60px;
-        text-align: center;
-    }
-
-    .best-seller-ctn {
-        max-width: 400px;
-        width: 90%;
-        height: auto;
-        margin: 0 auto;
-        position: relative;
-        translate: -5% 0;
-    }
-
     #home-hero {
         height: 80vh;
     }
 
-    .best-seller-content h2 {
-        width: unset;
-    }
-
-    .best-seller-grid {
-        gap: 0;
-    }
-
-    .best-seller-content p {
-        max-width: 400px;
-        margin: 0 auto 20px;
-    }
-
-    .best-seller-content {
-        text-align: center;
-    }
-
-    .best-seller-decorative-bg {
-        scale: .8;
-    }
-
-    #otherLaundryPowders {
-        padding: 100px 0 0;
-    }
-
-    .powder-grid-scrollable {
-        overflow-x: scroll;
-        padding: 0 30px;
-        display: flex;
-        scrollbar-width: none;
-    }
-
-    #powderScrollableTitle,
-    #liquidLaundryResponsiveTitle {
-        display: block;
-        font-size: clamp(30px, 6vw, 80px);
-        text-transform: uppercase;
-    }
-
-    .powders-grid {
-        grid-template-columns: repeat(3, 330px);
-        height: fit-content;
-        gap: 160px;
-        /* padding-bottom: 100px; */
-        padding: 80px 120px 60px;
-        background: #FFFFFF50;
-        border-radius: 20px;
-        border: 4px solid;
-        backdrop-filter: blur(20px);
-        margin-bottom: 50px;
-    }
-
-    .powders-bg-text {
+    .view-buttons {
         display: none;
     }
 
-    .product-item-CTN,
-    .product-item {
-        width: 100%;
+    .products-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 100px;
+        padding: 0 20px;
     }
 
-    .product-item-CTN[data-pos="1"],
-    .product-item-CTN[data-pos="2"],
-    .product-item-CTN[data-pos="3"],
-    .product-item-CTN[data-pos="1"] .product-item,
-    .product-item-CTN[data-pos="2"] .product-item,
-    .product-item-CTN[data-pos="3"] .product-item {
-        position: unset;
-        translate: unset;
-        transform: unset;
-        /* top: 0;
-        left: 0; */
-    }
-
-    .product-item-CTN[data-pos="2"] .product-details-and-link,
-    .product-item-CTN[data-pos="5"] .product-details-and-link,
-    .product-item-CTN[data-pos="3"] .product-details-and-link,
-    .product-item-CTN[data-pos="6"] .product-details-and-link {
-        scale: unset;
-        translate: unset;
-    }
-
-    .product-item-CTN[data-pos="2"] .product-item .anti-clockwise-trig,
-    .product-item-CTN[data-pos="5"] .product-item .anti-clockwise-trig,
-    .product-item-CTN[data-pos="3"] .product-item .clockwise-trig,
-    .product-item-CTN[data-pos="6"] .product-item .clockwise-trig {
-        visibility: hidden;
-    }
-
-    .product-item--featured {
-        order: -1;
-    }
-
-    .product-item .product-img-ctn img,
-    .product-item--featured .product-img-ctn img,
-    #product5kg .product-img-ctn img {
-        transform: none;
-        width: 100%;
-    }
-
-    .footer-range-img {
-        width: 90%;
-    }
-
-
-    .footer-right {
-        width: 100%;
-    }
-
-    .footer-logo {
-        margin-top: 0;
-        width: 160px;
-    }
-
-    .products-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .products-preview {
-        display: none;
-    }
-
-    .products-hint {
-        opacity: 1;
-    }
-
-    #liquidLaundryGrid {
-        margin-top: 200px;
-    }
-
-    .liquid-wave {
-        top: -40px;
-    }
-
-    .liquid-bg-text {
-        display: none;
-    }
-
-    .liquid-product {
-        width: 100%;
-        max-width: 400px;
-        align-self: center;
-    }
-
-    .liquid-product img {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    #liquidLaundry {
-        padding-bottom: 100px;
+    #liquidDetergents {
+        flex-direction: column;
     }
 
     .trust-copy p {
         max-width: 400px;
         margin: 0 auto 20px;
-    }
-
-    .trust-community {
-        grid-template-columns: 1fr;
-        padding: 80px 40px;
-        text-align: center;
     }
 
     .trust-socials {
@@ -268,12 +114,6 @@
     .socials-videos {
         height: auto;
         margin: 0 auto;
-    }
-
-
-    #comments h2 {
-        text-align: center;
-        padding-right: 0;
     }
 
     .footer-column ul {
@@ -312,28 +152,28 @@
     #products-panel {
         margin-bottom: 140px;
     }
+
+    #perks {
+        padding-bottom: 160px;
+        padding-TOP: 160px;
+        gap: 30px;
+    }
+
+    .perk {
+        scale: .7;
+    }
+
+    #liquidDetergents {
+        padding-top: 80px;
+    }
+
+    #socials {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+    }
 }
 
-@media (max-width: 900px) {
-    .product-item .product-details h3 {
-        font-size: 30px;
-    }
-
-
-    #liquidLaundryGrid {
-        margin-top: 160px;
-        padding-bottom: unset;
-        gap: 50px;
-    }
-
-}
-
-/* @media (max-width: 900px) {
-    .product-item .product-details h3 {
-        font-size: 30px;
-    }
-
-} */
 
 @media (max-width: 850px) {
     #intro {
@@ -361,29 +201,10 @@
 }
 
 @media (max-width: 768px) {
-    #about-page .wave-section-wrapper {
-        background-image: url('../assets/img/jpg/liquid-large.jpg');
-        background-image: url('../assets/img/webp/liquid-large-mobile.webp');
-    }
 
-    #blog-hero {
-        padding-bottom: 50px;
-    }
-
-    .faq-hero-product {
-        height: clamp(140px, 22vw, 220px);
-    }
-
-    .drop-CTN {
-        scale: .7;
-    }
 
     .faq-grid {
         grid-template-columns: 1fr;
-    }
-
-    .footer-range-img {
-        width: 100%;
     }
 
     .footer-cta {
@@ -393,11 +214,6 @@
 
     #home-hero {
         height: 70vh;
-    }
-
-    .product-badge {
-        translate: -5px 5px;
-        rotate: unset;
     }
 
     .product-list-scrollable {
@@ -448,8 +264,28 @@
         gap: 0;
     }
 
+    #powderDetergents,
+    #liquidDetergents {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .product-thumb:hover:not(.active) {
         background: none;
+    }
+
+    .products-grid {
+        flex-wrap: nowrap;
+        padding: 50px;
+        width: 100%;
+        overflow: auto;
+        justify-content: unset;
+        scrollbar-width: none;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        text-align: center;
     }
 
     .product-list-scrollable-ctn {
@@ -463,58 +299,13 @@
         padding-left: 2.5vw;
     }
 
-    #products-page .hero-content {
-        margin-bottom: 0;
+    #socials {
+        padding-left: 0;
+        padding-right: 0;
     }
 
-    #intro {
-        display: flex;
-        flex-direction: column;
-        /* padding: 0 30 60px; */
-        gap: 50px;
-    }
 
-    #maximumEfficiency {
-        margin: 0;
-    }
-
-    .intro-block {
-        max-width: 500px;
-    }
-
-    .liquid-product {
-        grid-area: image;
-        margin: 0 auto;
-    }
-
-    .liquid-product .reflected {
-        display: none;
-    }
-
-    .liquid-content {
-        grid-area: content;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .liquid-content p {
-        text-align: center;
-    }
-
-    #liquidLaundryResponsiveTitle {
-        grid-area: title;
-        position: unset;
-        filter: drop-shadow(0 0 10px #00000030);
-        translate: unset;
-    }
-
-    .liquid-wave {
-        display: none;
-    }
-
-    .trust-community {
+    .socials-videos {
         padding-left: 0;
         padding-right: 0;
     }
@@ -553,52 +344,28 @@
         align-items: flex-end;
     }
 
-    .footer-links {
-        flex-direction: column;
+
+    #perksWave {
+        display: none;
     }
 
-    section,
-    #bestSeller {
-        padding: 50px 30px;
-    }
-
-    #laundryPowders {
-        padding: 50px 0 0;
-    }
-
-    #liquidLaundryGrid {
-        position: relative;
-        overflow: hidden;
-        border: 4px solid;
-        border-radius: 20px;
-        background: radial-gradient(red, hsl(from var(--sky) h s l /90%) 70%);
-        backdrop-filter: blur(20px);
-        padding: 100px 40px 40px;
+    #perks {
+        background: var(--yellow);
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            /* 'title' */
-            'image'
-            'content';
-        margin: 0;
-        align-items: unset;
-        gap: 24px;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        margin-top: 50px;
+
     }
 
-    #liquidLaundryGrid>* {
-        position: relative;
-        z-index: 2;
+    .perk {
+        scale: 1;
     }
 
-    #liquidLaundryResponsiveTitle {
-        filter: unset;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
-
-    .best-seller-ctn {
-        max-width: 350px;
+    section {
+        padding: 50px 30px;
     }
 
     #products-panel-section {
@@ -659,14 +426,16 @@
         border: none;
     }
 
-    #liquidLaundryResponsiveTitle {
-        left: 50%;
-        translate: -50% 0;
-        white-space: nowrap;
+    .product {
+        width: 300px;
     }
 
-    #home-hero h1 {
-        font-size: clamp(3.5rem, 14vw, 136px);
+    .product-img-container {
+        width: 280px;
+    }
+
+    .products-grid {
+        padding: 50px 11vw;
     }
 
     .intro-block h2,
@@ -692,6 +461,19 @@
         width: 100%;
         max-width: 450px;
         margin: 0 auto;
+    }
+
+    #perks {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .footer-column:first-of-type {
+        text-align: unset;
     }
 
     #contact-modal {
@@ -798,10 +580,8 @@
     }
 
 
-    #availabilityBanner,
-    #trustBanner,
-    #resellersBanner {
-        height: 80px;
+    .sliding-banner {
+        height: 120px;
     }
 
     #blog-hero {
@@ -809,33 +589,12 @@
     }
 
     .comment-card {
-        padding: 80px 24px;
+        padding: 0 30px;
     }
 
-    .best-seller-ctn {
-        max-width: 300px;
-    }
-
-    .best-seller-badge {
-        font-size: 20px;
-    }
-
-    .hero-text {
-        max-width: unset;
-    }
-
-
-    #home-hero h1 {
-        margin: 0;
-    }
-
-
-    .reflected {
-        opacity: .3;
-    }
-
-    .hero-text:has(.drop-fr) {
-        translate: unset;
+    .comments-grid,
+    #comments {
+        height: fit-content;
     }
 
 }

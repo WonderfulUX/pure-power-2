@@ -108,13 +108,13 @@ h5 {
 }
 
 h1 {
-    font-size: clamp(3.5rem, 5.5vw, 170px);
+    font-size: clamp(2.1rem, 5.5vw, 170px);
     text-align: center;
     max-width: 80%;
     margin: 0 auto;
 }
 
 h2 {
-    font-size: 7vw;
+    font-size: clamp(50px, 7vw, 80px);
     margin-bottom: 80px;
 }

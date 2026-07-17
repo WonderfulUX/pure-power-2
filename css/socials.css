@@ -19,7 +19,7 @@
     position: absolute;
     fill: var(--lightGrey);
     pointer-events: none;
-    width: 450px;
+    width: 33vw;
     height: auto;
     z-index: -1;
 }

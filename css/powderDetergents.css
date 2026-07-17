@@ -5,7 +5,7 @@
 }
 
 h2 .monument {
-    font-size: 40px;
+    font-size: clamp(24px, 4vw, 40px);
     line-height: 100%;
     color: var(--dark-blue);
     font-weight: 700;
@@ -19,7 +19,48 @@ h2 * {
     display: flex;
     gap: 30px;
     width: fit-content;
-    padding: 0 100px;
+    padding: 0 60px;
+    position: relative;
+    transition: translate .8s ease-in-out;
+}
+
+.view-buttons {
+    position: absolute;
+    top: 200px;
+    right: 25px;
+    display: flex;
+    z-index: 2;
+}
+
+.view-buttons button {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-buttons svg {
+    stroke: var(--dark-blue);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    scale: 2;
+}
+
+.view-buttons button:not([disabled]):hover {
+    background: var(--dark-blue);
+}
+
+.view-buttons button:not([disabled]):hover svg {
+    stroke: var(--white);
+}
+
+[disabled] {
+    opacity: .1;
+    pointer-events: none;
 }
 
 .product {
