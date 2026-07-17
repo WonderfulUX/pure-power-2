@@ -1,20 +1,3 @@
-#products-page {
-    background-image: url('../assets/img/jpg/community-large.jpg');
-    background-image: url('../assets/img/webp/community-large-desktop.webp');
-    background-size: contain;
-}
-
-#products-page .hero {
-    background: none;
-    height: fit-content;
-    padding: 0;
-}
-
-/* #product-hero {
-    padding-top:
-        200px;
-} */
-
 #product-hero .hero-content {
     max-width: unset;
     /* margin-top: 50px; */
@@ -42,9 +25,14 @@
     border-radius: 50px;
 }
 
+.products-list-panel {
+    display: flex;
+    align-items: flex-start;
+}
+
 .products-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr .9fr;
     gap: clamp(24px, 3vw, 40px);
     max-width: 1280px;
     margin: 0 auto;
@@ -92,8 +80,22 @@
     gap: 10px;
 }
 
+.product-list-scrollable-ctn {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+    background: var(--lightGrey);
+    scrollbar-width: none;
+}
+
 .products-thumbs {
     margin-bottom: 24px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .product-list-scrollable {
@@ -111,11 +113,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .product-thumb.active {
-    border: 4px solid white;
-    background: rgba(253, 216, 53, 0.08);
+    border: 2px solid var(--signature);
+    background: var(--glacial);
 }
 
 .product-thumb:hover:not(.active) {
@@ -132,7 +135,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(20px, 3vw, 40px);
+    /* padding: 10px; */
 }
 
 .products-preview .product-image img {
@@ -140,7 +143,7 @@
     max-width: 440px;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 24px 60px var(--cream));
+    filter: drop-shadow(0 24px 100px var(--glacial));
     transition: opacity 0.2s ease;
 }
 
@@ -153,9 +156,10 @@
 
 .product-label,
 .product-tab {
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
     font-weight: 600;
+    color: var(--signature);
 }
 
 .product-detail-header {
@@ -163,9 +167,7 @@
 }
 
 .product-details-block {
-    border: 4px solid white;
-    background: var(--product-panel-bg);
-    color: red;
+    background: var(--glacial);
     padding: 20px;
     border-radius: 20px;
     display: flex;
@@ -178,6 +180,7 @@
 .product-name {
     font-size: clamp(1.5rem, 2.5vw, 2.25rem);
     color: var(--sky);
+    margin-bottom: 20px;
 }
 
 #products-page .product-name {
@@ -185,21 +188,15 @@
     font-weight: 500;
 }
 
-.product-badge {
+.product-badge.tag {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 30px;
-    color: white;
-    font-weight: 500;
-    border: 4px solid;
-    background: linear-gradient(to bottom, var(--pink), var(--yellow));
-    padding: 4px 20px;
-    border-radius: 100px;
-    rotate: -10deg;
+    width: 120px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    rotate: -14deg;
     translate: 30% -50%;
-    font-family: "Titan One", sans-serif;
-    text-shadow: 0 0 20px #00000050;
 }
 
 .product-features {
@@ -238,7 +235,7 @@
 }
 
 .product-tab::after {
-    background: hsl(from var(--product-panel-bg) h s l /0%);
+    background: hsl(from var(--glacial) h s l /0%);
 }
 
 .product-tab.active::after {
@@ -249,13 +246,11 @@
     bottom: 0;
     left: 50%;
     translate: -50% 4px;
-    background: var(--product-panel-bg);
+    background: var(--glacial);
 }
 
 .product-tab {
-    border: 4px solid #FFFFFF00;
     border-bottom: none;
-    color: red;
     padding: 10px 16px 12px;
     transition: opacity 0.2s ease;
     position: relative;
@@ -273,6 +268,10 @@
     right: 0;
     translate: 100% -50%;
 
+}
+
+.product-tab-content {
+    text-align: left;
 }
 
 .product-tab-content.product-description:not([hidden]) {
@@ -294,15 +293,11 @@
     opacity: 1;
 }
 
-/* #product-hero .hero-subtitle {
-    margin-bottom: 80px;
-} */
 
 .product-tab.active {
-    border: 4px solid white;
     border-bottom: none;
     border-radius: 20px 20px 0 0;
-    background: var(--product-panel-bg);
+    background: var(--glacial);
 }
 
 .product-tab-content.product-details-block {
@@ -312,14 +307,11 @@
 
 .product-tab-content {
     font-size: clamp(0.875rem, 1vw, 0.9375rem);
-    color: red;
-    border-color: white;
     width: 100%;
     font-size: 20px;
 }
 
 #products-cta {
-    background: red;
     padding: clamp(48px, 6vw, 80px) clamp(24px, 6vw, 80px);
     text-align: center;
     display: flex;
