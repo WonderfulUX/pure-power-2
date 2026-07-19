@@ -21,18 +21,6 @@
 
 @media screen and (max-width: 1200px) {
 
-
-    #about-page .wave-section-wrapper {
-        background-image: url('../assets/img/jpg/liquid-large.jpg');
-        background-image: url('../assets/img/webp/liquid-large-tablet.webp');
-    }
-
-    .best-seller-grid {
-        grid-template-columns: 380px 1fr;
-        padding: 200px 100px 120px;
-        gap: 60px;
-    }
-
     .hero {
         height: 90vh;
     }
@@ -138,12 +126,11 @@
         padding-right: unset;
     }
 
+    .article-grid,
     .faq-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
         max-width: 750px;
         margin: 0 auto;
-        width: 90%;
         gap: 80px;
     }
 
@@ -298,9 +285,22 @@
 
     }
 
+    .full-description .contained {
+        width: 100%;
+        word-break: break-word;
+
+    }
+
     h2 {
         margin-bottom: 0;
         text-align: center;
+    }
+
+    #about-content h2,
+    .article-name,
+    #faq-content h2 {
+        text-align: unset;
+        margin-bottom: 20px;
     }
 
     #liquidDetergents h2 {
@@ -627,6 +627,14 @@
         aspect-ratio: 9/16;
     }
 
+    .contained {
+        margin: 50px auto;
+    }
+
+    .article-name {
+        font-size: 24px;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -701,12 +709,23 @@
         margin-bottom: 12px;
     }
 
+    .faq-grid,
     #perks {
         gap: 50px 0;
     }
 
     .header-logo img {
         height: 60px;
+    }
+
+    .contained h2 {
+        font-size: 30px;
+    }
+
+    #faq-content h2 {
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 12px;
     }
 
 }

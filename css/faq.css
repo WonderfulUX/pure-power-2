@@ -14,7 +14,8 @@
     width: 90%;
 }
 
+.article-name,
 #faq-content h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 30px;
 }

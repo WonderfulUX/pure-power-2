@@ -3,17 +3,6 @@
     width: 30ch;
 }
 
-.blog-page .article-name {
-    font-size: 30px;
-    margin-bottom: 20px;
-
-}
-
-.blog-page .article-description {
-    font-size: 30px;
-    line-height: 1.2;
-
-}
 
 .article-grid {
     display: grid;
@@ -25,6 +14,12 @@
 .article-link {
     display: block;
     padding: 24px;
+    height: 100%;
+
+}
+
+.article-link-ctn {
+    box-shadow: 0 8px 20px #00000015;
 }
 
 .article-link-ctn:hover {
