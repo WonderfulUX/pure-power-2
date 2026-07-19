@@ -24,10 +24,10 @@
     display: block;
     border: 2px solid;
     border-radius: 100px;
-    width: 360px;
+    width: 300px;
     text-align: center;
-    line-height: 90px;
-    font-size: 50px;
+    line-height: 80px;
+    font-size: 40px;
     font-weight: 300;
     text-transform: uppercase;
     transition: background-color 0.2s ease, color 0.2s ease;

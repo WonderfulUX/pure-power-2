@@ -1,7 +1,7 @@
 #powderDetergents h3 {
     left: 22vw;
     top: 0;
-    translate: 0 -25%;
+    translate: 0 -10%;
 }
 
 h2 .monument {
@@ -17,9 +17,9 @@ h2 * {
 
 .products-grid {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     width: fit-content;
-    padding: 0 60px;
+    padding: 0 8vw;
     position: relative;
     transition: translate .8s ease-in-out;
 }
