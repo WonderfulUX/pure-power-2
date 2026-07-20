@@ -1,7 +1,7 @@
 #powderDetergents h3 {
-    left: 22vw;
+    right: 0;
     top: 0;
-    translate: 0 -10%;
+    translate: 2% -10%;
 }
 
 h2 .monument {
@@ -160,7 +160,7 @@ h2 * {
     font-size: 30px;
 }
 
-.tag span:nth-of-type(2) {
+.tag span:last-of-type {
     font-size: 22px;
 }
 

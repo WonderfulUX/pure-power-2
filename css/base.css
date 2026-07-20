@@ -39,7 +39,7 @@ section,
     position: absolute;
     color: var(--glacial);
     opacity: .5;
-    font-size: 16vw;
+    font-size: clamp(80px, 17vw, 250px);
     z-index: -1;
 }
 

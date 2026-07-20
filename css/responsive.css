@@ -107,14 +107,14 @@
     }
 
     .footer-column li {
-        height: 40px;
+        height: 44px;
     }
 
     .footer-column-link {
         display: inline-block;
         width: 100%;
         height: 100%;
-        line-height: 40px;
+        line-height: 44px;
     }
 
     #liquidDetergents h2 {
@@ -348,10 +348,13 @@
 
     .socials-video {
         width: 300px;
-        height: 500px;
+        height: auto;
     }
 
-    .socials-video--sm .socials-video--md .socials-video--lg {
+    .socials-video .socials-video--sm,
+    .socials-video .socials-video--md,
+    .socials-video .socials-video--lg {
+        flex-shrink: 0;
         height: 100%;
     }
 
@@ -447,7 +450,7 @@
     }
 
     .product {
-        width: 300px;
+        width: 260px;
     }
 
     .product-img-container {
@@ -624,7 +627,6 @@
 
     .socials-video {
         width: 260px;
-        aspect-ratio: 9/16;
     }
 
     .contained {
@@ -633,6 +635,18 @@
 
     .article-name {
         font-size: 24px;
+    }
+
+    .tag span:first-of-type {
+        font-size: 24px;
+    }
+
+    .tag span:last-of-type {
+        font-size: 18px;
+    }
+
+    .footer-column {
+        width: 100%;
     }
 
 }
@@ -648,6 +662,10 @@
     .mobile-menu-toggle {
         width: 44px;
         height: 44px;
+    }
+
+    .header-language-toggle {
+        font-size: 16px;
     }
 
     .contact-type {
@@ -726,6 +744,29 @@
         font-size: 24px;
         text-align: left;
         margin-bottom: 12px;
+    }
+
+    .mobile-menu-nav {
+        gap: 0;
+    }
+
+    .mobile-menu-nav a {
+        line-height: 48px;
+    }
+
+    #powderDetergents h3,
+    #liquidDetergents h3 {
+        display: none;
+    }
+
+    #powderDetergents,
+    #liquidDetergents {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    #liquidDetergents {
+        margin-top: 0;
     }
 
 }

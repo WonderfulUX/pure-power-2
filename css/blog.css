@@ -26,3 +26,112 @@
     display: block;
     background-color: var(--glacial);
 }
+
+.article-section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.article-section {
+    display: grid;
+    align-items: center;
+    gap: 30px 0;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.article-section.conclude {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "intro ."
+        "block1 block2"
+    ;
+    align-items: unset;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.article-section.left {
+    grid-template-areas: "intro intro ."
+        "img img block1"
+        "block2 . ."
+    ;
+}
+
+.article-section.right {
+    grid-template-areas: ". intro intro"
+        "block1 img img"
+        ". . block2"
+    ;
+}
+
+.article-section-intro-block {
+    grid-area: intro;
+}
+
+.article-img {
+    grid-area: img;
+
+}
+
+.article-section-block {
+    position: relative;
+    padding: 24px;
+    box-shadow: 0 8px 20px #00000015;
+    background: white;
+}
+
+.article-section.left .article-section-block:nth-last-of-type(1) {
+    grid-area: block1;
+    translate: -5% 0;
+}
+
+.article-section.left .article-section-block:nth-last-of-type(2) {
+    grid-area: block2;
+    translate: 10% calc(-10% - 30px);
+}
+
+.article-section.right .article-section-block:nth-last-of-type(1) {
+    grid-area: block1;
+    translate: 5% 0;
+}
+
+.article-section.right .article-section-block:nth-last-of-type(2) {
+    grid-area: block2;
+    translate: -10% calc(-10% - 30px);
+}
+
+.section-subtitle {
+    margin: 0 0 12px;
+}
+
+.article-section.conclude .article-section-intro-block {
+    grid-area: intro;
+}
+
+.article-section.conclude .article-section-block {
+    padding: 0;
+    box-shadow: none;
+}
+
+.article-section.conclude .article-section-block:nth-last-of-type(1) {
+    grid-area: block1;
+}
+
+.article-section.conclude .article-section-block:nth-last-of-type(2) {
+    grid-area: block2;
+}
+
+.article-section.contained {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--glacial);
+    padding: 24px;
+    margin-bottom: 50px;
+}
+
+.article-pagination {
+    text-align: center;
+}

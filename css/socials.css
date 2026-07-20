@@ -64,6 +64,7 @@
     border-radius: 20px;
     overflow: hidden;
     aspect-ratio: 9/16;
+    pointer-events: none;
 }
 
 .socials-video video {
