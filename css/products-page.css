@@ -65,6 +65,11 @@
     opacity: 1;
 }
 
+#category-products-count {
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
 .products-hint-close svg {
     width: 24px;
 }
@@ -118,6 +123,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    outline: none;
     flex-grow: 0;
 }
 
@@ -363,5 +369,5 @@
 }
 
 .products-category-toggle {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }

@@ -170,6 +170,7 @@ function initProductsPage() {
     }
 
     const categoryTabs = panel.querySelectorAll('.category-tab');
+    const categoryCount = panel.querySelector('#category-products-count');
     const thumbsContainer = panel.querySelector('.product-list-scrollable-ctn');
     const previewContainer = panel.querySelector('.products-preview');
     const detailName = panel.querySelector('.product-name');
@@ -249,6 +250,13 @@ function initProductsPage() {
         if (!thumbsContainer) return;
 
         const items = PRODUCTS.filter(p => p.category === category);
+
+        if (categoryCount) {
+            categoryCount.textContent = lang === 'fr'
+                ? `${items.length} produit${items.length > 1 ? 's' : ''}`
+                : `${items.length} product${items.length > 1 ? 's' : ''}`;
+        }
+
         thumbsContainer.innerHTML = items
             .map(p => `<button class="product-thumb" data-product="${p.id}" role="listitem" aria-label="${p.name}"><img src="${p.image}" loading="lazy" alt="${p.name}"></button>`)
             .join('');
