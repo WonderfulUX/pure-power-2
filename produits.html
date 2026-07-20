@@ -110,46 +110,21 @@
         <section id="products-panel-section" class="gradient-CTN" style="padding-top: 0;">
             <div id="products-panel">
 
+                <div class="products-category-toggle" role="tablist">
+                    <button class="category-tab active" role="tab" aria-selected="true"
+                        data-category="powder">Poudres</button>
+                    <button class="category-tab" role="tab" aria-selected="false"
+                        data-category="liquid">Liquides</button>
+                </div>
+
                 <div class="products-layout">
                     <div class="products-list-panel">
                         <div class="products-thumbs" role="list">
                             <div class="product-list-scrollable">
-                                <div class="product-list-scrollable-ctn">
-                                    <button class="product-thumb active" data-product="iconic-4kg" role="listitem"
-                                        aria-label="Seau 4KG">
-                                        <img src="./assets/img/png/4kg-prod.png" loading="lazy" alt="Seau 4KG">
-                                    </button>
-                                    <button class="product-thumb" data-product="family-5kg" role="listitem"
-                                        aria-label="Seau vissé 5KG">
-                                        <img src="./assets/img/png/5kg-prod.png" loading="lazy" alt="Seau 5KG">
-                                    </button>
-                                    <button class="product-thumb" data-product="pro-format-6kg" role="listitem"
-                                        aria-label="Seau 6KG">
-                                        <img src="./assets/img/png/6kg-prod.png" loading="lazy" alt="Seau 6KG">
-                                    </button>
-                                    <button class="product-thumb" data-product="compact-2kg" role="listitem"
-                                        aria-label="Seau 2KG">
-                                        <img src="./assets/img/png/2kg-prod.png" loading="lazy" alt="Seau 2KG">
-                                    </button>
-                                    <button class="product-thumb" data-product="liquid-5kg" role="listitem"
-                                        aria-label="Liquide 5KG">
-                                        <img src="./assets/img/png/1.5kg-prod.png" loading="lazy" alt="Seau 1.5KG">
-                                    </button>
-                                </div>
+                                <div class="product-list-scrollable-ctn"></div>
                             </div>
                         </div>
-                        <div class="products-preview">
-                            <picture class="product-image">
-                                <source media="(min-width: 1000px)" srcset="./assets/img/webp/4k-product-desktop.webp"
-                                    type="image/webp">
-                                <source media="(min-width: 1000px)" srcset="./assets/img/png/4k-product-desktop.png">
-                                <source media="(min-width: 575px)" srcset="./assets/img/webp/4k-product-tablet.webp"
-                                    type="image/webp">
-                                <source media="(min-width: 575px)" srcset="./assets/img/png/4k-product-tablet.png">
-                                <source srcset="./assets/img/webp/4k-product-mobile.webp" type="image/webp">
-                                <img src="./assets/img/png/4k-product-mobile.png" loading="lazy" alt="Pure Power 4KG">
-                            </picture>
-                        </div>
+                        <div class="products-preview"></div>
                     </div>
 
                     <div class="product-detail-panel" id="product-detail">

@@ -1,172 +1,7 @@
 import { moveElementsAntiClockwise, moveElementsClockwise } from "./modules/3Drotate.js";
+import { PRODUCTS_FR, PRODUCTS_EN } from "./data.js";
 
 const lang = document.documentElement.lang;
-
-const PRODUCTS_EN = [
-    {
-        id: 'iconic-4kg',
-        name: 'Pure Power 4KG',
-        image: {
-            webp: { desktop: '../assets/img/webp/4k-product-desktop.webp', tablet: '../assets/img/webp/4k-product-tablet.webp', mobile: '../assets/img/webp/4k-product-mobile.webp' },
-            png: { desktop: '../assets/img/png/4k-product-desktop.png', tablet: '../assets/img/png/4k-product-tablet.png', mobile: '../assets/img/png/4k-product-mobile.png' }
-        },
-        badge: 'Best seller',
-        features: [
-            'Most economical choice',
-            'Maximum concentration',
-            'Long-lasting fragrance'
-        ],
-        description: 'Loved by families for its unbeatable value and maximum concentration.',
-        composition: 'Sodium carbonate, sodium percarbonate, enzymes, optical brighteners, fragrance.'
-    },
-    {
-        id: 'compact-2kg',
-        name: 'Pure Power 2KG',
-        image: {
-            webp: { desktop: '../assets/img/webp/2kg-product-desktop.webp', tablet: '../assets/img/webp/2kg-product-tablet.webp', mobile: '../assets/img/webp/2kg-product-mobile.webp' },
-            png: { desktop: '../assets/img/png/2kg-product-desktop.png', tablet: '../assets/img/png/2kg-product-tablet.png', mobile: '../assets/img/png/2kg-product-mobile.png' }
-        },
-        badge: null,
-        features: [
-            'Compact format',
-            'Maximum concentration',
-            'Long-lasting fragrance'
-        ],
-        description: 'The ideal compact format for smaller households without sacrificing performance.',
-        composition: 'Sodium carbonate, sodium percarbonate, enzymes, optical brighteners, fragrance.'
-    },
-    {
-        id: 'family-5kg',
-        name: 'Pure Power 5KG',
-        image: {
-            webp: { desktop: '../assets/img/webp/5kg-product-desktop.webp', tablet: '../assets/img/webp/5kg-product-tablet.webp', mobile: '../assets/img/webp/5kg-product-mobile.webp' },
-            png: { desktop: '../assets/img/png/5kg-product-desktop.png', tablet: '../assets/img/png/5kg-product-tablet.png', mobile: '../assets/img/png/5kg-product-mobile.png' }
-        },
-        badge: null,
-        features: [
-            'Family format',
-            'Maximum concentration',
-            'Long-lasting fragrance'
-        ],
-        description: 'The family-sized format designed for larger households and frequent use.',
-        composition: 'Sodium carbonate, sodium percarbonate, enzymes, optical brighteners, fragrance.'
-    },
-    {
-        id: 'pro-format-6kg',
-        name: 'Pure Power 6KG',
-        image: {
-            webp: { desktop: '../assets/img/webp/6kg-desktop-product.webp', tablet: '../assets/img/webp/6kg-tablet-product.webp', mobile: '../assets/img/webp/6kg-mobile-product.webp' },
-            png: { desktop: '../assets/img/png/6kg-desktop.png', tablet: '../assets/img/png/6kg-tablet.png', mobile: '../assets/img/png/6kg-mobile.png' }
-        },
-        badge: null,
-        features: [
-            'Professional format',
-            'Maximum concentration',
-            'Long-lasting fragrance'
-        ],
-        description: 'The professional format for intensive and high-volume use.',
-        composition: 'Sodium carbonate, sodium percarbonate, enzymes, optical brighteners, fragrance.'
-    },
-    {
-        id: 'liquid-5kg',
-        name: 'Pure Power Liquid 5KG',
-        image: {
-            webp: { desktop: '../assets/img/webp/5k-liquid-product-desktop.webp', tablet: '../assets/img/webp/5k-liquid-product-tablet.webp', mobile: '../assets/img/webp/5k-liquid-product-mobile.webp' },
-            png: { desktop: '../assets/img/png/5k-liquid-product-desktop.png', tablet: '../assets/img/png/5k-liquid-product-tablet.png', mobile: '../assets/img/png/5k-liquid-product-mobile.png' }
-        },
-        badge: null,
-        features: [
-            '100% hypoallergenic',
-            'Suitable for delicate fabrics',
-            'Long-lasting fragrance'
-        ],
-        description: 'The liquid formula crafted for delicate fabrics and sensitive skin.',
-        composition: 'Aqua, anionic surfactants, non-ionic surfactants, enzymes, fragrance, preservatives.'
-    }
-];
-
-const PRODUCTS_FR = [
-    {
-        id: 'iconic-4kg',
-        name: 'Pure Power 4KG',
-        image: {
-            webp: { desktop: './assets/img/webp/4k-product-desktop.webp', tablet: './assets/img/webp/4k-product-tablet.webp', mobile: './assets/img/webp/4k-product-mobile.webp' },
-            png: { desktop: './assets/img/png/4k-product-desktop.png', tablet: './assets/img/png/4k-product-tablet.png', mobile: './assets/img/png/4k-product-mobile.png' }
-        },
-        badge: 'Best seller',
-        features: [
-            'Choix le plus économique',
-            'Concentration maximale',
-            'Parfum longue durée'
-        ],
-        description: 'Adoré des familles pour son rapport qualité-prix imbattable et sa concentration maximale.',
-        composition: 'Carbonate de sodium, percarbonate de sodium, enzymes, azurants optiques, parfum.'
-    },
-    {
-        id: 'compact-2kg',
-        name: 'Pure Power 2KG',
-        image: {
-            webp: { desktop: './assets/img/webp/2kg-product-desktop.webp', tablet: './assets/img/webp/2kg-product-tablet.webp', mobile: './assets/img/webp/2kg-product-mobile.webp' },
-            png: { desktop: './assets/img/png/2kg-product-desktop.png', tablet: './assets/img/png/2kg-product-tablet.png', mobile: './assets/img/png/2kg-product-mobile.png' }
-        },
-        badge: null,
-        features: [
-            'Format compact',
-            'Concentration maximale',
-            'Parfum longue durée'
-        ],
-        description: 'Le format compact idéal pour les petits foyers sans compromis sur les performances.',
-        composition: 'Carbonate de sodium, percarbonate de sodium, enzymes, azurants optiques, parfum.'
-    },
-    {
-        id: 'family-5kg',
-        name: 'Pure Power 5KG',
-        image: {
-            webp: { desktop: './assets/img/webp/5kg-product-desktop.webp', tablet: './assets/img/webp/5kg-product-tablet.webp', mobile: './assets/img/webp/5kg-product-mobile.webp' },
-            png: { desktop: './assets/img/png/5kg-product-desktop.png', tablet: './assets/img/png/5kg-product-tablet.png', mobile: './assets/img/png/5kg-product-mobile.png' }
-        },
-        badge: null,
-        features: [
-            'Format familial',
-            'Concentration maximale',
-            'Parfum longue durée'
-        ],
-        description: 'Le format familial conçu pour les grands foyers et une utilisation fréquente.',
-        composition: 'Carbonate de sodium, percarbonate de sodium, enzymes, azurants optiques, parfum.'
-    },
-    {
-        id: 'pro-format-6kg',
-        name: 'Pure Power 6KG',
-        image: {
-            webp: { desktop: './assets/img/webp/6kg-desktop-product.webp', tablet: './assets/img/webp/6kg-tablet-product.webp', mobile: './assets/img/webp/6kg-mobile-product.webp' },
-            png: { desktop: './assets/img/png/6kg-desktop.png', tablet: './assets/img/png/6kg-tablet.png', mobile: './assets/img/png/6kg-mobile.png' }
-        },
-        badge: null,
-        features: [
-            'Format professionnel',
-            'Concentration maximale',
-            'Parfum longue durée'
-        ],
-        description: 'Le format professionnel pour une utilisation intensive et à haut volume.',
-        composition: 'Carbonate de sodium, percarbonate de sodium, enzymes, azurants optiques, parfum.'
-    },
-    {
-        id: 'liquid-5kg',
-        name: 'Pure Power 5KG liquide',
-        image: {
-            webp: { desktop: './assets/img/webp/5k-liquid-product-desktop.webp', tablet: './assets/img/webp/5k-liquid-product-tablet.webp', mobile: './assets/img/webp/5k-liquid-product-mobile.webp' },
-            png: { desktop: './assets/img/png/5k-liquid-product-desktop.png', tablet: './assets/img/png/5k-liquid-product-tablet.png', mobile: './assets/img/png/5k-liquid-product-mobile.png' }
-        },
-        badge: null,
-        features: [
-            '100% hypoallergénique',
-            'Adapté aux tissus délicats',
-            'Parfum longue durée'
-        ],
-        description: 'La formule liquide conçue pour les tissus délicats et les peaux sensibles.',
-        composition: 'Aqua, tensioactifs anioniques, tensioactifs non ioniques, enzymes, parfum, conservateurs.'
-    }
-];
 
 const PRODUCTS = lang === 'fr' ? PRODUCTS_FR : PRODUCTS_EN;
 
@@ -334,7 +169,8 @@ function initProductsPage() {
         hint.addEventListener('click', dismiss);
     }
 
-    const thumbs = panel.querySelectorAll('.product-thumb');
+    const categoryTabs = panel.querySelectorAll('.category-tab');
+    const thumbsContainer = panel.querySelector('.product-list-scrollable-ctn');
     const previewContainer = panel.querySelector('.products-preview');
     const detailName = panel.querySelector('.product-name');
     const detailBadge = panel.querySelector('.product-badge');
@@ -359,27 +195,24 @@ function initProductsPage() {
 
     function renderProduct(product) {
         if (previewContainer) {
-            const picture = document.createElement('picture');
-            picture.className = 'product-image';
-            picture.innerHTML =
-                `<source media="(min-width: 1000px)" srcset="${product.image.webp.desktop}" type="image/webp">` +
-                `<source media="(min-width: 1000px)" srcset="${product.image.png.desktop}">` +
-                `<source media="(min-width: 575px)" srcset="${product.image.webp.tablet}" type="image/webp">` +
-                `<source media="(min-width: 575px)" srcset="${product.image.png.tablet}">` +
-                `<source srcset="${product.image.webp.mobile}" type="image/webp">` +
-                `<img src="${product.image.png.mobile}" alt="${product.name}" loading="lazy">`;
+            const image = document.createElement('div');
+            image.className = 'product-image';
+            image.innerHTML = `<img src="${product.image}" alt="${product.name}" loading="lazy">`;
             const existing = previewContainer.querySelector('.product-image');
-            if (existing) existing.replaceWith(picture);
-            else previewContainer.appendChild(picture);
+            if (existing) existing.replaceWith(image);
+            else previewContainer.appendChild(image);
         }
 
         if (detailName) detailName.textContent = product.name;
 
         if (detailBadge) {
             if (product.badge) {
-                detailBadge.textContent = product.badge;
+                detailBadge.innerHTML = product.badge.map(line => `<span>${line}</span>`).join('');
+                detailBadge.classList.toggle('badge-pill', product.badgeShape === 'pill');
                 detailBadge.hidden = false;
             } else {
+                detailBadge.innerHTML = '';
+                detailBadge.classList.remove('badge-pill');
                 detailBadge.hidden = true;
             }
         }
@@ -392,20 +225,64 @@ function initProductsPage() {
 
         tabPanels.forEach(p => {
             if (p.dataset.tab === 'description') p.textContent = product.description;
-            if (p.dataset.tab === 'composition') p.textContent = product.composition;
+            if (p.dataset.tab === 'composition') {
+                p.textContent = product.composition;
+                if (lang === 'fr') {
+                    const detailPageHref = product.category === 'liquid'
+                        ? './descriptif-complet-liquides.html'
+                        : './descriptif-complet-poudres.html';
+                    const detailLink = document.createElement('a');
+                    detailLink.href = detailPageHref;
+                    detailLink.textContent = 'Voir la description détaillée';
+                    p.append(' ', detailLink);
+                }
+            }
         });
     }
 
-    thumbs.forEach(thumb => {
-        thumb.addEventListener('click', () => {
-            thumbs.forEach(t => t.classList.remove('active'));
-            thumb.classList.add('active');
-            const product = PRODUCTS.find(p => p.id === thumb.dataset.product);
+    function selectThumb(thumb) {
+        thumbsContainer.querySelectorAll('.product-thumb').forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+    }
+
+    function renderThumbs(category) {
+        if (!thumbsContainer) return;
+
+        const items = PRODUCTS.filter(p => p.category === category);
+        thumbsContainer.innerHTML = items
+            .map(p => `<button class="product-thumb" data-product="${p.id}" role="listitem" aria-label="${p.name}"><img src="${p.image}" loading="lazy" alt="${p.name}"></button>`)
+            .join('');
+
+        thumbsContainer.querySelectorAll('.product-thumb').forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                selectThumb(thumb);
+                const product = PRODUCTS.find(p => p.id === thumb.dataset.product);
+                if (product) renderProduct(product);
+            });
+        });
+
+        const first = thumbsContainer.querySelector('.product-thumb');
+        if (first) {
+            selectThumb(first);
+            const product = PRODUCTS.find(p => p.id === first.dataset.product);
             if (product) renderProduct(product);
+        }
+    }
+
+    categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            categoryTabs.forEach(t => {
+                t.classList.remove('active');
+                t.setAttribute('aria-selected', 'false');
+            });
+            tab.classList.add('active');
+            tab.setAttribute('aria-selected', 'true');
+            renderThumbs(tab.dataset.category);
         });
     });
 
-    thumbs[0]?.click();
+    const initialCategory = panel.querySelector('.category-tab.active')?.dataset.category || PRODUCTS[0]?.category;
+    renderThumbs(initialCategory);
 }
 
 function initTickers() {

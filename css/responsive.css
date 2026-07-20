@@ -178,6 +178,67 @@
     .trust-socials {
         gap: 30px;
     }
+
+    .products-list-panel {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .product-list-scrollable,
+    .products-thumbs {
+        width: 100%;
+    }
+
+    .product-list-scrollable-ctn {
+        flex-direction: unset;
+        width: fit-content;
+        overflow: unset;
+        border-radius: 20px;
+    }
+
+    .product-list-scrollable,
+    .product-detail-panel {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .product-list-scrollable {
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .product-thumb {
+        width: 250px;
+        height: 250px;
+    }
+
+    .products-thumbs {
+        height: auto;
+    }
+
+    .product-badge.tag.badge-pill,
+    .product-badge.tag {
+        translate: -10px -20px;
+        rotate: 0deg;
+    }
+
+    .products-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products-preview {
+        display: none;
+    }
+
+    #products-panel-section,
+    #products-panel {
+        padding: 0;
+    }
+
+    .products-category-toggle {
+        padding: 0 20px;
+    }
 }
 
 
@@ -208,6 +269,9 @@
 
 @media (max-width: 768px) {
 
+    .product-name.section-headline {
+        text-align: left;
+    }
 
     .faq-grid {
         grid-template-columns: 1fr;
@@ -237,10 +301,6 @@
         margin: 0;
     }
 
-    .product-thumb {
-        width: 250px;
-    }
-
     .products-thumbs {
         max-width: 100%;
         overflow: hidden;
@@ -258,12 +318,6 @@
 
     .product-thumb {
         background: none;
-    }
-
-    .products-hint,
-    .product-detail-panel {
-        width: 95%;
-        margin: 0 auto;
     }
 
     .products-layout {
@@ -307,15 +361,16 @@
         align-self: unset;
     }
 
-    .product-list-scrollable-ctn {
+    /* .product-list-scrollable-ctn {
         display: flex;
         background: #FFFFFF30;
         padding: 20px;
         border-radius: 4px;
-    }
+    } */
 
+    #product-detail,
     .product-list-scrollable {
-        padding-left: 2.5vw;
+        padding: 2.5vw;
     }
 
     #socials {
@@ -442,6 +497,11 @@
         font-weight: 400px;
         padding: unset;
         width: 300px;
+    }
+
+    .product-thumb {
+        width: 180px;
+        height: 180px;
     }
 
     #products-panel {
@@ -699,17 +759,13 @@
     .product-label,
     .product-tab {
         padding: 10px 10px 12px;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .product-badge {
         font-size: 20px;
     }
 
-    .product-features li,
-    .product-tab-content {
-        font-size: 16px;
-    }
 
     #blog-hero {
         padding-bottom: 0px;
