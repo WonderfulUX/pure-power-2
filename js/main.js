@@ -135,10 +135,7 @@ function initContactModal() {
         document.querySelector("#powderDetergents .products-grid").style.translate = '0px 0px'
         deActivateButton(slideLeft)
         activateButton(slideRight)
-
-        initSliders(document.querySelectorAll('.ticker-track'))
     })
-    window.addEventListener('load', initSliders(document.querySelectorAll('.ticker-track')))
 
     const radios = modal.querySelectorAll('input[name="query-type"]');
     radios.forEach(radio => {
@@ -332,14 +329,12 @@ initContactModal();
 initProductsPage();
 initTickers();
 
+function initMarquees() {
+    initSliders(document.querySelectorAll('.ticker-track, .comments-grid'))
+}
 
-let commentsWidth = document.querySelector('.comments-grid').getBoundingClientRect().width
-const durationMultiplier = document.querySelectorAll('.comment-card').length
-
-document.querySelector('.comments-grid').animate(
-    [{ translate: "0 0 " }, { translate: `-${commentsWidth / 2}px 0` }],
-    { duration: durationMultiplier * 6000, easing: "linear", iterations: "Infinity" }
-)
+window.addEventListener('load', initMarquees)
+window.addEventListener('resize', initMarquees)
 
 
 slideRight.addEventListener('click', () => {

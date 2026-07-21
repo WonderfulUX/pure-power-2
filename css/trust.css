@@ -29,25 +29,14 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
-    animation: ticker-scroll 24s linear infinite;
     will-change: transform;
     font-family: "Titan One", sans-serif;
     font-size: clamp(3rem, 6.25vw, 90px);
     text-transform: uppercase;
     flex-shrink: 0;
-    min-width: 200%;
-}
-
-.trust-ticker-track {
-    animation-direction: reverse;
-}
-
-.trust-ticker-track {
-    animation-duration: 20s;
 }
 
 .resellers-ticker-track {
-    animation-duration: 40s;
     font-size: clamp(1.5rem, 4vw, 58px);
 }
 
