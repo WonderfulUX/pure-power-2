@@ -1,13 +1,4 @@
 @media screen and (min-width: 1400px) {
-    .hero-product {
-        position: relative;
-        translate: 0 5vw;
-    }
-
-    .footer-logo {
-        width: 250px;
-    }
-
     #powderDetergents .products-grid {
         padding: 0;
         margin: 0 auto;
@@ -23,10 +14,6 @@
 
     .hero {
         height: 90vh;
-    }
-
-    .best-seller-ctn {
-        width: 100%;
     }
 
     .socials-videos {
@@ -330,31 +317,6 @@
 }
 
 
-@media (max-width: 850px) {
-    #intro {
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
-    }
-
-    .intro-block {
-        max-width: 450px;
-    }
-
-    #maximumEfficiency {
-        margin: 0 0 0 auto;
-    }
-
-    .range-img {
-        width: 100%;
-    }
-
-    #product-hero .hero-subtitle {
-        margin-bottom: 30px;
-    }
-
-}
-
 @media (max-width: 768px) {
 
     .product-name.section-headline {
@@ -380,13 +342,6 @@
         padding: 20px 20px 0;
         width: 100%;
         display: flex;
-    }
-
-    .powders-grid {
-        grid-template-columns: repeat(3, 300px);
-        padding: 40px 80px;
-        gap: 80px;
-        margin: 0;
     }
 
     .products-thumbs {
@@ -480,11 +435,6 @@
         padding-right: 0;
     }
 
-    .socials-videos-scrollable-ctn {
-        width: 100%;
-        overflow: hidden;
-    }
-
     .socials-videos-srollable {
         width: 100%;
         overflow: auto;
@@ -507,14 +457,6 @@
     .socials-video .socials-video--lg {
         flex-shrink: 0;
         height: 100%;
-    }
-
-    .footer-logo {
-        width: 120px;
-    }
-
-    .footer-inner {
-        align-items: flex-end;
     }
 
 
@@ -560,14 +502,6 @@
         border-radius: 20px;
     }
 
-    .best-seller-decorative-bg {
-        scale: .6;
-    }
-
-    #product-hero .hero-subtitle {
-        margin-bottom: 0;
-    }
-
     .header-logo img {
         height: 70px;
     }
@@ -577,22 +511,8 @@
 
 @media screen and (max-width: 575px) {
 
-    .products-hint {
-        font-size: 14px;
-    }
-
-    #product-hero .hero-subtitle {
-        margin-bottom: 40px;
-    }
-
     #products-panel {
         margin-bottom: 80px;
-    }
-
-    .cta-button {
-        font-weight: 400px;
-        padding: unset;
-        width: 300px;
     }
 
     .product-thumb {
@@ -622,31 +542,6 @@
         scrollbar-width: none;
     }
 
-    .intro-block h2,
-    .best-seller-content h2 {
-        font-size: clamp(3rem, 12vw, 136px);
-    }
-
-    #intro {
-        padding-bottom: 0;
-    }
-
-    #bestSeller,
-    #otherLaundryPowders {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .powders-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-        padding: 40px 0;
-        gap: 30px;
-        width: 100%;
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
     #perks {
         grid-template-columns: 1fr;
     }
@@ -673,89 +568,16 @@
         grid-template-rows: repeat(auto-fill, auto);
     }
 
-    #liquidLaundryGrid {
-        max-width: 450px;
-        margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        grid-template-columns: 100%
-    }
-
-    .liquid-content {
-        width: 100%;
-    }
-
-    .liquid-content h3 {
-        font-size: 30px;
-    }
-
     .socials-videos {
         padding: 30px 16px;
     }
 
-    section,
-    .footer-inner {
+    section {
         padding: 50px 15px;
-    }
-
-    .footer-inner {
-        padding: 50vw 20px 50px;
-        margin: 0 auto;
-        width: 100%;
     }
 
     .footer-cta {
         align-self: center;
-    }
-
-    .powder-grid-scrollable {
-        padding: 0;
-    }
-
-    #powderScrollableTitle {
-        position: unset;
-        text-align: center;
-    }
-
-    .product-item-CTN {
-        width: 300px;
-        margin: 0 auto 80px;
-    }
-
-    .product-item-CTN:last-of-type {
-        margin-bottom: 0;
-    }
-
-    .hero-product {
-        position: relative;
-        translate: unset;
-        width: 90%;
-        max-width: 360px;
-        height: fit-content;
-    }
-
-    .hero-product picture:last-of-type {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        translate: 0 100%;
-        width: 100%;
-    }
-
-    .hero-text .hero-subtitle {
-        text-align: center;
-    }
-
-    .best-seller-decorative-bg {
-        scale: .5;
-    }
-
-    .best-seller-grid {
-        padding: 60px 24px 40px;
-    }
-
-    .product-item .product-img-ctn {
-        width: 90%;
     }
 
     .footer-cta {
@@ -869,10 +691,6 @@
 
     .product-thumb {
         width: 200px;
-    }
-
-    #purepowerRange {
-        padding: 50px 0 0;
     }
 
     .perk svg {

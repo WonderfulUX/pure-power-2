@@ -8,17 +8,6 @@
     padding: 80px 0 10px;
 }
 
-.footer-wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    pointer-events: none;
-    translate: 0 -12vw;
-    filter: drop-shadow(20px 10px 10px #00000020);
-}
-
 
 .footer-cta {
     display: block;

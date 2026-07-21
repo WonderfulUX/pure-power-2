@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#FFFFFF">
     <meta name="description"
-        content="Pure Power — Premium laundry products available in Guadeloupe, Martinique, Guyane and New-Caledonia.">
+        content="Pure Power — Premium laundry products available in Guadeloupe, Martinique, Guyana and New Caledonia.">
     <title>Pure Power — Premium Laundry</title>
     <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="../assets/favicon/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Titan+One&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@100..900&family=Titan+One&display=swap"
         rel="stylesheet">
     <link rel="alternate" hreflang="fr" href="../index.html">
     <link rel="alternate" hreflang="en" href="./index.html">
-    <script>(function () { var s = localStorage.getItem('pp-lang'); var l = (s || navigator.language || 'en').slice(0, 2).toLowerCase(); if (l === 'fr') { location.replace('../index.html'); } })();</script>
+    <script>(function () { var s = localStorage.getItem('pp-lang'); var l = (s || navigator.language || 'en').slice(0, 2).toLowerCase(); if (l === 'fr') { var p = location.pathname.split('/').pop(); location.replace('../' + (p || 'index.html')); } })();</script>
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/main.js" type="module" defer></script>
 </head>
 
 <body>
-    <a href="./" class="mobile-nav header-logo" aria-label="Pure Power home">
+    <a href="./" class="header-logo" aria-label="Pure Power page home">
         <img src="../assets/svg/purepower.svg" alt="Pure Power">
     </a>
     <div class="header-right-btns">
@@ -36,6 +36,7 @@
             </button>
             <ul class="header-language-menu" role="listbox">
                 <li role="option"><a href="../index.html" hreflang="fr" lang="fr">FR</a></li>
+                <!-- <li role="option"><a href="./index.html" hreflang="en" lang="en">EN</a></li> -->
             </ul>
         </div>
         <button class="mobile-menu-toggle" aria-label="Open menu" aria-controls="mobile-nav-backdrop"
@@ -48,7 +49,7 @@
     <div id="mobile-nav-backdrop" aria-hidden="true">
         <nav id="mobile-menu" aria-hidden="true">
             <div class="mobile-menu-top">
-                <a href="./" class="header-logo" aria-label="Pure Power home">
+                <a href="./" class="mobile-nav header-logo" aria-label="Pure Power home">
                     <img src="../assets/svg/purepower.svg" alt="Pure Power">
                 </a>
 
@@ -68,18 +69,22 @@
             </nav>
             <div class="mobile-menu-social">
                 <a href="https://www.tiktok.com/@the.pure.power" aria-label="TikTok">
-                    <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <svg class="footer-social-icon" width="24" height="28" viewBox="0 0 24 28" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path
-                            d="M12 15L19.785 10.5L12 6V15ZM29.34 3.255C29.535 3.96 29.67 4.905 29.76 6.105C29.865 7.305 29.91 8.34 29.91 9.24L30 10.5C30 13.785 29.76 16.2 29.34 17.745C28.965 19.095 28.095 19.965 26.745 20.34C26.04 20.535 24.75 20.67 22.77 20.76C20.82 20.865 19.035 20.91 17.385 20.91L15 21C8.715 21 4.8 20.76 3.255 20.34C1.905 19.965 1.035 19.095 0.66 17.745C0.465 17.04 0.33 16.095 0.24 14.895C0.135 13.695 0.0899999 12.66 0.0899999 11.76L0 10.5C0 7.215 0.24 4.8 0.66 3.255C1.035 1.905 1.905 1.035 3.255 0.66C3.96 0.465 5.25 0.33 7.23 0.24C9.18 0.135 10.965 0.0899999 12.615 0.0899999L15 0C21.285 0 25.2 0.24 26.745 0.66C28.095 1.035 28.965 1.905 29.34 3.255Z" />
+                            d="M19.0408 4.38667C17.9948 3.1726 17.4182 1.61373 17.4184 0H12.6888V19.2889C12.6531 20.333 12.2197 21.3221 11.4801 22.0477C10.7405 22.7732 9.75245 23.1784 8.72449 23.1778C6.55102 23.1778 4.7449 21.3733 4.7449 19.1333C4.7449 16.4578 7.28571 14.4511 9.90306 15.2756V10.36C4.62245 9.64444 0 13.8133 0 19.1333C0 24.3133 4.22449 28 8.70918 28C13.5153 28 17.4184 24.0333 17.4184 19.1333V9.34889C19.3362 10.7487 21.6388 11.4997 24 11.4956V6.68889C24 6.68889 21.1224 6.82889 19.0408 4.38667Z" />
                     </svg>
                 </a>
-                <a href="https://www.facebook.com/people/Pure-Power/61581267463357/" aria-label="Facebook"><svg
-                        width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="https://www.facebook.com/people/Pure-Power/61581267463357/" aria-label="Facebook">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15 0C6.75 0 0 6.735 0 15.03C0 22.53 5.49 28.755 12.66 29.88V19.38H8.85V15.03H12.66V11.715C12.66 7.95 14.895 5.88 18.33 5.88C19.965 5.88 21.675 6.165 21.675 6.165V9.87H19.785C17.925 9.87 17.34 11.025 17.34 12.21V15.03H21.51L20.835 19.38H17.34V29.88C20.8747 29.3218 24.0933 27.5183 26.4149 24.7951C28.7365 22.0719 30.008 18.6085 30 15.03C30 6.735 23.25 0 15 0Z" />
-                    </svg></a>
-                <a href="https://www.instagram.com/the.purepower/" aria-label="Instagram"><svg width="30" height="30"
-                        viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </svg>
+
+                </a>
+                <a href="https://www.instagram.com/the.purepower/" aria-label="Instagram">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -92,7 +97,8 @@
                             d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
-                    </svg></a>
+                    </svg>
+                </a>
 
             </div>
         </nav>
@@ -100,249 +106,305 @@
     <main>
 
         <section id="home-hero" class="hero">
-            <!-- <picture>
-                <source media="(min-width: 1000px)" srcset="../assets/img/webp/hero-foam-bg-desktop.webp"
-                    type="image/webp">
-                <source media="(min-width: 1000px)" srcset="../assets/img/png/hero-foam-bg-desktop.png">
-                <source media="(min-width: 575px)" srcset="../assets/img/webp/hero-foam-bg-tablet.webp"
-                    type="image/webp">
-                <source media="(min-width: 575px)" srcset="../assets/img/png/hero-foam-bg-tablet.png">
-                <source srcset="../assets/img/webp/hero-foam-bg-mobile.webp" type="image/webp">
-                <img class="hero-bg" src="../assets/img/png/hero-foam-bg-mobile.png" alt="" width="1440" height="804"
-                    loading="eager">
-            </picture> -->
-            <img class="hero-bg" src="../assets/img/png/hero-foam-bg-desktop-test.png" alt="" width="1920" height="1072"
-                loading="eager">
-            <div class="hero-text">
-                <h1>The laundry<br>revolution
-                </h1>
-                <p class="hero-subtitle">Cleaner. Simpler. Better. Stronger</p>
-            </div>
-            <div class="hero-product">
-                <img src="../assets/img/png/4kg-sparked.png" alt="Pure Power 4KG" width="944" height="708"
-                    loading="eager">
-                <picture>
-                    <source media="(min-width: 1000px)" srcset="../assets/img/webp/4kg-desktop.webp" type="image/webp">
-                    <source media="(min-width: 1000px)" srcset="../assets/img/png/4kg-desktop.png">
-                    <source media="(min-width: 575px)" srcset="../assets/img/webp/4kg-tablet.webp" type="image/webp">
-                    <source media="(min-width: 575px)" srcset="../assets/img/png/4kg-tablet.png">
-                    <source srcset="../assets/img/webp/4kg-mobile.webp" type="image/webp">
-                    <img class="reflected" src="../assets/img/png/4kg-mobile.png" alt="Pure Power 4KG" width="944"
-                        height="708" loading="eager">
-                </picture>
-            </div>
+            <h1>The laundry <br>revolution <br> starts now
+            </h1>
         </section>
 
-        <section id="intro">
-            <div class="intro-block" id="smartRecipes">
-                <h2>Smart<br>recipes</h2>
-                <p>Every Pure Power formula is calibrated by laundry chemists for tropical climates — fast-acting on
-                    tough
-                    stains, gentle on delicate fibres, and dosed so a single scoop does the work of three</p>
-            </div>
-            <div class="intro-block" id="maximumEfficiency">
-                <h2>Maximum<br>Efficiency</h2>
-                <p>Up to 120 washes from a single Mega Seau. Concentrated active enzymes mean less plastic, less
-                    storage,
-                    less waste and a fresher, brighter wash every cycle</p>
-            </div>
-        </section>
-
-        <section id="laundryPowders">
-            <div id="bestSeller" class="best-seller-grid">
-                <div class="best-seller-ctn">
-                    <!-- <img class="best-seller-decorative-bg decorative-1" src="../assets/best-seller-bg.webp" alt=""
-                        aria-hidden="true" loading="lazy" width="1921" height="1761"> -->
-                    <picture>
-                        <source media="(min-width: 1000px)" srcset="../assets/img/webp/best-seller-bg-desktop.webp"
-                            type="image/webp">
-                        <source media="(min-width: 1000px)" srcset="../assets/img/png/best-seller-bg-desktop.png">
-                        <source media="(min-width: 575px)" srcset="../assets/img/webp/best-seller-bg-tablet.webp"
-                            type="image/webp">
-                        <source media="(min-width: 575px)" srcset="../assets/img/png/best-seller-bg-tablet.png">
-                        <source srcset="../assets/img/webp/best-seller-bg-mobile.webp" type="image/webp">
-                        <img class="best-seller-decorative-bg decorative-2"
-                            src="../assets/img/png/best-seller-bg-mobile.png" alt="" aria-hidden="true" loading="lazy"
-                            width="1921" height="1761">
-                    </picture>
-                    <picture>
-                        <source media="(min-width: 1000px)" srcset="../assets/img/webp/4kg-desktop.webp"
-                            type="image/webp">
-                        <source media="(min-width: 1000px)" srcset="../assets/img/png/4kg-desktop.png">
-                        <source media="(min-width: 575px)" srcset="../assets/img/webp/4kg-tablet.webp"
-                            type="image/webp">
-                        <source media="(min-width: 575px)" srcset="../assets/img/png/4kg-tablet.png">
-                        <source srcset="../assets/img/webp/4kg-mobile.webp" type="image/webp">
-                        <img class="best-seller-product" src="../assets/img/png/4kg-mobile.png" alt="Pure Power 4KG"
-                            width="944" height="708" loading="lazy">
-                    </picture>
-                    <div class="best-seller-badge">
-                        <img class="best-seller-flower" src="../assets/svg/best-seller-tag.svg" alt="Best seller">
-                        <span>Best <br>Seller</span>
-                    </div>
-                </div>
-                <div class="best-seller-content">
-                    <h2>Pure Power 4Kg</h2>
-                    <p>Loved by families for its unbeatable value and maximum concentration.</p>
-                    <a href="./products.html" class="product-link">see details</a>
-                </div>
-            </div>
-            <div id="otherLaundryPowders">
-                <h2>
-                    <span class="powders-bg-text">laundry</span>
-                    <span class="powders-bg-text powders-bg-text--offset">powders</span>
-                </h2>
-                <div class="powder-grid-scrollable">
-                    <div class="powders-grid">
-                        <h3 id="powderScrollableTitle">Laundry powders</h3>
-                        <div class="product-item-CTN" data-pos="3">
-                            <div class="product-item" id="product2kg">
-                                <div class="clockwise-trig"></div>
-                                <div class="anti-clockwise-trig"></div>
-                                <div class="product-img-ctn">
-                                    <picture>
-                                        <source media="(min-width: 1000px)" srcset="../assets/img/webp/2kg-desktop.webp"
-                                            type="image/webp">
-                                        <source media="(min-width: 1000px)" srcset="../assets/img/png/2kg-desktop.png">
-                                        <source media="(min-width: 575px)" srcset="../assets/img/webp/2kg-tablet.webp"
-                                            type="image/webp">
-                                        <source media="(min-width: 575px)" srcset="../assets/img/png/2kg-tablet.png">
-                                        <source srcset="../assets/img/webp/2kg-mobile.webp" type="image/webp">
-                                        <img src="../assets/img/png/2kg-mobile.png" alt="Pure Power 2KG" width="624"
-                                            height="492">
-                                    </picture>
-                                    <img class="shadowing" src="../assets/img/png/2kg-mobile.png" alt="Pure Power 2KG"
-                                        width="624" height="492">
-                                </div>
-                                <div class="product-details-and-link">
-                                    <div class="product-details">
-                                        <h3>Compact format 2Kg</h3>
-                                        <p>The ideal format to start. Easy-to-store bucket, same concentration, same
-                                            power
-                                        </p>
-                                    </div>
-                                    <a href="./products.html" class="product-link">see details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-item-CTN" data-pos="1">
-                            <div class="product-item" id="product6kg">
-                                <div class="clockwise-trig"></div>
-                                <div class="anti-clockwise-trig"></div>
-                                <div class="product-img-ctn">
-                                    <picture>
-                                        <source media="(min-width: 1000px)" srcset="../assets/img/webp/6kg-desktop.webp"
-                                            type="image/webp">
-                                        <source media="(min-width: 1000px)" srcset="../assets/img/png/6kg-desktop.png">
-                                        <source media="(min-width: 575px)" srcset="../assets/img/webp/6kg-tablet.webp"
-                                            type="image/webp">
-                                        <source media="(min-width: 575px)" srcset="../assets/img/png/6kg-tablet.png">
-                                        <source srcset="../assets/img/webp/6kg-mobile.webp" type="image/webp">
-                                        <img src="../assets/img/png/6kg-mobile.png" alt="Pure Power 6KG" width="602"
-                                            height="506">
-                                    </picture>
-                                    <img class="shadowing" src="../assets/img/png/6kg-mobile.png" alt="Pure Power 6KG"
-                                        width="602" height="506">
-                                </div>
-                                <div class="product-details-and-link">
-
-                                    <div class="product-details">
-                                        <h3>Pro format 6Kg</h3>
-                                        <p>For professionals and large households. Intensive pace, zero compromise on
-                                            efficiency
-                                        </p>
-                                    </div>
-                                    <a href="./products.html" class="product-link">see details</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product-item-CTN" data-pos="2">
-                            <div class="product-item" id="product5kg">
-                                <div class="clockwise-trig"></div>
-                                <div class="anti-clockwise-trig"></div>
-                                <div class="product-img-ctn">
-                                    <picture>
-                                        <source media="(min-width: 1000px)" srcset="../assets/img/webp/5kg-desktop.webp"
-                                            type="image/webp">
-                                        <source media="(min-width: 1000px)" srcset="../assets/img/png/5kg-desktop.png">
-                                        <source media="(min-width: 575px)" srcset="../assets/img/webp/5kg-tablet.webp"
-                                            type="image/webp">
-                                        <source media="(min-width: 575px)" srcset="../assets/img/png/5kg-tablet.png">
-                                        <source srcset="../assets/img/webp/5kg-mobile.webp" type="image/webp">
-                                        <img src="../assets/img/png/5kg-mobile.png" alt="Pure Power 5KG" width="554"
-                                            height="503">
-                                    </picture>
-                                    <img class="shadowing" src="../assets/img/png/5kg-mobile.png" alt="Pure Power 5KG"
-                                        width="554" height="503">
-                                </div>
-                                <div class="product-details-and-link">
-                                    <div class="product-details">
-                                        <h3>Family format 5Kg</h3>
-                                        <p>Best value for large families. Weeks of spotless laundry at the best price
-                                        </p>
-                                    </div>
-                                    <a href="./products.html" class="product-link">see details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="liquidLaundry">
-            <picture>
-                <source media="(min-width: 1000px)" srcset="../assets/img/webp/liquid-laundry-wave-desktop.webp"
-                    type="image/webp">
-                <source media="(min-width: 1000px)" srcset="../assets/img/png/liquid-laundry-wave-desktop.png">
-                <source media="(min-width: 575px)" srcset="../assets/img/webp/liquid-laundry-wave-tablet.webp"
-                    type="image/webp">
-                <source media="(min-width: 575px)" srcset="../assets/img/png/liquid-laundry-wave-tablet.png">
-                <source srcset="../assets/img/webp/liquid-laundry-wave-mobile.webp" type="image/webp">
-                <img class="liquid-wave" src="../assets/img/png/liquid-laundry-wave-mobile.png" alt=""
-                    aria-hidden="true" loading="lazy" width="1439" height="803">
-            </picture>
-            <div id="liquidLaundryGrid">
-                <p id="liquidLaundryResponsiveTitle">Liquid Laundry</p>
-                <div class="liquid-content">
-                    <h3>Pouring spout 5kg</h3>
-                    <p>Ultra-practical dosing, hypoallergenic, cold-active, long-lasting fragrance.</p>
-                    <a href="./products.html" class="product-link">see details</a>
-                </div>
-                <div class="liquid-product">
-                    <picture>
-                        <source media="(min-width: 1000px)" srcset="../assets/img/webp/5kg-liquid-desktop.webp"
-                            type="image/webp">
-                        <source media="(min-width: 1000px)" srcset="../assets/img/png/5kg-liquid-desktop.png">
-                        <source media="(min-width: 575px)" srcset="../assets/img/webp/5kg-liquid-tablet.webp"
-                            type="image/webp">
-                        <source media="(min-width: 575px)" srcset="../assets/img/png/5kg-liquid-tablet.png">
-                        <source srcset="../assets/img/webp/5kg-liquid-mobile.webp" type="image/webp">
-                        <img src="../assets/img/png/5kg-liquid-mobile.png" alt="Pure Power Liquid 5KG" width="944"
-                            height="708" loading="lazy">
-                    </picture>
-                    <picture>
-                        <source media="(min-width: 1000px)" srcset="../assets/img/webp/5kg-liquid-desktop.webp"
-                            type="image/webp">
-                        <source media="(min-width: 1000px)" srcset="../assets/img/png/5kg-liquid-desktop.png">
-                        <source media="(min-width: 575px)" srcset="../assets/img/webp/5kg-liquid-tablet.webp"
-                            type="image/webp">
-                        <source media="(min-width: 575px)" srcset="../assets/img/png/5kg-liquid-tablet.png">
-                        <source srcset="../assets/img/webp/5kg-liquid-mobile.webp" type="image/webp">
-                        <img class="reflected" src="../assets/img/png/5kg-liquid-mobile.png" alt="Pure Power Liquid 5KG"
-                            width="944" height="708" loading="lazy">
-                    </picture>
-                </div>
-            </div>
-            <h2>
-                <span class="liquid-bg-text" aria-hidden="true">liquid</span>
-                <span class="liquid-bg-text liquid-bg-text--offset" aria-hidden="true">laundry</span>
+        <section id="powderDetergents" class="relative">
+            <h2><span class="monument">Laundry</span> <br>
+                <span class="upper">powders</span>
             </h2>
-        </section>
+            <h3>powders</h3>
+            <div class="view-buttons">
+                <button id="slideLeft" disabled aria-disabled="true"
+                    title="Show the first powders in the range again">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.7759 16.3252L7.5717 11.1207C7.46723 11.0162 7.38436 10.8922 7.32782 10.7557C7.27129 10.6192 7.24219 10.4729 7.24219 10.3252C7.24219 10.1775 7.27129 10.0312 7.32782 9.89467C7.38436 9.75818 7.46723 9.63416 7.5717 9.5297L12.7762 4.3252" />
+                    </svg>
 
+                </button>
+                <button id="slideRight" title="Show more powders in the range">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.24261 3.6748L12.4469 8.8793C12.5513 8.98377 12.6342 9.10779 12.6907 9.24428C12.7473 9.38077 12.7764 9.52707 12.7764 9.6748C12.7764 9.82254 12.7473 9.96883 12.6907 10.1053C12.6342 10.2418 12.5513 10.3658 12.4469 10.4703L7.24236 15.6748" />
+                    </svg>
+                </button>
+            </div>
+            <div class="products-grid">
+                <div class="product best-seller">
+                    <div class="product-img-container">
+                        <div class="tag">
+                            <span>best</span>
+                            <span>seller</span>
+                        </div>
+                        <img class="product-image" src="../assets/img/png/4kg-prod.png" alt="">
+                    </div>
+                    <h4 class="product-title monument">4Kg</h4>
+                    <h5 class="product-type spartan">Laundry powder bucket</h5>
+                    <p class="product-description">Maximum efficiency. Intense freshness and up to 80 washes of
+                        performance.</p>
+                    <a href="" class="product-link">
+                        See the product
+                    </a>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-image" src="../assets/img/png/5kg-prod.png" alt="">
+                    </div>
+                    <h4 class="product-title monument">5Kg</h4>
+                    <h5 class="product-type spartan"><strong>Screw-top bucket</strong> of laundry powder</h5>
+                    <p class="product-description">The format designed
+                        so you never run out of power.</p>
+                    <a href="" class="product-link">
+                        See the product
+                    </a>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-image" src="../assets/img/png/6kg-prod.png" alt="">
+                    </div>
+                    <h4 class="product-title monument">6Kg</h4>
+                    <h5 class="product-type spartan">Laundry powder bucket</h5>
+                    <p class="product-description">The MEGA bucket, spotless freshness
+                        with every wash</p>
+                    <a href="" class="product-link">
+                        See the product
+                    </a>
+                </div>
+                <div class="product concentree">
+                    <div class="product-img-container">
+                        <div class="tag">
+                            <span>Concentrated</span>
+                            <span>Formula</span>
+                        </div>
+                        <img class="product-image" src="../assets/img/png/2kg-prod.png" alt="">
+                    </div>
+                    <h4 class="product-title monument">2kg</h4>
+                    <h5 class="product-type spartan">Laundry powder bucket</h5>
+                    <p class="product-description">Concentrated power. Long-lasting freshness. Formulated with twice
+                        the fragrance.</p>
+                    <a href="" class="product-link">
+                        See the product
+                    </a>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-image" src="../assets/img/png/1.5kg-prod.png" alt="">
+                    </div>
+                    <h4 class="product-title monument">1.5kg</h4>
+                    <h5 class="product-type spartan">Laundry powder bucket</h5>
+                    <p class="product-description">The ecopack, the practical format
+                        that never runs short</p>
+                    <a href="" class="product-link">
+                        See the product
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="liquidDetergents" class="relative">
+            <h2><span class="monument">Laundry</span> <br>
+                <span class="upper">liquids</span>
+            </h2>
+            <h3>Liquids</h3>
+            <div class="products-grid">
+                <div class="product nouveau">
+                    <div class="product-img-container">
+                        <div class="tag">
+                            <span>New</span>
+                        </div>
+                        <img class="product-image" src="../assets/img/png/4kg-prod.png" alt="">
+                    </div>
+                    <h4 class="product-title monument">2L</h4>
+                    <h5 class="product-type spartan">Liquid laundry jug</h5>
+                    <p class="product-description">All the efficiency in a 2L format: freshness, cleanliness and
+                        softness with every wash.</p>
+                    <a href="" class="product-link">
+                        See the product
+                    </a>
+                </div>
+                <div class="product">
+                    <div class="product-img-container">
+                        <img class="product-image" src="../assets/img/png/5kg-prod.png" alt="">
+                    </div>
+                    <h4 class="product-title monument">5L</h4>
+                    <h5 class="product-type spartan">Liquid laundry jug</h5>
+                    <p class="product-description">Clean. Fresh. Disinfectant.
+                        Ultra effective and always gentle on skin.</p>
+                    <a href="" class="product-link">
+                        See the product
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="perks">
+            <h2 class="vh">Pure Power range benefits</h2>
+            <svg id="perksWave" width="1920" height="1103" viewBox="0 0 1920 1103" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M215.331 0.47667C212.03 0.827808 197.512 2.21022 183.069 3.54992C157.109 5.95569 153.163 6.48398 123.797 11.4711C91.0018 17.0403 34.1799 30.9735 7.12768 40.0809L0 42.4804V505.001C0 759.388 0.442667 967.522 0.98287 967.522C1.52457 967.522 11.1462 964.013 22.3659 959.721C52.0891 948.357 72.3843 941.049 88.5333 935.901C96.3738 933.402 108.528 929.501 115.544 927.232C134.607 921.068 174.036 909.898 193.573 905.126C203.064 902.807 216.231 899.583 222.834 897.962C234.21 895.167 250.365 891.805 279.105 886.247C295.172 883.14 346.836 876.59 374.248 874.185C400.84 871.85 476.718 871.804 501.189 874.107C612.594 884.591 697.115 909.642 845.568 976.176C996.278 1043.72 1065.69 1067.13 1171.19 1086.01C1246.03 1099.4 1328.94 1105.39 1394.15 1102.13C1429.61 1100.35 1436.77 1099.71 1476.16 1094.77C1521.69 1089.07 1581.56 1074.25 1628.86 1056.96C1664.73 1043.86 1689.1 1033.13 1722.63 1015.68C1747.88 1002.55 1759.31 995.976 1788.67 977.718C1815.68 960.928 1861.83 926.718 1897.79 896.841C1909.63 886.999 1920 878.947 1920 878.947C1919.97 878.947 1919.97 342.439 1919.97 342.439L1907.59 345.634C1865.09 356.232 1825.97 360.626 1782.04 359.735C1749.26 359.071 1746.48 358.774 1730.08 354.179C1700.44 345.873 1689.58 340.666 1596.6 290.18C1546.91 263.201 1516.49 250.716 1477.93 241.49C1437.89 231.908 1399.4 229.008 1350.51 231.886C1296.14 235.086 1267.45 239.496 1208.71 253.682C1140.61 270.126 1115.74 274.445 1064.67 278.692C1005.85 283.584 950.829 281.289 907.842 272.152C843.474 258.47 772.629 226.078 689.901 172.509C682.688 167.838 676.465 164.017 676.074 164.017C675.68 164.017 669.764 160.227 662.927 155.594C602.18 114.442 528.121 70.9938 483.03 50.0568C431.474 26.1177 378.369 10.3402 325.623 3.28894C309.194 1.09353 228.803 -0.956354 215.331 0.47667ZM0.739779 504.874C0.739779 759.766 0.913844 863.804 1.12542 736.07C1.337 608.336 1.337 399.789 1.12542 272.631C0.913844 145.473 0.739779 249.983 0.739779 504.874Z" />
+            </svg>
+            <div class="perk">
+                <svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M70.0549 0.0792092C69.6043 0.131873 68.1824 0.28659 66.895 0.423283C65.6077 0.559976 62.9597 0.982695 61.0109 1.36235C34.1664 6.59296 12.1234 26.2042 3.61032 52.4305C1.97843 57.4578 0.876688 62.6278 0.281699 68.0517C-0.0953776 71.488 -0.0935051 80.0093 0.284976 83.4999C2.40419 103.038 11.6052 120.595 26.402 133.335C37.5624 142.943 51.3827 149.066 66.4269 151.065C70.7505 151.64 80.9355 151.635 85.152 151.056C97.5051 149.36 107.748 145.546 117.687 138.943C136.726 126.293 148.962 105.973 151.284 83.1488C151.621 79.8363 151.621 71.7153 151.284 68.4028C150.007 55.8491 145.925 44.354 139.056 33.9672C135.949 29.2695 133.588 26.4256 129.07 21.9368C122.78 15.6875 117.446 11.8484 109.606 7.92806C102.014 4.13132 94.2074 1.70993 85.7088 0.515504C83.176 0.159493 72.0318 -0.151109 70.0549 0.0792092ZM71.2252 4.05361C70.7746 4.10534 69.2473 4.26122 67.8313 4.40002C62.1601 4.95545 55.1797 6.68612 49.3976 8.97058C26.7662 17.9118 9.94922 38.0277 5.36556 61.6405C3.58012 70.838 3.57778 80.9098 5.359 89.8196C10.5915 115.992 30.1084 137.294 55.6419 144.702C71.9601 149.436 89.3492 148.269 104.878 141.398C125.472 132.284 140.883 113.594 145.77 91.8045C147.798 82.765 148.09 72.7337 146.585 63.8386C142.895 42.0302 129.442 23.2133 109.945 12.5873C102.212 8.37278 94.0314 5.74144 84.8009 4.5002C82.2475 4.15683 72.9781 3.85185 71.2252 4.05361ZM104.88 11.0807C104.813 11.1965 104.3 14.1663 103.74 17.6803C103.18 21.1943 102.659 24.17 102.583 24.2933C102.505 24.419 101.269 23.9914 99.7685 23.3194C94.3844 20.9092 89.6373 19.4976 83.9816 18.625C80.15 18.034 72.0149 17.9156 68.6505 18.4019C57.3705 20.0327 47.7584 24.1098 39.5096 30.7631C36.57 33.1341 32.068 37.7595 29.8706 40.6665C23.4287 49.1888 19.363 59.599 18.3198 70.2435C17.675 76.8221 18.4289 84.9343 20.2803 91.341C21.5567 95.7585 23.8701 101.289 24.4415 101.289C24.5897 101.289 24.6292 101.117 24.5358 100.879C23.3938 97.9714 21.8038 90.6363 21.3565 86.2134C21.0064 82.7525 21.1943 74.6701 21.6973 71.5535C23.1078 62.8122 25.8049 55.5415 30.1721 48.7094C37.7754 36.8136 49.7225 28.0367 63.1308 24.496C68.1353 23.1745 70.6822 22.8339 76.4916 22.7101C82.1908 22.5886 85.2046 22.8384 89.9294 23.8228C92.4924 24.3572 97.482 25.8033 98.3578 26.266L98.9617 26.585L98.2595 26.8589C97.8733 27.0096 95.7309 27.8082 93.4987 28.6333C91.2664 29.4586 89.2979 30.2132 89.1245 30.3104C88.9375 30.415 95.3021 32.5019 104.769 35.4401C113.547 38.1644 120.75 40.3728 120.775 40.3473C120.801 40.322 117.447 34.0374 113.322 26.3814C109.198 18.7256 105.638 12.1035 105.412 11.6658C105.186 11.2284 104.946 10.965 104.88 11.0807ZM96.504 46.5097C93.8643 46.993 91.4087 48.4058 90.141 50.1714L89.3698 51.245L89.2118 50.4728C89.125 50.048 88.8668 49.5637 88.6381 49.3966C88.0553 48.9704 86.399 49.0181 85.2151 49.4956C84.6656 49.7173 82.9518 50.2245 81.4069 50.6226L78.5982 51.3468L78.5361 58.4118C78.5022 62.2977 78.5549 65.4801 78.6532 65.4836C78.7517 65.4873 80.3857 65.0922 82.2844 64.6058L85.7364 63.7215L85.7404 60.3276C85.7425 58.461 85.8216 56.8178 85.9162 56.6762C86.1575 56.3151 86.892 55.9715 87.7852 55.8022C88.5112 55.6646 88.5459 55.6913 88.5459 56.3858C88.5459 58.4661 90.0951 60.6509 91.9669 61.21C94.7619 62.0452 99.3369 60.7553 101.458 58.5342C103.048 56.8693 103.409 55.8544 103.405 53.0717C103.401 50.3869 103.12 49.2461 102.189 48.1402C101.006 46.7339 98.7747 46.094 96.504 46.5097ZM96.504 48.2418C92.7096 49.0643 90.4781 51.381 90.2363 54.7478C90.0825 56.8902 90.3077 57.8363 91.1952 58.7774C92.5044 60.1654 95.0723 60.1652 98.1666 58.7765C100.135 57.8931 101.276 56.57 101.748 54.6233C101.908 53.9627 101.897 53.9541 101.098 54.1039C99.0169 54.4943 97.9405 54.9484 97.8656 55.4671C97.7717 56.1168 96.4062 57.0507 95.55 57.0507C94.7121 57.0507 94.1187 56.4511 94.2093 55.6957C94.2765 55.1359 94.4944 55.046 98.0255 54.1219L101.77 53.1416L101.706 51.7717C101.567 48.8522 99.6594 47.5576 96.504 48.2418ZM126.992 50.5555C127.055 50.8452 127.429 52.1881 127.824 53.5398C129.681 59.8981 130.326 64.5567 130.302 71.4456C130.283 77.1942 130.027 79.603 128.907 84.5979C124.775 103.02 112.044 117.96 94.4593 125.02C84.3505 129.079 72.7707 130.022 61.5115 127.704C59.1274 127.213 54.6556 125.93 53.2372 125.33L52.4528 124.998L57.0992 123.289C59.6547 122.349 61.9748 121.465 62.2547 121.324C62.6854 121.107 60.3047 120.306 46.8065 116.129C38.0301 113.413 30.82 111.213 30.7842 111.24C30.7481 111.267 34.2766 117.88 38.6253 125.935C42.9737 133.991 46.5963 140.509 46.6754 140.421C46.7543 140.333 47.2753 137.389 47.8329 133.88C48.3904 130.371 48.9107 127.397 48.9889 127.27C49.0715 127.137 50.3338 127.584 51.9952 128.335C64.4394 133.961 78.1811 135.029 91.3654 131.395C103.169 128.142 114.348 120.58 121.586 110.953C133.297 95.3754 136.57 75.2553 130.316 57.2871C129.254 54.2354 127.393 50.0288 127.105 50.0288C126.98 50.0288 126.929 50.2657 126.992 50.5555ZM85.4319 51.2724C84.9422 51.569 84.3433 52.1136 84.101 52.483L83.6603 53.1547L83.503 52.5279C83.4166 52.1834 83.2998 51.9013 83.2436 51.9013C83.1875 51.9013 82.4616 52.0722 81.6307 52.281L80.1196 52.6604V58.0155C80.1196 60.9608 80.1985 63.3697 80.2951 63.369C80.3918 63.3683 80.8393 63.2698 81.2899 63.15C81.7405 63.0304 82.5569 62.8162 83.1039 62.6741L84.0987 62.4162V59.6088C84.0987 56.1227 84.3636 55.3538 85.7867 54.7078C86.3389 54.4573 86.9748 54.2499 87.2 54.2471C87.5532 54.2427 87.6096 54.0004 87.6096 52.4865V50.731L86.966 50.7322C86.612 50.7329 85.9216 50.9761 85.4319 51.2724ZM95.5725 51.1411C94.7455 51.5566 93.923 52.6751 94.2236 52.9757C94.4602 53.2123 97.738 52.3065 97.8466 51.9746C97.9548 51.6441 97.0974 50.7308 96.6796 50.7315C96.5188 50.7315 96.0205 50.9159 95.5725 51.1411ZM70.9911 53.328L64.0862 55.1115L64.0141 56.0819L63.9423 57.0526L63.304 55.8308C62.7909 54.8487 62.4214 54.4814 61.4182 53.9573C60.605 53.5325 59.8338 53.3118 59.2027 53.323C58.6702 53.3326 56.1281 53.8892 53.5534 54.5601L48.8721 55.7795L48.8108 64.4904C48.7771 69.2813 48.8197 73.2011 48.9053 73.2011C48.9912 73.2011 50.3355 72.876 51.8925 72.4786C53.4497 72.0809 55.1188 71.6556 55.6014 71.5332L56.4792 71.3106V69.0191V66.7276L57.6954 66.447C60.414 65.8195 62.562 64.0417 63.477 61.6613L63.9449 60.4447L63.957 62.1301C63.9818 65.5664 64.857 67.4565 66.7064 68.0667C67.8093 68.4307 69.7485 68.2174 70.9612 67.5988C71.4927 67.3278 71.9274 67.1529 71.9274 67.2103C71.9274 67.3254 77.7668 65.8012 77.9227 65.6453C77.9763 65.5919 77.9922 62.3972 77.958 58.5462L77.896 51.5444L70.9911 53.328ZM74.0925 54.1919L72.6296 54.5575V57.8168C72.6296 61.405 72.3744 62.3895 71.32 62.8698C69.7979 63.5633 69.5867 63.0683 69.5867 58.8057C69.5867 55.6534 69.5542 55.3905 69.1771 55.5029C68.952 55.5703 68.2409 55.7505 67.5972 55.9036C65.4871 56.4054 65.6069 56.1484 65.6133 60.1603C65.6196 64.2779 65.8155 65.3907 66.6616 66.1207C67.8629 67.1569 70.2299 66.5448 72.1029 64.7137C73.0694 63.7688 73.0977 63.7581 73.0977 64.336C73.0977 64.6632 73.1529 64.9862 73.2203 65.0536C73.288 65.1212 74.0253 65.0131 74.8588 64.8137L76.3746 64.4511V59.1124C76.3746 53.0356 76.6182 53.5606 74.0925 54.1919ZM58.2346 55.0542C58.1059 55.108 56.2891 55.5937 54.1971 56.1334L50.3935 57.1146V64.1047C50.3935 67.949 50.4724 71.0896 50.5691 71.0835C50.6657 71.0777 51.6399 70.8308 52.7342 70.5351L54.7237 69.9975L54.7904 67.7514L54.8574 65.5053L56.1948 65.1327C59.5145 64.2075 60.499 63.598 61.5382 61.8245C62.2484 60.6127 62.5222 58.4572 62.1208 57.2406C61.711 55.9989 60.6808 55.1403 59.4813 55.0406C58.9244 54.9942 58.3634 55.0003 58.2346 55.0542ZM110.945 58.5932C109.941 58.7746 106.412 59.6215 103.104 60.4751C90.5855 63.7049 88.2484 64.309 81.641 66.0236C77.9077 66.9923 72.7466 68.326 70.1719 68.9875C67.5972 69.6487 65.0918 70.2931 64.6045 70.4195C63.7567 70.6391 63.7237 70.684 63.8438 71.4569C63.9128 71.9014 64.0303 72.66 64.105 73.1426L64.2407 74.0203L63.4613 73.2716C62.3216 72.1766 61.0762 71.7291 59.1709 71.73C55.2852 71.7319 51.5451 73.8708 49.9088 77.0266L49.1338 78.5211L48.65 77.7923C48.3839 77.3913 47.6971 76.8263 47.1237 76.5365C45.4768 75.7047 43.873 75.8247 38.527 77.1802C35.9886 77.8239 33.8808 78.3505 33.8434 78.3505C33.8057 78.3505 33.775 84.3613 33.775 91.7078C33.775 104.321 33.7977 105.058 34.1846 104.938C34.8679 104.727 42.658 102.693 42.7851 102.693C42.8501 102.693 42.9035 100.595 42.9035 98.0301V93.3669L43.7812 93.0864C45.2383 92.6209 47.3399 91.4213 47.9328 90.7168C48.2397 90.3521 48.5393 90.0537 48.5983 90.0537C48.6575 90.0537 48.7474 91.2914 48.7984 92.8039C48.9046 95.9544 49.2436 96.8734 50.8282 98.3049C54.1774 101.331 61.6262 99.1033 64.1471 94.3223C65.0485 92.6129 65.1835 91.9636 65.3525 88.5323L65.4906 85.7235L66.0678 90.824C66.3855 93.6292 66.7171 96.041 66.8051 96.1833C66.9154 96.3617 68.4829 96.0448 71.8454 95.1647L76.7257 93.8874L77.0051 93.0822C77.2736 92.3084 77.2849 92.3021 77.2977 92.921C77.3066 93.358 77.4349 93.5646 77.6973 93.5646C78.241 93.5646 87.2262 91.2177 87.4074 91.0286C87.4893 90.9429 87.7803 88.7663 88.0541 86.1916C88.8069 79.1147 88.8841 79.0321 89.014 85.166L89.131 90.6943L102.239 87.3116C109.448 85.4511 115.907 83.7698 116.593 83.5755L117.84 83.2221L117.763 77.5648C117.692 72.2623 117.655 71.8583 117.187 71.1189L116.687 70.3303L117.18 69.2494C117.592 68.3462 117.674 67.7079 117.68 65.36C117.684 63.5621 117.571 62.2242 117.366 61.6428C116.862 60.2169 115.598 58.9813 114.224 58.5736C113.572 58.3797 112.978 58.2304 112.904 58.2421C112.831 58.2536 111.95 58.4116 110.945 58.5932ZM55.8355 58.9846L54.8407 59.2238V60.737C54.8407 61.9567 54.906 62.2252 55.1771 62.121C55.3622 62.0501 55.9397 61.8774 56.4605 61.7369C56.9812 61.5967 57.5147 61.2819 57.6455 61.0373C57.969 60.4327 57.9458 59.3132 57.6027 58.9701C57.2855 58.6529 57.2127 58.6534 55.8355 58.9846ZM110.899 60.2537C110.07 60.4409 104.842 61.7386 103.936 61.9822L103.058 62.2182V73.6393C103.058 79.9209 103.117 85.1189 103.188 85.1906C103.26 85.2624 104.576 84.9923 106.114 84.5907L108.909 83.8601V78.6522V73.4441L109.512 73.2929C110.582 73.0242 110.659 73.3504 110.741 78.4788C110.809 82.7811 110.856 83.2637 111.209 83.246C111.425 83.235 112.602 82.9428 113.825 82.5964L116.048 81.9666V77.1743C116.048 72.8767 116.003 72.3152 115.61 71.7354C115.369 71.3799 114.895 71.0288 114.557 70.9553C113.301 70.6819 113.261 70.6187 114.07 70.185C115.16 69.6005 115.651 68.8578 115.929 67.3762C116.457 64.559 116.047 62.0351 114.87 60.8582C114.172 60.1596 113.987 60.0959 112.736 60.1207C111.983 60.1357 111.156 60.1954 110.899 60.2537ZM95.4508 64.1567L90.7695 65.3761L90.7089 76.9857L90.648 88.595L94.4539 87.6002C96.5469 87.0532 98.7862 86.4564 99.4298 86.2743L100.6 85.9428L100.667 83.6682C100.704 82.4169 100.651 81.3952 100.55 81.3973C100.449 81.3997 99.5761 81.6084 98.6106 81.8615C97.6451 82.1145 96.7236 82.3233 96.5626 82.3256C96.347 82.3284 96.27 81.6876 96.27 79.8885V77.4475L97.4988 77.0945C98.1746 76.9005 99.0174 76.6711 99.3713 76.5845L100.015 76.4272V74.2291C100.015 73.02 99.9885 72.0327 99.9565 72.0348C99.9244 72.0371 99.1277 72.2389 98.1863 72.4835C96.8579 72.8283 96.449 72.8622 96.3617 72.6342C96.2997 72.4727 96.28 71.5072 96.318 70.4888L96.387 68.6369L97.3233 68.3548C97.8382 68.1999 98.7073 67.9588 99.2543 67.8193L100.249 67.5656V65.2338C100.249 63.9516 100.223 62.91 100.191 62.9196C100.158 62.9292 98.0255 63.4858 95.4508 64.1567ZM109.066 64.6969C108.98 64.7826 108.909 65.9412 108.909 67.2716C108.909 69.8973 109.039 70.1119 110.103 69.2501C110.557 68.8831 110.662 68.5395 110.739 67.1745C110.844 65.3071 110.559 64.5408 109.759 64.5408C109.464 64.5408 109.151 64.611 109.066 64.6969ZM85.6201 66.6944C84.204 67.0813 83.0208 67.4205 82.9909 67.4476C82.7659 67.6531 81.524 79.7647 81.524 81.7538C81.524 82.3708 81.4528 82.8047 81.366 82.7177C81.2791 82.6308 81.0273 80.1645 80.8063 77.2368C80.1891 69.0587 80.0999 68.2858 79.7725 68.2858C79.4263 68.2858 74.25 69.63 74.1285 69.7515C73.901 69.9792 72.648 81.402 72.6085 83.6099C72.5661 85.9644 72.2104 83.5165 71.8267 78.2335C71.6212 75.4013 71.3895 72.4905 71.3118 71.7651L71.1709 70.4462L68.4478 71.151C66.95 71.5386 65.6964 71.8796 65.662 71.9086C65.6093 71.9526 66.362 78.7505 67.4769 88.2982C67.6122 89.4568 67.817 91.2294 67.9321 92.2375C68.0473 93.2454 68.1987 94.1271 68.2685 94.1968C68.3382 94.2666 69.9683 93.9197 71.8909 93.4261L75.3866 92.5282L75.7492 89.8281C75.9483 88.3429 76.2966 85.6102 76.5232 83.755C76.7495 81.9001 76.9647 80.4781 77.0012 80.5952C77.0374 80.7124 77.2802 82.3354 77.5402 84.2021C77.8003 86.0688 78.1797 88.5061 78.3838 89.6183L78.7543 91.6406L82.2807 90.7343C84.2199 90.2358 85.8483 89.7864 85.8991 89.7358C86.0004 89.6345 86.4981 85.2982 87.5953 74.9566C87.9914 71.2233 88.3773 67.6686 88.4527 67.057C88.5281 66.4453 88.5009 65.9554 88.3923 65.9681C88.2837 65.9805 87.0362 66.3075 85.6201 66.6944ZM99.6054 69.406C98.3468 69.7204 98.1425 69.8461 98.1425 70.3039C98.1425 70.7795 98.2111 70.8137 98.7862 70.6257C99.1401 70.5099 99.8776 70.3006 100.425 70.1606C101.17 69.9699 101.419 69.7913 101.419 69.447C101.419 69.1947 101.34 68.9997 101.244 69.0142C101.147 69.0287 100.41 69.205 99.6054 69.406ZM57.8936 73.4909C55.0671 73.908 52.5834 75.5804 51.3143 77.9212L50.5106 79.4038L50.4371 86.6965C50.3886 91.5154 50.4516 94.3151 50.6224 94.9503C50.9555 96.1869 52.0608 97.4398 53.13 97.7925C54.4861 98.2401 56.9033 97.9519 58.6499 97.1346C60.6937 96.1782 61.9406 94.9924 62.8551 93.1354L63.6181 91.5861L63.6977 85.018C63.781 78.1431 63.6066 76.1192 62.842 75.0881C61.7692 73.6412 60.2338 73.1456 57.8936 73.4909ZM56.6849 77.858C56.1285 78.3084 56.1281 78.3138 56.0478 84.3568C56.0038 87.6831 56.0391 91.1683 56.1264 92.1017C56.276 93.7011 56.3179 93.7987 56.856 93.7987C57.2537 93.7987 57.4964 93.6164 57.6553 93.1983C57.7859 92.8545 57.8836 89.4643 57.8836 85.2687C57.8836 77.2652 57.8297 76.9316 56.6849 77.858ZM39.3925 78.6714L35.5305 79.6638L35.4699 91.2647L35.409 102.865L38.2786 102.121L41.148 101.377L41.2112 96.6945L41.2744 92.0123L42.4986 91.7036C45.0192 91.0679 46.8353 89.8161 47.5239 88.2399C48.0637 87.0043 48.0618 80.5102 47.5213 79.2437C46.7157 77.3555 44.9867 77.2336 39.3925 78.6714ZM99.4883 78.2819C98.1839 78.6241 98.1425 78.6595 98.1425 79.4291C98.1425 79.8658 98.1998 80.223 98.2698 80.223C98.34 80.223 99.0773 80.0522 99.9083 79.8434C101.394 79.4703 101.419 79.4506 101.419 78.673C101.419 77.781 101.407 77.7785 99.4883 78.2819ZM41.265 85.0213C41.265 88.1887 41.3636 88.3939 42.4588 87.5071C42.9138 87.1387 43.0172 86.7969 43.0961 85.4022C43.1479 84.4863 43.1209 83.3677 43.0362 82.9162C42.8955 82.166 42.8127 82.0955 42.0737 82.0955H41.265V85.0213Z" />
+                </svg>
+                <p>Container <br>
+                    reusable forever</p>
+            </div>
+            <div class="perk">
+                <svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M70.9717 0.157065C58.2148 1.03986 46.2225 4.88412 35.6532 11.4788C17.1427 23.0282 4.40194 42.1084 0.928773 63.4816C0.115232 68.4873 -0.0979219 71.9113 0.0380193 77.7921C0.173259 83.6491 0.613371 87.4313 1.74419 92.4595C6.37718 113.057 19.2413 130.575 37.719 141.447C46.7068 146.736 57.4541 150.193 68.4101 151.319C72.2008 151.709 80.2206 151.644 84.0867 151.193C101.614 149.147 116.958 141.738 129.372 129.324C141.709 116.987 149.027 101.689 151.15 83.8042C151.318 82.3886 151.455 78.8088 151.455 75.8489C151.455 70.1825 151.21 67.3436 150.273 62.1612C145.881 37.8554 129.602 17.0014 107.048 6.788C95.9196 1.74858 82.8045 -0.662092 70.9717 0.157065ZM69.58 4.28654C69.194 4.3317 67.8778 4.48074 66.6553 4.61786C54.3555 5.99739 41.3192 11.4872 31.0906 19.595C27.8961 22.1269 22.0811 27.9277 19.6152 31.0422C13.8448 38.3299 9.0918 47.5376 6.63152 56.1948C5.85307 58.9342 4.75712 64.4367 4.37129 67.5427C3.97166 70.7604 3.97166 80.9375 4.37129 84.1552C4.81889 87.7598 5.91508 93.025 6.88187 96.2158C9.57824 105.114 13.9719 113.543 19.621 120.656C22.1269 123.811 27.7073 129.39 30.8567 131.89C41.9528 140.696 54.8731 145.929 68.9614 147.323C72.078 147.632 79.4836 147.632 82.5995 147.323C99.1712 145.682 114.563 138.434 126.313 126.737C138.122 114.981 145.3 100 147.166 83.2193C147.53 79.9389 147.53 71.8201 147.165 68.4786C144.926 47.9883 134.314 29.6338 117.779 17.6504C107.812 10.4266 96.1494 5.92065 83.7357 4.49736C80.8868 4.17072 71.742 4.03455 69.58 4.28654ZM74.3766 11.856C74.3766 14.0521 74.2851 15.5996 74.1552 15.5996C72.7247 15.5996 67.2803 16.2248 64.8813 16.6644C39.0396 21.4016 19.2371 42.399 16.0073 68.4882C15.8098 70.0837 15.6481 72.0506 15.6481 72.8587V74.3281H11.7875H7.92682V75.7261V77.1241L11.729 77.1885L15.5311 77.2528L15.7068 79.9436C16.9027 98.2491 26.883 115.466 42.265 125.759C51.019 131.616 61.5274 135.189 71.7443 135.783L74.3766 135.936V139.76V143.586H75.7804H77.1843V139.725V135.864H78.4141C81.7693 135.864 87.9426 134.831 92.6269 133.484C103.979 130.222 115.032 122.861 122.426 113.636C129.654 104.62 134.402 93.2031 135.439 82.3505C135.584 80.8336 135.757 79.0397 135.824 78.3642L135.946 77.1358H139.673H143.4V75.732V74.3281H139.686H135.971L135.825 73.5969C135.745 73.1947 135.679 72.4104 135.679 71.854C135.679 70.2307 135.009 65.5429 134.361 62.6292C131.879 51.4741 126.37 41.5663 118.031 33.2612C107.244 22.5176 95.1077 17.0889 78.7637 15.6969L77.1843 15.5624V11.8372V8.11232H75.7804H74.3766V11.856ZM70.4308 19.3683C44.3469 21.687 22.9531 42.3569 19.5186 68.5584C19.3201 70.072 19.1578 71.9892 19.1578 72.8192V74.3281H29.4254H39.6933L39.8344 73.8016C39.9118 73.512 39.9769 72.9516 39.9785 72.5559C39.9855 71.0079 40.7642 67.2952 41.6332 64.6676C43.5011 59.0198 46.5159 54.2322 50.8346 50.0543C56.8495 44.2362 64.3721 40.7691 72.5632 40.0398L74.3766 39.8783V29.4939V19.1093L73.4992 19.1416C73.0167 19.1591 71.6357 19.2614 70.4308 19.3683ZM77.1843 29.475V39.873L78.8806 40.0381C84.6541 40.6004 90.3846 42.5878 95.1356 45.6756C104.526 51.7794 110.261 61.3236 111.472 72.8657L111.625 74.3281H122.016H132.406L132.274 72.6318C131.642 64.5169 129.972 58.0582 126.813 51.5152C124.014 45.7175 120.911 41.2024 116.677 36.7678C106.689 26.3074 93.9193 20.3426 79.1146 19.223L77.1843 19.0772V29.475ZM70.5248 42.4102C58.0391 44.3506 47.6565 53.1734 43.6033 65.2874C42.8555 67.5221 42.2837 70.3095 42.0008 73.0969L41.8763 74.3227L51.0485 74.3838L60.2209 74.4451L60.2911 75.7905L60.3613 77.1358H51.111H41.8609L41.998 78.5982C42.7259 86.3632 45.952 93.4722 51.2743 99.0394C55.8121 103.786 61.0642 106.896 67.2213 108.484C69.6245 109.104 74.0146 109.709 74.2682 109.455C74.3279 109.396 74.3766 105.253 74.3766 100.249V91.1511L75.7219 91.2213L77.0673 91.2915L77.1284 100.426L77.1897 109.561L79.3322 109.36C84.9903 108.827 91.1905 106.396 95.8588 102.878C98.323 101.021 102.086 97.0672 103.675 94.665C105.057 92.5744 106.581 89.6693 107.369 87.6199C108.337 85.1016 109.473 79.6661 109.473 77.5514C109.473 77.1604 108.934 77.1358 100.348 77.1358H91.223V75.732V74.3281H100.375H109.528L109.367 72.7487C108.552 64.7282 105.235 57.685 99.6436 52.1002C93.7731 46.2365 86.9342 42.9757 78.7637 42.1451L77.1843 41.9846V51.1371V60.2894H75.7804H74.3766V51.1643V42.0391L73.4992 42.0618C73.0167 42.0742 71.6781 42.231 70.5248 42.4102ZM74.4603 70.565C71.048 71.419 69.4015 75.173 71.0527 78.3338C72.9961 82.054 78.6237 81.9818 80.4481 78.2133C81.3992 76.2488 81.0274 73.6776 79.5702 72.1423C78.3263 70.8318 76.1178 70.1502 74.4603 70.565ZM19.1578 78.7521C19.1578 83.1074 20.7867 90.9 22.7432 95.9034C25.6827 103.421 29.4991 109.395 34.9492 115.01C43.1117 123.42 53.1527 128.999 64.2556 131.295C66.7746 131.816 71.1524 132.355 72.8676 132.355H74.3766V122.07V111.786L73.6161 111.678C73.1978 111.62 71.9081 111.451 70.7499 111.304C57.1078 109.575 45.1506 99.2917 41.2928 85.9713C40.633 83.6933 39.9853 80.2599 39.9795 79.0077C39.9771 78.5572 39.9118 77.9519 39.8344 77.6623L39.6933 77.1358H29.4254H19.1578V78.7521ZM111.467 78.8322C110.891 84.9563 108.712 90.9817 105.184 96.205C103.219 99.1134 98.7784 103.499 95.7856 105.485C90.7113 108.853 84.9835 110.97 79.6844 111.434C78.8884 111.503 78.0004 111.609 77.7108 111.667L77.1843 111.773V122.064V132.355H78.5762C82.1662 132.355 88.9134 131.086 93.6797 129.514C97.2376 128.34 103.709 125.17 106.9 123.038C120.035 114.26 129.006 100.5 131.565 85.2081C131.839 83.5737 132.386 78.4031 132.401 77.3113C132.402 77.2147 127.728 77.1358 122.015 77.1358H111.627L111.467 78.8322Z" />
+                </svg>
+                <p>Ultra stain-<br>
+                    removing action</p>
+            </div>
+            <div class="perk">
+                <svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M71.7178 0.05349C60.2556 0.917026 51.1997 3.32356 41.9263 7.97056C31.5541 13.1682 22.6018 20.5414 15.6809 29.5873C1.56115 48.042 -3.32373 71.527 2.25394 94.1382C7.00947 113.416 19.5969 130.452 36.6602 140.703C48.5886 147.87 61.6426 151.469 75.7277 151.477C82.6522 151.481 87.7005 150.874 94.2514 149.252C113.629 144.453 130.522 131.901 140.834 114.641C155.787 89.6126 155.044 58.1146 138.93 33.9478C126.42 15.1867 107.119 3.29409 84.651 0.503267C81.8249 0.152192 74.0138 -0.119358 71.7178 0.05349ZM71.466 4.13704C56.9524 4.96456 42.6631 10.4267 31.1373 19.5525C28.2403 21.8463 22.0727 27.9701 19.8194 30.7902C14.3804 37.5972 9.68779 46.4431 7.14794 54.6759C2.91796 68.3868 3.00427 84.0995 7.38323 97.6155C14.5989 119.886 31.7692 137.016 54.0589 144.183C60.6102 146.29 66.5385 147.252 74.0568 147.427C80.258 147.572 84.5385 147.218 90.0893 146.103C109.442 142.213 126.454 130.291 136.986 113.238C138.872 110.185 141.856 104.1 143.046 100.882C147.276 89.4367 148.541 76.8673 146.687 64.7039C144.357 49.4184 136.707 34.7362 125.513 24.0634C114.58 13.6388 101.302 7.06586 86.6651 4.83311C83.8764 4.40766 76.6759 3.84538 75.1093 3.93098C74.7877 3.94829 73.1481 4.04115 71.466 4.13704ZM72.6626 27.5257C69.4566 28.03 67.1934 28.9958 63.446 31.458C59.0661 34.3358 56.8146 35.0613 52.1877 35.0866C48.5331 35.1065 46.6274 34.6602 43.6911 33.0973C37.0445 29.5597 34.8566 28.8266 31.3618 28.9663L29.617 29.036L31.8305 29.5667C34.7208 30.2595 36.7367 31.2832 40.0252 33.7277C45.0083 37.4316 48.1025 38.5534 53.3572 38.5606C58.2584 38.5674 60.7255 37.7656 65.7559 34.5311C70.4513 31.5118 72.2446 30.9359 76.9805 30.9265C81.427 30.9174 82.7761 31.3317 88.3243 34.4074C91.4735 36.1531 93.7813 36.867 96.8399 37.0412C98.5048 37.1362 99.2263 37.1027 99.1232 36.9357C99.0402 36.8015 98.4933 36.6198 97.9079 36.5318C95.2151 36.1281 92.5753 34.8267 88.9091 32.0951C85.7756 29.7606 83.6404 28.64 81.0755 27.9839C78.9318 27.4357 74.7002 27.2053 72.6626 27.5257ZM73.389 38.8792C70.4506 39.5904 67.5281 41.6847 65.7465 44.356C64.7511 45.8485 63.8824 48.7348 63.8824 50.5493C63.8824 51.8818 63.9481 52.0923 64.4987 52.5252C65.8539 53.5913 67.6221 52.7147 67.6275 50.9741C67.6371 47.8993 69.5691 44.8004 72.3522 43.3954C76.7302 41.1854 82.1493 42.9936 84.1888 47.3452C84.7443 48.5301 84.8159 48.9637 84.8159 51.139C84.8159 53.4884 84.7815 53.6585 84.0209 55.0609C83.0388 56.8719 81.8298 57.9881 79.816 58.9421L78.2669 59.6761L47.8983 59.793L17.53 59.91L17.0828 60.4622C16.4604 61.231 16.513 62.2644 17.2101 62.9611L17.784 63.5353H47.9177C74.0189 63.5353 78.233 63.4881 79.4057 63.1826C85.9112 61.4883 90.007 54.9276 88.5758 48.4943C88.0114 45.9577 86.9872 44.0702 85.1864 42.2477C82.0974 39.1217 77.6422 37.8496 73.389 38.8792ZM106.037 42.6135C104.35 43.068 103.792 43.3856 101.539 45.1747C99.4013 46.873 98.7569 47.2542 96.9903 47.8658L95.8089 48.2752L96.7445 48.4578C98.2183 48.7458 100.379 48.245 102.999 47.0086L105.399 45.8763H108.205C111.314 45.8763 111.619 45.9779 114.912 48.1061C117.138 49.5454 119.101 50.0556 121.854 49.9117C124.65 49.7658 126.304 49.1733 128.279 47.6102C130.857 45.5699 131.799 44.9672 133.229 44.444C134.31 44.0482 134.536 43.8901 134.207 43.7596C133.335 43.4139 130.604 43.844 128.86 44.6016C124.258 46.6017 124.561 46.5198 122.14 46.4183C119.645 46.3137 118.541 45.9182 115.824 44.1551C113.749 42.8091 111.806 42.2472 109.292 42.2664C108.18 42.2748 106.715 42.4311 106.037 42.6135ZM105.84 53.4681C102.922 53.919 100.451 55.2534 98.3118 57.5329C96.8317 59.1101 95.8049 61.1957 95.3075 63.6364C94.6806 66.7097 95.281 67.9185 97.3617 67.7723C98.3034 67.7061 98.7705 66.9586 98.9623 65.21C99.6892 58.588 106.784 55.0775 112.272 58.6245C117.912 62.2702 117.432 70.6799 111.414 73.6426L109.853 74.4114L70.7086 74.5283L31.5646 74.6453L31 75.3016C30.2838 76.1343 30.2838 76.8986 31 77.7313L31.5646 78.3876H70.5865H109.609L111.256 77.8695C115.422 76.5585 118.755 73.0083 119.771 68.7979C120.133 67.2994 120.133 64.4515 119.772 62.9506C118.726 58.6079 114.9 54.7472 110.661 53.759C109.029 53.3785 107.152 53.2653 105.84 53.4681ZM102.39 84.8431C100.548 85.112 98.7403 85.9756 96.8816 87.4744C94.7 89.2333 93.6552 89.872 92.1836 90.3464L90.8972 90.761L91.8327 90.9596C93.2394 91.2578 95.1952 90.8184 97.8244 89.6133C100.559 88.3597 102.237 87.9936 104.202 88.2217C106.148 88.4474 107.168 88.8448 109.28 90.1992C111.71 91.7581 113.232 92.3258 115.386 92.4769C118.842 92.7197 121.289 91.887 124.227 89.4688C125.824 88.1543 128.373 86.6915 129.067 86.6911C129.22 86.6908 129.419 86.572 129.508 86.4268C129.626 86.2354 129.099 86.1901 127.592 86.2621C125.72 86.3517 125.281 86.4691 123.175 87.4442C120.359 88.7472 119.381 89.0267 117.631 89.0284C115.59 89.0305 114.111 88.6202 112.49 87.6021C110.042 86.0652 107.824 85.0847 106.217 84.8302C104.515 84.5605 104.321 84.5612 102.39 84.8431ZM17.6884 89.066C16.5465 89.6905 16.2684 91.1201 17.1128 92.0262C17.3749 92.3078 17.6119 92.563 17.639 92.5931C17.6661 92.6235 31.4238 92.7024 48.2115 92.7686L78.7347 92.889L80.0627 93.5413C81.8361 94.4121 83.7966 96.5387 84.4674 98.3189C85.1555 100.145 85.0486 103.323 84.2426 105C83.4128 106.726 81.8293 108.33 80.1249 109.168C74.7103 111.834 68.3152 108.203 67.7122 102.12C67.4986 99.9664 66.5542 99.0664 65.0556 99.5887C64.1306 99.9112 63.8824 100.41 63.8824 101.946C63.8824 108.329 69.643 113.859 76.2788 113.846C81.3536 113.836 85.4582 111.267 87.6378 106.735C91.114 99.5089 86.786 90.8081 78.8823 89.1327C77.5963 88.8602 72.2771 88.8045 47.7437 88.8071C26.7716 88.8092 18.02 88.8845 17.6884 89.066ZM49.4652 113.216C46.069 113.865 44.0466 114.832 40.403 117.55C36.5664 120.411 34.5713 121.398 31.1373 122.133C29.9292 122.391 29.892 122.42 30.5266 122.593C31.38 122.826 35.1123 122.377 36.7711 121.841C37.4639 121.617 38.8742 120.984 39.905 120.434C46.9333 116.682 48.2429 116.282 52.8894 116.468C57.158 116.639 59.1767 117.296 62.8739 119.717C68.6335 123.488 71.0545 124.253 76.5948 124.05C81.9074 123.856 83.9732 123.081 88.9091 119.429C92.2975 116.922 94.2701 115.91 97.3442 115.104L99.5512 114.526L96.7445 114.617C93.2557 114.731 91.7591 115.209 87.5048 117.565C82.9948 120.064 81.7779 120.438 77.7991 120.552C72.5435 120.702 70.5643 120.107 65.5087 116.856C62.593 114.981 60.6998 114.054 58.6114 113.479C56.6927 112.95 51.6219 112.805 49.4652 113.216Z" />
+                </svg>
+                <p>Intense<br>
+                    freshness</p>
+            </div>
+            <div class="perk">
+                <svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M69.7542 0.131413C55.7261 1.38437 42.9204 6.05742 31.8285 13.9708C28.2808 16.502 25.7571 18.6314 22.4922 21.8488C10.2099 33.9522 2.74699 49.1288 0.422758 66.7292C-0.144723 71.0274 -0.14004 80.7942 0.431654 84.9897C2.66037 101.346 8.97102 115.011 19.8693 127.078C29.8964 138.18 44.2569 146.496 59.1259 149.808C64.1585 150.929 68.0314 151.383 73.7621 151.525C82.636 151.744 89.698 150.821 97.7302 148.392C102.168 147.049 104.642 146.06 109.348 143.744C121.382 137.823 131.46 128.964 138.904 117.765C145.419 107.963 149.24 97.7894 151.035 85.4579C151.62 81.4432 151.621 70.2759 151.037 66.1439C149.75 57.0401 147.302 49.1309 143.391 41.4454C131.79 18.6509 109.72 3.34644 84.1519 0.367395C81.1244 0.0145929 72.6218 -0.124703 69.7542 0.131413ZM70.5982 4.11244C48.1972 5.86498 28.3265 17.477 15.9135 36.0683C4.06924 53.8084 0.803888 76.1499 7.04173 96.7691C9.74218 105.695 14.6194 114.683 20.6575 121.862C23.1428 124.817 28.2092 129.749 31.1927 132.117C42.3182 140.951 55.5559 146.153 70.1054 147.407C76.3198 147.943 84.9549 147.35 91.2922 145.952C114.258 140.885 133.527 124.56 142.398 102.655C148.615 87.3015 149.264 69.439 144.169 53.8532C141.213 44.8102 136.735 36.6969 130.793 29.6229C128.528 26.9252 123.39 21.8923 120.673 19.7086C115.139 15.261 106.799 10.5678 100.257 8.22059C97.0338 7.06385 92.2331 5.75191 89.0682 5.16242C83.7441 4.1712 75.6956 3.71375 70.5982 4.11244ZM93.6333 11.1029C91.4048 11.9141 78.1461 17.8846 76.7304 18.7143C72.8196 21.0065 69.9586 24.0901 67.8469 28.2894C65.9368 32.0878 64.7208 36.5649 64.7208 39.7993V41.5673L62.5553 39.3754C60.2025 36.9935 58.4711 35.7268 55.6533 34.3252C50.2777 31.6516 45.1355 31.0884 35.8826 32.1599C33.2561 32.464 29.983 32.6733 27.6888 32.6841C23.5485 32.7035 22.7596 32.8639 21.649 33.912C20.3878 35.1022 20.3176 35.874 21.0314 40.6876C22.5767 51.108 24.6247 58.1231 27.3235 62.2406C29.9744 66.2848 35.4378 71.0843 39.4953 72.9331C40.4847 73.3837 41.2956 73.8051 41.298 73.8695C41.3001 73.9339 40.7115 74.2422 39.99 74.5547C36.5975 76.024 30.874 81.1168 28.3679 84.896C25.5066 89.2111 23.3854 94.9492 21.059 104.667C19.6012 110.757 19.5624 111.442 20.5861 112.996C21.6092 114.549 22.4297 114.77 30.9382 115.78C45.8399 117.549 48.4652 117.707 52.2086 117.054C57.5398 116.124 63.1844 113.214 66.3442 109.766L67.7003 108.286L67.9909 110.099C68.8135 115.234 71.0097 119.645 74.623 123.422C78.0857 127.041 80.4214 128.316 93.4966 133.725C99.3126 136.132 100.734 136.388 102.509 135.347C104.065 134.436 104.203 134.159 108.747 122.884C112.756 112.935 112.321 104.244 107.461 97.1886C106.796 96.2234 106.507 95.6356 106.741 95.7252C108.944 96.5706 111.13 96.907 114.469 96.914C118.541 96.9227 119.794 96.6551 123.195 95.051C128.373 92.6095 132.15 89.1992 140.659 79.284C144.959 74.2738 145.052 74.5788 136.615 66.0636C133.19 62.6072 129.509 59.1166 128.435 58.3068C123.585 54.6508 117.712 52.8343 111.66 53.118C110.115 53.1906 108.204 53.3917 107.413 53.565L105.977 53.8801L107.244 52.0716C110.358 47.628 111.16 43.8988 110.262 38.0508C109.812 35.1261 109.223 33.0823 107.781 29.4531C106.138 25.3164 101.76 15.257 101.052 13.9897C100.31 12.6619 99.0534 11.4021 98.0549 10.9849C96.9881 10.5392 95.0389 10.5914 93.6333 11.1029ZM89.3484 16.0431C79.6928 20.162 76.872 21.6964 74.1292 24.3212C71.4452 26.8896 69.6514 30.059 68.5431 34.1901C67.9771 36.2999 67.9139 36.942 67.8984 40.743C67.8787 45.5706 67.9633 45.9976 70.6536 54.6725L72.1421 59.4718L72.821 59.4278C73.1944 59.4036 74.3427 59.3142 75.3728 59.2292C79.2955 58.905 83.4133 60.4967 86.4136 63.4968C87.3545 64.4377 88.1915 65.2075 88.2736 65.2075C88.356 65.2075 91.2283 62.957 94.6569 60.2064C102.677 53.7724 104.526 51.8363 106.278 48.0414C107.74 44.8741 108.163 40.972 107.429 37.4217C106.933 35.0193 106.038 32.6283 102.539 24.3554C98.4199 14.6188 97.726 13.4473 96.1062 13.4927C95.6094 13.5068 92.8764 14.538 89.3484 16.0431ZM40.2564 34.4345C39.8702 34.4811 36.2356 34.7475 32.1797 35.0268C28.1237 35.3059 24.5669 35.6242 24.2757 35.7343C23.1477 36.1603 23.1564 36.6094 24.4215 43.3435C26.2951 53.3168 27.2976 56.7545 29.3523 60.2502C32.8008 66.1174 39.5089 70.7664 46.616 72.2148C49.1093 72.7228 53.9474 72.831 59.1996 72.496L61.521 72.3478L61.8088 70.9431C62.5158 67.4898 64.5078 64.2408 67.1291 62.2649C67.9291 61.6621 68.8049 61.0668 69.0755 60.9424C69.5611 60.7189 69.5515 60.6657 68.3107 56.6994C67.6196 54.4902 66.8344 51.8925 66.5656 50.9268C64.4535 43.3384 57.1619 36.5295 49.3867 34.8847C47.6384 34.5148 41.9242 34.2332 40.2564 34.4345ZM109.319 56.1072C106.14 56.5044 102.385 57.9393 99.829 59.733C99.1162 60.2331 96.5026 62.2193 94.0208 64.1465C90.1844 67.1257 89.532 67.7218 89.6645 68.1263C90.563 70.8677 90.736 71.9692 90.6395 74.3377C90.529 77.0583 89.9793 79.0524 88.817 80.9513L88.1362 82.0633L89.9374 83.3954C94.6665 86.8927 103.371 91.5307 108.305 93.183C110.666 93.9734 111.279 94.0827 113.884 94.178C117.364 94.3051 119.089 93.9736 121.935 92.6303C126.01 90.7073 132.216 85.2161 138.249 78.1956C140.842 75.1775 141.137 74.7207 140.844 74.1778C140.387 73.3324 128.243 61.5251 126.725 60.4499C123.474 58.1472 119.359 56.6074 115.06 56.0844C112.808 55.8103 111.656 55.815 109.319 56.1072ZM73.2272 62.2631C67.0512 63.7609 62.998 70.5927 64.611 76.786C66.1194 82.5765 72.2882 86.6235 78.0395 85.5958C83.8738 84.5531 87.9044 79.6653 87.8948 73.6447C87.8845 67.0176 82.6403 61.881 75.9581 61.9533C75.1211 61.9622 73.8923 62.1018 73.2272 62.2631ZM53.5911 75.3975C44.5659 76.0315 42.5903 76.4646 39.0489 78.5856C36.028 80.395 31.3839 85.1847 29.4436 88.4922C27.7051 91.4553 25.8105 97.0859 23.6377 105.747C22.4564 110.456 22.4089 110.869 22.9909 111.38C23.6024 111.917 23.7325 111.94 31.9456 112.949C43.0395 114.312 46.9805 114.662 49.1526 114.477C53.1465 114.138 57.3073 112.662 60.995 110.277C64.6855 107.889 66.3634 105.309 68.0784 99.3827C69.0886 95.8921 70.8077 88.6277 70.8077 87.8498C70.8077 87.6297 70.3015 87.2182 69.5929 86.8623C65.3761 84.7443 62.3692 80.6177 61.7163 76.0528C61.6304 75.4528 61.4548 74.9415 61.3263 74.9164C61.1975 74.8914 57.7165 75.1079 53.5911 75.3975ZM85.1841 85.1599C82.3926 87.3312 78.8257 88.4767 75.2759 88.3419L73.3063 88.2672L72.0688 94.1199C70.2053 102.933 70.0508 105.136 70.947 110.116C72.2273 117.231 76.4689 122.822 83.0984 126.132C83.9997 126.583 86.6204 127.709 88.9221 128.637C91.2239 129.564 94.4356 130.91 96.0592 131.629C99.609 133.2 100.769 133.407 101.487 132.601C102.204 131.796 107.035 119.861 107.692 117.272C109.835 108.823 108.216 101.193 103.135 95.8079C100.997 93.5407 99.8983 92.745 92.6756 88.2304L86.3331 84.266L85.1841 85.1599Z" />
+                </svg>
+
+                <p>Long-lasting <br>
+                    fragrance</p>
+            </div>
+
+        </section>
+        <section id="socials">
+            <h2 class="vh">Join the Pure Power community</h2>
+            <svg id="facebook-icon" class="social-floating-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15 0C6.75 0 0 6.735 0 15.03C0 22.53 5.49 28.755 12.66 29.88V19.38H8.85V15.03H12.66V11.715C12.66 7.95 14.895 5.88 18.33 5.88C19.965 5.88 21.675 6.165 21.675 6.165V9.87H19.785C17.925 9.87 17.34 11.025 17.34 12.21V15.03H21.51L20.835 19.38H17.34V29.88C20.8747 29.3218 24.0933 27.5183 26.4149 24.7951C28.7365 22.0719 30.008 18.6085 30 15.03C30 6.735 23.25 0 15 0Z" />
+            </svg>
+            <svg id="instagram-icon" class="social-floating-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
+                <path
+                    d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
+            </svg>
+            <svg id="tiktok-icon" class="social-floating-icon" width="24" height="28" viewBox="0 0 24 28" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M19.0408 4.38667C17.9948 3.1726 17.4182 1.61373 17.4184 0H12.6888V19.2889C12.6531 20.333 12.2197 21.3221 11.4801 22.0477C10.7405 22.7732 9.75245 23.1784 8.72449 23.1778C6.55102 23.1778 4.7449 21.3733 4.7449 19.1333C4.7449 16.4578 7.28571 14.4511 9.90306 15.2756V10.36C4.62245 9.64444 0 13.8133 0 19.1333C0 24.3133 4.22449 28 8.70918 28C13.5153 28 17.4184 24.0333 17.4184 19.1333V9.34889C19.3362 10.7487 21.6388 11.4997 24 11.4956V6.68889C24 6.68889 21.1224 6.82889 19.0408 4.38667Z" />
+            </svg>
+
+
+            <div class="trust-copy">
+                <p>Follow us and share your Pure Power moments</p>
+                <div class="trust-socials">
+                    <a href="https://www.tiktok.com/@the.pure.power" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28" viewBox="0 0 24 28" fill="none">
+                            <path
+                                d="M19.0408 4.38667C17.9948 3.1726 17.4182 1.61373 17.4184 0H12.6888V19.2889C12.6531 20.333 12.2197 21.3221 11.4801 22.0477C10.7405 22.7732 9.75245 23.1784 8.72449 23.1778C6.55102 23.1778 4.7449 21.3733 4.7449 19.1333C4.7449 16.4578 7.28571 14.4511 9.90306 15.2756V10.36C4.62245 9.64444 0 13.8133 0 19.1333C0 24.3133 4.22449 28 8.70918 28C13.5153 28 17.4184 24.0333 17.4184 19.1333V9.34889C19.3362 10.7487 21.6388 11.4997 24 11.4956V6.68889C24 6.68889 21.1224 6.82889 19.0408 4.38667Z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/people/Pure-Power/61581267463357/" aria-label="Facebook"><svg
+                            width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 0C6.75 0 0 6.735 0 15.03C0 22.53 5.49 28.755 12.66 29.88V19.38H8.85V15.03H12.66V11.715C12.66 7.95 14.895 5.88 18.33 5.88C19.965 5.88 21.675 6.165 21.675 6.165V9.87H19.785C17.925 9.87 17.34 11.025 17.34 12.21V15.03H21.51L20.835 19.38H17.34V29.88C20.8747 29.3218 24.0933 27.5183 26.4149 24.7951C28.7365 22.0719 30.008 18.6085 30 15.03C30 6.735 23.25 0 15 0Z" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/the.purepower/" aria-label="Instagram"><svg width="30"
+                            height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
+                            <path
+                                d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="socials-videos-srollable">
+                <div class="socials-videos">
+                    <div class="socials-video socials-video--sm">
+                        <video autoplay="" muted="" loop="" playsinline="" preload="none">
+                            <source media="(min-width: 1000px)" src="../assets/videos/webm/social1-desktop.webm"
+                                type="video/webm">
+                            <source media="(min-width: 1000px)" src="../assets/videos/mp4/social1-desktop.mp4"
+                                type="video/mp4">
+                            <source media="(min-width: 575px)" src="../assets/videos/webm/social1-tablet.webm"
+                                type="video/webm">
+                            <source media="(min-width: 575px)" src="../assets/videos/mp4/social1-tablet.mp4"
+                                type="video/mp4">
+                            <source src="../assets/videos/webm/social1-mobile.webm" type="video/webm">
+                            <source src="../assets/videos/mp4/social1-mobile.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="socials-video socials-video--md">
+                        <video autoplay="" muted="" loop="" playsinline="" preload="none">
+                            <source media="(min-width: 1000px)" src="../assets/videos/webm/social2-desktop.webm"
+                                type="video/webm">
+                            <source media="(min-width: 1000px)" src="../assets/videos/mp4/social2-desktop.mp4"
+                                type="video/mp4">
+                            <source media="(min-width: 575px)" src="../assets/videos/webm/social2-tablet.webm"
+                                type="video/webm">
+                            <source media="(min-width: 575px)" src="../assets/videos/mp4/social2-tablet.mp4"
+                                type="video/mp4">
+                            <source src="../assets/videos/webm/social2-mobile.webm" type="video/webm">
+                            <source src="../assets/videos/mp4/social2-mobile.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="socials-video socials-video--lg">
+                        <video autoplay="" muted="" loop="" playsinline="" preload="none">
+                            <source media="(min-width: 1000px)" src="../assets/videos/webm/social3-desktop.webm"
+                                type="video/webm">
+                            <source media="(min-width: 1000px)" src="../assets/videos/mp4/social3-desktop.mp4"
+                                type="video/mp4">
+                            <source media="(min-width: 575px)" src="../assets/videos/webm/social3-tablet.webm"
+                                type="video/webm">
+                            <source media="(min-width: 575px)" src="../assets/videos/mp4/social3-tablet.mp4"
+                                type="video/mp4">
+                            <source src="../assets/videos/webm/social3-mobile.webm" type="video/webm">
+                            <source src="../assets/videos/mp4/social3-mobile.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="socials-video socials-video--sm">
+                        <video autoplay="" muted="" loop="" playsinline="" preload="none">
+                            <source media="(min-width: 1000px)" src="../assets/videos/webm/social4-desktop.webm"
+                                type="video/webm">
+                            <source media="(min-width: 1000px)" src="../assets/videos/mp4/social4-desktop.mp4"
+                                type="video/mp4">
+                            <source media="(min-width: 575px)" src="../assets/videos/webm/social4-tablet.webm"
+                                type="video/webm">
+                            <source media="(min-width: 575px)" src="../assets/videos/mp4/social4-tablet.mp4"
+                                type="video/mp4">
+                            <source src="../assets/videos/webm/social4-mobile.webm" type="video/webm">
+                            <source src="../assets/videos/mp4/social4-mobile.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="trust">
-            <div id="availabilityBanner">
+            <h2 class="vh">Loved by consumers, available at your favorite retailers
+            </h2>
+            <div id="availabilityBanner" class="sliding-banner">
                 <div class="ticker">
                     <div class="ticker-track availability-ticker-track">
                         <span class="ticker-item">Available in</span>
@@ -369,278 +431,235 @@
                 </div>
             </div>
 
-            <div id="trustBanner">
+            <div id="trustBanner" class="sliding-banner">
                 <div class="ticker">
                     <div class="ticker-track trust-ticker-track">
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <div class="ticker-element">
+                            <span class="ticker-item">605000</span>
+                            <div class="ticker-item-text">
+                                <span class="ticker-text-1">Families</span>
+                                <span class="ticker-text-2">have chosen us</span>
+                            </div>
+                        </div>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <div class="ticker-element">
+                            <span class="ticker-item">605000</span>
+                            <div class="ticker-item-text">
+                                <span class="ticker-text-1">Families</span>
+                                <span class="ticker-text-2">have chosen us</span>
+                            </div>
+                        </div>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <div class="ticker-element">
+                            <span class="ticker-item">605000</span>
+                            <div class="ticker-item-text">
+                                <span class="ticker-text-1">Families</span>
+                                <span class="ticker-text-2">have chosen us</span>
+                            </div>
+                        </div>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <div class="ticker-element">
+                            <span class="ticker-item">605000</span>
+                            <div class="ticker-item-text">
+                                <span class="ticker-text-1">Families</span>
+                                <span class="ticker-text-2">have chosen us</span>
+                            </div>
+                        </div>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <div class="ticker-element">
+                            <span class="ticker-item">605000</span>
+                            <div class="ticker-item-text">
+                                <span class="ticker-text-1">Families</span>
+                                <span class="ticker-text-2">have chosen us</span>
+                            </div>
+                        </div>
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Trusted by 2M people</span>
+                        <span class="ticker-item">Over 2 million consumers</span>
                         <span class="ticker-dot"></span>
                     </div>
                 </div>
             </div>
 
-            <div id="resellersBanner">
+            <div id="resellersBanner" class="sliding-banner">
                 <div class="ticker">
                     <div class="ticker-track resellers-ticker-track">
-                        <span class="ticker-item">Your favorite laundry in</span>
+                        <span class="ticker-item">Your favorite laundry detergent at</span>
                         <img src="../assets/svg/leclerc-logo.svg" alt="Leclerc" class="reseller-logo" loading="lazy">
                         <span class="ticker-dot"></span>
                         <img src="../assets/svg/leaderprice-logo.svg" alt="Leader Price" class="reseller-logo"
                             loading="lazy">
                         <span class="ticker-dot"></span>
-                        <img src="../assets/svg/promocash-logo.svg" alt="Promocash" class="reseller-logo"
-                            loading="lazy">
+                        <img src="../assets/svg/promocash-logo.svg" alt="Promocash" class="reseller-logo" loading="lazy">
                         <span class="ticker-dot"></span>
-                        <img src="../assets/svg/carrefour-logo.svg" alt="Carrefour" class="reseller-logo"
-                            loading="lazy">
+                        <img src="../assets/svg/carrefour-logo.svg" alt="Carrefour" class="reseller-logo" loading="lazy">
                         <span class="ticker-dot"></span>
-                        <span class="ticker-item">Your favorite laundry in</span>
+                        <span class="ticker-item">Your favorite laundry detergent at</span>
                         <img src="../assets/svg/leclerc-logo.svg" alt="Leclerc" class="reseller-logo" loading="lazy">
                         <span class="ticker-dot"></span>
                         <img src="../assets/svg/leaderprice-logo.svg" alt="Leader Price" class="reseller-logo"
                             loading="lazy">
                         <span class="ticker-dot"></span>
-                        <img src="../assets/svg/promocash-logo.svg" alt="Promocash" class="reseller-logo"
-                            loading="lazy">
+                        <img src="../assets/svg/promocash-logo.svg" alt="Promocash" class="reseller-logo" loading="lazy">
                         <span class="ticker-dot"></span>
-                        <img src="../assets/svg/carrefour-logo.svg" alt="Carrefour" class="reseller-logo"
-                            loading="lazy">
+                        <img src="../assets/svg/carrefour-logo.svg" alt="Carrefour" class="reseller-logo" loading="lazy">
                         <span class="ticker-dot"></span>
                     </div>
                 </div>
-            </div>
-
-            <div class="trust-community">
-                <div class="trust-copy">
-                    <p>Loved by families for its unbeatable value and maximum concentration.</p>
-                    <div class="trust-socials">
-                        <a href="https://www.tiktok.com/@the.pure.power" aria-label="TikTok"><img
-                                src="../assets/svg/tik-tok.svg" alt="" width="30" height="30" loading="lazy"></a>
-                        <a href="https://www.facebook.com/people/Pure-Power/61581267463357/" aria-label="Facebook"><svg
-                                width="30" height="30" viewBox="0 0 30 30" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15 0C6.75 0 0 6.735 0 15.03C0 22.53 5.49 28.755 12.66 29.88V19.38H8.85V15.03H12.66V11.715C12.66 7.95 14.895 5.88 18.33 5.88C19.965 5.88 21.675 6.165 21.675 6.165V9.87H19.785C17.925 9.87 17.34 11.025 17.34 12.21V15.03H21.51L20.835 19.38H17.34V29.88C20.8747 29.3218 24.0933 27.5183 26.4149 24.7951C28.7365 22.0719 30.008 18.6085 30 15.03C30 6.735 23.25 0 15 0Z" />
-                            </svg></a>
-                        <a href="https://www.instagram.com/the.purepower/" aria-label="Instagram"><svg width="30"
-                                height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
-                                <path
-                                    d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
-                            </svg></a>
-                    </div>
-                </div>
-                <div class="socials-videos-srollable">
-                    <div class="socials-videos">
-                        <div class="socials-video socials-video--sm">
-                            <video autoplay="" muted="" loop="" playsinline="" preload="none">
-                                <source media="(min-width: 1000px)" src="../assets/videos/webm/social1-desktop.webm"
-                                    type="video/webm">
-                                <source media="(min-width: 1000px)" src="../assets/videos/mp4/social1-desktop.mp4"
-                                    type="video/mp4">
-                                <source media="(min-width: 575px)" src="../assets/videos/webm/social1-tablet.webm"
-                                    type="video/webm">
-                                <source media="(min-width: 575px)" src="../assets/videos/mp4/social1-tablet.mp4"
-                                    type="video/mp4">
-                                <source src="../assets/videos/webm/social1-mobile.webm" type="video/webm">
-                                <source src="../assets/videos/mp4/social1-mobile.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="socials-video socials-video--md">
-                            <video autoplay="" muted="" loop="" playsinline="" preload="none">
-                                <source media="(min-width: 1000px)" src="../assets/videos/webm/social2-desktop.webm"
-                                    type="video/webm">
-                                <source media="(min-width: 1000px)" src="../assets/videos/mp4/social2-desktop.mp4"
-                                    type="video/mp4">
-                                <source media="(min-width: 575px)" src="../assets/videos/webm/social2-tablet.webm"
-                                    type="video/webm">
-                                <source media="(min-width: 575px)" src="../assets/videos/mp4/social2-tablet.mp4"
-                                    type="video/mp4">
-                                <source src="../assets/videos/webm/social2-mobile.webm" type="video/webm">
-                                <source src="../assets/videos/mp4/social2-mobile.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="socials-video socials-video--lg">
-                            <video autoplay="" muted="" loop="" playsinline="" preload="none">
-                                <source media="(min-width: 1000px)" src="../assets/videos/webm/social3-desktop.webm"
-                                    type="video/webm">
-                                <source media="(min-width: 1000px)" src="../assets/videos/mp4/social3-desktop.mp4"
-                                    type="video/mp4">
-                                <source media="(min-width: 575px)" src="../assets/videos/webm/social3-tablet.webm"
-                                    type="video/webm">
-                                <source media="(min-width: 575px)" src="../assets/videos/mp4/social3-tablet.mp4"
-                                    type="video/mp4">
-                                <source src="../assets/videos/webm/social3-mobile.webm" type="video/webm">
-                                <source src="../assets/videos/mp4/social3-mobile.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                        <div class="socials-video socials-video--sm">
-                            <video autoplay="" muted="" loop="" playsinline="" preload="none">
-                                <source media="(min-width: 1000px)" src="../assets/videos/webm/social4-desktop.webm"
-                                    type="video/webm">
-                                <source media="(min-width: 1000px)" src="../assets/videos/mp4/social4-desktop.mp4"
-                                    type="video/mp4">
-                                <source media="(min-width: 575px)" src="../assets/videos/webm/social4-tablet.webm"
-                                    type="video/webm">
-                                <source media="(min-width: 575px)" src="../assets/videos/mp4/social4-tablet.mp4"
-                                    type="video/mp4">
-                                <source src="../assets/videos/webm/social4-mobile.webm" type="video/webm">
-                                <source src="../assets/videos/mp4/social4-mobile.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="socials-videos-scrollable-ctn">
-                </div> -->
             </div>
 
             <div id="comments">
-                <picture>
-                    <source media="(min-width: 1000px)" srcset="../assets/img/webp/heart-bubbles-bg-desktop.webp"
-                        type="image/webp">
-                    <source media="(min-width: 1000px)" srcset="../assets/img/png/heart-bubbles-bg-desktop.png">
-                    <source media="(min-width: 575px)" srcset="../assets/img/webp/heart-bubbles-bg-tablet.webp"
-                        type="image/webp">
-                    <source media="(min-width: 575px)" srcset="../assets/img/png/heart-bubbles-bg-tablet.png">
-                    <source srcset="../assets/img/webp/heart-bubbles-bg-mobile.webp" type="image/webp">
-                    <img class="comments-bg" src="../assets/img/png/heart-bubbles-bg-mobile.png" alt=""
-                        aria-hidden="true" loading="lazy" width="1530" height="866">
-                </picture>
-                <h2>What people say<br>about us</h2>
+                <h2 class="vh">Customer feedback from our social media</h2>
                 <div class="comment-grid-scrollable">
                     <div class="comments-grid">
-                        <div class="comment-card ">
-
-                            <blockquote>Good evening, I'm getting back to you. This is the best laundry detergent I've
-                                ever used. I'm really, really satisfied.</blockquote>
-                        </div>
                         <div class="comment-card">
-
-                            <blockquote>Keep them coming!!!!!! The powder is exceptional!!!</blockquote>
+                            <blockquote>
+                                I've got it at home and honestly 10/10, you know how in the evening when you're too
+                                lazy to unload the laundry and it stinks the next day 😢 well with this one the
+                                laundry still smells just as good the next day, it cleans really well, I'm honestly
+                                amazed, the scent lasts a long time, truly the best laundry detergent purchase. 🙏
+                            </blockquote>
                         </div>
-                        <div class="comment-card ">
-
-                            <blockquote>Wow, a new product has arrived! Shopping carts are filled with these laundry
-                                detergent buckets, some with 6 or 7!</blockquote>
-                        </div>
+                        <span class="ticker-dot"></span>
                         <div class="comment-card">
-
-                            <blockquote>The miracle detergent, and the fragrance lasts.</blockquote>
+                            <blockquote>
+                                Aw I love these mini jugs, they can really be reused for so many things afterward.
+                            </blockquote>
                         </div>
-                        <div class="comment-card ">
-
-                            <blockquote>Good evening, I'm getting back to you. This is the best laundry detergent I've
-                                ever used. I'm really, really satisfied.</blockquote>
-                        </div>
+                        <span class="ticker-dot"></span>
                         <div class="comment-card">
-
-                            <blockquote>Keep them coming!!!!!! The powder is exceptional!!!</blockquote>
+                            <blockquote>
+                                Laundry powder that smells great and washes really well.
+                            </blockquote>
                         </div>
-                        <div class="comment-card ">
-
-                            <blockquote>Wow, a new product has arrived! Shopping carts are filled with these laundry
-                                detergent buckets, some with 6 or 7!</blockquote>
-                        </div>
+                        <span class="ticker-dot"></span>
                         <div class="comment-card">
-
-                            <blockquote>The miracle detergent, and the fragrance lasts.</blockquote>
+                            <blockquote>
+                                Washes super clean and smells great.
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                Very good laundry detergent 👍
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                Wow, this new product has arrived in Guyana, you should've seen the carts at Carrefour
+                                filled with these laundry buckets, some with 6 or 7 of them, I myself was only going
+                                to get 1 bucket and ended up turning back around for a 2nd.
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                Very good laundry detergent 👍
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                Good evening, coming back to you, the best laundry detergent I've ever used. I'm
+                                really, really satisfied. 🔥
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                Hi, coming back to you. I approve, no regrets, the detergent is amazing when it comes
+                                to scent, I love it.
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                Great products, I buy them on Réunion Island.
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                Bombard us with it 😍🤭 !!!!! The powder is exceptional !!! 🇵🇸
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                I've got my 5 kgs, that's good laundry detergent for a few months. 😍😍
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                Very effective, I've used it and it lasts a long time.
+                            </blockquote>
+                        </div>
+                        <span class="ticker-dot"></span>
+                        <div class="comment-card">
+                            <blockquote>
+                                This detergent, I have 2 of the 80-wash and 2 of the 120-wash, it's amazing. 😍😍👏🔥🙌❤️
+                            </blockquote>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="purepowerRange">
-            <img class="range-img" src="../assets/img/png/podium-new.png" alt="Pure Power product range" loading="lazy">
         </section>
     </main>
-
-
     <footer id="footer">
-        <picture>
-            <source media="(min-width: 1000px)" srcset="../assets/img/webp/footer-wave-desktop.webp" type="image/webp">
-            <source media="(min-width: 1000px)" srcset="../assets/img/png/footer-wave-desktop.png">
-            <source media="(min-width: 575px)" srcset="../assets/img/webp/footer-wave-tablet.webp" type="image/webp">
-            <source media="(min-width: 575px)" srcset="../assets/img/png/footer-wave-tablet.png">
-            <source srcset="../assets/img/webp/footer-wave-mobile.webp" type="image/webp">
-            <img class="footer-wave" src="../assets/img/png/footer-wave-mobile.png" alt="" aria-hidden="true"
-                loading="lazy" width="1440" height="843">
-        </picture>
-        <a href="./" class="footer-logo-link">
-            <img class="footer-logo" src="../assets/svg/purepower.svg" alt="Pure Power" loading="lazy">
-        </a>
-        <div class="footer-inner">
-            <a href="#contact" class="footer-cta">Let's talk</a>
-            <div class="footer-right">
-                <div class="footer-social">
-                    <a href="https://www.tiktok.com/@the.pure.power" aria-label="TikTok"><img
-                            src="../assets/svg/tik-tok.svg" alt="" width="26" height="30" loading="lazy"></a>
-                    <a href="https://www.facebook.com/people/Pure-Power/61581267463357/" aria-label="Facebook"><svg
-                            width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15 0C6.75 0 0 6.735 0 15.03C0 22.53 5.49 28.755 12.66 29.88V19.38H8.85V15.03H12.66V11.715C12.66 7.95 14.895 5.88 18.33 5.88C19.965 5.88 21.675 6.165 21.675 6.165V9.87H19.785C17.925 9.87 17.34 11.025 17.34 12.21V15.03H21.51L20.835 19.38H17.34V29.88C20.8747 29.3218 24.0933 27.5183 26.4149 24.7951C28.7365 22.0719 30.008 18.6085 30 15.03C30 6.735 23.25 0 15 0Z" />
-                        </svg></a>
-                    <a href="https://www.instagram.com/the.purepower/" aria-label="Instagram"><svg width="30"
-                            height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
-                            <path
-                                d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
-                        </svg></a>
+        <a href="#contact" class="footer-cta">Contact</a>
+        <div class="footer-social">
+            <a href="https://www.tiktok.com/@the.pure.power" aria-label="TikTok">
+                <svg width="30" height="21" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 15L19.785 10.5L12 6V15ZM29.34 3.255C29.535 3.96 29.67 4.905 29.76 6.105C29.865 7.305 29.91 8.34 29.91 9.24L30 10.5C30 13.785 29.76 16.2 29.34 17.745C28.965 19.095 28.095 19.965 26.745 20.34C26.04 20.535 24.75 20.67 22.77 20.76C20.82 20.865 19.035 20.91 17.385 20.91L15 21C8.715 21 4.8 20.76 3.255 20.34C1.905 19.965 1.035 19.095 0.66 17.745C0.465 17.04 0.33 16.095 0.24 14.895C0.135 13.695 0.0899999 12.66 0.0899999 11.76L0 10.5C0 7.215 0.24 4.8 0.66 3.255C1.035 1.905 1.905 1.035 3.255 0.66C3.96 0.465 5.25 0.33 7.23 0.24C9.18 0.135 10.965 0.0899999 12.615 0.0899999L15 0C21.285 0 25.2 0.24 26.745 0.66C28.095 1.035 28.965 1.905 29.34 3.255Z" />
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/people/Pure-Power/61581267463357/" aria-label="Facebook"><svg width="30"
+                    height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15 0C6.75 0 0 6.735 0 15.03C0 22.53 5.49 28.755 12.66 29.88V19.38H8.85V15.03H12.66V11.715C12.66 7.95 14.895 5.88 18.33 5.88C19.965 5.88 21.675 6.165 21.675 6.165V9.87H19.785C17.925 9.87 17.34 11.025 17.34 12.21V15.03H21.51L20.835 19.38H17.34V29.88C20.8747 29.3218 24.0933 27.5183 26.4149 24.7951C28.7365 22.0719 30.008 18.6085 30 15.03C30 6.735 23.25 0 15 0Z" />
+                </svg></a>
+            <a href="https://www.instagram.com/the.purepower/" aria-label="Instagram"><svg width="30" height="30"
+                    viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
+                    <path
+                        d="M15.0005 11.0943C17.1578 11.0943 18.9072 12.8434 18.9072 15.001C18.9071 17.1582 17.1577 18.9072 15.0005 18.9072C12.8432 18.9071 11.0944 17.1581 11.0943 15.001C11.0943 12.8435 12.8432 11.0944 15.0005 11.0943Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.9494 5.39389C14.2614 5.39342 14.6095 5.39389 15.0005 5.39389C18.1294 5.39389 18.5005 5.40478 19.736 5.46091C20.8786 5.51318 21.499 5.70405 21.9121 5.86449C22.459 6.07682 22.8489 6.33087 23.2589 6.74113C23.6691 7.15126 23.9227 7.542 24.1355 8.08886C24.296 8.50134 24.487 9.1215 24.5391 10.264C24.5952 11.4994 24.6076 11.8705 24.6076 14.998C24.6076 18.1256 24.5952 18.4968 24.5391 19.7321C24.4867 20.8744 24.296 21.4946 24.1355 21.9072C23.9233 22.454 23.669 22.8436 23.2589 23.2535C22.8488 23.6635 22.4592 23.9176 21.9121 24.1301C21.4995 24.2912 20.8786 24.4813 19.736 24.5337C18.5007 24.5898 18.1294 24.6022 15.0005 24.6022C11.8716 24.6022 11.5006 24.5898 10.2654 24.5337C9.12293 24.4809 8.50279 24.2899 8.08936 24.1296C7.54261 23.9172 7.15174 23.6635 6.74162 23.2535C6.33146 22.8433 6.07741 22.4534 5.86449 21.9062C5.70408 21.4937 5.51294 20.8735 5.46091 19.7311C5.40478 18.4957 5.39389 18.1246 5.39389 14.9951C5.39389 11.8657 5.40478 11.4964 5.46091 10.261C5.51318 9.11862 5.70408 8.49848 5.86449 8.08541C6.07695 7.5385 6.33134 7.14783 6.74162 6.73768C7.15177 6.32753 7.54248 6.07384 8.08936 5.86104C8.50246 5.69989 9.12286 5.50946 10.2654 5.45696C11.3464 5.4081 11.7654 5.39339 13.9494 5.39093V5.39389ZM15.0005 8.98275C11.6771 8.98285 8.98275 11.6775 8.98275 15.001C8.98287 18.3244 11.6772 21.0176 15.0005 21.0177C18.324 21.0177 21.0176 18.3244 21.0177 15.001C21.0177 11.6775 18.3242 8.98275 15.0005 8.98275ZM21.2562 7.33936C20.4799 7.33936 19.8499 7.96876 19.8499 8.74524C19.8499 9.52159 20.4798 10.1516 21.2562 10.1516C22.0326 10.1515 22.6626 9.52155 22.6626 8.74524C22.6626 7.96892 22.0326 7.33942 21.2562 7.33936Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M22.9686 0C26.8518 0 30 3.14813 30 7.03137V22.9686C30 26.8518 26.8518 30 22.9686 30H7.03137C3.14813 30 0 26.8518 0 22.9686V7.03137C0 3.14813 3.14813 0 7.03137 0H22.9686ZM14.9985 3.28187C11.818 3.28187 11.4184 3.29601 10.1689 3.35283C8.9213 3.41 8.06964 3.60753 7.32457 3.89734C6.55372 4.19663 5.89985 4.59695 5.24852 5.24852C4.59663 5.89994 4.19609 6.5536 3.89586 7.32408C3.60524 8.06939 3.40748 8.92138 3.35135 10.1684C3.29546 11.4184 3.28088 11.8183 3.28088 15.001C3.28088 18.1835 3.29513 18.5817 3.35184 19.8316C3.40927 21.0791 3.60679 21.9309 3.89635 22.6759C4.19587 23.4467 4.59603 24.1007 5.24754 24.752C5.89874 25.4039 6.55283 25.8049 7.32309 26.1041C8.06874 26.3939 8.92058 26.5914 10.1679 26.6487C11.4177 26.7055 11.8172 26.7196 14.9995 26.7196C18.182 26.7196 18.5804 26.7055 19.8302 26.6487C21.0777 26.5914 21.9306 26.3939 22.6764 26.1041C23.4467 25.8049 24.0996 25.4037 24.7505 24.752C25.4024 24.1007 25.8029 23.4465 26.1032 22.6759C26.3913 21.9306 26.589 21.0786 26.6477 19.8316C26.7038 18.5819 26.7186 18.1833 26.7186 15.001C26.7186 11.8185 26.7038 11.4187 26.6477 10.1689C26.589 8.92133 26.3913 8.06963 26.1032 7.32457C25.8029 6.55373 25.4024 5.89994 24.7505 5.24852C24.0988 4.59672 23.4469 4.19629 22.6754 3.89734C21.9283 3.60742 21.0762 3.40989 19.8287 3.35283C18.5788 3.296 18.1808 3.28187 14.9985 3.28187Z" />
+                </svg></a>
 
-                </div>
-                <nav class="footer-links" aria-label="Footer">
-                    <div class="footer-column">
-                        <p class="footer-column-title">Products</p>
-                        <ul>
-                            <li><a href="./products.html" class="footer-column-link">Iconic 4KG</a></li>
-                            <li><a href="./products.html" class="footer-column-link">Compact 2KG</a></li>
-                            <li><a href="./products.html" class="footer-column-link">Family 5KG</a></li>
-                            <li><a href="./products.html" class="footer-column-link">Pro format 6KG</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <p class="footer-column-title">About</p>
-                        <ul>
-                            <li><a href="./products.html" class="footer-column-link">Our products</a></li>
-                            <li><a href="./about.html" class="footer-column-link">About us</a></li>
-                            <li><a href="./faq.html" class="footer-column-link">FAQ</a></li>
-                            <li><a href="../blog/en/index.html" class="footer-column-link">Blog</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
         </div>
+        <nav class="footer-links" aria-label="Footer">
+            <div class="footer-column">
+                <p class="footer-column-title">Products</p>
+                <ul>
+                    <li><a href="./products.html" class="footer-column-link">4KG Bucket</a></li>
+                    <li><a href="./products.html" class="footer-column-link">Screw-top 5KG Bucket</a></li>
+                    <li><a href="./products.html" class="footer-column-link">2KG Bucket</a></li>
+                    <li><a href="./products.html" class="footer-column-link">6KG Bucket</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p class="footer-column-title">About</p>
+                <ul>
+                    <li><a href="./products.html" class="footer-column-link">Our products</a></li>
+                    <li><a href="./about.html" class="footer-column-link">About us</a></li>
+                    <li><a href="./faq.html" class="footer-column-link">FAQ</a></li>
+                    <li><a href="../blog/en/index.html" class="footer-column-link">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="footer-legal">
-            <a href="#">CGV</a>
+            <a href="#">Terms of sale</a>
             <span>·</span>
-            <a href="#">CGU</a>
+            <a href="#">Terms of use</a>
         </div>
     </footer>
 </body>

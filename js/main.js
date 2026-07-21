@@ -228,15 +228,13 @@ function initProductsPage() {
             if (p.dataset.tab === 'description') p.textContent = product.description;
             if (p.dataset.tab === 'composition') {
                 p.textContent = product.composition;
-                if (lang === 'fr') {
-                    const detailPageHref = product.category === 'liquid'
-                        ? './descriptif-complet-liquides.html'
-                        : './descriptif-complet-poudres.html';
-                    const detailLink = document.createElement('a');
-                    detailLink.href = detailPageHref;
-                    detailLink.textContent = 'Voir la description détaillée';
-                    p.append(' ', detailLink);
-                }
+                const detailPageHref = product.category === 'liquid'
+                    ? './descriptif-complet-liquides.html'
+                    : './descriptif-complet-poudres.html';
+                const detailLink = document.createElement('a');
+                detailLink.href = detailPageHref;
+                detailLink.textContent = lang === 'fr' ? 'Voir la description détaillée' : 'See the full description';
+                p.append(' ', detailLink);
             }
         });
     }

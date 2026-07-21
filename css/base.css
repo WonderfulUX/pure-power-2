@@ -20,8 +20,7 @@ body {
     font-style: normal;
 }
 
-section,
-.footer-inner {
+section {
     position: relative;
     padding: 50px 30px;
 }
@@ -73,24 +72,12 @@ img {
     font-family: 'Monument extended';
 }
 
-.hk {
-    font-family: 'HK Grotesk Wide';
-}
-
-.titan {
-    font-family: "Titan One", sans-serif;
-}
-
 .spartan {
     font-family: "League Spartan", sans-serif;
 }
 
 .upper {
     text-transform: uppercase;
-}
-
-.lower {
-    text-transform: unset;
 }
 
 .relative {
@@ -101,10 +88,6 @@ img {
     background-color: var(--glacial);
 }
 
-
-.shadow {
-    text-shadow: 0 6px 6px hsl(from black h s l / 15%);
-}
 
 .readable {
     font-weight: 400;
