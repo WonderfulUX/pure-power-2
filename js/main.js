@@ -233,6 +233,7 @@ function initProductsPage() {
                     : './descriptif-complet-poudres.html';
                 const detailLink = document.createElement('a');
                 detailLink.href = detailPageHref;
+                detailLink.classList = "hightlight-link";
                 detailLink.textContent = lang === 'fr' ? 'Voir la description détaillée' : 'See the full description';
                 p.append(' ', detailLink);
             }

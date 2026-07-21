@@ -78,7 +78,7 @@
     height: 100%;
     overflow: auto;
     background: var(--lightGrey);
-    scrollbar-width: none;
+    scrollbar-width: thin;
 }
 
 .products-thumbs {

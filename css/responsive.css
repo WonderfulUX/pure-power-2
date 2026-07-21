@@ -186,6 +186,7 @@
         width: fit-content;
         overflow: unset;
         border-radius: 20px;
+        scrollbar-width: none;
     }
 
     .product-list-scrollable,

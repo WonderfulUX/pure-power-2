@@ -29,7 +29,7 @@
     width: 90%;
     max-width: 500px;
     overflow-y: auto;
-    background: var(--glacial);
+    background: var(--white);
     border-radius: 20px;
     padding: 30px 40px;
     /* color: red; */
