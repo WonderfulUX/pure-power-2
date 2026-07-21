@@ -5,7 +5,8 @@
     background-color: var(--signature);
     text-align: center;
     overflow: hidden;
-    height: 280px;
+    height: fit-content;
+    padding: 24px 0;
     color: var(--white);
 }
 

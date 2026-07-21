@@ -32,7 +32,7 @@
     animation: ticker-scroll 24s linear infinite;
     will-change: transform;
     font-family: "Titan One", sans-serif;
-    font-size: clamp(2rem, 6.25vw, 90px);
+    font-size: clamp(3rem, 6.25vw, 90px);
     text-transform: uppercase;
     flex-shrink: 0;
     min-width: 200%;

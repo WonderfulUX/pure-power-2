@@ -511,18 +511,19 @@
 
 @media screen and (max-width: 575px) {
 
-    #products-panel {
-        margin-bottom: 80px;
-    }
-
     .product-thumb {
         width: 180px;
         height: 180px;
     }
 
-    #products-panel {
+    #products-panel-section {
         padding: 0;
+    }
+
+    #products-panel {
+        padding: 50px 0 0;
         border: none;
+        margin: 0;
     }
 
     .product {
@@ -656,10 +657,6 @@
 
     .article-section {
         margin-bottom: 80px;
-    }
-
-    #comments {
-        padding: 0;
     }
 
     .header-right-btns {

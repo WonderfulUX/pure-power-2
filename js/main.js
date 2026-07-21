@@ -1,5 +1,5 @@
-import { moveElementsAntiClockwise, moveElementsClockwise } from "./modules/3Drotate.js";
 import { PRODUCTS_FR, PRODUCTS_EN } from "./data.js";
+import { initSliders } from "./sliders.js";
 
 const lang = document.documentElement.lang;
 
@@ -135,7 +135,10 @@ function initContactModal() {
         document.querySelector("#powderDetergents .products-grid").style.translate = '0px 0px'
         deActivateButton(slideLeft)
         activateButton(slideRight)
+
+        initSliders(document.querySelectorAll('.ticker-track'))
     })
+    window.addEventListener('load', initSliders(document.querySelectorAll('.ticker-track')))
 
     const radios = modal.querySelectorAll('input[name="query-type"]');
     radios.forEach(radio => {
@@ -330,23 +333,12 @@ initProductsPage();
 initTickers();
 
 
-document.addEventListener('DOMContentLoaded', () => {
-
-    document.querySelectorAll('.clockwise-trig').forEach(trigger => {
-        trigger.addEventListener('click', moveElementsClockwise)
-    })
-    document.querySelectorAll('.anti-clockwise-trig').forEach(trigger => {
-        trigger.addEventListener('click', moveElementsAntiClockwise)
-    })
-})
-
 let commentsWidth = document.querySelector('.comments-grid').getBoundingClientRect().width
-const duration = document.querySelectorAll('.comment-card').length
-console.log(commentsWidth)
+const durationMultiplier = document.querySelectorAll('.comment-card').length
 
 document.querySelector('.comments-grid').animate(
     [{ translate: "0 0 " }, { translate: `-${commentsWidth / 2}px 0` }],
-    { duration: duration * 6000, easing: "linear", iterations: "Infinity" }
+    { duration: durationMultiplier * 6000, easing: "linear", iterations: "Infinity" }
 )
 
 

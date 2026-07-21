@@ -7,11 +7,11 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
-    animation: ticker-scroll 26s linear infinite;
+    /* animation: ticker-scroll 26s linear infinite; */
     will-change: transform;
 }
 
-@keyframes ticker-scroll {
+/* @keyframes ticker-scroll {
     from {
         transform: translateX(0);
     }
@@ -19,7 +19,7 @@
     to {
         transform: translateX(-50%);
     }
-}
+} */
 
 .ticker-item {
     display: inline-flex;

@@ -147,4 +147,5 @@
 .article-pagination-prev,
 .article-pagination-next {
     line-height: 40px;
+    font-size: 20px;
 }
