@@ -88,7 +88,7 @@
 .contact-type label {
     padding: 10px 18px;
     border-radius: 30px;
-    border: 2px solid var(--dark-blue);
+    border: 2px solid hsl(from var(--dark-blue) h s l / 30%);
     cursor: pointer;
     font-size: 15px;
     font-weight: 500;
@@ -144,7 +144,7 @@
     font-size: clamp(0.875rem, 1vw, 0.9375rem);
     color: var(--dark-blue);
     width: 100%;
-    border: 2px solid var(--white);
+    border: 2px solid hsl(from var(--dark-blue) h s l / 30%);
 }
 
 .field input:focus,
